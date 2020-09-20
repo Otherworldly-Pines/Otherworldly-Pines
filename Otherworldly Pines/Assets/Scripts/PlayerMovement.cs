@@ -46,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
 
         speed = Input.GetKey(KeyCode.LeftShift) ? initialSpeed * runMultiplier : initialSpeed;
 
-        if( Input.GetKeyDown(KeyCode.UpArrow) && isGrounded == true){
+        if( Input.GetKeyDown(KeyCode.Space) && isGrounded == true){
             rb.velocity = Vector2.up * jumpForce;
         }
     }
