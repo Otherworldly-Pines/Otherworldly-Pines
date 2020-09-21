@@ -419,7 +419,7 @@ GameObject:
   - component: {fileID: 522231419}
   - component: {fileID: 522231418}
   m_Layer: 0
-  m_Name: CM vcam1
+  m_Name: Camera Control
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -650,7 +650,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 8.491255, y: 4.2978983}
+  m_Offset: {x: -0.012893677, y: 0.008788109}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -661,7 +661,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 35.2124, y: 14.609997}
+  m_Size: {x: 37.145172, y: 17.256468}
   m_EdgeRadius: 0
 --- !u!1 &982633389
 GameObject:
