@@ -2,33 +2,39 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(BasicMovement))]
+[RequireComponent(typeof(EnemyBehavior))]
 public class Patrol : MonoBehaviour
 {
     public float left;
     public float right;
     private float leftBound;
     private float rightBound;
-    private BasicMovement movement;
+    private EnemyBehavior behavior;
 
     // Start is called before the first frame update
     void Start()
     {
+        this.initPatrolRange();
+        this.behavior = gameObject.GetComponent<EnemyBehavior>();
+        this.behavior.moveRight();
+    }
+
+    public void initPatrolRange(){
         this.leftBound = gameObject.transform.position.x + this.left;
         this.rightBound = gameObject.transform.position.x + this.right;
-        this.movement = gameObject.GetComponent<BasicMovement>();
-        this.movement.moveRight();
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        if(gameObject.transform.position.x < this.leftBound){
-            this.movement.moveRight();
-		}
-        else if(gameObject.transform.position.x > this.rightBound){
-            this.movement.moveLeft();  
-		}
+        if(this.behavior.isPatrolling()){
+            if(gameObject.transform.position.x < this.leftBound){
+                this.behavior.moveRight();
+            }
+            else if(gameObject.transform.position.x > this.rightBound){
+                this.behavior.moveLeft();  
+            }
+        }
+        
     }
 }
