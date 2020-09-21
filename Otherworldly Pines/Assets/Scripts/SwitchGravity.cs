@@ -7,7 +7,7 @@ public class SwitchGravity : MonoBehaviour
 {
 
     //private float gravity = -9.81f;
-
+    public GameObject player;
     private Rigidbody2D rb;
     private int angle = 0;
     private List<Rigidbody2D> flippables = new List<Rigidbody2D>();
@@ -26,11 +26,10 @@ public class SwitchGravity : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.J))
         {
             angle = angle + 180;
-            transform.eulerAngles = new Vector3(0, 0, angle);
-            Vector3 Scaler = transform.localScale;
+            player.transform.eulerAngles = new Vector3(0, 0, angle);
+            Vector3 Scaler = player.transform.localScale;
             Scaler.x *= -1;
-            transform.localScale = Scaler;
-
+            player.transform.localScale = Scaler;
             rb.gravityScale *= -1;
             if (flippables.Count != 0)
             {
