@@ -42,10 +42,6 @@ public class SwitchGravity : MonoBehaviour
         }
     }
 
-    void UpdateFlippables()
-    {
-        
-    }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
@@ -62,6 +58,10 @@ public class SwitchGravity : MonoBehaviour
         if (flippables.Contains(gameObject))
         {
             flippables.Remove(gameObject);
+            if(gameObject.gravityScale < 0 ){
+                 gameObject.gravityScale *= -1;
+            }
+
         }
     }
 }
