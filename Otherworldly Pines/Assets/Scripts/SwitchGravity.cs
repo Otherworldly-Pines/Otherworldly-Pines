@@ -39,6 +39,29 @@ public class SwitchGravity : MonoBehaviour
                 }
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            angle = angle + 180;
+            player.transform.eulerAngles = new Vector3(0, 0, angle);
+            Vector3 Scaler = player.transform.localScale;
+            Scaler.x *= -1;
+            player.transform.localScale = Scaler;
+            rb.gravityScale *= -1;
+        }
+
+
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            if (flippables.Count != 0)
+            {
+                foreach (Rigidbody2D flippable in flippables)
+                {
+                    flippable.gravityScale *= -1;
+                }
+            }
+        }
+
     }
 
 
