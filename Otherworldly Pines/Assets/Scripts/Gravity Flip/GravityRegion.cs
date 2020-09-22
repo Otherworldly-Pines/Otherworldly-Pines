@@ -5,10 +5,10 @@ using UnityEngine;
 public class GravityRegion : MonoBehaviour
 {
 
-    private int angle = 0;
+    private HashSet<GravityFlippable> flippables = new HashSet<GravityFlippable>();
+
 	public bool gravityIsFlipped = false;
 	public bool playerCanFlipGravity = true;
-    private HashSet<GravityFlippable> flippables = new HashSet<GravityFlippable>();
 
 	public void FlipGravity()
 	{
@@ -22,27 +22,16 @@ public class GravityRegion : MonoBehaviour
 		}
 	}
 
-    void FlipPlayer()
-    {
-        // angle = angle + 180;
-        // player.transform.eulerAngles = new Vector3(0, 0, angle);
-        // Vector3 Scaler = player.transform.localScale;
-        // Scaler.x *= -1;
-        // player.transform.localScale = Scaler;
-        // rb.gravityScale *= -1;
-        // if (player.GetComponent<PlayerMovement>().isUpsideDown)
-        //     player.GetComponent<PlayerMovement>().isUpsideDown = false;
-        // else
-        //     player.GetComponent<PlayerMovement>().isUpsideDown = true;
-    }
-
     private void OnTriggerEnter2D(Collider2D collider)
     {
+		// If the player just entered the region, inform them of that so they can control it
         GravityControl controller = collider.GetComponent<GravityControl>();
 		if (controller != null) {
 			controller.EnterGravityRegion(this);
 		}
 		
+		// If a flippable object just entered, add them to this gravity region
+		// and if they need their gravity updated, take care of that too
         GravityFlippable flippable = collider.GetComponent<GravityFlippable>();
         if (flippable != null) {
 			flippables.Add(flippable);
@@ -55,14 +44,17 @@ public class GravityRegion : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collider)
     {
+		// If the player just exited, inform them of that
         GravityControl controller = collider.GetComponent<GravityControl>();
 		if (controller != null) {
 			controller.ExitGravityRegion(this);
 		}
 		
+		// If a flippable object just exited, remove them from the list of flippables
         GravityFlippable flippable = collider.GetComponent<GravityFlippable>();
         if (flippable != null) {
 			flippables.Remove(flippable);
 		}
     }
+
 }

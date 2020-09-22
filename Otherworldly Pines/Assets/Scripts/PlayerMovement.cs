@@ -22,7 +22,6 @@ public class PlayerMovement : MonoBehaviour
     
     private bool isGrounded;
 
-    // Start is called before the first frame update
     void Start()
     {   
         body = GetComponent<Rigidbody2D>();
@@ -59,4 +58,5 @@ public class PlayerMovement : MonoBehaviour
         Scaler.x *= -1;
         transform.localScale = Scaler;
     }
+
 }
