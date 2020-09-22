@@ -30,4 +30,5 @@ public class GravityFlippable : MonoBehaviour
 		localScale.y *= -1;
 		transform.localScale = localScale;
     }
+
 }

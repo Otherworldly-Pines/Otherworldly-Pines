@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    
     public float initialSpeed;
     public float runMultiplier;
     private float speed;
@@ -11,51 +12,48 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce;
     private float moveInput;
 
-    private Rigidbody2D rb;
+    private Rigidbody2D body;
+    private GravityFlippable flippable;
 
     private bool facingRight = true;
+
+    public Collider2D groundCollider;
+    public LayerMask groundMask;
     
     private bool isGrounded;
-
-    public Transform groundCheck;
-    public float checkRadius;
-    public LayerMask whatIsGround;
-    public bool isUpsideDown = false;
 
     // Start is called before the first frame update
     void Start()
     {   
-        rb = GetComponent<Rigidbody2D>();
+        body = GetComponent<Rigidbody2D>();
+        flippable = GetComponent<GravityFlippable>();
     }
 
     void FixedUpdate()
     {
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
+        isGrounded = groundCollider.IsTouchingLayers(groundMask);
 
         moveInput = Input.GetAxis("Horizontal");
-        rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+        body.velocity = new Vector2(moveInput * speed, body.velocity.y);
 
-        if(facingRight == false && moveInput > 0){
-            Flip();
-        }else if(facingRight == true && moveInput < 0){
-            Flip();
+        if ((facingRight && moveInput < 0) || (!facingRight && moveInput > 0))
+        {
+            FlipHorizontal();
         }
     }
 
-    void Update(){
-
+    void Update()
+    {
         speed = Input.GetKey(KeyCode.LeftShift) ? initialSpeed * runMultiplier : initialSpeed;
 
-        if( Input.GetKeyDown(KeyCode.Space) && isGrounded == true && !isUpsideDown){
-            rb.velocity = Vector2.up * jumpForce;
-        }
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded == true && isUpsideDown)
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
-            rb.velocity = Vector2.down * jumpForce;
+            body.velocity = (!flippable.isUpsideDown ? Vector2.up : Vector2.down) * jumpForce;
         }
     }
 
-    void Flip(){
+    void FlipHorizontal()
+    {
         facingRight = !facingRight;
         Vector3 Scaler = transform.localScale;
         Scaler.x *= -1;
