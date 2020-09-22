@@ -251,6 +251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isUpsideDown: 0
+  gravityAffectsSprite: 1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -608,6 +609,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isUpsideDown: 0
+  gravityAffectsSprite: 0
 --- !u!1 &722704494
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,6 +915,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isUpsideDown: 0
+  gravityAffectsSprite: 0
 --- !u!1 &820265621
 GameObject:
   m_ObjectHideFlags: 0
@@ -1109,6 +1112,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a2d54666f0524d208f3149876b91c10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gravityIsFlipped: 0
+  playerCanFlipGravity: 1
 --- !u!61 &1058312235
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1321,6 +1326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isUpsideDown: 0
+  gravityAffectsSprite: 0
 --- !u!1 &1621221602
 GameObject:
   m_ObjectHideFlags: 0
@@ -2502,6 +2508,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a2d54666f0524d208f3149876b91c10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gravityIsFlipped: 0
+  playerCanFlipGravity: 1
 --- !u!61 &2036425810
 BoxCollider2D:
   m_ObjectHideFlags: 0

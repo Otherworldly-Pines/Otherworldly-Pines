@@ -7,6 +7,7 @@ public class GravityFlippable : MonoBehaviour
 
     private Rigidbody2D body;
     public bool isUpsideDown = false;
+	public bool gravityAffectsSprite = true;
 
     void Start()
     {
@@ -19,9 +20,12 @@ public class GravityFlippable : MonoBehaviour
         body.gravityScale *= -1;
         isUpsideDown = body.gravityScale < 0;
 		
-		Vector3 flippedScale = transform.localScale;
-		flippedScale.y *= -1;
-		transform.localScale = flippedScale;
+		if (gravityAffectsSprite)
+		{
+			Vector3 flippedScale = transform.localScale;
+			flippedScale.y *= -1;
+			transform.localScale = flippedScale;			
+		}
     }
 
 }
