@@ -6,11 +6,15 @@ public class GravityRegion : MonoBehaviour
 {
 
     private int angle = 0;
-	private bool gravityIsFlipped = false;
+	public bool gravityIsFlipped = false;
+	public bool playerCanFlipGravity = true;
     private HashSet<GravityFlippable> flippables = new HashSet<GravityFlippable>();
 
 	public void FlipGravity()
 	{
+		// Don't flip gravity if it's fixed
+		if (!playerCanFlipGravity) return;
+
 		gravityIsFlipped = !gravityIsFlipped;
 		foreach (GravityFlippable flippable in flippables)
 		{
