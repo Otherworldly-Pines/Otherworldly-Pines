@@ -23,7 +23,7 @@ public class SwitchGravity : MonoBehaviour
 
     void FlipGravity()
     {
-        if (Input.GetKeyDown(KeyCode.J))
+        if (Input.GetKeyDown(KeyCode.W))
         {
             angle = angle + 180;
             player.transform.eulerAngles = new Vector3(0, 0, angle);
