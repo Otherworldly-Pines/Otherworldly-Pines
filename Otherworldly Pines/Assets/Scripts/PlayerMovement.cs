@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     public Transform groundCheck;
     public float checkRadius;
     public LayerMask whatIsGround;
-
+    public bool isUpsideDown = false;
 
     // Start is called before the first frame update
     void Start()
@@ -46,8 +46,12 @@ public class PlayerMovement : MonoBehaviour
 
         speed = Input.GetKey(KeyCode.LeftShift) ? initialSpeed * runMultiplier : initialSpeed;
 
-        if( Input.GetKeyDown(KeyCode.Space) && isGrounded == true){
+        if( Input.GetKeyDown(KeyCode.Space) && isGrounded == true && !isUpsideDown){
             rb.velocity = Vector2.up * jumpForce;
+        }
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded == true && isUpsideDown)
+        {
+            rb.velocity = Vector2.down * jumpForce;
         }
     }
 
