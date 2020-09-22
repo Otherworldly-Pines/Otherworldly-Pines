@@ -4,23 +4,20 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    
-    public float initialSpeed;
-    public float runMultiplier;
-    private float speed;
 
+    public float walkSpeed;
+    public float runSpeed;
     public float jumpForce;
-    private float moveInput;
-
-    private Rigidbody2D body;
-    private GravityFlippable flippable;
-
-    private bool facingRight = true;
 
     public Collider2D groundCollider;
     public LayerMask groundMask;
     
+    private float currentMovementSpeed;
     private bool isGrounded;
+    private bool isFacingRight = true;
+
+    private Rigidbody2D body;
+    private GravityFlippable flippable;
 
     void Start()
     {   
@@ -32,10 +29,10 @@ public class PlayerMovement : MonoBehaviour
     {
         isGrounded = groundCollider.IsTouchingLayers(groundMask);
 
-        moveInput = Input.GetAxis("Horizontal");
-        body.velocity = new Vector2(moveInput * speed, body.velocity.y);
+        float horizontalInput = Input.GetAxis("Horizontal");
+        body.velocity = new Vector2(horizontalInput * currentMovementSpeed, body.velocity.y);
 
-        if ((facingRight && moveInput < 0) || (!facingRight && moveInput > 0))
+        if ((isFacingRight && horizontalInput < 0) || (!isFacingRight && horizontalInput > 0))
         {
             FlipHorizontal();
         }
@@ -43,20 +40,21 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        speed = Input.GetKey(KeyCode.LeftShift) ? initialSpeed * runMultiplier : initialSpeed;
+        currentMovementSpeed = Input.GetKey(KeyCode.LeftShift) ? runSpeed : walkSpeed;
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
-            body.velocity = (!flippable.isUpsideDown ? Vector2.up : Vector2.down) * jumpForce;
+            Vector2 jumpDirection = !flippable.isUpsideDown ? Vector2.up : Vector2.down;
+            body.velocity = jumpDirection * jumpForce;
         }
     }
 
     void FlipHorizontal()
     {
-        facingRight = !facingRight;
-        Vector3 Scaler = transform.localScale;
-        Scaler.x *= -1;
-        transform.localScale = Scaler;
+        isFacingRight = !isFacingRight;
+        Vector3 localScale = transform.localScale;
+        localScale.x *= -1;
+        transform.localScale = localScale;
     }
 
 }

@@ -17,14 +17,14 @@ public class GravityControl : MonoBehaviour
 
     public void EnterGravityRegion(GravityRegion region)
     {
-        this.activeGravityRegion = region;
+        activeGravityRegion = region;
     }
 
     public void ExitGravityRegion(GravityRegion region)
     {
         if (activeGravityRegion.gameObject.GetInstanceID() == region.gameObject.GetInstanceID())
         {
-            this.activeGravityRegion = null;
+            activeGravityRegion = null;
         }
     }
 }

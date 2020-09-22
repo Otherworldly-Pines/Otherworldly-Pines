@@ -5,10 +5,10 @@ using UnityEngine;
 public class GravityRegion : MonoBehaviour
 {
 
-    private HashSet<GravityFlippable> flippables = new HashSet<GravityFlippable>();
-
 	public bool gravityIsFlipped = false;
 	public bool playerCanFlipGravity = true;
+
+    private HashSet<GravityFlippable> flippables = new HashSet<GravityFlippable>();
 
 	public void FlipGravity()
 	{
@@ -35,7 +35,7 @@ public class GravityRegion : MonoBehaviour
         GravityFlippable flippable = collider.GetComponent<GravityFlippable>();
         if (flippable != null) {
 			flippables.Add(flippable);
-        	if (this.gravityIsFlipped != flippable.isUpsideDown)
+        	if (gravityIsFlipped != flippable.isUpsideDown)
         	{
             	flippable.Flip();
         	}

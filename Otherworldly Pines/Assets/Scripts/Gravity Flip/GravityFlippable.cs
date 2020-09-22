@@ -5,9 +5,10 @@ using UnityEngine;
 public class GravityFlippable : MonoBehaviour
 {
 
-    private Rigidbody2D body;
-    public bool isUpsideDown = false;
 	public bool gravityAffectsSprite = true;
+    public bool isUpsideDown = false;
+
+    private Rigidbody2D body;
 
     void Start()
     {
