@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - flippable
+  - Ground
   layers:
   - Default
   - TransparentFX

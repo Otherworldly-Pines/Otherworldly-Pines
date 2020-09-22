@@ -21,16 +21,25 @@ public class SwitchGravity : MonoBehaviour
         
     }
 
+    void FlipPlayer()
+    {
+        angle = angle + 180;
+        player.transform.eulerAngles = new Vector3(0, 0, angle);
+        Vector3 Scaler = player.transform.localScale;
+        Scaler.x *= -1;
+        player.transform.localScale = Scaler;
+        rb.gravityScale *= -1;
+        if (player.GetComponent<PlayerMovement>().isUpsideDown)
+            player.GetComponent<PlayerMovement>().isUpsideDown = false;
+        else
+            player.GetComponent<PlayerMovement>().isUpsideDown = true;
+    }
+
     void FlipGravity()
     {
-        if (Input.GetKeyDown(KeyCode.J))
+        if (Input.GetKeyDown(KeyCode.W))
         {
-            angle = angle + 180;
-            player.transform.eulerAngles = new Vector3(0, 0, angle);
-            Vector3 Scaler = player.transform.localScale;
-            Scaler.x *= -1;
-            player.transform.localScale = Scaler;
-            rb.gravityScale *= -1;
+            FlipPlayer();
             if (flippables.Count != 0)
             {
                 foreach (Rigidbody2D flippable in flippables)
@@ -42,12 +51,7 @@ public class SwitchGravity : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.K))
         {
-            angle = angle + 180;
-            player.transform.eulerAngles = new Vector3(0, 0, angle);
-            Vector3 Scaler = player.transform.localScale;
-            Scaler.x *= -1;
-            player.transform.localScale = Scaler;
-            rb.gravityScale *= -1;
+            FlipPlayer();
         }
 
 
