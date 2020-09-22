@@ -5,7 +5,7 @@ using UnityEngine;
 public class GravityFlippable : MonoBehaviour
 {
 
-	public bool gravityAffectsSprite = true;
+    public bool gravityAffectsSprite = true;
     public bool isUpsideDown = false;
 
     private Rigidbody2D body;
@@ -20,13 +20,13 @@ public class GravityFlippable : MonoBehaviour
     {
         body.gravityScale *= -1;
         isUpsideDown = body.gravityScale < 0;
-		
-		if (gravityAffectsSprite)
-		{
-			Vector3 flippedScale = transform.localScale;
-			flippedScale.y *= -1;
-			transform.localScale = flippedScale;			
-		}
+        
+        if (gravityAffectsSprite)
+        {
+            Vector3 flippedScale = transform.localScale;
+            flippedScale.y *= -1;
+            transform.localScale = flippedScale;            
+        }
     }
 
 }
