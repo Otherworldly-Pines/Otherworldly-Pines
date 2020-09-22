@@ -6,7 +6,8 @@ public class GravityFlippable : MonoBehaviour
 {
 
     private Rigidbody2D body;
-    
+    public bool isUpsideDown = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,5 +24,10 @@ public class GravityFlippable : MonoBehaviour
     public void Flip()
     {
         body.gravityScale *= -1;
+        isUpsideDown = body.gravityScale < 0;
+		
+		Vector3 localScale = transform.localScale;
+		localScale.y *= -1;
+		transform.localScale = localScale;
     }
 }

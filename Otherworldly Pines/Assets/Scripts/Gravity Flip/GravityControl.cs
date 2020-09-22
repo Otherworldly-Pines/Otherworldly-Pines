@@ -16,7 +16,10 @@ public class GravityControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.W) && activeGravityRegion != null)
+        {
+            activeGravityRegion.FlipGravity();
+        }
     }
 
     public void EnterGravityRegion(GravityRegion region)
@@ -26,7 +29,7 @@ public class GravityControl : MonoBehaviour
 
     public void ExitGravityRegion(GravityRegion region)
     {
-        if (activeGravityRegion.gameObject.GetInstanceId() == region.gameObject.GetInstanceId())
+        if (activeGravityRegion.gameObject.GetInstanceID() == region.gameObject.GetInstanceID())
         {
             this.activeGravityRegion = null;
         }
