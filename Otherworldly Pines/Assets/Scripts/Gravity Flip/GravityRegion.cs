@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.U2D;
 
 public class GravityRegion : MonoBehaviour
 {
@@ -8,7 +9,18 @@ public class GravityRegion : MonoBehaviour
     public bool gravityIsFlipped = false;
     public bool playerCanFlipGravity = true;
 
+    public SpriteShapeRenderer background;
+
     private HashSet<GravityFlippable> flippables = new HashSet<GravityFlippable>();
+    private Color gravityColor = new Color(0f, 0.12f, 0.34f, 1f);
+
+    void Update()
+    {
+        if (background != null)
+        {
+            background.color = gravityIsFlipped ? gravityColor : Color.clear;
+        }
+    }
 
     public void FlipGravity()
     {
