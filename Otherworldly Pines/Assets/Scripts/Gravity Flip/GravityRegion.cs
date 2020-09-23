@@ -14,6 +14,17 @@ public class GravityRegion : MonoBehaviour
     private HashSet<GravityFlippable> flippables = new HashSet<GravityFlippable>();
     private Color gravityColor = new Color(0f, 0.12f, 0.34f, 1f);
 
+    void Start()
+    {
+        BoxCollider2D collider = GetComponent<BoxCollider2D>();
+        if (background != null)
+        {
+            Vector3 updatedScale = new Vector3(collider.size.x / 4f, collider.size.y / 4f, 1f);
+            background.transform.localScale = updatedScale;
+            background.transform.localPosition = new Vector3(collider.offset.x, collider.offset.y, 0f);
+        }
+    }
+
     void Update()
     {
         if (background != null)
