@@ -7,7 +7,7 @@ public class MovingPlatform : MonoBehaviour
     /* speed: changeable in Inspector, speed of the platform
      * pauseDuration: changeable in Inspector, how long platform pauses at an endpoint 
      * timer: keeps track of how long platform has been stopped at endpoint */
-    public float speed = 1;
+    public float speed = 2;
     public float pauseDuration = 0.5f;
     private float timer = 0.0f;
 
@@ -22,6 +22,7 @@ public class MovingPlatform : MonoBehaviour
     private Vector3 pos_two;
     private Vector3 targetPos;
 
+    private float moveDist;
     /* isForward: which direction the platform is moving along its path
      *      true = from pos_one to pos_two
      *      false = from pos_two to pos_one */
@@ -36,11 +37,13 @@ public class MovingPlatform : MonoBehaviour
         isForward = false;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void UpdateMoveDist()
     {
-        float move = speed * Time.deltaTime;
+        moveDist = speed * Time.deltaTime;
+    }
 
+    private void UpdateMoveDirection()
+    {
         // forward/backward movement checking+swap
         if (isForward && Vector3.Distance(transform.position, pos_two) < 0.001f)
         {
@@ -55,16 +58,26 @@ public class MovingPlatform : MonoBehaviour
             timer = 0.0f;
         }
         else { } //changes nothing so it if messes up we know it's messed up
-
+    }
+    
+    private void PauseIfEndPoint()
+    {
         // endpoint pause if/else
         if (timer >= pauseDuration)
         {
-            transform.position = Vector3.MoveTowards(transform.position, targetPos, move);
+            float speedMult = targetPos.y - this.gameObject.transform.position.y;
+            transform.position = Vector3.MoveTowards(transform.position, targetPos, moveDist);
         }
         else
         {
             timer += Time.deltaTime;
         }
-
+    }
+    // Update is called once per frame
+    void Update()
+    {
+        UpdateMoveDist();
+        UpdateMoveDirection();
+        PauseIfEndPoint();
     }
 }
