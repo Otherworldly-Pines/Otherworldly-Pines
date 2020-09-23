@@ -4,61 +4,57 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float initialSpeed;
-    public float runMultiplier;
-    private float speed;
 
+    public float walkSpeed;
+    public float runSpeed;
     public float jumpForce;
-    private float moveInput;
 
-    private Rigidbody2D rb;
-
-    private bool facingRight = true;
+    public Collider2D groundCollider;
+    public LayerMask groundMask;
     
+    private float currentMovementSpeed;
     private bool isGrounded;
+    private bool isFacingRight = true;
 
-    public Transform groundCheck;
-    public float checkRadius;
-    public LayerMask whatIsGround;
-    public bool isUpsideDown = false;
+    private Rigidbody2D body;
+    private GravityFlippable flippable;
 
-    // Start is called before the first frame update
     void Start()
     {   
-        rb = GetComponent<Rigidbody2D>();
+        body = GetComponent<Rigidbody2D>();
+        flippable = GetComponent<GravityFlippable>();
     }
 
     void FixedUpdate()
     {
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
+        isGrounded = groundCollider.IsTouchingLayers(groundMask);
 
-        moveInput = Input.GetAxis("Horizontal");
-        rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+        float horizontalInput = Input.GetAxis("Horizontal");
+        body.velocity = new Vector2(horizontalInput * currentMovementSpeed, body.velocity.y);
 
-        if(facingRight == false && moveInput > 0){
-            Flip();
-        }else if(facingRight == true && moveInput < 0){
-            Flip();
-        }
-    }
-
-    void Update(){
-
-        speed = Input.GetKey(KeyCode.LeftShift) ? initialSpeed * runMultiplier : initialSpeed;
-
-        if( Input.GetKeyDown(KeyCode.Space) && isGrounded == true && !isUpsideDown){
-            rb.velocity = Vector2.up * jumpForce;
-        }
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded == true && isUpsideDown)
+        if ((isFacingRight && horizontalInput < 0) || (!isFacingRight && horizontalInput > 0))
         {
-            rb.velocity = Vector2.down * jumpForce;
+            FlipHorizontal();
         }
     }
 
-    void Flip(){
-        facingRight = !facingRight;
-        Vector3 Scaler = transform.localScale;
-        Scaler.x *= -1;
-        transform.localScale = Scaler;
+    void Update()
+    {
+        currentMovementSpeed = Input.GetKey(KeyCode.LeftShift) ? runSpeed : walkSpeed;
+
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        {
+            Vector2 jumpDirection = !flippable.isUpsideDown ? Vector2.up : Vector2.down;
+            body.velocity = jumpDirection * jumpForce;
+        }
     }
+
+    void FlipHorizontal()
+    {
+        isFacingRight = !isFacingRight;
+        Vector3 localScale = transform.localScale;
+        localScale.x *= -1;
+        transform.localScale = localScale;
+    }
+
 }
