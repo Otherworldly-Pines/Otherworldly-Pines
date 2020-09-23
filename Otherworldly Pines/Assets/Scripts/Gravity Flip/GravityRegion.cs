@@ -21,7 +21,7 @@ public class GravityRegion : MonoBehaviour
         {
             Vector3 updatedScale = new Vector3(collider.size.x / 4f, collider.size.y / 4f, 1f);
             background.transform.localScale = updatedScale;
-            background.transform.localPosition = Vector3.zero;
+            background.transform.localPosition = new Vector3(collider.offset.x, collider.offset.y, 0f);
         }
     }
 
