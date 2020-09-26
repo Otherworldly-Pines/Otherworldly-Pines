@@ -5,12 +5,12 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-    public float walkSpeed;
-    public float runSpeed;
-    public float jumpForce;
-
     public Collider2D groundCollider;
     public LayerMask groundMask;
+
+	private float walkSpeed = 5f;
+	private float runSpeed = 7f;
+	private float jumpForce = 8f;
     
     private float currentMovementSpeed;
     private bool isGrounded;
