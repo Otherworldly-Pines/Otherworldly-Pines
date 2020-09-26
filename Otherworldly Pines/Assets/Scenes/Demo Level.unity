@@ -317,7 +317,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3952145474258469269, guid: 44e8ba5fd09304d7292a3704d1d3c749, type: 3}
       propertyPath: m_DynamicOccludee
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3952145474258469269, guid: 44e8ba5fd09304d7292a3704d1d3c749, type: 3}
       propertyPath: m_ShapeTexture
@@ -472,7 +472,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &713900577
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -772,7 +772,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &1532243608
 SpriteRenderer:
   m_ObjectHideFlags: 0

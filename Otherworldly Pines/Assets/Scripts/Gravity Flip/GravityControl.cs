@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GravityControl : MonoBehaviour
+public class GravityControl : GravityAffected
 {
 
     private GravityRegion activeGravityRegion;

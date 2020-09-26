@@ -9,19 +9,20 @@ public class GravityRegion : MonoBehaviour
     public bool gravityIsFlipped = false;
     public bool playerCanFlipGravity = true;
 
-    public SpriteShapeRenderer background;
+    public SpriteRenderer background;
 
+    private BoxCollider2D ownCollider;
     private HashSet<GravityFlippable> flippables = new HashSet<GravityFlippable>();
     private Color gravityColor = new Color(0f, 0.12f, 0.34f, 1f);
 
     void Start()
     {
-        BoxCollider2D collider = GetComponent<BoxCollider2D>();
+        ownCollider = GetComponent<BoxCollider2D>();
         if (background != null)
         {
-            Vector3 updatedScale = new Vector3(collider.size.x / 4f, collider.size.y / 4f, 1f);
+            Vector3 updatedScale = new Vector3(ownCollider.size.x, ownCollider.size.y, 1f);
             background.transform.localScale = updatedScale;
-            background.transform.localPosition = new Vector3(collider.offset.x, collider.offset.y, 0f);
+            background.transform.localPosition = new Vector3(ownCollider.offset.x, ownCollider.offset.y, 0f);
         }
     }
 
@@ -47,36 +48,49 @@ public class GravityRegion : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        // If the player just entered the region, inform them of that so they can control it
-        GravityControl controller = collider.GetComponent<GravityControl>();
-        if (controller != null) {
-            controller.EnterGravityRegion(this);
-        }
-        
-        // If a flippable object just entered, add them to this gravity region
-        // and if they need their gravity updated, take care of that too
-        GravityFlippable flippable = collider.GetComponent<GravityFlippable>();
-        if (flippable != null) {
-            flippables.Add(flippable);
-            if (gravityIsFlipped != flippable.isUpsideDown)
+        GravityCenter gravityCenter = collider.GetComponent<GravityCenter>();
+        if (gravityCenter == null) return;
+
+        foreach (GravityAffected owner in gravityCenter.owners)
+        {
+            // If the player just entered the region, inform them of that so they can control it
+            if (owner is GravityControl)
             {
-                flippable.Flip();
+                GravityControl controller = owner as GravityControl;
+                controller.EnterGravityRegion(this);
+            }
+
+            // If a flippable object just entered, add them to this gravity region
+            // and if they need their gravity updated, take care of that too
+            if (owner is GravityFlippable)
+            {
+                GravityFlippable flippable = owner as GravityFlippable;
+                flippables.Add(flippable);
+                if (gravityIsFlipped != flippable.isUpsideDown) flippable.Flip();
             }
         }
     }
 
     private void OnTriggerExit2D(Collider2D collider)
     {
-        // If the player just exited, inform them of that
-        GravityControl controller = collider.GetComponent<GravityControl>();
-        if (controller != null) {
-            controller.ExitGravityRegion(this);
-        }
-        
-        // If a flippable object just exited, remove them from the list of flippables
-        GravityFlippable flippable = collider.GetComponent<GravityFlippable>();
-        if (flippable != null) {
-            flippables.Remove(flippable);
+        GravityCenter gravityCenter = collider.GetComponent<GravityCenter>();
+        if (gravityCenter == null) return;
+
+        foreach (GravityAffected owner in gravityCenter.owners)
+        {
+            // If the player just exited, inform them of that
+            if (owner is GravityControl)
+            {
+                GravityControl controller = owner as GravityControl;
+                controller.ExitGravityRegion(this);
+            }
+
+            // If a flippable object just exited, remove them from the list of flippabless
+            if (owner is GravityFlippable)
+            {
+                GravityFlippable flippable = owner as GravityFlippable;
+                flippables.Remove(flippable);
+            }
         }
     }
 
