@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
 
 	private float walkSpeed = 5f;
 	private float runSpeed = 7f;
-	private float jumpForce = 8f;
+	private float jumpForce = 8.5f;
     
     private float currentMovementSpeed;
     private bool isGrounded;

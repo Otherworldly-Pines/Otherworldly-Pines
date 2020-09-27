@@ -135,7 +135,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 2
+  m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: 8cfdb8c468d604b0fa5370c257a3d63f, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -153,9 +153,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0ee7188af5e0485e83e001317db3584, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 5
-  runSpeed: 7
-  jumpForce: 10
   groundCollider: {fileID: 6143024623366533718}
   groundMask:
     serializedVersion: 2
@@ -172,6 +169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 552093184aa03433a898a0fa958a8aa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  center: {fileID: 0}
 --- !u!114 &6143024624257782109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,6 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dcb0ddbd0ca94701b89ae3b25e5d598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  center: {fileID: 0}
   gravityAffectsSprite: 1
   isUpsideDown: 0
 --- !u!1 &6677522062563206666
