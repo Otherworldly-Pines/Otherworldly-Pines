@@ -30,10 +30,12 @@ public class PlayerDetector : MonoBehaviour
 
     void checkPlayer(){
         if(seePlayer()){
+            Debug.Log(true);
             if(!this.behavior.isChasing())
             this.behavior.chase();
         }
         else{
+            Debug.Log(false);
             if(this.behavior.isChasing()){
                 this.behavior.reInitPatrol();
                 this.behavior.patrol();
