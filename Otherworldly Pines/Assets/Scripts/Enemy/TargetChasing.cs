@@ -3,22 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(EnemyBehavior))]
-public class PlayerChasing : MonoBehaviour
+public class TargetChasing : MonoBehaviour
 {
     private EnemyBehavior behavior;
-    private GameObject player;
+    private GameObject target;
     // Start is called before the first frame update
     void Start()
     {
         this.behavior = gameObject.GetComponent<EnemyBehavior>();
-        this.player = GameObject.FindGameObjectWithTag("Player");
+        this.target = GameObject.FindGameObjectWithTag("Player");
     }
+
+    public void setTarget(GameObject target){
+        this.target = target;
+    }
+
+    public GameObject getTarget(){
+        return this.target;
+    }
+
 
     // Update is called once per frame
     void Update()
     {
         if(this.behavior.isChasing()){
-            if(this.player.transform.position.x - gameObject.transform.position.x < 0){
+            if(this.target.transform.position.x - gameObject.transform.position.x < 0){
                 this.behavior.moveLeft();
             }
             else{

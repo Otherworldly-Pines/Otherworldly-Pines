@@ -6,6 +6,7 @@ TagManager:
   tags:
   - flippable
   - Ground
+  - firecracker
   layers:
   - Default
   - TransparentFX
