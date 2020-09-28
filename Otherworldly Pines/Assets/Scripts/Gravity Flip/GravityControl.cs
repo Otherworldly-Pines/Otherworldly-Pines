@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GravityControl : GravityAffected {
+public class GravityControl : GravityAffected, IHUDConnected {
 
-    [HideInInspector] public GravityFlipIndicator indicator;
+    private GravityFlipIndicator indicator;
     private GravityRegion activeGravityRegion;
 
     void Update()
@@ -30,4 +30,9 @@ public class GravityControl : GravityAffected {
             SetActiveGravityRegion(null);
         }
     }
+
+    public void ConnectToHUD(HUD hud) {
+        indicator = hud.gravityFlipIndicator;
+    }
+
 }

@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public interface IHUDConnected {
+
+    void ConnectToHUD(HUD hud);
+
+}
+
 public class HUD : MonoBehaviour {
 
     public HealthBar healthBar;
@@ -11,11 +17,10 @@ public class HUD : MonoBehaviour {
         GameObject player = GameObject.Find("Player");
         if (player == null) return;
 
-        PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
-        if (playerHealth != null) playerHealth.healthBar = healthBar;
-
-        GravityControl playerGravityControls = player.GetComponent<GravityControl>();
-        if (playerGravityControls != null) playerGravityControls.indicator = gravityFlipIndicator;
+        IHUDConnected[] connectables = player.GetComponentsInChildren<IHUDConnected>();
+        foreach (IHUDConnected connectable in connectables) {
+            connectable.ConnectToHUD(this);
+        }
     }
 
 }
