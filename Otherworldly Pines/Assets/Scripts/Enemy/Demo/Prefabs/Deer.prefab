@@ -75,6 +75,8 @@ GameObject:
   - component: {fileID: 7683570258011486539}
   - component: {fileID: 1058136101}
   - component: {fileID: 1058136102}
+  - component: {fileID: 1583167359}
+  - component: {fileID: 1583167367}
   m_Layer: 0
   m_Name: Deer
   m_TagString: Untagged
@@ -209,7 +211,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   left: -5
   right: 5
-  speed: 5
+  speed: 3
 --- !u!114 &1058136101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -238,3 +240,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c78881876c05cc479f2c9a3eafbe56c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1583167359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7683570258011486532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08f27c08400a92641b9d6223bac8035e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1583167367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7683570258011486532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ec288b78db4f6d4d8c143f581c71841, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3

@@ -5,6 +5,9 @@ TextureImporter:
   - first:
       213: -5249762075863780043
     second: deer_0
+  - first:
+      213: 8853832997727273734
+    second: deer_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -100,7 +103,7 @@ TextureImporter:
         width: 327
         height: 245
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -108,6 +111,27 @@ TextureImporter:
       bones: []
       spriteID: 53572d8d4391527b0800000000000000
       internalID: -5249762075863780043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deer_1
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 694
+        width: 117
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6038a2aa3322fda70800000000000000
+      internalID: 8853832997727273734
       vertices: []
       indices: 
       edges: []
