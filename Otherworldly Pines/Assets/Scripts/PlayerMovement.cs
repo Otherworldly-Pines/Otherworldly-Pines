@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
 
     public LayerMask groundMask;
+    public LayerMask pushablesMask;
 
 	private float walkSpeed = 5f;
 	private float runSpeed = 7f;
@@ -18,7 +19,9 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D body;
     private GravityFlippable flippable;
+    private BoxCollider2D boxCollider;
 
+    private float forwardCastLength = 0.01f;
     private Vector2 groundCastSize = new Vector2(0.6f, 0.01f);
     private Vector2 groundCastOffset = new Vector2(0f, -0.75f);
 
@@ -26,13 +29,19 @@ public class PlayerMovement : MonoBehaviour
     {   
         body = GetComponent<Rigidbody2D>();
         flippable = GetComponent<GravityFlippable>();
+        boxCollider = GetComponent<BoxCollider2D>();
     }
 
     void FixedUpdate()
     {
+        Vector2 nextVelocity = body.velocity;
+        
         isGrounded = CheckIsGrounded();
+        nextVelocity.x = currentHorizontalInput * currentMovementSpeed;
 
-        body.velocity = new Vector2(currentHorizontalInput * currentMovementSpeed, body.velocity.y);
+        if (IsAgainstWall()) nextVelocity.x = 0f;
+
+        body.velocity = nextVelocity;
 
         if (currentHorizontalInput != 0 && isFacingRight == currentHorizontalInput < 0) FlipHorizontal();
     }
@@ -49,6 +58,16 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    private bool IsAgainstWall() {
+        Vector2 offset = new Vector2(boxCollider.size.x / 2f, 0f) + boxCollider.offset;
+        Vector2 origin = (Vector2) transform.localPosition + (isFacingRight ? offset : -offset);
+        Vector2 size = new Vector2(0.02f, boxCollider.size.y);
+        Vector2 direction = isFacingRight ? Vector2.right : Vector2.left;
+        
+        RaycastHit2D hitInfo = Physics2D.BoxCast(origin, size, 0f, direction, size.x, groundMask);
+        return hitInfo.collider != null;
+    }
+    
     bool CheckIsGrounded()
     {
         Vector2 direction = !flippable.isUpsideDown ? Vector2.down : Vector2.up;

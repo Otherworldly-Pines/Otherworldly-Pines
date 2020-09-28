@@ -98,6 +98,9 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 1280
+  pushablesMask:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!114 &6143024624257782106
 MonoBehaviour:
   m_ObjectHideFlags: 0
