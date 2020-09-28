@@ -19,6 +19,9 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D body;
     private GravityFlippable flippable;
 
+    private Vector2 groundCastSize = new Vector2(0.6f, 0.01f);
+    private Vector2 groundCastOffset = new Vector2(0f, -0.75f);
+
     void Start()
     {   
         body = GetComponent<Rigidbody2D>();
@@ -48,14 +51,9 @@ public class PlayerMovement : MonoBehaviour
 
     bool CheckIsGrounded()
     {
-        Vector2 boxSize = new Vector2(0.6f, 0.01f);
-        Vector2 boxOrigin = transform.localPosition + new Vector3(0f, -0.75f, 0f);
         Vector2 direction = !flippable.isUpsideDown ? Vector2.down : Vector2.up;
         
-        RaycastHit2D hitInfo = Physics2D.BoxCast(boxOrigin, boxSize, 0f, direction, boxSize.y, groundMask);
-        Debug.DrawRay(boxOrigin - (boxSize / 2.0f), new Vector2(0f, boxSize.y));
-        Debug.DrawRay(boxOrigin + (boxSize / 2.0f), new Vector2(0f, boxSize.y));
-        Debug.DrawRay(boxOrigin + (boxSize / 2.0f), new Vector2(-boxSize.x, 0f));
+        RaycastHit2D hitInfo = Physics2D.BoxCast((Vector2)transform.localPosition + groundCastOffset, groundCastSize, 0f, direction, groundCastSize.y, groundMask);
         return hitInfo.collider != null;
     }
 
@@ -65,6 +63,16 @@ public class PlayerMovement : MonoBehaviour
         Vector3 localScale = transform.localScale;
         localScale.x *= -1;
         transform.localScale = localScale;
+    }
+
+    void OnDrawGizmos() {
+        Gizmos.color = Color.yellow;
+
+        Vector2 groundCastTopLeft = (Vector2)transform.localPosition + groundCastOffset - (groundCastSize / 2.0f);
+        Gizmos.DrawRay(groundCastTopLeft, new Vector2(0f, groundCastSize.y));
+        Gizmos.DrawRay(groundCastTopLeft, new Vector2(groundCastSize.x, 0f));
+        Gizmos.DrawRay(groundCastTopLeft + new Vector2(0f, groundCastSize.y), new Vector2(groundCastSize.x, 0f));
+        Gizmos.DrawRay(groundCastTopLeft + new Vector2(groundCastSize.x, 0f), new Vector2(0f, groundCastSize.y));
     }
 
 }
