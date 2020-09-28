@@ -200,7 +200,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 1289227296}
-  controller: {fileID: 0}
 --- !u!1 &923829389
 GameObject:
   m_ObjectHideFlags: 0

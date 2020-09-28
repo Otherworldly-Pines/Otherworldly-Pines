@@ -8,7 +8,7 @@ public class PlayerHealth : MonoBehaviour {
     private static float maxHealth = 100f;
     private static float minHealth = 0f;
     
-    public HealthBar healthBar;
+    [HideInInspector] public HealthBar healthBar;
     [HideInInspector] public float currentHealth = 100f;
 
     private void Start() {
@@ -17,7 +17,7 @@ public class PlayerHealth : MonoBehaviour {
 
     private void SetHealth(float health) {
         currentHealth = health;
-        healthBar.SetHealth(currentHealth);
+        if (healthBar != null) healthBar.SetHealth(currentHealth);
     }
 
     public void RefillMaxHealth() {

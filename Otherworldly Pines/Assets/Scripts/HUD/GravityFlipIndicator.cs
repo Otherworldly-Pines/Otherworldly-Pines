@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class GravityFlipIndicator : MonoBehaviour {
 
     public Text text;
-    public GravityControl controller;
 
     public void GravityRegionChanged(GravityRegion activeGravityRegion) {
         if (activeGravityRegion == null || !activeGravityRegion.playerCanFlipGravity) {

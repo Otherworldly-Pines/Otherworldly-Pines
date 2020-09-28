@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GravityControl : GravityAffected {
 
-    public GravityFlipIndicator indicator;
+    [HideInInspector] public GravityFlipIndicator indicator;
     private GravityRegion activeGravityRegion;
 
     void Update()
@@ -17,7 +17,7 @@ public class GravityControl : GravityAffected {
 
     private void SetActiveGravityRegion(GravityRegion region) {
         activeGravityRegion = region;
-        indicator.GravityRegionChanged(activeGravityRegion);
+        if (indicator != null) indicator.GravityRegionChanged(activeGravityRegion);
     }
 
     public void EnterGravityRegion(GravityRegion region) {
