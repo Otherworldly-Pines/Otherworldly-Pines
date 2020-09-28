@@ -13,13 +13,15 @@ public class PlayerMovement : MonoBehaviour
 	private float jumpForce = 8.5f;
     
     private float currentHorizontalInput;
-    private float currentMovementSpeed;
+    private bool isPressingShift = false;
     private bool isGrounded;
     private bool isFacingRight = true;
 
     private Rigidbody2D body;
     private GravityFlippable flippable;
     private BoxCollider2D boxCollider;
+
+    private PushPullBlock currentPushable;
 
     private float forwardCastLength = 0.01f;
     private Vector2 groundCastSize = new Vector2(0.6f, 0.01f);
@@ -34,21 +36,38 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        Vector2 nextVelocity = body.velocity;
-        
         isGrounded = CheckIsGrounded();
-        nextVelocity.x = currentHorizontalInput * currentMovementSpeed;
+        bool isPushing = false;
+        
+        Vector2 nextVelocity = body.velocity;
+        nextVelocity.x = currentHorizontalInput * walkSpeed;
 
-        if (IsAgainstWall()) nextVelocity.x = 0f;
+        PushPullBlock pushableFromLastUpdate = currentPushable;
+        currentPushable = IsAgainstPushable();
+        
+        if (pushableFromLastUpdate != currentPushable && pushableFromLastUpdate != null) 
+            pushableFromLastUpdate.ResetFriction();
+        
+        if (currentPushable != null) {
+            if (isGrounded && isPressingShift) {
+                isPushing = true;
+                currentPushable.ResetFriction();
+            } else {
+                currentPushable.FreezeInPlace();
+            }
+        } else if (isGrounded && isPressingShift) {
+            nextVelocity.x = currentHorizontalInput * runSpeed;
+        }
+
+        if (!isPushing && IsAgainstWall()) nextVelocity.x = 0f;
 
         body.velocity = nextVelocity;
 
         if (currentHorizontalInput != 0 && isFacingRight == currentHorizontalInput < 0) FlipHorizontal();
     }
 
-    void Update()
-    {
-        currentMovementSpeed = Input.GetKey(KeyCode.LeftShift) ? runSpeed : walkSpeed;
+    void Update() {
+        isPressingShift = Input.GetKey(KeyCode.LeftShift);
         currentHorizontalInput = Input.GetAxis("Horizontal");
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
@@ -58,14 +77,24 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private bool IsAgainstWall() {
+    private Collider2D FrontIsTouchingMask(LayerMask mask) {
         Vector2 offset = new Vector2(boxCollider.size.x / 2f, 0f) + boxCollider.offset;
         Vector2 origin = (Vector2) transform.localPosition + (isFacingRight ? offset : -offset);
-        Vector2 size = new Vector2(0.02f, boxCollider.size.y);
+        Vector2 size = new Vector2(0.02f, boxCollider.size.y * 0.97f);
         Vector2 direction = isFacingRight ? Vector2.right : Vector2.left;
         
-        RaycastHit2D hitInfo = Physics2D.BoxCast(origin, size, 0f, direction, size.x, groundMask);
-        return hitInfo.collider != null;
+        RaycastHit2D hitInfo = Physics2D.BoxCast(origin, size, 0f, direction, size.x, mask);
+        return hitInfo.collider;
+    }
+
+    private PushPullBlock IsAgainstPushable() {
+        Collider2D collision = FrontIsTouchingMask(pushablesMask);
+        if (collision != null) return collision.GetComponent<PushPullBlock>();
+        return null;
+    }
+
+    private bool IsAgainstWall() {
+        return FrontIsTouchingMask(groundMask) != null;
     }
     
     bool CheckIsGrounded()

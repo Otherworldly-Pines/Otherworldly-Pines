@@ -65,7 +65,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 2270627686091004557}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 71b112b5a61d347cab0cba57f636b74b, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -162,3 +162,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shouldFreezePosition: 0
   isBeingMoved: 0
+  collider: {fileID: 0}
+  highFrictionMaterial: {fileID: 6200000, guid: 4c483a8b091704c619d9c7a70f34c559, type: 2}
