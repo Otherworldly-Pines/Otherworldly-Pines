@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour {
         flippable = GetComponent<GravityFlippable>();
         boxCollider = GetComponent<BoxCollider2D>();
     }
-
+    
     void FixedUpdate() {
         isGrounded = groundCheck.IsGrounded();
         bool isPushing = false;
@@ -41,16 +41,17 @@ public class PlayerMovement : MonoBehaviour {
 
         PushPullBlock pushableFromLastUpdate = currentPushable;
         currentPushable = IsAgainstPushable();
-        
-        if (pushableFromLastUpdate != currentPushable && pushableFromLastUpdate != null) 
-            pushableFromLastUpdate.ResetFriction();
-        
+
+        if (pushableFromLastUpdate != currentPushable && pushableFromLastUpdate != null) {
+            pushableFromLastUpdate.Harden();
+        }
+
         if (currentPushable != null) {
             if (isGrounded && isPressingShift) {
                 isPushing = true;
-                currentPushable.ResetFriction();
+                currentPushable.Soften();
             } else {
-                currentPushable.FreezeInPlace();
+                currentPushable.Harden();
             }
         } else if (isGrounded && isPressingShift) {
             nextVelocity.x = currentHorizontalInput * runSpeed;

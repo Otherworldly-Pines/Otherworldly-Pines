@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6143024624257782106}
   - component: {fileID: 6143024624257782109}
   - component: {fileID: 7203038634332508862}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -103,6 +103,9 @@ MonoBehaviour:
   pushablesMask:
     serializedVersion: 2
     m_Bits: 1024
+  isGrounded: 0
+  currentPushable: {fileID: 0}
+  isPushing: 0
 --- !u!114 &6143024624257782106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,7 +150,7 @@ MonoBehaviour:
   body: {fileID: 6143024624257782103}
   groundLayerMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 1280
   percentColliderWidth: 1
   height: 0.01
   offset: {x: 0, y: 0}
@@ -162,7 +165,7 @@ GameObject:
   - component: {fileID: 2685420152699142500}
   - component: {fileID: 2662968684065368266}
   - component: {fileID: 4380445174235120817}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Player Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 973513609842292003}
   - component: {fileID: 973513609842292028}
   - component: {fileID: -8475570433503670337}
+  - component: {fileID: -5419981217214946156}
+  - component: {fileID: -5111825560484536298}
   m_Layer: 10
   m_Name: 4x3 Block
   m_TagString: Untagged
@@ -163,4 +165,53 @@ MonoBehaviour:
   shouldFreezePosition: 0
   isBeingMoved: 0
   collider: {fileID: 0}
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 2048
   highFrictionMaterial: {fileID: 6200000, guid: 4c483a8b091704c619d9c7a70f34c559, type: 2}
+--- !u!114 &-5419981217214946156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973513609842292024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f98b78738bdc545c09564858327c92ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collider: {fileID: 973513609842292031}
+  body: {fileID: 973513609842292030}
+  groundLayerMask:
+    serializedVersion: 2
+    m_Bits: 1280
+  percentColliderWidth: 1
+  height: 0.01
+  offset: {x: 0, y: 0}
+--- !u!234 &-5111825560484536298
+SliderJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973513609842292024}
+  m_Enabled: 0
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 0}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 1
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0}
+  m_AutoConfigureAngle: 0
+  m_Angle: 0
+  m_UseMotor: 0
+  m_Motor:
+    m_MotorSpeed: 0
+    m_MaximumMotorForce: 10000
+  m_UseLimits: 0
+  m_TranslationLimits:
+    m_LowerTranslation: 0
+    m_UpperTranslation: 0
