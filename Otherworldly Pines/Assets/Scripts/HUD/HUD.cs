@@ -5,5 +5,6 @@ using UnityEngine;
 public class HUD : MonoBehaviour {
 
     public HealthBar healthBar;
+    public GravityFlipIndicator gravityFlipIndicator;
 
 }
