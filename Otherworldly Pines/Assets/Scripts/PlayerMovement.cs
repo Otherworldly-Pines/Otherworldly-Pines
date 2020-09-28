@@ -35,45 +35,17 @@ public class PlayerMovement : MonoBehaviour {
     }
     
     void FixedUpdate() {
+        Vector2 nextVelocity = body.velocity;
+        
         isGrounded = groundCheck.IsGrounded();
 
-        Vector2 nextVelocity = body.velocity;
-        nextVelocity.x = currentHorizontalInput * walkSpeed;
+        HandlePushPull();
+
+        float horizontalMovementSpeed = walkSpeed;
+        if (!isPullingBlock && IsAgainstWall()) horizontalMovementSpeed = 0f;
+        else if (currentPushable == null && isGrounded && isPressingShift) horizontalMovementSpeed = runSpeed;
         
-        // Handle push/pull
-        if (!isPullingBlock) {
-            PushPullBlock pushableFromLastUpdate = currentPushable;
-            currentPushable = IsAgainstPushable();
-
-            // Check if the player has just turned away from a block they were previously facing
-            if (pushableFromLastUpdate != currentPushable && pushableFromLastUpdate != null) {
-                pushableFromLastUpdate.DisconnectFromBody();
-                isPullingBlock = false;
-                pushableFromLastUpdate.Harden();
-            }
-        } else if (currentPushable != null && !currentPushable.IsGrounded()) {
-            // Check if the block the player was holding has fallen off the edge
-            currentPushable.DisconnectFromBody();
-            isPullingBlock = false;
-            currentPushable.Harden();
-            currentPushable = null;
-        }
-
-        if (currentPushable != null) {
-            // Check if the player is pushing/pulling a block
-            if (isGrounded && isPressingShift) {
-                isPullingBlock = true;
-                currentPushable.ConnectToBody(body);
-            } else {
-                isPullingBlock = false;
-                currentPushable.Harden();
-            }
-        } else if (isGrounded && isPressingShift) {
-            // If the player is not interacting with a pushable, use shift to determine speed
-            nextVelocity.x = currentHorizontalInput * runSpeed;
-        }
-
-        if (!isPullingBlock && IsAgainstWall()) nextVelocity.x = 0f;
+        nextVelocity.x = currentHorizontalInput * horizontalMovementSpeed;
 
         body.velocity = nextVelocity;
 
@@ -91,6 +63,38 @@ public class PlayerMovement : MonoBehaviour {
         }
     }
 
+    private void HandlePushPull() {
+        if (!isPullingBlock) {
+            PushPullBlock lastPushable = currentPushable;
+            currentPushable = GetCurrentPushable();
+
+            // Check if the player has just turned away from a block they were previously facing
+            if (lastPushable != currentPushable && lastPushable != null) {
+                isPullingBlock = false;
+                lastPushable.DisconnectFromBody();
+                lastPushable.Harden();
+            }
+        } else if (currentPushable != null && !currentPushable.IsGrounded()) {
+            // Check if the block the player was holding has fallen off the edge
+            currentPushable.DisconnectFromBody();
+            isPullingBlock = false;
+            currentPushable.Harden();
+            currentPushable = null;
+        }
+        
+        if (currentPushable != null) {
+            if (isGrounded && isPressingShift) {
+                // Player is pushing/pulling a block
+                isPullingBlock = true;
+                currentPushable.ConnectToBody(body);
+            } else {
+                // Player is against a block but not pushing it 
+                isPullingBlock = false;
+                currentPushable.Harden();
+            }
+        }
+    }
+
     private Collider2D FrontIsTouchingMask(LayerMask mask) {
         Vector2 offset = new Vector2(boxCollider.size.x / 2f, 0f) + boxCollider.offset;
         Vector2 origin = (Vector2) transform.localPosition + (isFacingRight ? offset : -offset);
@@ -101,7 +105,7 @@ public class PlayerMovement : MonoBehaviour {
         return hitInfo.collider;
     }
 
-    private PushPullBlock IsAgainstPushable() {
+    private PushPullBlock GetCurrentPushable() {
         Collider2D collision = FrontIsTouchingMask(pushablesMask);
         if (collision != null) return collision.GetComponent<PushPullBlock>();
         return null;
