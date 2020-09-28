@@ -47,7 +47,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 25
+  m_Radius: 10
 --- !u!114 &956172978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73,11 +73,10 @@ GameObject:
   - component: {fileID: 7683570258011486534}
   - component: {fileID: 7683570258011486535}
   - component: {fileID: 7683570258011486539}
-  - component: {fileID: 1058136100}
   - component: {fileID: 1058136101}
   - component: {fileID: 1058136102}
   m_Layer: 0
-  m_Name: enemy
+  m_Name: Deer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -92,7 +91,7 @@ Transform:
   m_GameObject: {fileID: 7683570258011486532}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.08, y: -1.88, z: 0}
-  m_LocalScale: {x: 0.32558072, y: 0.33013755, z: 1}
+  m_LocalScale: {x: 0.60994595, y: 0.62686926, z: 1}
   m_Children:
   - {fileID: 956172977}
   m_Father: {fileID: 0}
@@ -138,7 +137,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 753c36a7837d3864c8a6b06d81a88dff, type: 3}
+  m_Sprite: {fileID: -5249762075863780043, guid: ec67dde2460e4c444ac8d219636d2970, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -166,14 +165,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.12, y: 5.12}
+    oldSize: {x: 3.27, y: 2.45}
     newSize: {x: 5.12, y: 5.12}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.12, y: 5.12}
+  m_Size: {x: 3.4, y: 2.4}
   m_EdgeRadius: 0
 --- !u!50 &7683570258011486535
 Rigidbody2D:
@@ -210,20 +209,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   left: -5
   right: 5
---- !u!114 &1058136100
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7683570258011486532}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a951432a249ae8b47a82f99a113903e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  detectionRange: 10
-  checkRate: 1
+  speed: 5
 --- !u!114 &1058136101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -236,10 +222,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2112f0e5197aeea48a1ca7ce1a8f487a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  exaustRate: 4
-  regenRate: 6
-  slowAmplifier: 0.3
+  exaustRate: 6
+  regenRate: 10
+  exaustedMovementRate: 0.3
+  aggroExaustRate: 12
 --- !u!114 &1058136102
 MonoBehaviour:
   m_ObjectHideFlags: 0

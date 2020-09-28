@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(EnemyBehavior))]
-public class TargetChasing : MonoBehaviour
+public class TargetLocking: MonoBehaviour
 {
     private EnemyBehavior behavior;
     private GameObject target;
@@ -26,13 +26,13 @@ public class TargetChasing : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(this.behavior.isChasing()){
-            if(this.target.transform.position.x - gameObject.transform.position.x < 0){
-                this.behavior.moveLeft();
-            }
-            else{
-                this.behavior.moveRight();
-            }
-        }
+        // if(this.behavior.isChasing()){
+        //     if(this.target.transform.position.x - gameObject.transform.position.x < 0){
+        //         this.behavior.moveLeft();
+        //     }
+        //     else{
+        //         this.behavior.moveRight();
+        //     }
+        // }
     }
 }

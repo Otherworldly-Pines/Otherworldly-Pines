@@ -7,16 +7,17 @@ public class Patrol : MonoBehaviour
 {
     public float left;
     public float right;
+
+    public float speed = 1;
     private float leftBound;
     private float rightBound;
     private EnemyBehavior behavior;
-
+    private int currentDirection = 1;
     // Start is called before the first frame update
     void Start()
     {
         this.initPatrolRange();
         this.behavior = gameObject.GetComponent<EnemyBehavior>();
-        this.behavior.moveRight();
     }
 
     public void initPatrolRange(){
@@ -28,12 +29,19 @@ public class Patrol : MonoBehaviour
     void Update()
     {
         if(this.behavior.isPatrolling()){
+            float movementRate = 1;
+            if(this.behavior.isExausted()){
+                movementRate = this.behavior.getExaustedMovementRate();
+            }
+
             if(gameObject.transform.position.x < this.leftBound){
-                this.behavior.moveRight();
+                this.currentDirection = 1;
             }
             else if(gameObject.transform.position.x > this.rightBound){
-                this.behavior.moveLeft();  
+                this.currentDirection = -1;
             }
+
+            gameObject.transform.Translate(new Vector2(this.currentDirection * Time.deltaTime * this.speed * movementRate, 0));
         }
         
     }
