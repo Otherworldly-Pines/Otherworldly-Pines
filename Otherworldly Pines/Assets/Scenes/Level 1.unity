@@ -424,6 +424,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1155840938, guid: 95b44db5bd6424eeeaf59acde02d4d0f, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1427891100}
     - target: {fileID: 6143024624257782100, guid: 95b44db5bd6424eeeaf59acde02d4d0f, type: 3}
       propertyPath: m_Name
       value: Player
@@ -26043,6 +26047,17 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1427891100 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1427891100, guid: c94c4e947833646559dfb9afa6ea4ef8, type: 3}
+  m_PrefabInstance: {fileID: 5368769434249892375}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a669841a52494e6285403d4f5126041, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1713580020
 GameObject:
   m_ObjectHideFlags: 0
