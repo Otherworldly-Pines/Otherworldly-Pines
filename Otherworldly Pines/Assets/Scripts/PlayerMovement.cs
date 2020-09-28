@@ -54,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
         Vector2 direction = !flippable.isUpsideDown ? Vector2.down : Vector2.up;
         
         RaycastHit2D hitInfo = Physics2D.BoxCast((Vector2)transform.localPosition + groundCastOffset, groundCastSize, 0f, direction, groundCastSize.y, groundMask);
-        return hitInfo.collider != null;
+        return hitInfo.distance > 0f;
     }
 
     void FlipHorizontal()
