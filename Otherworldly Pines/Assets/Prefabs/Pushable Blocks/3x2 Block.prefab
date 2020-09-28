@@ -13,7 +13,10 @@ GameObject:
   - component: {fileID: 2270627686091004554}
   - component: {fileID: 2270627686091004566}
   - component: {fileID: 2270627686091004553}
-  m_Layer: 8
+  - component: {fileID: -8257334220319552748}
+  - component: {fileID: 1032983802286210281}
+  - component: {fileID: 1274229062072383263}
+  m_Layer: 10
   m_Name: 3x2 Block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +67,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 2270627686091004557}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 71b112b5a61d347cab0cba57f636b74b, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -147,3 +150,68 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-8257334220319552748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2270627686091004557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40707b931af1a496cb7075f776c5cce8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shouldFreezePosition: 0
+  isBeingMoved: 0
+  collider: {fileID: 0}
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  highFrictionMaterial: {fileID: 6200000, guid: 4c483a8b091704c619d9c7a70f34c559, type: 2}
+--- !u!114 &1032983802286210281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2270627686091004557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f98b78738bdc545c09564858327c92ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collider: {fileID: 2270627686091004554}
+  body: {fileID: 2270627686091004555}
+  groundLayerMask:
+    serializedVersion: 2
+    m_Bits: 1280
+  percentColliderWidth: 1
+  height: 0.01
+  offset: {x: 0, y: 0}
+--- !u!234 &1274229062072383263
+SliderJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2270627686091004557}
+  m_Enabled: 0
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 0}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 1
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0}
+  m_AutoConfigureAngle: 0
+  m_Angle: 90
+  m_UseMotor: 0
+  m_Motor:
+    m_MotorSpeed: 0
+    m_MaximumMotorForce: 10000
+  m_UseLimits: 0
+  m_TranslationLimits:
+    m_LowerTranslation: 0
+    m_UpperTranslation: 0
