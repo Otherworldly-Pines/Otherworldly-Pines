@@ -3,11 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Add this component to any object with a collider and rigidbody to
+// give it the ability to check if it's on the ground or not
 public class GroundChecker : MonoBehaviour {
 
-    [Header("Component References")]
-    public Collider2D collider;
-    public Rigidbody2D body;
+    [HideInInspector] public Collider2D collider;
+    [HideInInspector] public Rigidbody2D body;
     public LayerMask groundLayerMask;
 
     [Header("Boxcast Properties")]
@@ -15,6 +16,11 @@ public class GroundChecker : MonoBehaviour {
     public float height = 0.01f;
     public Vector2 offset = Vector2.zero;
     private Vector2 size;
+
+    private void Start() {
+        collider = GetComponent<Collider2D>();
+        body = GetComponent<Rigidbody2D>();
+    }
 
     public bool IsGrounded() {
         Physics2D.queriesStartInColliders = false;
