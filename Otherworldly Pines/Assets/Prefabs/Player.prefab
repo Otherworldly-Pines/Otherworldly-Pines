@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6143024624257782107}
   - component: {fileID: 6143024624257782106}
   - component: {fileID: 6143024624257782109}
+  - component: {fileID: 1155840938}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -95,7 +96,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0ee7188af5e0485e83e001317db3584, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  groundCollider: {fileID: 0}
   groundMask:
     serializedVersion: 2
     m_Bits: 256
@@ -127,6 +127,20 @@ MonoBehaviour:
   center: {fileID: 0}
   gravityAffectsSprite: 1
   isUpsideDown: 0
+--- !u!114 &1155840938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6143024624257782100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33ecb99fd8086498d91e9e2b45ef0899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  currentHealth: 100
 --- !u!1 &6677522062563206666
 GameObject:
   m_ObjectHideFlags: 0
