@@ -10,12 +10,14 @@ public class PauseMenu : MonoBehaviour
     public GameObject pausePanelUI;
     public GameObject pauseMenuUI;
     public GameObject optionMenuUI;
+    public GameObject helpMenuUI;
 
     void Start()
     {
         pausePanelUI.SetActive(false);
         pauseMenuUI.SetActive(false);
         optionMenuUI.SetActive(false);
+        helpMenuUI.SetActive(false);
         GameIsPause = false;
     }
 
@@ -39,6 +41,7 @@ public class PauseMenu : MonoBehaviour
         pausePanelUI.SetActive(false);
         pauseMenuUI.SetActive(false);
         optionMenuUI.SetActive(false);
+        helpMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPause = false;
     }
@@ -64,10 +67,15 @@ public class PauseMenu : MonoBehaviour
 
     public void Help()
     {
-
+        helpMenuUI.SetActive(true);   
     }
 
-    public void saveProgress()
+    public void backtoOptionsMenu()
+    {
+        helpMenuUI.SetActive(false);
+    }
+
+    public void returnToCheckpoint()
     {
         
     }
