@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 973513609842292031}
   - component: {fileID: 973513609842292003}
   - component: {fileID: 973513609842292028}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: 4x3 Block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
