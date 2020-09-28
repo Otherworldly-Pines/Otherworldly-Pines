@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[SelectionBase]
 public class PlayerMovement : MonoBehaviour {
 
     public GroundChecker groundCheck;
@@ -22,6 +23,7 @@ public class PlayerMovement : MonoBehaviour {
     private BoxCollider2D boxCollider;
 
     private PushPullBlock currentPushable;
+    private bool isPullingBlock = false;
 
     private float forwardCastLength = 0.01f;
 
@@ -34,30 +36,44 @@ public class PlayerMovement : MonoBehaviour {
     
     void FixedUpdate() {
         isGrounded = groundCheck.IsGrounded();
-        bool isPushing = false;
-        
+
         Vector2 nextVelocity = body.velocity;
         nextVelocity.x = currentHorizontalInput * walkSpeed;
+        
+        // Handle push/pull
+        if (!isPullingBlock) {
+            PushPullBlock pushableFromLastUpdate = currentPushable;
+            currentPushable = IsAgainstPushable();
 
-        PushPullBlock pushableFromLastUpdate = currentPushable;
-        currentPushable = IsAgainstPushable();
-
-        if (pushableFromLastUpdate != currentPushable && pushableFromLastUpdate != null) {
-            pushableFromLastUpdate.Harden();
+            // Check if the player has just turned away from a block they were previously facing
+            if (pushableFromLastUpdate != currentPushable && pushableFromLastUpdate != null) {
+                pushableFromLastUpdate.DisconnectFromBody();
+                isPullingBlock = false;
+                pushableFromLastUpdate.Harden();
+            }
+        } else if (currentPushable != null && !currentPushable.IsGrounded()) {
+            // Check if the block the player was holding has fallen off the edge
+            currentPushable.DisconnectFromBody();
+            isPullingBlock = false;
+            currentPushable.Harden();
+            currentPushable = null;
         }
 
         if (currentPushable != null) {
+            // Check if the player is pushing/pulling a block
             if (isGrounded && isPressingShift) {
-                isPushing = true;
-                currentPushable.Soften();
+                isPullingBlock = true;
+                currentPushable.ConnectToBody(body);
             } else {
+                isPullingBlock = false;
                 currentPushable.Harden();
             }
         } else if (isGrounded && isPressingShift) {
+            // If the player is not interacting with a pushable, use shift to determine speed
             nextVelocity.x = currentHorizontalInput * runSpeed;
         }
 
-        if (!isPushing && IsAgainstWall()) nextVelocity.x = 0f;
+        if (!isPullingBlock && IsAgainstWall()) nextVelocity.x = 0f;
 
         body.velocity = nextVelocity;
 
@@ -68,7 +84,7 @@ public class PlayerMovement : MonoBehaviour {
         isPressingShift = Input.GetKey(KeyCode.LeftShift);
         currentHorizontalInput = Input.GetAxis("Horizontal");
 
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded && !isPullingBlock)
         {
             Vector2 jumpDirection = !flippable.isUpsideDown ? Vector2.up : Vector2.down;
             body.velocity = jumpDirection * jumpForce;
@@ -95,8 +111,8 @@ public class PlayerMovement : MonoBehaviour {
         return FrontIsTouchingMask(groundMask) != null;
     }
 
-    void FlipHorizontal()
-    {
+    void FlipHorizontal() {
+        if (isPullingBlock) return;
         isFacingRight = !isFacingRight;
         Vector3 localScale = transform.localScale;
         localScale.x *= -1;

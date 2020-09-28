@@ -11,6 +11,7 @@ public class PushPullBlock : MonoBehaviour {
     [SerializeField] private LayerMask playerMask;
     private float border = 0.5f;
     private bool isPlayerNear = false;
+    private GroundChecker groundChecker;
 
     private SliderJoint2D joint;
     public PhysicsMaterial2D highFrictionMaterial;
@@ -19,7 +20,12 @@ public class PushPullBlock : MonoBehaviour {
     void Start() {
         collider = GetComponent<BoxCollider2D>();
         joint = GetComponent<SliderJoint2D>();
+        groundChecker = GetComponent<GroundChecker>();
         originalMaterial = collider.sharedMaterial;
+    }
+
+    public bool IsGrounded() {
+        return groundChecker.IsGrounded();
     }
 
     private void Update() {
@@ -42,7 +48,7 @@ public class PushPullBlock : MonoBehaviour {
         joint.enabled = true;
     }
 
-    public void DisconnectFromBody(Rigidbody2D otherBody) {
+    public void DisconnectFromBody() {
         joint.connectedBody = null;
         joint.enabled = false;
     }
