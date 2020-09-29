@@ -8,12 +8,14 @@ public class GravityRegion : MonoBehaviour
 
     public bool gravityIsFlipped = false;
     public bool playerCanFlipGravity = true;
+    public int maxFlipCount = 0; // Only considered restricted if greater than zero
 
     public SpriteRenderer background;
 
     private BoxCollider2D ownCollider;
     private HashSet<GravityFlippable> flippables = new HashSet<GravityFlippable>();
     private Color gravityColor = new Color(0f, 0.12f, 0.34f, 1f);
+    private int currentFlipCount = 0;
 
     void Start()
     {
@@ -36,9 +38,10 @@ public class GravityRegion : MonoBehaviour
 
     public void FlipGravity()
     {
-        // Don't flip gravity if it's fixed
         if (!playerCanFlipGravity) return;
+        if (maxFlipCount > 0 && currentFlipCount >= maxFlipCount) return;
 
+        currentFlipCount++;
         gravityIsFlipped = !gravityIsFlipped;
         foreach (GravityFlippable flippable in flippables)
         {
