@@ -6,6 +6,7 @@ TagManager:
   tags:
   - flippable
   - Ground
+  - CM
   layers:
   - Default
   - TransparentFX
