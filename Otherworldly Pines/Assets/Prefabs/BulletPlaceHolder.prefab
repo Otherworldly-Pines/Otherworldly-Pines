@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2368777333298514427}
   - component: {fileID: -2488532358820609698}
   - component: {fileID: 3620708198798138463}
+  - component: {fileID: -155953835281480196}
   m_Layer: 0
   m_Name: BulletPlaceHolder
   m_TagString: Untagged
@@ -131,3 +132,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16262898, y: 0.1562464}
   m_EdgeRadius: 0
+--- !u!114 &-155953835281480196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7121226826332205653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dcb0ddbd0ca94701b89ae3b25e5d598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  center: {fileID: 0}
+  gravityAffectsSprite: 1
+  isUpsideDown: 0
