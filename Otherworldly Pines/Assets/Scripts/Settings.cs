@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Settings : MonoBehaviour
+public class Setting : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -14,10 +14,5 @@ public class Settings : MonoBehaviour
     void Update()
     {
         
-    }
-
-    public void SetFullScreen(bool isFullscreen)
-    {
-        Screen.fullScreen = isFullscreen;
     }
 }
