@@ -10,7 +10,7 @@ public class PlayerThrow : MonoBehaviour
     public float bulletDestroyTime = 3.0f;
     
     void Update() {
-        if (Input.GetMouseButtonDown(0)) Shoot();
+        if (Input.GetMouseButtonDown(0) && !PauseMenu.GameIsPaused) Shoot();
     }
 
     //let arm follow the mouse and flip
