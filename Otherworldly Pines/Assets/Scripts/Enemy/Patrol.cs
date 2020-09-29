@@ -13,8 +13,8 @@ public class Patrol : MonoBehaviour
     public float maxLeftBound;
     public float maxRightBound;
 
-    public float leftBound;
-    public float rightBound;
+    private float leftBound;
+    private float rightBound;
 
     private EnemyBehavior behavior;
     private int direction = -1;
@@ -32,6 +32,8 @@ public class Patrol : MonoBehaviour
     }
 
     public void initPatrolRange(){
+        Debug.Log(this.rightBound);
+        Debug.Log(this.leftBound);
         this.rightBound = gameObject.transform.position.x + this.right;
         this.leftBound =  gameObject.transform.position.x + this.left;
 
@@ -56,9 +58,11 @@ public class Patrol : MonoBehaviour
             }
 
             if(gameObject.transform.position.x < this.leftBound){
+                Debug.Log("Right");
                 this.direction = 1;
             }
             else if(gameObject.transform.position.x > this.rightBound){
+                Debug.Log("Left");
                 this.direction = -1;
             }
             switch(this.direction){
