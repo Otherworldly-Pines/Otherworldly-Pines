@@ -10,7 +10,7 @@ public class Checkpoint : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            cm.lastCheckPointPos = transform.position;
+            cm.lastCheckPointPos = gameObject.transform.position;
         }
     }
 
