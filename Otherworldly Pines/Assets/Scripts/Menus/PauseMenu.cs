@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
+    private Scene currentScene;
+
     public static bool GameIsPaused = false;
 
     public GameObject pausePanelUI;
@@ -77,7 +79,9 @@ public class PauseMenu : MonoBehaviour
 
     public void returnToCheckpoint()
     {
-        
+        currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.name);
+        Resume();
     }
 
     public void QuitGame()
