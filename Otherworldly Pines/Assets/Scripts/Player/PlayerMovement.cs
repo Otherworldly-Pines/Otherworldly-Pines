@@ -112,7 +112,8 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     private bool IsAgainstWall() {
-        return FrontIsTouchingMask(groundMask) != null;
+        Collider2D collider = FrontIsTouchingMask(groundMask);
+        return collider != null && !collider.isTrigger;
     }
 
     void FlipHorizontal() {
