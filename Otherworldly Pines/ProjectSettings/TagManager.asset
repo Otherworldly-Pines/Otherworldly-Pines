@@ -6,8 +6,7 @@ TagManager:
   tags:
   - flippable
   - Ground
-  - sandwich
-  - firecracker
+  - CM
   layers:
   - Default
   - TransparentFX
