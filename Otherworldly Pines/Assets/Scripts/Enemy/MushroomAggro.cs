@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+// TODO: Implement this enemy
 [RequireComponent(typeof(EnemyBehavior))]
 [RequireComponent(typeof(TargetLocking))]
 public class MushroomAggro : MonoBehaviour

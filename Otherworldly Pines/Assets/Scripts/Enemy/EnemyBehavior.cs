@@ -8,16 +8,18 @@ public class EnemyBehavior : MonoBehaviour
 {
 
     private int state = 1; //0 is resting, 1 is moving, 
-    private Patrol patrolController;
-    private float stamina = 100;
-    private float maxStamina = 100;
-    private bool exausted = false;
+    private Patrol patrolController; 
+    private float stamina = 100; //Stamina for movement. Eneter resting state when reach 0
+    private float maxStamina = 100; // Max stamina to end resting state
+    private bool exausted = false; // Exausted state
 
-    public float exaustRate = 1;
-    public float regenRate = 2;
+    public float exaustRate = 1; // Amount of stamina use per second in neutral and investigate state
+    public float regenRate = 2; // Amount of stamina regen per second in resting state
  
-    public float exaustedMovementRate = 0.3f; 
-    public float aggroExaustRate = 2; 
+    public float exaustedMovementRate = 0.3f;  // Rate of moving when exausted
+    public float aggroExaustRate = 2;  // Amount of stamina use per second in aggressive state.
+    public int direction = 1; // Direction the enemy is moveing
+
     // Start is called before the first frame update 
     void Start()
     {
@@ -25,31 +27,13 @@ public class EnemyBehavior : MonoBehaviour
     }
 
     // Update is called once per frame
+    // Update stamina every frame
     void Update()
     {
-        // switch(this.state){
-        //     case 1:
-        //         moveWithSpeedAmplifier(1);
-        //         break;
-        //     case 2:
-        //         moveWithSpeedAmplifier(2);
-        //         break;
-        //     default:
-        //         break;
-        // }
         updateStamina();
     }
 
-    // void moveWithSpeedAmplifier(int amplifier){
-    //     if(this.exausted){
-    //         gameObject.transform.Translate(new Vector2(this.direction * Time.deltaTime * this.speed * this.slowAmplifier, 0));
-    //     }
-    //     else{
-    //         gameObject.transform.Translate(new Vector2(this.direction * Time.deltaTime * this.speed * amplifier, 0));
-    //     }
-    //     this.updateStamina(amplifier);
-    // }
-
+    // Update stamina base on the state enemy is in
     void updateStamina(){
         if(!this.exausted){
             if(this.isChasing()){
@@ -64,13 +48,38 @@ public class EnemyBehavior : MonoBehaviour
             }
         }
         else{
-            this.stamina += Time.deltaTime * this.regenRate;
-            
+            this.stamina += Time.deltaTime * this.regenRate;     
             if(this.stamina > this.maxStamina){
                 this.exausted = false;
             }
         }
         
+    }
+
+    // Reinitialize patrol in patrol scripts
+    public void reInitPatrol(){
+        this.patrolController.initPatrolRange();
+    }
+
+    // Enter rest state for amount of seconds
+    public IEnumerator restForSeconds(float second){
+        int tmp = this.state;
+        this.state = 0;
+        yield return new WaitForSeconds(second);
+        this.state = tmp;
+	}
+
+    // ------------ Getters and Setters------------------
+    public void turnLeft(){
+        this.direction = -1;
+    }
+
+    public void turnRight(){
+        this.direction = 1;
+    }
+
+    public int getDirection(){
+        return this.direction;
     }
 
 
@@ -108,18 +117,7 @@ public class EnemyBehavior : MonoBehaviour
         this.state = 3;
     }
 
-    public void reInitPatrol(){
-        this.patrolController.initPatrolRange();
-    }
-
     public float getExaustedMovementRate(){
         return this.exaustedMovementRate;
     }
-
-    public IEnumerator restForSeconds(float second){
-        int tmp = this.state;
-        this.state = 0;
-        yield return new WaitForSeconds(second);
-        this.state = tmp;
-	}
 }

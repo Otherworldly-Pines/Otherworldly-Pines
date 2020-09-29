@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
+// This class is in charge of the aggressive state of the deer.
 [RequireComponent(typeof(EnemyBehavior))]
 [RequireComponent(typeof(TargetLocking))]
 public class DeerAggro : MonoBehaviour
@@ -10,19 +13,20 @@ public class DeerAggro : MonoBehaviour
     private EnemyBehavior behavior;
     private TargetLocking targetLocking;
     
-    private SpriteController spriteController;
+
     // Start is called before the first frame update
     void Start()
     {
         this.behavior = gameObject.GetComponent<EnemyBehavior>();
         this.targetLocking = gameObject.GetComponent<TargetLocking>();
-        this.spriteController = gameObject.GetComponent<SpriteController>();
     }
 
 
     
 
     // Update is called once per frame
+    // It check if the deer is chasing, look for the target that is locked and move in that direction.
+    // Exaust rate applied to this state too
     void Update()
     {
         if(this.behavior.isChasing()){
@@ -35,10 +39,10 @@ public class DeerAggro : MonoBehaviour
             }
             switch(direction.x){
                 case 1:
-                    this.spriteController.turnRight();
+                    this.behavior.turnRight();
                     break;
                 case -1:
-                    this.spriteController.turnLeft();
+                    this.behavior.turnLeft();
                     break;
             }
             

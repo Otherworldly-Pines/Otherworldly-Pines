@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// Target for aggro and investigation
 [RequireComponent(typeof(EnemyBehavior))]
 public class TargetLocking: MonoBehaviour
 {
@@ -26,13 +27,6 @@ public class TargetLocking: MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // if(this.behavior.isChasing()){
-        //     if(this.target.transform.position.x - gameObject.transform.position.x < 0){
-        //         this.behavior.moveLeft();
-        //     }
-        //     else{
-        //         this.behavior.moveRight();
-        //     }
-        // }
+
     }
 }
