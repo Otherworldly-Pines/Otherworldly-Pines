@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GravityFlippable : MonoBehaviour
+public class GravityFlippable : GravityAffected
 {
 
     public bool gravityAffectsSprite = true;
@@ -12,6 +12,7 @@ public class GravityFlippable : MonoBehaviour
 
     void Start()
     {
+        base.Start();
         body = GetComponentInParent<Rigidbody2D>();
     }
     
