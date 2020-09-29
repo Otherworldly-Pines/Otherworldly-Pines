@@ -7,22 +7,43 @@ public class Patrol : MonoBehaviour
 {
     public float left;
     public float right;
-
+    public float maxLeft;
+    public float maxRight;
     public float speed = 1;
-    private float leftBound;
-    private float rightBound;
+    public float maxLeftBound;
+    public float maxRightBound;
+
+    public float leftBound;
+    public float rightBound;
+
     private EnemyBehavior behavior;
-    private int currentDirection = 1;
+    private int direction = -1;
+    private SpriteController spriteController;
     // Start is called before the first frame update
     void Start()
     {
+        
+        this.maxLeftBound = gameObject.transform.position.x + this.maxLeft;
+        this.maxRightBound = gameObject.transform.position.x + this.maxRight;
+
         this.initPatrolRange();
         this.behavior = gameObject.GetComponent<EnemyBehavior>();
+        this.spriteController = gameObject.GetComponent<SpriteController>();
     }
 
     public void initPatrolRange(){
-        this.leftBound = gameObject.transform.position.x + this.left;
         this.rightBound = gameObject.transform.position.x + this.right;
+        this.leftBound =  gameObject.transform.position.x + this.left;
+
+        if(this.leftBound < this.maxLeftBound){
+            this.leftBound = this.maxLeftBound;
+            this.rightBound = Mathf.Min(this.maxRightBound,this.leftBound + this.right - this.left);
+        }
+        else if(this.rightBound > this.maxRightBound){
+            this.rightBound = this.maxRightBound;
+            this.leftBound = Mathf.Max(this.maxLeftBound,this.rightBound - this.right + this.left);
+        }
+
     }
 
     // Update is called once per frame
@@ -35,13 +56,20 @@ public class Patrol : MonoBehaviour
             }
 
             if(gameObject.transform.position.x < this.leftBound){
-                this.currentDirection = 1;
+                this.direction = 1;
             }
             else if(gameObject.transform.position.x > this.rightBound){
-                this.currentDirection = -1;
+                this.direction = -1;
             }
-
-            gameObject.transform.Translate(new Vector2(this.currentDirection * Time.deltaTime * this.speed * movementRate, 0));
+            switch(this.direction){
+                case 1:
+                    this.spriteController.turnRight();
+                    break;
+                case -1:
+                    this.spriteController.turnLeft();
+                    break;
+            }
+            gameObject.transform.Translate(new Vector2(this.direction * Time.deltaTime * this.speed * movementRate, 0));
         }
         
     }
