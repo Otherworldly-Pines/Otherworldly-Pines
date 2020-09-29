@@ -42,3 +42,4 @@ Assets/StreamingAssets/crashlytics-build.properties
 .DS_Store
 **/Plugins
 Plugins.meta
+.vscode
