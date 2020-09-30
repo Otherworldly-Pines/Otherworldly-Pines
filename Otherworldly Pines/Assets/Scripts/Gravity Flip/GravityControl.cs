@@ -21,7 +21,7 @@ public class GravityControl : GravityAffected, IHUDConnected {
     }
 
     public void EnterGravityRegion(GravityRegion region) {
-        SetActiveGravityRegion(region);
+         SetActiveGravityRegion(region);
     }
 
     public void ExitGravityRegion(GravityRegion region)
