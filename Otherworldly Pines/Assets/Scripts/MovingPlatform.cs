@@ -11,9 +11,6 @@ public class MovingPlatform : MonoBehaviour
 
     public GameObject destination;
     private Rigidbody2D body;
-
-    private Vector3 originalPosition;
-    private Vector3 destinationPosition;
     
     private Vector3 currentTarget;
     private Vector3 nextTarget;
@@ -23,12 +20,9 @@ public class MovingPlatform : MonoBehaviour
 
     void Start() {
         body = GetComponentInChildren<Rigidbody2D>();
-        
-        originalPosition = this.gameObject.transform.position;
-        destinationPosition = destination.transform.position;
 
-        currentTarget = destinationPosition;
-        nextTarget = originalPosition;
+        currentTarget = destination.transform.position;
+        nextTarget = gameObject.transform.position;
 
         StartMoving();
     }
@@ -40,13 +34,16 @@ public class MovingPlatform : MonoBehaviour
     }
 
     private bool IsAtTarget() {
-        return Vector3.Distance(transform.position, currentTarget) < 0.001f;
+        float actualDistance = Vector2.Distance(transform.position, nextTarget);
+        float maxDistance = Vector2.Distance(currentTarget, nextTarget);
+        return actualDistance > maxDistance;
     }
 
     private void Pause() {
         pauseTimer = 0f;
         isPaused = true;
         body.velocity = Vector2.zero;
+        body.position = currentTarget;
         SwapTargets();
     }
 
