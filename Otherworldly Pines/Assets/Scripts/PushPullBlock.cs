@@ -62,6 +62,7 @@ public class PushPullBlock : MonoBehaviour {
     }
 
     private void OnDrawGizmosSelected() {
+        if (collider == null) collider = GetComponent<BoxCollider2D>();
         Gizmos.color = Color.yellow;
         Vector2 size = collider.bounds.size + new Vector3(2f * border, -0.01f, 0f);
         Gizmos.DrawRay((Vector2)collider.bounds.center - size / 2f, new Vector2(size.x, 0f));
