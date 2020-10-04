@@ -1737,6 +1737,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3048704110848231395, guid: 95b44db5bd6424eeeaf59acde02d4d0f, type: 3}
+      propertyPath: ammoPerBerry
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6143024624257782100, guid: 95b44db5bd6424eeeaf59acde02d4d0f, type: 3}
       propertyPath: m_Name
       value: Player
