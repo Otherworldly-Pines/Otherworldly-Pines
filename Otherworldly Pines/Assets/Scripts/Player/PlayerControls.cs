@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [SelectionBase]
-public class PlayerMovement : MonoBehaviour {
+public class PlayerControls : MonoBehaviour {
 
     public GroundChecker groundCheck;
     public LayerMask groundMask;
