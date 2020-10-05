@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: -6612527000541482799}
   - component: {fileID: -2647878123967911881}
   - component: {fileID: -5590097979379776640}
+  - component: {fileID: 2793012068928615331}
   m_Layer: 10
   m_Name: 2x2 Block
   m_TagString: Untagged
@@ -215,3 +216,17 @@ SliderJoint2D:
   m_TranslationLimits:
     m_LowerTranslation: 0
     m_UpperTranslation: 0
+--- !u!114 &2793012068928615331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2945843626260660658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71d029f19b7d849e084e6bc7005b3628, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFrozen: 0
+  indicatorSprite: {fileID: 21300000, guid: dcbb2713def444ee9a1eb07e8f51415e, type: 3}

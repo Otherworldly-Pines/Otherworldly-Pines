@@ -11,8 +11,14 @@ public class PlayerThrow : MonoBehaviour
     public int ammoPerBerry = 3;
     private int ammo = 0;
     
+    private PlayerFreeze playerFreeze;
+
+    private void Start() {
+        playerFreeze = GetComponent<PlayerFreeze>();
+    }
+
     void Update() {
-        if (Input.GetMouseButtonDown(0) && !PauseMenu.GameIsPaused) Shoot();
+        if (!playerFreeze.IsHoveringAny() && Input.GetMouseButtonDown(0) && !PauseMenu.GameIsPaused) Shoot();
     }
 
     //let arm follow the mouse and flip
@@ -62,7 +68,7 @@ public class PlayerThrow : MonoBehaviour
     // pick up ammo and destroy berries
     void OnCollisionEnter2D(Collision2D target)
     {
-        if (target.gameObject.CompareTag("BerryBush"))
+        if (target.gameObject.CompareTag("Berries"))
         {
             ammo += ammoPerBerry;
             Debug.Log("1");
