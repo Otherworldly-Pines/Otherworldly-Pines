@@ -228,3 +228,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71d029f19b7d849e084e6bc7005b3628, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFrozen: 0
+  indicatorSprite: {fileID: 21300000, guid: dcbb2713def444ee9a1eb07e8f51415e, type: 3}

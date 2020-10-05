@@ -41,4 +41,10 @@ public class PlayerFreeze : MonoBehaviour {
         freezeTimeout = MAX_TIMEOUT;
     }
 
+    public void UnfreezeObject(Freezable obj) {
+        obj.Unfreeze();
+        frozen = null;
+        hasFrozen = false;
+    }
+
 }
