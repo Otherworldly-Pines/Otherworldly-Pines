@@ -35,7 +35,6 @@ public class PlayerFreeze : MonoBehaviour {
     }
 
     public void FreezeObject(Freezable obj) {
-        hoveredObjects.Clear();
         obj.Freeze();
         frozen = obj;
         hasFrozen = true;

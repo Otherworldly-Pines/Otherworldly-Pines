@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Freezable : MonoBehaviour {
 
+    public bool isFrozen = false;
     private PlayerFreeze player;
     private Rigidbody2D body;
     private RigidbodyType2D originalBodyType;
@@ -17,16 +18,18 @@ public class Freezable : MonoBehaviour {
     }
 
     public void Freeze() {
+        isFrozen = true;
         body.bodyType = RigidbodyType2D.Static;
     }
 
     public void Unfreeze() {
         body.bodyType = originalBodyType;
         body.velocity = Vector2.zero;
+        isFrozen = false;
     }
 
     private void OnMouseDown() {
-        player.FreezeObject(this);
+        if (!isFrozen) player.FreezeObject(this);
     }
 
     private void OnMouseEnter() {

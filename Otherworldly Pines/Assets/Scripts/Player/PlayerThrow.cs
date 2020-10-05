@@ -8,9 +8,14 @@ public class PlayerThrow : MonoBehaviour
     public GameObject bulletPrefab;
     public float bulletSpeed = 10.0f;
     public float bulletDestroyTime = 3.0f;
-    
+    private PlayerFreeze playerFreeze;
+
+    private void Start() {
+        playerFreeze = GetComponent<PlayerFreeze>();
+    }
+
     void Update() {
-        if (Input.GetMouseButtonDown(0) && !PauseMenu.GameIsPaused) Shoot();
+        if (!playerFreeze.IsHoveringAny() && Input.GetMouseButtonDown(0) && !PauseMenu.GameIsPaused) Shoot();
     }
 
     //let arm follow the mouse and flip
