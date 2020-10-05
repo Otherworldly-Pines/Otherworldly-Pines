@@ -46,7 +46,7 @@ public class Freezable : MonoBehaviour {
 
     private void OnMouseEnter() {
         player.StartHovering(this);
-        if (!isFrozen) renderer.color = Color.Lerp(Color.clear, Color.cyan, 0.2f);
+        if (!isFrozen && player.CanFreeze()) renderer.color = Color.Lerp(Color.clear, Color.cyan, 0.2f);
     }
 
     private void OnMouseExit() {

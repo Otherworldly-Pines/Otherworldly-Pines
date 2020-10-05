@@ -3,14 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerFreeze : MonoBehaviour {
+public class PlayerFreeze : MonoBehaviour, IHUDConnected {
 
     private static float MAX_TIMEOUT = 10f;
     
     private HashSet<Freezable> hoveredObjects = new HashSet<Freezable>();
     private Freezable frozen;
     public bool hasFrozen = false;
-    private float freezeTimeout = 0f;
+    private float freezeTimeout = MAX_TIMEOUT;
+    private StasisDisplay stasisDisplay;
 
     private void Update() {
         if (hasFrozen) {
@@ -19,7 +20,16 @@ public class PlayerFreeze : MonoBehaviour {
                 hasFrozen = false;
                 frozen.Unfreeze();
             }
+        } else {
+            if (freezeTimeout < MAX_TIMEOUT) freezeTimeout += Time.deltaTime;
+            else if (freezeTimeout > MAX_TIMEOUT) freezeTimeout = MAX_TIMEOUT;
         }
+        
+        stasisDisplay.SetPercent(freezeTimeout / MAX_TIMEOUT);
+    }
+
+    public bool CanFreeze() {
+        return freezeTimeout >= MAX_TIMEOUT;
     }
 
     public bool IsHoveringAny() {
@@ -27,7 +37,7 @@ public class PlayerFreeze : MonoBehaviour {
     }
 
     public void StartHovering(Freezable obj) {
-        hoveredObjects.Add(obj);
+        if (CanFreeze()) hoveredObjects.Add(obj);
     }
 
     public void StopHovering(Freezable obj) {
@@ -35,16 +45,22 @@ public class PlayerFreeze : MonoBehaviour {
     }
 
     public void FreezeObject(Freezable obj) {
-        obj.Freeze();
-        frozen = obj;
-        hasFrozen = true;
-        freezeTimeout = MAX_TIMEOUT;
+        if (CanFreeze()) {
+            obj.Freeze();
+            frozen = obj;
+            hasFrozen = true;
+            freezeTimeout = MAX_TIMEOUT;
+        }
     }
 
     public void UnfreezeObject(Freezable obj) {
         obj.Unfreeze();
         frozen = null;
         hasFrozen = false;
+    }
+
+    public void ConnectToHUD(HUD hud) {
+        stasisDisplay = hud.stasisDisplay;
     }
 
 }
