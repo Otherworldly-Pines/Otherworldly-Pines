@@ -72,7 +72,7 @@ public class PlayerControls : MonoBehaviour {
             if (lastPushable != currentPushable && lastPushable != null) {
                 isPullingBlock = false;
                 lastPushable.DisconnectFromBody();
-                lastPushable.Harden();
+                lastPushable.Soften();
             }
         } else if (currentPushable != null && !currentPushable.IsGrounded()) {
             // Check if the block the player was holding has fallen off the edge
