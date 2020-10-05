@@ -7,36 +7,19 @@ public class PlayerFollow : MonoBehaviour
     public float speed;
     public GameObject player;
 
-    public float frequency;
-    public float magnitude;
-    public float stoppingDistX;
-    public float stoppingDistY;
-
     private Transform playerTransform;
-    private Rigidbody2D playerRigidBody;
     // Start is called before the first frame update
     void Start()
     {
         playerTransform = player.GetComponent<Transform>();
-        playerRigidBody = player.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Moving
-        if(playerRigidBody.velocity.magnitude > 0){
-            Vector2 newPosition = new Vector2(playerTransform.position.x, playerTransform.position.y + stoppingDistY - 1f);
-
-            transform.position = Vector2.MoveTowards(transform.position, newPosition, speed * Time.deltaTime);
-        }
-        //Idle
-        else{
-            Vector2 newPosition = new Vector2(playerTransform.position.x - stoppingDistX, (playerTransform.position.y + stoppingDistY) * Mathf.Sin(Time.time * frequency)*magnitude);
-
-            transform.position = Vector2.MoveTowards(transform.position, newPosition, speed * Time.deltaTime);
-
-        }
+        //set where the spirit should be with regards to player
+        Vector2 newPosition = new Vector2(playerTransform.position.x - 2f, playerTransform.position.y + 3f);
+        //follow the player 
+        transform.position = Vector2.MoveTowards(transform.position, newPosition, speed * Time.deltaTime);
     }
-
 }

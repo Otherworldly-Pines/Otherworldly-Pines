@@ -155,10 +155,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   player: {fileID: 846604560}
-  frequency: 0
-  magnitude: 0
-  stoppingDistX: 0
-  stoppingDistY: 0
 --- !u!212 &337620691
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -869,10 +865,6 @@ PrefabInstance:
       propertyPath: continueButton
       value: 
       objectReference: {fileID: 1269362499}
-    - target: {fileID: 7783445546808858190, guid: 7088746ecd4f44c4fa6ad20f13e2546c, type: 3}
-      propertyPath: sentences.Array.data[1]
-      value: So far I can't say much.
-      objectReference: {fileID: 0}
     - target: {fileID: 7783445546808858191, guid: 7088746ecd4f44c4fa6ad20f13e2546c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 705.4689
