@@ -26,13 +26,13 @@ public class PlayerFollow : MonoBehaviour
     {
         //Moving
         if(playerRigidBody.velocity.magnitude > 0){
-            Vector2 newPosition = new Vector2(playerTransform.position.x - stoppingDistX, playerTransform.position.y + stoppingDistY);
+            Vector2 newPosition = new Vector2(playerTransform.position.x, playerTransform.position.y + stoppingDistY - 1f);
 
             transform.position = Vector2.MoveTowards(transform.position, newPosition, speed * Time.deltaTime);
         }
         //Idle
         else{
-            Vector2 newPosition = new Vector2(playerTransform.position.x - stoppingDistX, playerTransform.position.y * Mathf.Sin(Time.time * frequency)*magnitude);
+            Vector2 newPosition = new Vector2(playerTransform.position.x - stoppingDistX, (playerTransform.position.y + stoppingDistY) * Mathf.Sin(Time.time * frequency)*magnitude);
 
             transform.position = Vector2.MoveTowards(transform.position, newPosition, speed * Time.deltaTime);
 
