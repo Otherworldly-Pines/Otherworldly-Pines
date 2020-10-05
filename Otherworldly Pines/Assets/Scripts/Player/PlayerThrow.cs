@@ -62,7 +62,7 @@ public class PlayerThrow : MonoBehaviour
     // pick up ammo and destroy berries
     void OnCollisionEnter2D(Collision2D target)
     {
-        if (target.gameObject.CompareTag("Berries"))
+        if (target.gameObject.CompareTag("BerryBush"))
         {
             ammo += ammoPerBerry;
             Debug.Log("1");
