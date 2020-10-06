@@ -8,9 +8,17 @@ public class PlayerThrow : MonoBehaviour
     public GameObject bulletPrefab;
     public float bulletSpeed = 10.0f;
     public float bulletDestroyTime = 3.0f;
+    public int ammoPerBerry = 3;
+    private int ammo = 0;
     
+    private PlayerFreeze playerFreeze;
+
+    private void Start() {
+        playerFreeze = GetComponent<PlayerFreeze>();
+    }
+
     void Update() {
-        if (Input.GetMouseButtonDown(0) && !PauseMenu.GameIsPaused) Shoot();
+        if (!playerFreeze.IsHoveringAny() && Input.GetMouseButtonDown(0) && !PauseMenu.GameIsPaused) Shoot();
     }
 
     //let arm follow the mouse and flip
@@ -34,18 +42,39 @@ public class PlayerThrow : MonoBehaviour
     //fire the bullets
     void Shoot()
     {
-        GameObject bullet = Instantiate(bulletPrefab) as GameObject;
-        bullet.transform.position = transform.position;
-        FollowMouse(bullet);
+        if (ammo > 0)
+        {
+            GameObject bullet = Instantiate(bulletPrefab) as GameObject;
+            bullet.transform.position = transform.position;
+            FollowMouse(bullet);
 
-        Vector3 difference = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, transform.position.z)) - transform.position;
-        float distance = difference.magnitude;
-        Vector2 direction = difference / distance;
-        direction.Normalize();
-        
-        bullet.transform.position += new Vector3(direction.x , direction.y, 0f); // bullets dont collide with player's collider
-        bullet.GetComponent<Rigidbody2D>().velocity = direction * bulletSpeed;
+            Vector3 difference =
+                Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y,
+                    transform.position.z)) - transform.position;
+            float distance = difference.magnitude;
+            Vector2 direction = difference / distance;
+            direction.Normalize();
 
-        Destroy(bullet, bulletDestroyTime);
+            bullet.transform.position +=
+                new Vector3(direction.x, direction.y, 0f); // bullets dont collide with player's collider
+            bullet.GetComponent<Rigidbody2D>().velocity = direction * bulletSpeed;
+
+            Destroy(bullet, bulletDestroyTime);
+
+            ammo--;
+        }
+    }
+    
+    // pick up ammo and destroy berries
+    void OnCollisionEnter2D(Collision2D target)
+    {
+        if (target.gameObject.CompareTag("Berries"))
+        {
+            ammo += ammoPerBerry;
+            Debug.Log("1");
+            Destroy(target.gameObject);
+        }
     }
 }
+
+

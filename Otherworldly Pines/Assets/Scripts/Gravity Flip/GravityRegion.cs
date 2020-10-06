@@ -43,8 +43,9 @@ public class GravityRegion : MonoBehaviour
 
         currentFlipCount++;
         gravityIsFlipped = !gravityIsFlipped;
-        foreach (GravityFlippable flippable in flippables)
-        {
+        
+        flippables.RemoveWhere(flippable => !flippable.StillExists());
+        foreach (GravityFlippable flippable in flippables) {
             flippable.Flip();
         }
     }

@@ -15,6 +15,10 @@ public class GravityFlippable : GravityAffected
         base.Start();
         body = GetComponentInParent<Rigidbody2D>();
     }
+
+    public bool StillExists() {
+        return body != null;
+    }
     
     // Flip gravity
     public void Flip()
