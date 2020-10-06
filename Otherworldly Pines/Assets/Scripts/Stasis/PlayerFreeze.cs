@@ -19,10 +19,14 @@ public class PlayerFreeze : MonoBehaviour, IHUDConnected {
             if (freezeTimeout < 0) {
                 hasFrozen = false;
                 frozen.Unfreeze();
+                stasisDisplay.SetStasisEnabled(false);
             }
         } else {
             if (freezeTimeout < MAX_TIMEOUT) freezeTimeout += Time.deltaTime;
-            else if (freezeTimeout > MAX_TIMEOUT) freezeTimeout = MAX_TIMEOUT;
+            else if (freezeTimeout > MAX_TIMEOUT) {
+                freezeTimeout = MAX_TIMEOUT;
+                stasisDisplay.SetStasisEnabled(true);
+            }
         }
         
         stasisDisplay.SetPercent(freezeTimeout / MAX_TIMEOUT);
@@ -57,6 +61,7 @@ public class PlayerFreeze : MonoBehaviour, IHUDConnected {
         obj.Unfreeze();
         frozen = null;
         hasFrozen = false;
+        stasisDisplay.SetStasisEnabled(false);
     }
 
     public void ConnectToHUD(HUD hud) {

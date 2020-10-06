@@ -5,18 +5,14 @@ using UnityEngine.UI;
 
 public class GravityFlipIndicator : MonoBehaviour {
 
-    public Text text;
+    public Image image;
 
     public void GravityRegionChanged(GravityRegion activeGravityRegion) {
         if (activeGravityRegion == null || !activeGravityRegion.playerCanFlipGravity) {
-            DisplayText("Disabled");
+            image.color = new Color(0.75f, 0.75f, 0.75f, 0.5f);
         } else if (activeGravityRegion.playerCanFlipGravity) {
-            DisplayText("Enabled");
+            image.color = Color.white;
         }
-    }
-
-    private void DisplayText(string message) {
-        text.text = "Gravity Flip: " + message;
     }
 
 }
