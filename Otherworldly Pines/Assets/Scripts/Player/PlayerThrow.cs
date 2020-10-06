@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerThrow : MonoBehaviour
-{
-    
+public class PlayerThrow : MonoBehaviour, IHUDConnected {
+
+    private BerryCounter berryCounter;
     public GameObject bulletPrefab;
     public float bulletSpeed = 10.0f;
     public float bulletDestroyTime = 3.0f;
@@ -15,6 +15,7 @@ public class PlayerThrow : MonoBehaviour
 
     private void Start() {
         playerFreeze = GetComponent<PlayerFreeze>();
+        if (berryCounter) berryCounter.SetCount(ammo);
     }
 
     void Update() {
@@ -63,6 +64,8 @@ public class PlayerThrow : MonoBehaviour
 
             ammo--;
         }
+        
+        berryCounter.SetCount(ammo);
     }
     
     // pick up ammo and destroy berries
@@ -75,6 +78,11 @@ public class PlayerThrow : MonoBehaviour
             Destroy(target.gameObject);
         }
     }
+
+    public void ConnectToHUD(HUD hud) {
+        berryCounter = hud.berryCounter;
+    }
+
 }
 
 
