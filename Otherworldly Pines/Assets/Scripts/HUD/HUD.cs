@@ -13,6 +13,7 @@ public class HUD : MonoBehaviour {
     public HealthBar healthBar;
     public GravityFlipIndicator gravityFlipIndicator;
     public StasisDisplay stasisDisplay;
+    public BerryCounter berryCounter;
 
     private void Start() {
         GameObject player = GameObject.Find("Player");
