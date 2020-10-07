@@ -40,13 +40,6 @@ public class CrushDetection : MonoBehaviour
         {
             platformScript.PushableEnter();
             //tell movingplatforms script to just pause the platform for pause duration then switch
-            //eg set bool stoppedByPushable to true? and add (stoppedByPushable) to the pause condition
         }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        imColliding = false;
-        platformScript.PushableExit();
     }
 }
