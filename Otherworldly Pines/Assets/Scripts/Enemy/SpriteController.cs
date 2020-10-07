@@ -10,7 +10,7 @@ public class SpriteController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        this.controller = gameObject.GetComponent<SpriteRenderer>();
+        this.controller = gameObject.GetComponentInChildren<SpriteRenderer>();
         this.behavior = gameObject.GetComponent<EnemyBehavior>();
     }
 
