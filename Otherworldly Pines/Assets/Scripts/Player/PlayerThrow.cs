@@ -9,7 +9,7 @@ public class PlayerThrow : MonoBehaviour, IHUDConnected {
     public float bulletSpeed = 10.0f;
     public float bulletDestroyTime = 3.0f;
     public int ammoPerBerry = 3;
-    private int ammo = 0;
+    private int ammo = 20;
     
     private PlayerFreeze playerFreeze;
 

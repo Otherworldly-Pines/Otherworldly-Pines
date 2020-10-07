@@ -151,7 +151,7 @@ MonoBehaviour:
   body: {fileID: 6143024624257782103}
   groundLayerMask:
     serializedVersion: 2
-    m_Bits: 1280
+    m_Bits: 9472
   percentColliderWidth: 1
   height: 0.01
   offset: {x: 0, y: 0}
@@ -195,6 +195,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 7121226826332205653, guid: be84e52594781294aa47e11a85c21256, type: 3}
   bulletSpeed: 10
   bulletDestroyTime: 3
+  ammoPerBerry: 3
 --- !u!114 &7003344175297845799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,6 +208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0da121fb0dd3429ba12badda73d0d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasFrozen: 0
 --- !u!1 &6677522062563206666
 GameObject:
   m_ObjectHideFlags: 0

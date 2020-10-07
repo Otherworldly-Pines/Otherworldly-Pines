@@ -83,7 +83,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.98, y: 0.98}
   m_EdgeRadius: 0
 --- !u!114 &2945843626260660649
 MonoBehaviour:
@@ -186,7 +186,7 @@ MonoBehaviour:
   body: {fileID: 2945843626260660660}
   groundLayerMask:
     serializedVersion: 2
-    m_Bits: 1280
+    m_Bits: 9472
   percentColliderWidth: 1
   height: 0.01
   offset: {x: 0, y: 0}

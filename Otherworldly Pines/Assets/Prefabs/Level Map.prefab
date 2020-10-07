@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3264629694527038759}
   - component: {fileID: 3264629694527038756}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Level Map
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ Grid:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3264629694527038757}
   m_Enabled: 1
-  m_CellSize: {x: 1, y: 1, z: 0}
+  m_CellSize: {x: 0.5, y: 0.5, z: 0}
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 3264629695910977486}
   - component: {fileID: 3264629695910977487}
   - component: {fileID: 3264629695910977484}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ Transform:
   m_GameObject: {fileID: 3264629695910977474}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3264629694527038759}
   m_RootOrder: 0

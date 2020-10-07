@@ -11,6 +11,9 @@ public class PlayerPos : MonoBehaviour
     {
         cm = GameObject.FindGameObjectWithTag("CM").GetComponent<CheckpointMaster>();
         transform.position = cm.lastCheckPointPos;
+
+        Spirit spirit = GameObject.FindObjectOfType<Spirit>();
+        spirit.transform.position = transform.position - new Vector3(2f, 2f, 0f);
     }
 
     // Update is called once per frame

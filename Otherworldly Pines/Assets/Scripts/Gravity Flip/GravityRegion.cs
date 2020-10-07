@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.U2D;
@@ -96,6 +97,24 @@ public class GravityRegion : MonoBehaviour
                 flippables.Remove(flippable);
             }
         }
+    }
+
+    private void OnDrawGizmos() {
+        if (!ownCollider) ownCollider = GetComponent<BoxCollider2D>();
+        Gizmos.color = Color.blue;
+        Gizmos.DrawLine(ownCollider.bounds.min, new Vector3(ownCollider.bounds.min.x, ownCollider.bounds.max.y, 0f));
+        Gizmos.DrawLine(ownCollider.bounds.min, new Vector3(ownCollider.bounds.max.x, ownCollider.bounds.min.y, 0f));
+        Gizmos.DrawLine(ownCollider.bounds.max, new Vector3(ownCollider.bounds.min.x, ownCollider.bounds.max.y, 0f));
+        Gizmos.DrawLine(ownCollider.bounds.max, new Vector3(ownCollider.bounds.max.x, ownCollider.bounds.min.y, 0f));
+    }
+
+    private void OnDrawGizmosSelected() {
+        if (!ownCollider) ownCollider = GetComponent<BoxCollider2D>();
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawLine(ownCollider.bounds.min, new Vector3(ownCollider.bounds.min.x, ownCollider.bounds.max.y, 0f));
+        Gizmos.DrawLine(ownCollider.bounds.min, new Vector3(ownCollider.bounds.max.x, ownCollider.bounds.min.y, 0f));
+        Gizmos.DrawLine(ownCollider.bounds.max, new Vector3(ownCollider.bounds.min.x, ownCollider.bounds.max.y, 0f));
+        Gizmos.DrawLine(ownCollider.bounds.max, new Vector3(ownCollider.bounds.max.x, ownCollider.bounds.min.y, 0f));
     }
 
 }
