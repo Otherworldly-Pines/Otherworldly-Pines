@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,13 +7,26 @@ public class GravityControl : GravityAffected, IHUDConnected {
 
     private GravityFlipIndicator indicator;
     private GravityRegion activeGravityRegion;
+    private PlayerControls player;
+    private bool canFlip = true;
+
+    private void Awake()
+    {
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerControls>();
+    }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W) && activeGravityRegion != null)
+        if (Input.GetKeyDown(KeyCode.W) && isFlipActive())
         {
             activeGravityRegion.FlipGravity();
+            player.setJumping(false);
         }
+    }
+
+    private bool isFlipActive()
+    {
+        return activeGravityRegion != null && (player.isPlayerGrounded() || player.isPlayerJumping());
     }
 
     private void SetActiveGravityRegion(GravityRegion region) {

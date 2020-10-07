@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,9 +10,9 @@ public class PlayerControls : MonoBehaviour {
     public LayerMask groundMask;
     public LayerMask pushablesMask;
 
-	private float walkSpeed = 5f;
-	private float runSpeed = 7f;
-	private float jumpForce = 8.5f;
+    private float walkSpeed = 5f;
+    private float runSpeed = 7f;
+    private float jumpForce = 8.5f;
     
     private float currentHorizontalInput;
     private bool isPressingShift = false;
@@ -26,6 +27,7 @@ public class PlayerControls : MonoBehaviour {
     private bool isPullingBlock = false;
 
     private float forwardCastLength = 0.01f;
+    private bool isJumping = false;
 
     void Start()
     {   
@@ -55,12 +57,35 @@ public class PlayerControls : MonoBehaviour {
     void Update() {
         isPressingShift = Input.GetKey(KeyCode.LeftShift);
         currentHorizontalInput = Input.GetAxis("Horizontal");
-
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded && !isPullingBlock)
+    
+        if (Input.GetKeyDown(KeyCode.Space) && isPlayerGrounded())
         {
+            setJumping(true);
+            Debug.Log("Jump if: "+ isJumping);
+
             Vector2 jumpDirection = !flippable.isUpsideDown ? Vector2.up : Vector2.down;
             body.velocity = jumpDirection * jumpForce;
         }
+        if (isPlayerGrounded())
+        {
+            //Debug.Log("Ground If: "+ isJumping);
+
+            //   isJumping = false;
+        }
+    }
+
+    public void setJumping(bool jp)
+    {
+        isJumping = jp;
+    }
+    public bool isPlayerJumping()
+    {
+        Debug.Log("Method Call: " + isJumping);
+        return isJumping;
+    }
+    public bool isPlayerGrounded()
+    {
+        return isGrounded && !isPullingBlock;
     }
 
     private void HandlePushPull() {
