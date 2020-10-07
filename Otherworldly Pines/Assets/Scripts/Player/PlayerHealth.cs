@@ -26,6 +26,7 @@ public class PlayerHealth : MonoBehaviour, IHUDConnected {
 
     public void TakeDamage(float damage) {
         SetHealth(currentHealth - damage);
+        Debug.Log(currentHealth);
     }
 
     public void ConnectToHUD(HUD hud) {

@@ -27,6 +27,6 @@ public class TargetLocking: MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        // Debug.Log(this.target.tag);
     }
 }

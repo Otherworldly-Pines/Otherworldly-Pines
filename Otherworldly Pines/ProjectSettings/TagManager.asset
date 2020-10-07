@@ -8,6 +8,7 @@ TagManager:
   - Ground
   - CM
   - Berries
+  - berry
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - Gravity Regions
   - Pushables
   - Player
-  - 
+  - Berries
   - 
   - 
   - 

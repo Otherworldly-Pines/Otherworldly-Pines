@@ -7,7 +7,8 @@ using UnityEngine;
 public class EnemyBehavior : MonoBehaviour
 {
 
-    private int state = 1; //0 is resting, 1 is moving, 
+// TODO state to enum
+    private int state = 1; //0 is eat , 1 is moving, , 
     private Patrol patrolController; 
     private float stamina = 100; //Stamina for movement. Eneter resting state when reach 0
     private float maxStamina = 100; // Max stamina to end resting state
@@ -19,6 +20,7 @@ public class EnemyBehavior : MonoBehaviour
     public float exaustedMovementRate = 0.3f;  // Rate of moving when exausted
     public float aggroExaustRate = 2;  // Amount of stamina use per second in aggressive state.
     public int direction = 1; // Direction the enemy is moveing
+    public float eatTime = 3f;
 
     // Start is called before the first frame update 
     void Start()
@@ -31,6 +33,7 @@ public class EnemyBehavior : MonoBehaviour
     void Update()
     {
         updateStamina();
+        // Debug.Log(this.state);
     }
 
     // Update stamina base on the state enemy is in
@@ -105,6 +108,14 @@ public class EnemyBehavior : MonoBehaviour
         return this.state == 3;
     }
 
+    public bool isEating(){
+        return this.state == 0;
+    }
+
+    public void eat(){
+        this.state = 0;
+    }
+
     public void chase(){
         this.state = 2;
     }
@@ -119,5 +130,11 @@ public class EnemyBehavior : MonoBehaviour
 
     public float getExaustedMovementRate(){
         return this.exaustedMovementRate;
+    }
+
+    public IEnumerator eatBerries(){
+        this.eat();
+        yield return new WaitForSeconds(this.eatTime);
+        this.patrol();
     }
 }

@@ -25,10 +25,9 @@ public class Investigate : MonoBehaviour
         if(this.behavior.isInvestigating()){
             if(this.targetLocking.getTarget().transform.position.x >  gameObject.transform.position.x){
                 this.behavior.turnRight();
-            
             }
             else{
-                this.behavior.turnRight();
+                this.behavior.turnLeft();
             }
             float movementRate = 1;
             if(this.behavior.isExausted()){
@@ -37,5 +36,16 @@ public class Investigate : MonoBehaviour
 
             gameObject.transform.Translate(new Vector2(this.behavior.direction, 0) * Time.deltaTime * this.speed * movementRate, 0);
         }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other) {
+        if(other.collider.tag == "Berries"){
+            StartCoroutine(eatThenDestroy(other.collider.gameObject));
+        }
+    }
+
+    IEnumerator eatThenDestroy(GameObject berry){
+        yield return StartCoroutine(this.behavior.eatBerries());
+        Destroy(berry);
     }
 }

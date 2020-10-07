@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -2488532358820609698}
   - component: {fileID: 3620708198798138463}
   - component: {fileID: -155953835281480196}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: BulletPlaceHolder
   m_TagString: Berries
   m_Icon: {fileID: 0}

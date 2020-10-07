@@ -50,7 +50,7 @@ public class DeerAggro : MonoBehaviour
             if(this.behavior.isExausted()){
                 movementRate = this.behavior.getExaustedMovementRate();        
             }
-            gameObject.transform.Translate(direction * Time.deltaTime * this.aggroSpeed * movementRate, 0);
+            gameObject.transform.Translate(new Vector2(this.behavior.getDirection() * Time.deltaTime * this.aggroSpeed * movementRate, 0));
         }
 
     }

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,12 +13,15 @@ public class Patrol : MonoBehaviour
     public float speed = 3; // Patrolling speed 
     public float maxLeftBound; // Max left bound but add with starting position in world for checking
     public float maxRightBound; // Max right bound but add with starting position in world for checking
-    private float leftBound; // Left bound but add with starting position in world for checking
-    private float rightBound; // Right bound but add with starting position in world for checking
+    private float leftBound ; // Left bound but add with starting position in world for checking
+    private float rightBound ; // Right bound but add with starting position in world for checking
 
 
     private EnemyBehavior behavior;
     private int direction = -1; // Current moving direction 
+
+    // Just for gizmos drawing
+    private bool gizmosInitialized = false;
 
     // Start is called before the first frame update
     void Start()
@@ -28,12 +32,11 @@ public class Patrol : MonoBehaviour
 
         this.initPatrolRange();
         this.behavior = gameObject.GetComponent<EnemyBehavior>();
+        gizmosInitialized = true;
     }
-
+    
     // Init patrol range inside max bound.
     public void initPatrolRange(){
-        Debug.Log(this.rightBound);
-        Debug.Log(this.leftBound);
         this.rightBound = gameObject.transform.position.x + this.right;
         this.leftBound =  gameObject.transform.position.x + this.left;
 
@@ -64,9 +67,30 @@ public class Patrol : MonoBehaviour
             else if(gameObject.transform.position.x > this.rightBound){
                 this.behavior.turnLeft();
             }
-
+            
             gameObject.transform.Translate(new Vector2(this.behavior.getDirection() * Time.deltaTime * this.speed * movementRate, 0));
         }
         
     }
+
+    private void OnDrawGizmosSelected() {
+        if (!Application.isPlaying && !gizmosInitialized) {
+            this.maxLeftBound = gameObject.transform.position.x + this.maxLeft;
+            this.maxRightBound = gameObject.transform.position.x + this.maxRight;
+            gizmosInitialized = true;
+        }
+        
+        float height = 3;
+        Vector2 center = gameObject.transform.position;
+        Gizmos.color = Color.red;
+        Gizmos.DrawLine(new Vector2(maxLeftBound, center.y - height / 2), new Vector2(maxLeftBound, center.y + height / 2));
+        Gizmos.DrawLine(new Vector2(maxRightBound, center.y - height / 2), new Vector2(maxRightBound, center.y + height / 2));
+
+        if (Application.isPlaying) {
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawLine(new Vector2(leftBound, center.y - height / 2), new Vector2(leftBound, center.y + height / 2));
+            Gizmos.DrawLine(new Vector2(rightBound, center.y - height / 2), new Vector2(rightBound, center.y + height / 2));
+        }
+    }
+
 }
