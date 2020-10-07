@@ -17,8 +17,10 @@ public class MovingPlatform : MonoBehaviour
 
     private bool isPaused;
     private float pauseTimer;
+    private bool hitPushable;
 
     void Start() {
+        hitPushable = false;
         body = GetComponentInChildren<Rigidbody2D>();
 
         currentTarget = destination.transform.position;
@@ -43,7 +45,7 @@ public class MovingPlatform : MonoBehaviour
         pauseTimer = 0f;
         isPaused = true;
         body.velocity = Vector2.zero;
-        body.position = currentTarget;
+        if (!hitPushable) body.position = currentTarget;
         SwapTargets();
     }
 
@@ -52,19 +54,31 @@ public class MovingPlatform : MonoBehaviour
         body.velocity = direction * movementSpeed;
     }
 
+    public void PushableEnter()
+    {
+        if (!isPaused) hitPushable = true;
+        //else even if this is called then dont change hitPushable again
+    }
+
+    public void PushableExit()
+    {
+        hitPushable = false;
+    }
+
     void Update() {
         if (isPaused) {
             pauseTimer += Time.deltaTime;
 
             if (pauseTimer > pauseDuration) {
                 isPaused = false;
+                PushableExit();
                 StartMoving();
             }
         }
     }
 
     private void FixedUpdate() {
-        if (!isPaused && IsAtTarget()) Pause();
+        if (!isPaused && (IsAtTarget() || hitPushable)) Pause();
     }
 
 }

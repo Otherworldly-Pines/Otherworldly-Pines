@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 2793012068928615331}
   m_Layer: 10
   m_Name: 2x2 Block
-  m_TagString: Untagged
+  m_TagString: Pushable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
