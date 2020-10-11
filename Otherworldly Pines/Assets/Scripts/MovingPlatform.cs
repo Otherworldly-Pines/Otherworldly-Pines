@@ -52,7 +52,7 @@ public class MovingPlatform : MonoBehaviour
         body.velocity = direction * movementSpeed;
     }
 
-    /*void OnCollisionEnter2D(Collision2D target)
+    void OnCollisionEnter2D(Collision2D target)
     {
         if (target.gameObject.CompareTag("Block"))
         {
@@ -62,7 +62,7 @@ public class MovingPlatform : MonoBehaviour
             body.velocity = Vector2.zero;
             SwapTargets();
         }
-    }*/
+    }
 
     void Update() {
         if (isPaused) {
