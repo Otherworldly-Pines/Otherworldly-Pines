@@ -4,7 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Thorn : MonoBehaviour
-{ 
+{
+    public float knockbackPower = 50f;
+
+    public float knockbackDuration = 0.02f;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +27,7 @@ public class Thorn : MonoBehaviour
         {
             collision.gameObject.GetComponent<PlayerHealth>().TakeDamage(34);
             PlayerControls player = collision.gameObject.GetComponent<PlayerControls>();
-            StartCoroutine(player.Knockback(0.02f,350,player.transform.position));
+            StartCoroutine(player.Knockback(0.02f,50,player.transform.position));
         }
     }
 }

@@ -156,7 +156,7 @@ public class PlayerControls : MonoBehaviour {
         while (knockDur > timer)
         {
             timer += Time.deltaTime;
-            body.AddForce(new Vector2(knockbackDir.x * -100, knockbackDir.y * knockbackPwr));
+            body.AddForce(new Vector2(knockbackDir.x * -20, knockbackDir.y * -knockbackPwr));
         }
 
         yield return 0;
