@@ -149,4 +149,18 @@ public class PlayerControls : MonoBehaviour {
         transform.localScale = localScale;
     }
 
+    public IEnumerator Knockback(float knockDur, float knockbackPwr, Vector2 knockbackDir)
+    {
+        float timer = 0;
+
+        while (knockDur > timer)
+        {
+            timer += Time.deltaTime;
+            body.AddForce(new Vector2(knockbackDir.x * -100, knockbackDir.y * knockbackPwr));
+        }
+
+        yield return 0;
+    }
+    
+
 }
