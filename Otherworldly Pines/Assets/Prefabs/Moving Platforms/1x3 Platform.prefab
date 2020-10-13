@@ -146,6 +146,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 1.5
   pauseDuration: 0.75
+  childables:
+    serializedVersion: 2
+    m_Bits: 23552
   destination: {fileID: 7698082574903136451}
 --- !u!1 &7698082574903136451
 GameObject:
