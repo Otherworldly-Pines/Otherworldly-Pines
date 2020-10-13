@@ -8,6 +8,7 @@ TagManager:
   - Ground
   - CM
   - Berries
+  - Block
   layers:
   - Default
   - TransparentFX
