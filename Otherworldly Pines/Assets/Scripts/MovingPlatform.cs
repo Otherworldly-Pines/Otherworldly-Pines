@@ -67,4 +67,12 @@ public class MovingPlatform : MonoBehaviour
         if (!isPaused && IsAtTarget()) Pause();
     }
 
+    private void OnDrawGizmos() {
+        Gizmos.color = Color.magenta;
+        Gizmos.DrawRay(transform.position, destination.transform.position - transform.position);
+
+        Collider2D collider = GetComponent<Collider2D>();
+        GizmosUtility.DrawBox(destination.transform.position, collider.bounds.size);
+    }
+
 }
