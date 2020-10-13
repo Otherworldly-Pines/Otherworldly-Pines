@@ -23,6 +23,8 @@ public class Thorn : MonoBehaviour
         if(collision.collider.tag == "Player")
         {
             collision.gameObject.GetComponent<PlayerHealth>().TakeDamage(34);
+            PlayerControls player = collision.gameObject.GetComponent<PlayerControls>();
+            StartCoroutine(player.Knockback(0.02f,350,player.transform.position));
         }
     }
 }
