@@ -5,7 +5,7 @@ using System.ComponentModel;
 using System.Linq;
 using UnityEngine;
 
-public class MovingPlatform : MonoBehaviour {
+public class MovingPlatform : MonoBehaviour, PressurePlateActivated {
 
     public float movementSpeed = 2;
     public float pauseDuration = 0.5f;
@@ -24,6 +24,8 @@ public class MovingPlatform : MonoBehaviour {
     private float pauseTimer;
 
     private List<GameObject> children = new List<GameObject>();
+
+    private bool isBlocked = false;
 
     void Start() {
         body = GetComponentInChildren<Rigidbody2D>();
@@ -46,7 +48,7 @@ public class MovingPlatform : MonoBehaviour {
     private bool IsAtTarget() {
         float actualDistance = Vector2.Distance(transform.position, nextTarget);
         float maxDistance = Vector2.Distance(currentTarget, nextTarget);
-        return actualDistance > maxDistance;
+        return actualDistance > maxDistance - 0.001f;
     }
 
     private void Pause() {
@@ -87,7 +89,7 @@ public class MovingPlatform : MonoBehaviour {
             }
         }
 
-        if (!isVertical && !isPaused) {
+        if (!isVertical && !isPaused && !isBlocked) {
             transform.position += (Vector3) (GetCurrentDirection() * Time.deltaTime * movementSpeed);
         }
     }
@@ -131,6 +133,16 @@ public class MovingPlatform : MonoBehaviour {
         List<Collider2D> colliders = new List<Collider2D>();
         Physics2D.OverlapBox(center, size, 0f, filter, colliders);
         return colliders.Select(collider => collider.gameObject).ToList();
+    }
+
+    public void PPEnable() {
+        isBlocked = false;
+        if (isVertical) StartMoving();
+    }
+
+    public void PPDisable() {
+        isBlocked = true;
+        if (isVertical) body.velocity = Vector2.zero;
     }
 
     private void OnValidate() {
