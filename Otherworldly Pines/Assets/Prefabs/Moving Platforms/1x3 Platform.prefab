@@ -144,8 +144,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2ad35f12adf6e64b846426c3b973272, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 1.5
-  pauseDuration: 0.75
+  movementSpeed: 2.5
+  pauseDuration: 3
   childables:
     serializedVersion: 2
     m_Bits: 23552
