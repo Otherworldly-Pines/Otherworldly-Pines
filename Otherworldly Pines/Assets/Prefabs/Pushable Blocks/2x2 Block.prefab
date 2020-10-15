@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: -2647878123967911881}
   - component: {fileID: -5590097979379776640}
   - component: {fileID: 2793012068928615331}
+  - component: {fileID: 6858659717382767541}
   m_Layer: 10
   m_Name: 2x2 Block
   m_TagString: Untagged
@@ -165,7 +166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shouldFreezePosition: 0
   isBeingMoved: 0
-  collider: {fileID: 0}
+  collider: {fileID: 2945843626260660661}
   playerMask:
     serializedVersion: 2
     m_Bits: 2048
@@ -230,3 +231,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isFrozen: 0
   indicatorSprite: {fileID: 21300000, guid: dcbb2713def444ee9a1eb07e8f51415e, type: 3}
+--- !u!114 &6858659717382767541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2945843626260660658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10c30dcfe83154d4094d233181d7458b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageImpulseThreshold: 5000
+  highestDamagingImpulse: 10000
+  lowestDamageDealt: 10
+  HighestDamageDealt: 30
