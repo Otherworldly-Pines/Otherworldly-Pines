@@ -8,16 +8,20 @@ public class Freezable : MonoBehaviour {
     public bool isFrozen = false;
     private PlayerFreeze player;
     private Rigidbody2D body;
+    private Collider2D collider;
     private RigidbodyType2D originalBodyType;
     public Sprite indicatorSprite;
     private SpriteRenderer renderer;
 
     void Start() {
+        collider = GetComponent<Collider2D>();
+        
         var rendererObj = new GameObject();
         rendererObj.transform.parent = transform;
         rendererObj.transform.localPosition = Vector3.zero;
         renderer = rendererObj.AddComponent<SpriteRenderer>();
         renderer.sprite = indicatorSprite;
+        renderer.size = collider.bounds.size;
         renderer.color = Color.clear;
 
         body = GetComponent<Rigidbody2D>();
