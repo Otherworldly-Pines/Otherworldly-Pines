@@ -14,8 +14,6 @@ public class Investigate : BehaviorRelated
     {
         if(this.behavior.isGrounded() && this.behavior.isInvestigating()){
             if(this.behavior.getTarget() == null){
-                Debug.Log("Patrol");
-                this.behavior.reInitPatrol();
                 this.behavior.patrol();
             }
             else{

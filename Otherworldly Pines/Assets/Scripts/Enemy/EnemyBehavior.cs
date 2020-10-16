@@ -4,13 +4,11 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(BoxCollider2D))]
-[RequireComponent(typeof(Patrol))]
 public class EnemyBehavior : MonoBehaviour
 {
 
 // TODO state to enum
     private int state = 1; //0 is eat , 1 is moving, , 
-    private Patrol patrolController; 
     private float stamina = 100; //Stamina for movement. Eneter resting state when reach 0
     private float maxStamina = 100; // Max stamina to end resting state
     private bool exausted = false; // Exausted state
@@ -35,7 +33,6 @@ public class EnemyBehavior : MonoBehaviour
     // Start is called before the first frame update 
     void Start()
     {
-        this.patrolController = gameObject.GetComponent<Patrol>();
         this.collider = gameObject.GetComponent<BoxCollider2D>();
         this.rigidbody = gameObject.GetComponent<Rigidbody2D>();
         groundChecker = GetComponent<GroundChecker>();
@@ -75,11 +72,6 @@ public class EnemyBehavior : MonoBehaviour
             }
         }
         
-    }
-
-    // Reinitialize patrol in patrol scripts
-    public void reInitPatrol(){
-        this.patrolController.initPatrolRange();
     }
 
     // Enter rest state for amount of seconds
