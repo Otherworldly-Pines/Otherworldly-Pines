@@ -12,7 +12,6 @@ public class DeerAggro : BehaviorRelated
     void Update()
     {
         if(this.behavior.isGrounded() && this.behavior.isChasing()){
-            Vector2 direction;
             if(this.behavior.getTarget().transform.position.x > gameObject.transform.position.x){
                 this.behavior.turnRight();
             }
@@ -20,11 +19,8 @@ public class DeerAggro : BehaviorRelated
                 this.behavior.turnLeft();
             }
 
-            float movementRate = 1;
-            if(this.behavior.isExausted()){
-                movementRate = this.behavior.getExaustedMovementRate();        
-            }
-            gameObject.transform.Translate(new Vector2(this.behavior.getDirection() * Time.deltaTime * this.aggroSpeed * movementRate, 0));
+            float movementRate = behavior.GetCurrentMovementSpeed();
+            MoveForwardBy(Time.deltaTime * aggroSpeed * movementRate);
         }
 
     }

@@ -19,5 +19,9 @@ public class BehaviorRelated : MonoBehaviour {
     protected Vector2 GetDirectionVector() {
         return new Vector2(behavior.direction, 0f);
     }
+
+    protected void MoveForwardBy(float dist) {
+        gameObject.transform.Translate(GetDirectionVector() * dist);
+    }
     
 }

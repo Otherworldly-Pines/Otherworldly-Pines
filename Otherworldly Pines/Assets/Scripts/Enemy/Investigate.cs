@@ -25,12 +25,8 @@ public class Investigate : BehaviorRelated
                 else{
                     this.behavior.turnLeft();
                 }
-                float movementRate = 1;
-                if(this.behavior.isExausted()){
-                    movementRate = this.behavior.getExaustedMovementRate();        
-                }
-
-                gameObject.transform.Translate(new Vector2(this.behavior.direction, 0) * Time.deltaTime * this.speed * movementRate, 0);
+                float movementRate = behavior.GetCurrentMovementSpeed();
+                MoveForwardBy(Time.deltaTime * this.speed * movementRate);
             }
             
         }

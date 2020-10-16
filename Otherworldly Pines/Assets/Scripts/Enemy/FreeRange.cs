@@ -21,22 +21,17 @@ public class FreeRange : BehaviorRelated
                 this.behavior.flipDirection();
             }
 
-
-            float movementRate = 1;
-            if(this.behavior.isExausted()){
-                movementRate = this.behavior.getExaustedMovementRate();
-            }
-            
-            gameObject.transform.Translate(new Vector2(this.behavior.getDirection() * Time.deltaTime * this.speed * movementRate, 0));
+            float movementRate = behavior.GetCurrentMovementSpeed();
+            MoveForwardBy(Time.deltaTime * speed * movementRate);
         }
     }
 
     bool reachLedge(){
         float extraHeight = 0.1f;
         Vector2 center2d = this.behavior.getCollider().bounds.center;
-        RaycastHit2D raycastHit = Physics2D.Raycast(center2d + new Vector2(this.behavior.getCollider().bounds.extents.x * this.behavior.direction, 0), 
+        RaycastHit2D raycastHit = Physics2D.Raycast(center2d + new Vector2(collider.bounds.extents.x * this.behavior.direction, 0), 
                                                     Vector2.down, 
-                                                    this.behavior.getCollider().bounds.extents.y + extraHeight, 
+                                                    collider.bounds.extents.y + extraHeight, 
                                                     this.groundMask);
         return raycastHit.collider == null;
     }

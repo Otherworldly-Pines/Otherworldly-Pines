@@ -51,11 +51,8 @@ public class Patrol : BehaviorRelated
     // Turn when reach boundary
     void Update()
     {
-        if(this.behavior.isGrounded() && this.behavior.isPatrolling()){
-            float movementRate = 1;
-            if(this.behavior.isExausted()){
-                movementRate = this.behavior.getExaustedMovementRate();
-            }
+        if(this.behavior.isGrounded() && this.behavior.isPatrolling()) {
+            float movementRate = behavior.GetCurrentMovementSpeed();
 
             if(gameObject.transform.position.x < this.leftBound){
                 this.behavior.turnRight();
@@ -64,7 +61,7 @@ public class Patrol : BehaviorRelated
                 this.behavior.turnLeft();
             }
             
-            gameObject.transform.Translate(new Vector2(this.behavior.getDirection() * Time.deltaTime * this.speed * movementRate, 0));
+            MoveForwardBy(Time.deltaTime * this.speed * movementRate);
         }
         
     }

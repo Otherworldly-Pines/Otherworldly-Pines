@@ -33,24 +33,18 @@ public class Vision : BehaviorRelated
     void Update()
     { 
         if(!this.behavior.isEating()){
-            float outsideBound = this.behavior.getDirection() * (this.behavior.getCollider().bounds.extents.x + 0.01f) + this.GetComponent<Collider2D>().bounds.center.x;
+            float outsideBound = behavior.getDirection() * (collider.bounds.extents.x + 0.01f) + collider.bounds.center.x;
             
             RaycastHit2D hitTop = Physics2D.Raycast(
-                new Vector2(
-                    outsideBound,
-                    this.behavior.getCollider().bounds.center.y
-                ), 
-                new Vector2(this.behavior.getDirection(),0),
+                new Vector2(outsideBound, collider.bounds.center.y), 
+                GetDirectionVector(),
                 maxDistant,
                 visionMask
             );
 
             RaycastHit2D hitBottom = Physics2D.Raycast(
-                new Vector2(
-                    outsideBound,
-                    this.behavior.getCollider().bounds.center.y - this.behavior.getCollider().bounds.extents.y + 0.1f
-                ), 
-                new Vector2(this.behavior.getDirection(),0),
+                new Vector2(outsideBound, collider.bounds.center.y - collider.bounds.extents.y + 0.1f), 
+                GetDirectionVector(),
                 maxDistant,
                 visionMask
             );
@@ -102,14 +96,11 @@ public class Vision : BehaviorRelated
     // Vision: green
     private void OnDrawGizmosSelected() {
         if (this.behavior != null && this.behavior.getCollider() != null) {
-            float outsideBound = this.behavior.getDirection() * (this.behavior.getCollider().bounds.extents.x + 0.01f) + this.GetComponent<Collider2D>().bounds.center.x;
+            float outsideBound = this.behavior.getDirection() * (collider.bounds.extents.x + 0.01f) + collider.bounds.center.x;
             int layer_mask = LayerMask.GetMask("Player","Berries", "Ground");    
             RaycastHit2D hitTop = Physics2D.Raycast(
-                new Vector2(
-                    outsideBound,
-                    this.behavior.getCollider().bounds.center.y
-                ), 
-                new Vector2(this.behavior.getDirection(),0),
+                new Vector2(outsideBound, collider.bounds.center.y), 
+                GetDirectionVector(),
                 maxDistant,
                 layer_mask
             );
@@ -117,25 +108,16 @@ public class Vision : BehaviorRelated
             RaycastHit2D hitBottom = Physics2D.Raycast(
                 new Vector2(
                     outsideBound,
-                    this.behavior.getCollider().bounds.center.y - this.behavior.getCollider().bounds.extents.y + 0.1f
+                    collider.bounds.center.y - collider.bounds.extents.y + 0.1f
                 ), 
-                new Vector2(this.behavior.getDirection(),0),
+                GetDirectionVector(),
                 maxDistant,
                 layer_mask
             );
 
             Gizmos.color = Color.green;
-            Gizmos.DrawLine(new Vector2(
-                    outsideBound ,
-                    this.behavior.getCollider().bounds.center.y
-                ), 
-                hitTop.point);
-            Gizmos.DrawLine(new Vector2(
-                outsideBound,
-                this.behavior.getCollider().bounds.center.y - this.behavior.getCollider().bounds.extents.y + 0.1f
-            ),hitBottom.point);
-            }
-
-        
+            Gizmos.DrawLine(new Vector2(outsideBound, collider.bounds.center.y), hitTop.point);
+            Gizmos.DrawLine(new Vector2(outsideBound, collider.bounds.center.y - collider.bounds.extents.y + 0.1f), hitBottom.point);
+        }
     }
 }

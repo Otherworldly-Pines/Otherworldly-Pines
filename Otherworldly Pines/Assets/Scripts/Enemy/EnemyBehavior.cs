@@ -178,8 +178,8 @@ public class EnemyBehavior : MonoBehaviour
         this.state = 3;
     }
 
-    public float getExaustedMovementRate(){
-        return this.exaustedMovementRate;
+    public float GetCurrentMovementSpeed() {
+        return exausted ? exaustedMovementRate : 1f;
     }
 
     public IEnumerator eatBerries(){
