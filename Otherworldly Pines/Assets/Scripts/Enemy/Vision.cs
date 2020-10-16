@@ -5,10 +5,8 @@ using System;
 
 
 // TODO: boxcast
-[RequireComponent(typeof(EnemyBehavior))]
-public class Vision : MonoBehaviour
+public class Vision : BehaviorRelated
 {
-    private EnemyBehavior behavior;
     public float maxDistant = 7;
 
     private LayerMask playerMask;
@@ -19,8 +17,6 @@ public class Vision : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        this.behavior = gameObject.GetComponent<EnemyBehavior>();
-
         playerMask = LayerMask.GetMask("Player");
         berriesMask = LayerMask.GetMask("Berries");
         groundMask = LayerMask.GetMask("Ground", "Pushables");

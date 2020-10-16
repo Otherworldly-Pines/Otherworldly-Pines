@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(EnemyBehavior))]
-public class Patrol : MonoBehaviour
+public class Patrol : BehaviorRelated
 {
     public float left; // Left range of patrol
     public float right; // Right range of patrol
@@ -17,8 +17,6 @@ public class Patrol : MonoBehaviour
     private float rightBound ; // Right bound but add with starting position in world for checking
 
 
-    private EnemyBehavior behavior;
-
     // Just for gizmos drawing
     private bool gizmosInitialized = false;
 
@@ -30,7 +28,6 @@ public class Patrol : MonoBehaviour
         this.maxRightBound = gameObject.transform.position.x + this.maxRight;
 
         this.initPatrolRange();
-        this.behavior = gameObject.GetComponent<EnemyBehavior>();
         gizmosInitialized = true;
     }
     

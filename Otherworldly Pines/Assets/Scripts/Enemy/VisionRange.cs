@@ -2,23 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Collider2D))]
-public class VisionRange : MonoBehaviour
+public class VisionRange : BehaviorRelated
 {
 
     private GameObject animal;
-    private EnemyBehavior behavior;
-    // Start is called before the first frame update
+    
     void Start()
     {
         animal = gameObject.transform.parent.gameObject;
-        behavior = animal.GetComponent<EnemyBehavior>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     private void OnTriggerExit2D(Collider2D other) {

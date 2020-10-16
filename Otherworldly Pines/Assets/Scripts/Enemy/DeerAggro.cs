@@ -2,25 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
-
-// This class is in charge of the aggressive state of the deer.
-[RequireComponent(typeof(EnemyBehavior))]
-public class DeerAggro : MonoBehaviour
+public class DeerAggro : BehaviorRelated
 {
     private float aggroSpeed = 5;
-    private EnemyBehavior behavior;
     
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        this.behavior = gameObject.GetComponent<EnemyBehavior>();
-    }
-
-
-    
-
     // Update is called once per frame
     // It check if the deer is chasing, look for the target that is locked and move in that direction.
     // Exaust rate applied to this state too

@@ -3,18 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // Investigate behavior of the enemy
-[RequireComponent(typeof(EnemyBehavior))]
-public class Investigate : MonoBehaviour
+public class Investigate : BehaviorRelated
 {
     // Start is called before the first frame update
-    private EnemyBehavior behavior; 
     public float speed = 3; // Speed of movement
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        this.behavior = gameObject.GetComponent<EnemyBehavior>();
-    }
 
     // Update is called once per frame
     // Move toward the target 

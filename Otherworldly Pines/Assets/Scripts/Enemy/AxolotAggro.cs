@@ -4,22 +4,9 @@ using UnityEngine;
 
 
 // TODO: Implement this enemy
-[RequireComponent(typeof(EnemyBehavior))]
-public class AxolotAggro : MonoBehaviour
-{
-    private EnemyBehavior behavior;
-    // Start is called before the first frame update
-    void Start()
-    {
-        this.behavior = gameObject.GetComponent<EnemyBehavior>();
-    }
-
-
+public class AxolotAggro : BehaviorRelated {
     
-
-    // Update is called once per frame
-    void Update()
-    {
+    void Update() {
         if(this.behavior.isChasing()){
             if(this.behavior.isExausted()){
                 // Do something 

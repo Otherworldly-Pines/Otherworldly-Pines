@@ -3,15 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // Control the art sprite for enemy
-public class SpriteController : MonoBehaviour
+public class SpriteController : BehaviorRelated
 {
     private SpriteRenderer controller;
-    private EnemyBehavior behavior;
     // Start is called before the first frame update
     void Start()
     {
         this.controller = gameObject.GetComponentInChildren<SpriteRenderer>();
-        this.behavior = gameObject.GetComponent<EnemyBehavior>();
     }
 
     // Update is called once per frame

@@ -3,16 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(EnemyBehavior))]
-public class FreeRange : MonoBehaviour
+public class FreeRange : BehaviorRelated
 {
 
     public float speed = 3; // Patrolling speed 
-    private EnemyBehavior behavior;
     private LayerMask groundMask;
-    // Start is called before the first frame update
-    void Start()
-    {
-        this.behavior = gameObject.GetComponent<EnemyBehavior>();
+    
+    void Start() {
         groundMask = LayerMask.GetMask("Ground", "Pushables");
     }
 

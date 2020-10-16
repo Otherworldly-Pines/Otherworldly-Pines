@@ -7,22 +7,12 @@ using UnityEngine;
 // This class is in charge of the aggressive state of the deer.
 [RequireComponent(typeof(EnemyBehavior))]
 
-public class RabbitAggro : MonoBehaviour
+public class RabbitAggro : BehaviorRelated
 {
     public float aggroSpeed = 4f;
     public float jumpForce = 0.5f;
-    private EnemyBehavior behavior;
 
     private bool jumpable = true;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        this.behavior = gameObject.GetComponent<EnemyBehavior>();
-    }
-
-
-    
 
     // Update is called once per frame
     // It check if the deer is chasing, look for the target that is locked and move in that direction.
