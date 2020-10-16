@@ -8,14 +8,12 @@ public class Investigate : MonoBehaviour
 {
     // Start is called before the first frame update
     private EnemyBehavior behavior; 
-    private TargetLocking targetLocking;
     public float speed = 3; // Speed of movement
 
     // Start is called before the first frame update
     void Start()
     {
         this.behavior = gameObject.GetComponent<EnemyBehavior>();
-        this.targetLocking = gameObject.GetComponent<TargetLocking>();
     }
 
     // Update is called once per frame
@@ -23,13 +21,13 @@ public class Investigate : MonoBehaviour
     void Update()
     {
         if(this.behavior.isGrounded() && this.behavior.isInvestigating()){
-            if(this.targetLocking.getTarget() == null){
+            if(this.behavior.getTarget() == null){
                 Debug.Log("Patrol");
                 this.behavior.reInitPatrol();
                 this.behavior.patrol();
             }
             else{
-                if(this.targetLocking.getTarget().transform.position.x >  gameObject.transform.position.x){
+                if(this.behavior.getTarget().transform.position.x >  gameObject.transform.position.x){
                     this.behavior.turnRight();
                 }
                 else{

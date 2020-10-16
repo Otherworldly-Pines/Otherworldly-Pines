@@ -9,7 +9,6 @@ using System;
 public class Vision : MonoBehaviour
 {
     private EnemyBehavior behavior;
-    private TargetLocking targetLocking;
     public float maxDistant = 7;
 
     private LayerMask playerMask;
@@ -21,7 +20,6 @@ public class Vision : MonoBehaviour
     void Start()
     {
         this.behavior = gameObject.GetComponent<EnemyBehavior>();
-        this.targetLocking = gameObject.GetComponent<TargetLocking>();
 
         playerMask = LayerMask.GetMask("Player");
         berriesMask = LayerMask.GetMask("Berries");
@@ -78,13 +76,13 @@ public class Vision : MonoBehaviour
             
             if (player != null) {
                 if (!behavior.isChasing()) {
-                    this.targetLocking.setTarget(player);
+                    this.behavior.setTarget(player);
                     this.behavior.chase();
                 }
             } else if (berry != null) {
                 if(!behavior.isInvestigating()){
                     Debug.Log("Investigate");
-                    this.targetLocking.setTarget(berry);
+                    this.behavior.setTarget(berry);
                     this.behavior.investigate();
                 }
             } else if (ground != null) {

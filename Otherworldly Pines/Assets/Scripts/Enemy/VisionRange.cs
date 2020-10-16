@@ -7,13 +7,11 @@ public class VisionRange : MonoBehaviour
 {
 
     private GameObject animal;
-    private TargetLocking targetLocking;
     private EnemyBehavior behavior;
     // Start is called before the first frame update
     void Start()
     {
         animal = gameObject.transform.parent.gameObject;
-        targetLocking = animal.GetComponent<TargetLocking>();
         behavior = animal.GetComponent<EnemyBehavior>();
     }
 
@@ -24,7 +22,7 @@ public class VisionRange : MonoBehaviour
     }
 
     private void OnTriggerExit2D(Collider2D other) {
-        if(other.gameObject.GetInstanceID() == this.targetLocking.getTarget().GetInstanceID()){
+        if(other.gameObject.GetInstanceID() == this.behavior.getTarget().GetInstanceID()){
             if (!this.behavior.isPatrolling()) {
                     Debug.Log("Patrol");
                     this.behavior.reInitPatrol();

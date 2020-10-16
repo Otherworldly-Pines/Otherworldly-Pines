@@ -6,14 +6,12 @@ using UnityEngine;
 
 // This class is in charge of the aggressive state of the deer.
 [RequireComponent(typeof(EnemyBehavior))]
-[RequireComponent(typeof(TargetLocking))]
 
 public class RabbitAggro : MonoBehaviour
 {
     public float aggroSpeed = 4f;
     public float jumpForce = 0.5f;
     private EnemyBehavior behavior;
-    private TargetLocking targetLocking;
 
     private bool jumpable = true;
 
@@ -21,8 +19,6 @@ public class RabbitAggro : MonoBehaviour
     void Start()
     {
         this.behavior = gameObject.GetComponent<EnemyBehavior>();
-        this.targetLocking = gameObject.GetComponent<TargetLocking>();
-
     }
 
 
@@ -41,7 +37,7 @@ public class RabbitAggro : MonoBehaviour
                     jump();
                 }
                 
-                if(this.targetLocking.getTarget().transform.position.x > gameObject.transform.position.x){
+                if(this.behavior.getTarget().transform.position.x > gameObject.transform.position.x){
                     this.behavior.turnRight();
                 }
                 else{

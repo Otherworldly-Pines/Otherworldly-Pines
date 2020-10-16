@@ -28,7 +28,8 @@ public class EnemyBehavior : MonoBehaviour
     public float aggroExaustRate = 2;  // Amount of stamina use per second in aggressive state.
     public int direction = 1; // Direction the enemy is moveing
     public float eatTime = 3f;
-
+    
+    private GameObject target;
 
     // Start is called before the first frame update 
     void Start()
@@ -38,6 +39,8 @@ public class EnemyBehavior : MonoBehaviour
         this.rigidbody = gameObject.GetComponent<Rigidbody2D>();
 
         groundMask = LayerMask.GetMask("Ground", "Pushables");
+        
+        target = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
@@ -99,6 +102,15 @@ public class EnemyBehavior : MonoBehaviour
     }
 
     // ------------ Getters and Setters------------------
+    
+    public void setTarget(GameObject target){
+        this.target = target;
+    }
+
+    public GameObject getTarget(){
+        return target;
+    }
+    
     public void turnLeft(){
         this.direction = -1;
     }

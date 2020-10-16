@@ -5,16 +5,13 @@ using UnityEngine;
 
 // TODO: Implement this enemy
 [RequireComponent(typeof(EnemyBehavior))]
-[RequireComponent(typeof(TargetLocking))]
 public class AxolotAggro : MonoBehaviour
 {
     private EnemyBehavior behavior;
-    private TargetLocking targetLocking;
     // Start is called before the first frame update
     void Start()
     {
         this.behavior = gameObject.GetComponent<EnemyBehavior>();
-        this.targetLocking = gameObject.GetComponent<TargetLocking>();
     }
 
 
