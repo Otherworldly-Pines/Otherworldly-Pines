@@ -18,7 +18,6 @@ public class Patrol : MonoBehaviour
 
 
     private EnemyBehavior behavior;
-    private int direction = -1; // Current moving direction 
 
     // Just for gizmos drawing
     private bool gizmosInitialized = false;
@@ -55,7 +54,7 @@ public class Patrol : MonoBehaviour
     // Turn when reach boundary
     void Update()
     {
-        if(this.behavior.isPatrolling()){
+        if(this.behavior.isGrounded() && this.behavior.isPatrolling()){
             float movementRate = 1;
             if(this.behavior.isExausted()){
                 movementRate = this.behavior.getExaustedMovementRate();

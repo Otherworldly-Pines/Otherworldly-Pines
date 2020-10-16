@@ -22,19 +22,27 @@ public class Investigate : MonoBehaviour
     // Move toward the target 
     void Update()
     {
-        if(this.behavior.isInvestigating()){
-            if(this.targetLocking.getTarget().transform.position.x >  gameObject.transform.position.x){
-                this.behavior.turnRight();
+        if(this.behavior.isGrounded() && this.behavior.isInvestigating()){
+            if(this.targetLocking.getTarget() == null){
+                Debug.Log("Patrol");
+                this.behavior.reInitPatrol();
+                this.behavior.patrol();
             }
             else{
-                this.behavior.turnLeft();
-            }
-            float movementRate = 1;
-            if(this.behavior.isExausted()){
-                movementRate = this.behavior.getExaustedMovementRate();        
-            }
+                if(this.targetLocking.getTarget().transform.position.x >  gameObject.transform.position.x){
+                    this.behavior.turnRight();
+                }
+                else{
+                    this.behavior.turnLeft();
+                }
+                float movementRate = 1;
+                if(this.behavior.isExausted()){
+                    movementRate = this.behavior.getExaustedMovementRate();        
+                }
 
-            gameObject.transform.Translate(new Vector2(this.behavior.direction, 0) * Time.deltaTime * this.speed * movementRate, 0);
+                gameObject.transform.Translate(new Vector2(this.behavior.direction, 0) * Time.deltaTime * this.speed * movementRate, 0);
+            }
+            
         }
     }
 
@@ -46,6 +54,9 @@ public class Investigate : MonoBehaviour
 
     IEnumerator eatThenDestroy(GameObject berry){
         yield return StartCoroutine(this.behavior.eatBerries());
-        Destroy(berry);
+        if(berry != null){
+            Destroy(berry);
+        }
+        
     }
 }

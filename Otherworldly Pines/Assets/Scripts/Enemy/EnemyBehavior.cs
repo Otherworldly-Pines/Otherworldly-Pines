@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(BoxCollider2D))]
 [RequireComponent(typeof(Patrol))]
 public class EnemyBehavior : MonoBehaviour
 {
@@ -14,6 +15,12 @@ public class EnemyBehavior : MonoBehaviour
     private float maxStamina = 100; // Max stamina to end resting state
     private bool exausted = false; // Exausted state
 
+    private Rigidbody2D rigidbody;
+    private BoxCollider2D collider;
+
+    private bool grounded = true;
+    private LayerMask groundMask;
+    
     public float exaustRate = 1; // Amount of stamina use per second in neutral and investigate state
     public float regenRate = 2; // Amount of stamina regen per second in resting state
  
@@ -22,10 +29,15 @@ public class EnemyBehavior : MonoBehaviour
     public int direction = 1; // Direction the enemy is moveing
     public float eatTime = 3f;
 
+
     // Start is called before the first frame update 
     void Start()
     {
         this.patrolController = gameObject.GetComponent<Patrol>();
+        this.collider = gameObject.GetComponent<BoxCollider2D>();
+        this.rigidbody = gameObject.GetComponent<Rigidbody2D>();
+
+        groundMask = LayerMask.GetMask("Ground", "Pushables");
     }
 
     // Update is called once per frame
@@ -33,6 +45,7 @@ public class EnemyBehavior : MonoBehaviour
     void Update()
     {
         updateStamina();
+        updateGrounded();
         // Debug.Log(this.state);
     }
 
@@ -72,9 +85,34 @@ public class EnemyBehavior : MonoBehaviour
         this.state = tmp;
 	}
 
+    public bool isGrounded(){
+        return this.grounded;
+    }
+
+    void updateGrounded(){
+        float extraHeight = 0.1f;
+        RaycastHit2D raycastHit = Physics2D.Raycast(this.collider.bounds.center, 
+                                                    Vector2.down, 
+                                                    this.collider.bounds.extents.y + extraHeight, 
+                                                    this.groundMask);
+        this.grounded =  raycastHit.collider != null;
+    }
+
     // ------------ Getters and Setters------------------
     public void turnLeft(){
         this.direction = -1;
+    }
+
+    public void flipDirection(){
+        this.direction *= -1;
+    }
+
+    public Rigidbody2D getRigidbody(){
+        return this.rigidbody;
+    }
+
+    public BoxCollider2D getCollider(){
+        return this.collider;
     }
 
     public void turnRight(){
