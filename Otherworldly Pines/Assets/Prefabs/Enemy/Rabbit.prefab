@@ -95,7 +95,6 @@ GameObject:
   - component: {fileID: 2098249186938693129}
   - component: {fileID: 2098249186938693133}
   - component: {fileID: 2098249186938693134}
-  - component: {fileID: 2098249186938693121}
   - component: {fileID: 2098249186938693122}
   - component: {fileID: 2098249186938693123}
   - component: {fileID: 2098249186938693132}
@@ -209,18 +208,6 @@ MonoBehaviour:
   aggroExaustRate: 2
   direction: 1
   eatTime: 3
---- !u!114 &2098249186938693121
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2098249186938693130}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c78881876c05cc479f2c9a3eafbe56c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2098249186938693122
 MonoBehaviour:
   m_ObjectHideFlags: 0
