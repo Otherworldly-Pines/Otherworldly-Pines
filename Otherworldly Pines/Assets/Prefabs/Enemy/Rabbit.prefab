@@ -101,6 +101,7 @@ GameObject:
   - component: {fileID: 2098249186938693120}
   - component: {fileID: 2098249186938693127}
   - component: {fileID: 2098249186938693126}
+  - component: {fileID: 9010958326117654544}
   m_Layer: 0
   m_Name: Rabbit
   m_TagString: Untagged
@@ -286,6 +287,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+--- !u!114 &9010958326117654544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098249186938693130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f98b78738bdc545c09564858327c92ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collider: {fileID: 2098249186938693128}
+  body: {fileID: 0}
+  groundLayerMask:
+    serializedVersion: 2
+    m_Bits: 1280
+  percentColliderWidth: 1
+  height: 0.01
+  offset: {x: 0, y: 0}
 --- !u!1 &2098249187618277737
 GameObject:
   m_ObjectHideFlags: 0

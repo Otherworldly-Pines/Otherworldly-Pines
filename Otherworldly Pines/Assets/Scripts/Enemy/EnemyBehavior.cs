@@ -17,6 +17,7 @@ public class EnemyBehavior : MonoBehaviour
 
     private Rigidbody2D rigidbody;
     private BoxCollider2D collider;
+    private GroundChecker groundChecker;
 
     private bool grounded = true;
     private LayerMask groundMask;
@@ -37,6 +38,7 @@ public class EnemyBehavior : MonoBehaviour
         this.patrolController = gameObject.GetComponent<Patrol>();
         this.collider = gameObject.GetComponent<BoxCollider2D>();
         this.rigidbody = gameObject.GetComponent<Rigidbody2D>();
+        groundChecker = GetComponent<GroundChecker>();
 
         groundMask = LayerMask.GetMask("Ground", "Pushables");
         
@@ -92,13 +94,8 @@ public class EnemyBehavior : MonoBehaviour
         return this.grounded;
     }
 
-    void updateGrounded(){
-        float extraHeight = 0.1f;
-        RaycastHit2D raycastHit = Physics2D.Raycast(this.collider.bounds.center, 
-                                                    Vector2.down, 
-                                                    this.collider.bounds.extents.y + extraHeight, 
-                                                    this.groundMask);
-        this.grounded =  raycastHit.collider != null;
+    void updateGrounded() {
+        grounded = groundChecker.IsGrounded();
     }
 
     // ------------ Getters and Setters------------------
