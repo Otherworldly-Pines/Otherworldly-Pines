@@ -43,13 +43,13 @@ public class ParallaxBackground : MonoBehaviour
 
         // if object is too far left or right (is offscreen), moves it back over
         // creates the "scrolling background"
-        if (transform.position.x - cam.transform.position.x < -1.5 * screenWidthInUnits)
+        if (transform.position.x - cam.transform.position.x < -1.0 * screenWidthInUnits)
         {
-            transform.position = new Vector2(transform.position.x + (2 * objLength), transform.position.y);
+            transform.position = new Vector3(transform.position.x + (2 * objLength), transform.position.y, transform.position.z);
         }
-        else if (transform.position.x - cam.transform.position.x > 1.5 * screenWidthInUnits)
+        else if (transform.position.x - cam.transform.position.x > 1.0 * screenWidthInUnits)
         {
-            transform.position = new Vector2(transform.position.x - (2 * objLength), transform.position.y);
+            transform.position = new Vector3(transform.position.x - (2 * objLength), transform.position.y, transform.position.z);
         }
     }
 }
