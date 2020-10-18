@@ -98,6 +98,7 @@ MonoBehaviour:
   cam: {fileID: 0}
   bgMoveSpeed: 0.5
   offsetY: 1
+  isLeft: 1
 --- !u!1 &8003329939606687294
 GameObject:
   m_ObjectHideFlags: 0
@@ -196,6 +197,7 @@ MonoBehaviour:
   cam: {fileID: 0}
   bgMoveSpeed: 0.5
   offsetY: 1
+  isLeft: 0
 --- !u!1 &8794407122706842164
 GameObject:
   m_ObjectHideFlags: 0

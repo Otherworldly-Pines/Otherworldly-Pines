@@ -16,8 +16,10 @@ public class ParallaxBackground : MonoBehaviour
     // placing obj offsetY distance above center of cam
     [SerializeField] private float offsetY;
 
+    public bool isLeft; //if is initially left obj or not
+
     private float move; // parallax movement value
-    private Vector2 startPos;
+    private Vector3 startPos;
     private float objLength, objHeight;
     private float screenHeightInUnits, screenWidthInUnits;
 
@@ -28,14 +30,21 @@ public class ParallaxBackground : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        startPos = transform.position;
-        objLength = GetComponent<SpriteRenderer>().bounds.size.x;
-        objHeight = GetComponent<SpriteRenderer>().bounds.size.y;
 
         awakeHeight = Camera.main.orthographicSize * 2;
         awakeWidth = awakeHeight * Screen.width / Screen.height;
 
-        ratio = (awakeWidth)/objLength;
+        ratio = (awakeWidth)/ GetComponent<SpriteRenderer>().bounds.size.x;
+
+        //transform.localScale = new Vector3(ratio * transform.localScale.x, ratio * transform.localScale.y, transform.localScale.z);
+        if (isLeft)
+            transform.position = new Vector3(-(ratio * GetComponent<SpriteRenderer>().bounds.size.x) / 2, transform.position.y + offsetY, transform.position.z);
+        else
+            transform.position = new Vector3((ratio * GetComponent<SpriteRenderer>().bounds.size.x) / 2, transform.position.y + offsetY, transform.position.z);
+            
+        startPos = transform.position;
+        objLength = ratio * GetComponent<SpriteRenderer>().bounds.size.x;
+        objHeight = ratio * GetComponent<SpriteRenderer>().bounds.size.y;
     }
 
     // Update is called once per frame
@@ -48,7 +57,7 @@ public class ParallaxBackground : MonoBehaviour
         move = cam.transform.position.x * bgMoveSpeed;
 
         // moves obj
-        transform.position = new Vector2(startPos.x + move, cam.transform.position.y + offsetY);
+        transform.position = new Vector3(startPos.x + move, cam.transform.position.y + offsetY, transform.position.z);
 
         // if object is too far left or right (is offscreen), moves it back over
         // creates the "scrolling background"
