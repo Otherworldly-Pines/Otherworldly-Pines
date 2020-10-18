@@ -13,12 +13,15 @@ public class PlayerThrow : MonoBehaviour, IHUDConnected {
     
     private PlayerFreeze playerFreeze;
 
+    private bool controlsFrozen = false;
+
     private void Start() {
         playerFreeze = GetComponent<PlayerFreeze>();
         if (berryCounter) berryCounter.SetCount(ammo);
     }
 
     void Update() {
+        if (controlsFrozen) return;
         if (!playerFreeze.IsHoveringAny() && Input.GetMouseButtonDown(0) && !PauseMenu.GameIsPaused) Shoot();
     }
 
@@ -81,6 +84,14 @@ public class PlayerThrow : MonoBehaviour, IHUDConnected {
 
     public void ConnectToHUD(HUD hud) {
         berryCounter = hud.berryCounter;
+    }
+
+    public void FreezeControls() {
+        controlsFrozen = true;
+    }
+
+    public void UnfreezeControls() {
+        controlsFrozen = false;
     }
 
 }
