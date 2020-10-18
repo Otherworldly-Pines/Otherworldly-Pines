@@ -21,12 +21,21 @@ public class ParallaxBackground : MonoBehaviour
     private float objLength, objHeight;
     private float screenHeightInUnits, screenWidthInUnits;
 
+    private float awakeHeight, awakeWidth;
+
+    private float ratio;
+
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         startPos = transform.position;
         objLength = GetComponent<SpriteRenderer>().bounds.size.x;
         objHeight = GetComponent<SpriteRenderer>().bounds.size.y;
+
+        awakeHeight = Camera.main.orthographicSize * 2;
+        awakeWidth = awakeHeight * Screen.width / Screen.height;
+
+        ratio = (awakeWidth)/objLength;
     }
 
     // Update is called once per frame
@@ -51,5 +60,10 @@ public class ParallaxBackground : MonoBehaviour
         {
             transform.position = new Vector3(transform.position.x - (2 * objLength), transform.position.y, transform.position.z);
         }
+    }
+
+    public float getRatio()
+    {
+        return ratio;
     }
 }
