@@ -3,16 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(EnemyBehavior))]
-public class FreeRange : MonoBehaviour
+public class FreeRange : BehaviorRelated
 {
 
     public float speed = 3; // Patrolling speed 
-    private EnemyBehavior behavior;
     private LayerMask groundMask;
-    // Start is called before the first frame update
-    void Start()
-    {
-        this.behavior = gameObject.GetComponent<EnemyBehavior>();
+    
+    void Start() {
         groundMask = LayerMask.GetMask("Ground", "Pushables");
     }
 
@@ -24,22 +21,17 @@ public class FreeRange : MonoBehaviour
                 this.behavior.flipDirection();
             }
 
-
-            float movementRate = 1;
-            if(this.behavior.isExausted()){
-                movementRate = this.behavior.getExaustedMovementRate();
-            }
-            
-            gameObject.transform.Translate(new Vector2(this.behavior.getDirection() * Time.deltaTime * this.speed * movementRate, 0));
+            float movementRate = behavior.GetCurrentMovementSpeed();
+            MoveForwardBy(Time.deltaTime * speed * movementRate);
         }
     }
 
     bool reachLedge(){
         float extraHeight = 0.1f;
         Vector2 center2d = this.behavior.getCollider().bounds.center;
-        RaycastHit2D raycastHit = Physics2D.Raycast(center2d + new Vector2(this.behavior.getCollider().bounds.extents.x * this.behavior.direction, 0), 
+        RaycastHit2D raycastHit = Physics2D.Raycast(center2d + new Vector2(collider.bounds.extents.x * this.behavior.direction, 0), 
                                                     Vector2.down, 
-                                                    this.behavior.getCollider().bounds.extents.y + extraHeight, 
+                                                    collider.bounds.extents.y + extraHeight, 
                                                     this.groundMask);
         return raycastHit.collider == null;
     }
