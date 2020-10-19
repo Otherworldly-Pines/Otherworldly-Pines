@@ -4,17 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Thorn : MonoBehaviour
-{ 
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
+{
+    public float knockDur = 0.01f;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public float knockbackPower = 100f;
+
 
     //calls when the player hits the thorn; can be changed to other functions
     //now, it just assumes player dies instantly, and resets the scene
@@ -24,7 +18,7 @@ public class Thorn : MonoBehaviour
         {
             collision.gameObject.GetComponent<PlayerHealth>().TakeDamage(34);
             PlayerControls player = collision.gameObject.GetComponent<PlayerControls>();
-            StartCoroutine(player.Knockback(.02f,100f,player.transform.position));
+            StartCoroutine(player.Knockback(knockDur,knockbackPower,player.transform.localPosition));
         }
     }
 }
