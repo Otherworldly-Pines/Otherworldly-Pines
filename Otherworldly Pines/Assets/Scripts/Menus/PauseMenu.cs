@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -8,11 +9,16 @@ public class PauseMenu : MonoBehaviour
     private Scene currentScene;
 
     public static bool GameIsPaused = false;
+    public static bool IsDisabledByTutorialText = false;
 
     public GameObject pausePanelUI;
     public GameObject pauseMenuUI;
     public GameObject optionMenuUI;
     public GameObject helpMenuUI;
+
+    private void Awake() {
+        IsDisabledByTutorialText = false;
+    }
 
     void Start()
     {
@@ -25,6 +31,7 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
     {
+        if (IsDisabledByTutorialText) return;
         if(Input.GetKeyDown(KeyCode.Escape))
         {
             if (GameIsPaused)
@@ -87,5 +94,10 @@ public class PauseMenu : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void exitLevel()
+    {
+        SceneManager.LoadScene(SceneIdentifier.MainMenu);
     }
 }

@@ -97,20 +97,21 @@ public class GravityRegion : MonoBehaviour {
         GizmosUtility.DrawCollider(ownCollider);
     }
 
-    private Vector3 Snap(Vector3 original) {
-        return new Vector3(Mathf.Round(original.x * 4f) / 4f, Mathf.Round(original.y * 4f) / 4f, Mathf.Round(original.z * 4f) / 4f);
+    private bool IsValid(float size) {
+        var rounded = Mathf.Round(size * 4f) / 4f;
+        return Mathf.Abs(rounded - size) < 0.000001f;
     }
-    
+
     private void OnValidate() {
+        if (transform.position.z < 90f) Debug.LogError("Gravity regions must have z positions over 90 " + gameObject.name);
         if (!ownCollider) ownCollider = GetComponent<BoxCollider2D>();
         if (ownCollider.offset.magnitude > 0.001f) {
-            Vector2 newPosition = transform.position + (Vector3)ownCollider.offset;
-            transform.position = newPosition;
-            ownCollider.offset = Vector2.zero;
+            var corrected = transform.position + (Vector3)ownCollider.offset;
+            Debug.LogError("Gravity region colliders must have offsets of zero. " + gameObject.name + " position should be " + corrected);
         }
 
-        transform.position = Snap(transform.position);
-        ownCollider.size = Snap(ownCollider.size);
+        if (!IsValid(ownCollider.size.x) || !IsValid(ownCollider.size.y))
+            Debug.LogError("Gravity region collider sizes must be multiples of 0.25: " + gameObject.name);
     }
 
 }

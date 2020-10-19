@@ -693,7 +693,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3283676856345139297}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: QuitGame
+        m_MethodName: exitLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

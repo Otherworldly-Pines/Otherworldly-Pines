@@ -29,6 +29,8 @@ public class PlayerControls : MonoBehaviour {
     private float forwardCastLength = 0.01f;
     private bool isJumping = false;
 
+    private bool controlsFrozen = false;
+
     void Start()
     {   
         body = GetComponent<Rigidbody2D>();
@@ -37,6 +39,8 @@ public class PlayerControls : MonoBehaviour {
     }
     
     void FixedUpdate() {
+        if (controlsFrozen) return;
+        
         Vector2 nextVelocity = body.velocity;
         
         isGrounded = groundCheck.IsGrounded();
@@ -55,6 +59,8 @@ public class PlayerControls : MonoBehaviour {
     }
 
     void Update() {
+        if (controlsFrozen) return;
+        
         isPressingShift = Input.GetKey(KeyCode.LeftShift);
         currentHorizontalInput = Input.GetAxis("Horizontal");
     
@@ -97,13 +103,12 @@ public class PlayerControls : MonoBehaviour {
             if (lastPushable != currentPushable && lastPushable != null) {
                 isPullingBlock = false;
                 lastPushable.DisconnectFromBody();
-                lastPushable.Soften();
             }
         } else if (currentPushable != null && !currentPushable.IsGrounded()) {
             // Check if the block the player was holding has fallen off the edge
             currentPushable.DisconnectFromBody();
             isPullingBlock = false;
-            currentPushable.Harden();
+            currentPushable.Soften();
             currentPushable = null;
         }
         
@@ -162,5 +167,12 @@ public class PlayerControls : MonoBehaviour {
         yield return 0;
     }
     
+    public void FreezeControls() {
+        controlsFrozen = true;
+    }
+
+    public void UnfreezeControls() {
+        controlsFrozen = false;
+    }
 
 }

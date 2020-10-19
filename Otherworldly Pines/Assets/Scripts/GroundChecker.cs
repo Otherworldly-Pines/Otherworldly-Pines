@@ -34,6 +34,7 @@ public class GroundChecker : MonoBehaviour {
     }
 
     private void OnDrawGizmosSelected() {
+        if (!collider) collider = GetComponent<Collider2D>();
         Vector2 verticalOffset = new Vector2(0f, collider.bounds.extents.y);
         Vector2 direction = (body != null && body.gravityScale < 0f) ? Vector2.up : Vector2.down;
         Vector2 origin = (Vector2) collider.bounds.center + (offset + verticalOffset) * direction;

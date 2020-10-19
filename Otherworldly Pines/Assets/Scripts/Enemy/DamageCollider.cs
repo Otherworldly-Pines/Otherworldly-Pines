@@ -25,8 +25,8 @@ public class DamageCollider : MonoBehaviour
     }
 
     private void OnCollisionStay2D(Collision2D other) {
-        if(other.collider.tag == "Player"){
-            Debug.Log("Stay");
-        }
+        // if(other.collider.tag == "Player"){
+        //     // Debug.Log("Stay");
+        // }
     }
 }

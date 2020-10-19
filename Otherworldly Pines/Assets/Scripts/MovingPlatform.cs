@@ -5,7 +5,7 @@ using System.ComponentModel;
 using System.Linq;
 using UnityEngine;
 
-public class MovingPlatform : MonoBehaviour {
+public class MovingPlatform : MonoBehaviour, PressurePlateActivated {
 
     public float movementSpeed = 2;
     public float pauseDuration = 0.5f;
@@ -24,6 +24,8 @@ public class MovingPlatform : MonoBehaviour {
     private float pauseTimer;
 
     private List<GameObject> children = new List<GameObject>();
+
+    private bool isBlocked = false;
 
     void Start() {
         body = GetComponentInChildren<Rigidbody2D>();
@@ -46,14 +48,14 @@ public class MovingPlatform : MonoBehaviour {
     private bool IsAtTarget() {
         float actualDistance = Vector2.Distance(transform.position, nextTarget);
         float maxDistance = Vector2.Distance(currentTarget, nextTarget);
-        return actualDistance > maxDistance;
+        return actualDistance > maxDistance - 0.001f;
     }
 
-    private void Pause() {
+    private void Pause(bool snapToTarget = true) {
         pauseTimer = 0f;
         isPaused = true;
         body.velocity = Vector2.zero;
-        body.position = currentTarget;
+        if (snapToTarget) body.position = currentTarget;
         SwapTargets();
     }
 
@@ -65,18 +67,6 @@ public class MovingPlatform : MonoBehaviour {
         body.velocity = GetCurrentDirection() * movementSpeed;
     }
 
-    void OnCollisionEnter2D(Collision2D target)
-    {
-        if (target.gameObject.CompareTag("Block"))
-        {
-            Debug.Log("1");
-            pauseTimer = 0f;
-            isPaused = true;
-            body.velocity = Vector2.zero;
-            SwapTargets();
-        }
-    }
-
     void Update() {
         if (isPaused) {
             pauseTimer += Time.deltaTime;
@@ -86,8 +76,8 @@ public class MovingPlatform : MonoBehaviour {
                 if (isVertical) StartMoving();
             }
         }
-
-        if (!isVertical && !isPaused) {
+      
+        if (!isVertical && !isPaused && !isBlocked) {
             transform.position += (Vector3) (GetCurrentDirection() * Time.deltaTime * movementSpeed);
         }
     }
@@ -95,6 +85,29 @@ public class MovingPlatform : MonoBehaviour {
     private void FixedUpdate() {
         if (!isPaused && IsAtTarget()) Pause();
         if (!isVertical) UpdateChildren();
+    }
+
+    private bool IsInWay(Vector2 otherPosition) {
+        if (isVertical) {
+            return Math.Abs(Mathf.Sign(otherPosition.y - transform.position.y) - Mathf.Sign(GetCurrentDirection().y)) < 0.001f;
+        } else {
+            return Math.Abs(Mathf.Sign(otherPosition.x - transform.position.x) - Mathf.Sign(GetCurrentDirection().x)) < 0.001f;
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D other) {
+        LayerMask stoppables = LayerMask.GetMask("Pushables", "Player", "Enemies");
+        if (other.gameObject && stoppables == (stoppables | (1 << other.gameObject.layer))) {
+            // If the object is not in the way, don't worry about it
+            if (!IsInWay(other.transform.position)) return;
+            
+            float distanceBetweenCenters = Vector3.Distance(collider.bounds.center, other.collider.bounds.center);
+            Vector2 combinedColliderExtents = collider.bounds.extents + other.collider.bounds.extents;
+            float maxAllowedDistance = isVertical ? combinedColliderExtents.y : combinedColliderExtents.x;
+            if (distanceBetweenCenters < maxAllowedDistance) {
+                Pause(false);
+            }
+        }
     }
 
     private void UpdateChildren() {
@@ -131,6 +144,16 @@ public class MovingPlatform : MonoBehaviour {
         List<Collider2D> colliders = new List<Collider2D>();
         Physics2D.OverlapBox(center, size, 0f, filter, colliders);
         return colliders.Select(collider => collider.gameObject).ToList();
+    }
+
+    public void PPEnable() {
+        isBlocked = false;
+        if (isVertical) StartMoving();
+    }
+
+    public void PPDisable() {
+        isBlocked = true;
+        if (isVertical) body.velocity = Vector2.zero;
     }
 
     private void OnValidate() {
