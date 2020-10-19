@@ -31,6 +31,8 @@ public class DialogTrigger : MonoBehaviour
             gravityControls.FreezeControls();
             throwControls.FreezeControls();
 
+            PauseMenu.IsDisabledByTutorialText = true;
+
             dialogDisplay.SetActive(true);
             continueText.SetActive(false);
             dialogText.text = "";
@@ -40,21 +42,13 @@ public class DialogTrigger : MonoBehaviour
 
     private void Update() {
         if (isDisplaying) {
-            if (dialogText.text == sentences[sentenceIndex] && Input.anyKeyDown) {
+            if (Input.GetKeyUp(KeyCode.Escape)) {
+                Close();
+            } else if (dialogText.text == sentences[sentenceIndex] && Input.anyKeyDown) {
                 if (sentenceIndex < sentences.Length - 1) {
                     NextSentence();
                 } else {
-                    dialogDisplay.SetActive(false);
-                    
-                    var playerControls = player.GetComponent<PlayerControls>();
-                    var gravityControls = player.GetComponent<GravityControl>();
-                    var throwControls = player.GetComponent<PlayerThrow>();
-                    
-                    playerControls.UnfreezeControls();
-                    gravityControls.UnfreezeControls();
-                    throwControls.UnfreezeControls();
-
-                    gameObject.SetActive(false);
+                    Close();
                 }
             }
         }
@@ -75,5 +69,21 @@ public class DialogTrigger : MonoBehaviour
         dialogText.text = "";
         StartCoroutine(TypeText());
         continueText.SetActive(false);
+    }
+
+    private void Close() {
+        dialogDisplay.SetActive(false);
+                    
+        var playerControls = player.GetComponent<PlayerControls>();
+        var gravityControls = player.GetComponent<GravityControl>();
+        var throwControls = player.GetComponent<PlayerThrow>();
+                    
+        playerControls.UnfreezeControls();
+        gravityControls.UnfreezeControls();
+        throwControls.UnfreezeControls();
+
+        gameObject.SetActive(false);
+
+        PauseMenu.IsDisabledByTutorialText = false;
     }
 }
