@@ -9,10 +9,9 @@ public class LevelChanger : MonoBehaviour
     public float transitionTime = 1f;
     public string levelName;
 
-    void onTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        
-        if (other.CompareTag("Player"))
+        if (other.tag == "Player")
         {
             StartCoroutine(LoadLevel());
         }
@@ -20,7 +19,7 @@ public class LevelChanger : MonoBehaviour
 
     IEnumerator LoadLevel()
     {
-        fade_animator.SetTrigger("FadeOut");
+        fade_animator.SetBool("FadeOut", true);
         yield return new WaitForSeconds(transitionTime);
         SceneManager.LoadScene(levelName);
     }
