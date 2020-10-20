@@ -7,7 +7,7 @@ public class Thorn : MonoBehaviour
 {
     public float knockDur = 0.01f;
 
-    public float knockbackPower = 100f;
+    public float knockbackPower = 10f;
 
 
     //calls when the player hits the thorn; can be changed to other functions
@@ -18,7 +18,7 @@ public class Thorn : MonoBehaviour
         {
             collision.gameObject.GetComponent<PlayerHealth>().TakeDamage(34);
             PlayerControls player = collision.gameObject.GetComponent<PlayerControls>();
-            StartCoroutine(player.Knockback(knockDur,knockbackPower,player.transform.localPosition));
+            player.Knockback(knockDur,knockbackPower,player.transform.localPosition);
         }
     }
 }
