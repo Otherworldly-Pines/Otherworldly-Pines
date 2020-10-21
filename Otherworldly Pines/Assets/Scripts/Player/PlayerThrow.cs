@@ -8,8 +8,7 @@ public class PlayerThrow : MonoBehaviour, IHUDConnected {
     public GameObject bulletPrefab;
     public float bulletSpeed = 10.0f;
     public float bulletDestroyTime = 3.0f;
-    public int ammoPerBerry = 3;
-    private int ammo = 20;
+    private int ammo = 0;
     
     private PlayerFreeze playerFreeze;
 
@@ -72,12 +71,9 @@ public class PlayerThrow : MonoBehaviour, IHUDConnected {
     }
     
     // pick up ammo and destroy berries
-    void OnCollisionEnter2D(Collision2D target)
-    {
-        if (target.gameObject.CompareTag("Berries"))
-        {
-            ammo += ammoPerBerry;
-            Debug.Log("1");
+    void OnCollisionEnter2D(Collision2D target) {
+        if (target.gameObject.CompareTag("Berries")) {
+            Collect(1);
             Destroy(target.gameObject);
         }
     }
@@ -92,6 +88,11 @@ public class PlayerThrow : MonoBehaviour, IHUDConnected {
 
     public void UnfreezeControls() {
         controlsFrozen = false;
+    }
+
+    public void Collect(int amount) {
+        ammo += amount;
+        berryCounter.SetCount(ammo);
     }
 
 }

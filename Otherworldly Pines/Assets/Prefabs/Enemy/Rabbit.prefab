@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2098249186594794146}
   - component: {fileID: 2098249186594794145}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: 2098249186938693127}
   - component: {fileID: 2098249186938693126}
   - component: {fileID: 9010958326117654544}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Rabbit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -298,7 +298,7 @@ GameObject:
   - component: {fileID: 2098249187618277736}
   - component: {fileID: 2098249187618277743}
   - component: {fileID: 2098249187618277742}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Vision Range
   m_TagString: Untagged
   m_Icon: {fileID: 0}
