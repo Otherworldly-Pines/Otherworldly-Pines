@@ -6,6 +6,8 @@ using UnityEngine.U2D;
 
 public class GravityRegion : MonoBehaviour {
 
+    [SerializeField] private ParticleSystem particles;
+    [SerializeField] private BoxCollider2D boundsCollider;
     public bool gravityIsFlipped = false;
     public bool playerCanFlipGravity = true;
     public int maxFlipCount = 0; // Only considered restricted if greater than zero
@@ -17,12 +19,18 @@ public class GravityRegion : MonoBehaviour {
     private Color gravityColor = new Color(0f, 0.12f, 0.34f, 1f);
     private int currentFlipCount = 0;
 
-    void Start() {
+    void Awake() {
+        if (!playerCanFlipGravity) particles.Stop();
         ownCollider = GetComponent<BoxCollider2D>();
         if (background != null) {
             Vector3 updatedScale = new Vector3(ownCollider.size.x, ownCollider.size.y, 1f);
             background.transform.localScale = updatedScale;
             background.transform.localPosition = new Vector3(ownCollider.offset.x, ownCollider.offset.y, 0f);
+
+            boundsCollider.size = updatedScale;
+            var sh = particles.shape;
+            sh.scale = new Vector3(ownCollider.size.x, 1, ownCollider.size.y);
+            particles.transform.localPosition = new Vector3(particles.transform.localPosition.x, 0, -0.5f);
         }
     }
 
@@ -34,10 +42,21 @@ public class GravityRegion : MonoBehaviour {
 
     public void FlipGravity() {
         if (!playerCanFlipGravity) return;
-        if (maxFlipCount > 0 && currentFlipCount >= maxFlipCount) return;
+        if (maxFlipCount > 0 && currentFlipCount >= maxFlipCount)
+        {
+            particles.Stop(true, ParticleSystemStopBehavior.StopEmitting);
+            return;
+        }
 
         currentFlipCount++;
         gravityIsFlipped = !gravityIsFlipped;
+
+        //flips particles along with region's gravity. kinda ugly maybe but we do what we must
+        particles.transform.position = new Vector3(particles.transform.position.x, -particles.transform.position.y, particles.transform.position.z);
+        if (particles.transform.rotation.z == 0)
+            particles.transform.rotation = Quaternion.Euler(particles.transform.rotation.x, particles.transform.rotation.y, -180.0f);
+        else
+            particles.transform.rotation = Quaternion.Euler(particles.transform.rotation.x, particles.transform.rotation.y, 0.0f);
 
         flippables.RemoveWhere(flippable => !flippable.StillExists());
         foreach (GravityFlippable flippable in flippables) {
