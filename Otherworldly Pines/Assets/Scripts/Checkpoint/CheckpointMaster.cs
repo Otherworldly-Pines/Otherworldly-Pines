@@ -1,12 +1,16 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class CheckpointMaster : MonoBehaviour
 {
+    
     private static CheckpointMaster instance;
-    public Vector2 lastCheckPointPos;
+    
+    [SerializeField] private Transform startingPosition;
+    [HideInInspector] public Vector2 lastCheckPointPos;
     private Scene currentScene;
 
     void Awake()
@@ -15,6 +19,7 @@ public class CheckpointMaster : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(instance);
+            instance.lastCheckPointPos = startingPosition.position;
         }
         else
         {
@@ -37,4 +42,9 @@ public class CheckpointMaster : MonoBehaviour
             SceneManager.LoadScene(currentScene.name);
         };
     }
+
+    private void OnValidate() {
+        if (startingPosition == null) Debug.LogError("Must assign a starting position");
+    }
+
 }
