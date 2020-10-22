@@ -10,6 +10,8 @@ public class GravityControl : GravityAffected, IHUDConnected {
     private PlayerControls player;
     private bool canFlip = true;
 
+    private bool controlsFrozen = false;
+
     private void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerControls>();
@@ -17,6 +19,8 @@ public class GravityControl : GravityAffected, IHUDConnected {
 
     void Update()
     {
+        if (controlsFrozen) return;
+        
         if (Input.GetKeyDown(KeyCode.W) && isFlipActive())
         {
             activeGravityRegion.FlipGravity();
@@ -47,6 +51,14 @@ public class GravityControl : GravityAffected, IHUDConnected {
 
     public void ConnectToHUD(HUD hud) {
         indicator = hud.gravityFlipIndicator;
+    }
+
+    public void FreezeControls() {
+        controlsFrozen = true;
+    }
+
+    public void UnfreezeControls() {
+        controlsFrozen = false;
     }
 
 }

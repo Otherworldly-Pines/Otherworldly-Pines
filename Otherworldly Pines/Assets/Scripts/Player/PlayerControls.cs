@@ -29,6 +29,14 @@ public class PlayerControls : MonoBehaviour {
     private float forwardCastLength = 0.01f;
     private bool isJumping = false;
 
+    private bool controlsFrozen = false;
+    
+    //Vars Used to determine knockback
+    private float timer = 0;
+    private float knockDur = 0;
+    private float knockbackPwr = 0;
+    private Vector2 knockbackDir;
+
     void Start()
     {   
         body = GetComponent<Rigidbody2D>();
@@ -37,6 +45,18 @@ public class PlayerControls : MonoBehaviour {
     }
     
     void FixedUpdate() {
+        if (controlsFrozen) return;
+        if (shouldKnockback())
+        {
+            timer += Time.deltaTime;
+            body.AddForce(new Vector2(this.knockbackDir.x * -100, knockbackDir.y * -knockbackPwr));
+        }
+        else
+        {
+            resetKnockback();
+        }
+
+        ;
         Vector2 nextVelocity = body.velocity;
         
         isGrounded = groundCheck.IsGrounded();
@@ -55,6 +75,8 @@ public class PlayerControls : MonoBehaviour {
     }
 
     void Update() {
+        if (controlsFrozen) return;
+        
         isPressingShift = Input.GetKey(KeyCode.LeftShift);
         currentHorizontalInput = Input.GetAxis("Horizontal");
     
@@ -146,6 +168,35 @@ public class PlayerControls : MonoBehaviour {
         Vector3 localScale = transform.localScale;
         localScale.x *= -1;
         transform.localScale = localScale;
+    }
+
+    public void Knockback(float knockDur, float knockbackPwr, Vector2 knockbackDir)
+    {
+        this.knockDur = knockDur;
+        this.knockbackPwr = knockbackPwr;
+        this.knockbackDir = knockbackDir;
+    }
+
+    public bool shouldKnockback()
+    {
+        return knockDur > timer;
+    }
+
+    public void resetKnockback()
+    {
+        timer = 0;
+        this.knockDur = 0;
+        this.knockbackPwr = 0;
+        this.knockbackDir = new Vector2(0f,0f);
+    }
+    
+    
+    public void FreezeControls() {
+        controlsFrozen = true;
+    }
+
+    public void UnfreezeControls() {
+        controlsFrozen = false;
     }
 
 }

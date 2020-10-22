@@ -24,7 +24,7 @@ public class PressurePlate : MonoBehaviour {
     }
 
     private void OnValidate() {
-        if (target.GetComponentInChildren<PressurePlateActivated>() == null)
+        if (target != null && target.GetComponentInChildren<PressurePlateActivated>() == null)
             Debug.LogError(gameObject.name + "'s target must implement PressurePlateActivated");
     }
 
@@ -40,6 +40,11 @@ public class PressurePlate : MonoBehaviour {
             validContants.Remove(other.gameObject.GetInstanceID());
             if (validContants.Count == 0) activatable.PPDisable();
         }
+    }
+
+    private void OnDrawGizmosSelected() {
+        Gizmos.color = Color.green;
+        Gizmos.DrawLine(gameObject.transform.position, target.transform.position);
     }
 
 }

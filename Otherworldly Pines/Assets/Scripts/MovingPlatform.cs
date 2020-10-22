@@ -51,11 +51,11 @@ public class MovingPlatform : MonoBehaviour, PressurePlateActivated {
         return actualDistance > maxDistance - 0.001f;
     }
 
-    private void Pause() {
+    private void Pause(bool snapToTarget = true) {
         pauseTimer = 0f;
         isPaused = true;
         body.velocity = Vector2.zero;
-        body.position = currentTarget;
+        if (snapToTarget) body.position = currentTarget;
         SwapTargets();
     }
 
@@ -67,18 +67,6 @@ public class MovingPlatform : MonoBehaviour, PressurePlateActivated {
         body.velocity = GetCurrentDirection() * movementSpeed;
     }
 
-    void OnCollisionEnter2D(Collision2D target)
-    {
-        if (target.gameObject.CompareTag("Block"))
-        {
-            Debug.Log("1");
-            pauseTimer = 0f;
-            isPaused = true;
-            body.velocity = Vector2.zero;
-            SwapTargets();
-        }
-    }
-
     void Update() {
         if (isPaused) {
             pauseTimer += Time.deltaTime;
@@ -88,7 +76,7 @@ public class MovingPlatform : MonoBehaviour, PressurePlateActivated {
                 if (isVertical) StartMoving();
             }
         }
-
+      
         if (!isVertical && !isPaused && !isBlocked) {
             transform.position += (Vector3) (GetCurrentDirection() * Time.deltaTime * movementSpeed);
         }
@@ -97,6 +85,29 @@ public class MovingPlatform : MonoBehaviour, PressurePlateActivated {
     private void FixedUpdate() {
         if (!isPaused && IsAtTarget()) Pause();
         if (!isVertical) UpdateChildren();
+    }
+
+    private bool IsInWay(Vector2 otherPosition) {
+        if (isVertical) {
+            return Math.Abs(Mathf.Sign(otherPosition.y - transform.position.y) - Mathf.Sign(GetCurrentDirection().y)) < 0.001f;
+        } else {
+            return Math.Abs(Mathf.Sign(otherPosition.x - transform.position.x) - Mathf.Sign(GetCurrentDirection().x)) < 0.001f;
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D other) {
+        LayerMask stoppables = LayerMask.GetMask("Pushables", "Player", "Enemies");
+        if (other.gameObject && stoppables == (stoppables | (1 << other.gameObject.layer))) {
+            // If the object is not in the way, don't worry about it
+            if (!IsInWay(other.transform.position)) return;
+            
+            float distanceBetweenCenters = Vector3.Distance(collider.bounds.center, other.collider.bounds.center);
+            Vector2 combinedColliderExtents = collider.bounds.extents + other.collider.bounds.extents;
+            float maxAllowedDistance = isVertical ? combinedColliderExtents.y : combinedColliderExtents.x;
+            if (distanceBetweenCenters < maxAllowedDistance) {
+                Pause(false);
+            }
+        }
     }
 
     private void UpdateChildren() {

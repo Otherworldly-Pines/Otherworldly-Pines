@@ -4,19 +4,18 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(BoxCollider2D))]
-[RequireComponent(typeof(Patrol))]
 public class EnemyBehavior : MonoBehaviour
 {
 
 // TODO state to enum
     private int state = 1; //0 is eat , 1 is moving, , 
-    private Patrol patrolController; 
     private float stamina = 100; //Stamina for movement. Eneter resting state when reach 0
     private float maxStamina = 100; // Max stamina to end resting state
     private bool exausted = false; // Exausted state
 
     private Rigidbody2D rigidbody;
     private BoxCollider2D collider;
+    private GroundChecker groundChecker;
 
     private bool grounded = true;
     private LayerMask groundMask;
@@ -28,16 +27,19 @@ public class EnemyBehavior : MonoBehaviour
     public float aggroExaustRate = 2;  // Amount of stamina use per second in aggressive state.
     public int direction = 1; // Direction the enemy is moveing
     public float eatTime = 3f;
-
+    
+    private GameObject target;
 
     // Start is called before the first frame update 
     void Start()
     {
-        this.patrolController = gameObject.GetComponent<Patrol>();
         this.collider = gameObject.GetComponent<BoxCollider2D>();
         this.rigidbody = gameObject.GetComponent<Rigidbody2D>();
+        groundChecker = GetComponent<GroundChecker>();
 
         groundMask = LayerMask.GetMask("Ground", "Pushables");
+        
+        target = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
@@ -72,11 +74,6 @@ public class EnemyBehavior : MonoBehaviour
         
     }
 
-    // Reinitialize patrol in patrol scripts
-    public void reInitPatrol(){
-        this.patrolController.initPatrolRange();
-    }
-
     // Enter rest state for amount of seconds
     public IEnumerator restForSeconds(float second){
         int tmp = this.state;
@@ -89,16 +86,20 @@ public class EnemyBehavior : MonoBehaviour
         return this.grounded;
     }
 
-    void updateGrounded(){
-        float extraHeight = 0.1f;
-        RaycastHit2D raycastHit = Physics2D.Raycast(this.collider.bounds.center, 
-                                                    Vector2.down, 
-                                                    this.collider.bounds.extents.y + extraHeight, 
-                                                    this.groundMask);
-        this.grounded =  raycastHit.collider != null;
+    void updateGrounded() {
+        grounded = groundChecker.IsGrounded();
     }
 
     // ------------ Getters and Setters------------------
+    
+    public void setTarget(GameObject target){
+        this.target = target;
+    }
+
+    public GameObject getTarget(){
+        return target;
+    }
+    
     public void turnLeft(){
         this.direction = -1;
     }
@@ -166,8 +167,8 @@ public class EnemyBehavior : MonoBehaviour
         this.state = 3;
     }
 
-    public float getExaustedMovementRate(){
-        return this.exaustedMovementRate;
+    public float GetCurrentMovementSpeed() {
+        return exausted ? exaustedMovementRate : 1f;
     }
 
     public IEnumerator eatBerries(){
