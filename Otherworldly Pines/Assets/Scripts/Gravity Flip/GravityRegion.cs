@@ -10,45 +10,25 @@ public class GravityRegion : MonoBehaviour {
     [SerializeField] private BoxCollider2D boundsCollider;
     public bool gravityIsFlipped = false;
     public bool playerCanFlipGravity = true;
-    public int maxFlipCount = 0; // Only considered restricted if greater than zero
-
-    public SpriteRenderer background;
 
     private BoxCollider2D ownCollider;
     private HashSet<GravityFlippable> flippables = new HashSet<GravityFlippable>();
-    private Color gravityColor = new Color(0f, 0.12f, 0.34f, 1f);
-    private int currentFlipCount = 0;
 
     void Awake() {
         if (!playerCanFlipGravity) particles.Stop();
         ownCollider = GetComponent<BoxCollider2D>();
-        if (background != null) {
-            Vector3 updatedScale = new Vector3(ownCollider.size.x, ownCollider.size.y, 1f);
-            background.transform.localScale = updatedScale;
-            background.transform.localPosition = new Vector3(ownCollider.offset.x, ownCollider.offset.y, 0f);
-
-            boundsCollider.size = updatedScale;
-            var sh = particles.shape;
-            sh.scale = new Vector3(ownCollider.size.x, 1, ownCollider.size.y);
-            particles.transform.localPosition = new Vector3(particles.transform.localPosition.x, 0, -0.5f);
-        }
-    }
-
-    void Update() {
-        if (background != null) {
-            background.color = gravityIsFlipped ? gravityColor : Color.clear;
-        }
+        
+        Vector3 updatedScale = new Vector3(ownCollider.size.x, ownCollider.size.y, 1f);
+        boundsCollider.size = updatedScale;
+        
+        var sh = particles.shape;
+        sh.scale = new Vector3(ownCollider.size.x, 1, ownCollider.size.y);
+        particles.transform.localPosition = new Vector3(particles.transform.localPosition.x, 0, -0.5f);
     }
 
     public void FlipGravity() {
         if (!playerCanFlipGravity) return;
-        if (maxFlipCount > 0 && currentFlipCount >= maxFlipCount)
-        {
-            particles.Stop(true, ParticleSystemStopBehavior.StopEmitting);
-            return;
-        }
-
-        currentFlipCount++;
+        
         gravityIsFlipped = !gravityIsFlipped;
 
         //flips particles along with region's gravity. kinda ugly maybe but we do what we must

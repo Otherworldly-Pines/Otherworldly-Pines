@@ -9,6 +9,7 @@ TagManager:
   - CM
   - Berries
   - Block
+  - BerryBush
   layers:
   - Default
   - TransparentFX
@@ -25,7 +26,7 @@ TagManager:
   - Enemies
   - Pressure Plates
   - Berries
-  - 
+  - Grav Flip Particle Colliders
   - 
   - 
   - 
