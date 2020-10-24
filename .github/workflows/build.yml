@@ -1,0 +1,43 @@
+name: Generate Executables
+
+on:
+  push:
+    branches:
+      - master
+      - add-build-action
+
+env:
+  UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        projectPath:
+          - Otherworldly Pines
+        targetPlatform:
+          - StandaloneOSX
+          - StandaloneWindows64
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          lfs: true
+      - uses: actions/cache@v1.1.0
+        with:
+          path: Otherworldly Pines/Library
+          key: Library-${{ matrix.projectPath }}-${{ matrix.targetPlatform }}
+          restore-keys: |
+            Library-${{ matrix.projectPath }}-
+            Library-
+      - uses: webbertakken/unity-builder@v1.4
+        with:
+          projectPath: ${{ matrix.projectPath }}
+          unityVersion: 2020.1.4f1
+          targetPlatform: ${{ matrix.targetPlatform }}
+      - uses: actions/upload-artifact@v1
+        with:
+          name: Executables
+          path: build
