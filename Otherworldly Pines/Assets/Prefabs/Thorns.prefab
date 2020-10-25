@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1802465787146032997}
   - component: {fileID: 1802465787146032994}
   - component: {fileID: 1802465787146032999}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: Thorns
   m_TagString: Ground
   m_Icon: {fileID: 0}

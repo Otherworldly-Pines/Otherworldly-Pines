@@ -254,7 +254,7 @@ MonoBehaviour:
     m_PropagationSpeed: 343
   m_LayerMask:
     serializedVersion: 2
-    m_Bits: 4096
+    m_Bits: 36864
   m_IgnoreTag: 
   m_UseImpactDirection: 0
   m_ScaleImpactWithMass: 0
