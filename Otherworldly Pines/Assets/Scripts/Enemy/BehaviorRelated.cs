@@ -10,7 +10,7 @@ public class BehaviorRelated : MonoBehaviour {
     protected Rigidbody2D body;
     protected BoxCollider2D collider;
 
-    private void Awake() {
+    protected void Awake() {
         behavior = GetComponent<EnemyBehavior>();
         body = GetComponent<Rigidbody2D>();
         collider = GetComponent<BoxCollider2D>();
