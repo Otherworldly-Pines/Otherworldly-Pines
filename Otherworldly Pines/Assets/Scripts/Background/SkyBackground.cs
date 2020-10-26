@@ -23,15 +23,8 @@ public class SkyBackground : MonoBehaviour
         spriteSize = spriteRenderer.sprite.bounds.size;
 
         Vector2 bgScale = transform.localScale;
-        if (camWidth >= camHeight)
-        { // Landscape (or equal)
-            bgScale *= camWidth / spriteSize.x;
-        }
-        else
-        { // Portrait
-            bgScale *= camHeight / spriteSize.y;
-        }
 
+        bgScale *= camHeight / spriteSize.y;
         transform.localScale = bgScale;
 
     }

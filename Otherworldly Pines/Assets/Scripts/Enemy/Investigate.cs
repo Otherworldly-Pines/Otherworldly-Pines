@@ -1,12 +1,20 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 // Investigate behavior of the enemy
-public class Investigate : BehaviorRelated
-{
+public class Investigate : BehaviorRelated {
+
+    private LayerMask berriesMask;
+    
     // Start is called before the first frame update
     public float speed = 3; // Speed of movement
+
+    private void Awake() {
+        base.Awake();
+        berriesMask = LayerMask.GetMask("Enemy Berry Colliders");
+    }
 
     // Update is called once per frame
     // Move toward the target 
@@ -31,7 +39,7 @@ public class Investigate : BehaviorRelated
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
-        if(other.collider.tag == "Berries"){
+        if (MasksUtility.IsInMask(other.gameObject, berriesMask)) {
             StartCoroutine(eatThenDestroy(other.collider.gameObject));
         }
     }
