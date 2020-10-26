@@ -13,6 +13,7 @@ public class Vision : BehaviorRelated
     private LayerMask berriesMask;
     private LayerMask groundMask; 
     private LayerMask visionMask;
+    private LayerMask platesMask;
 
     // Start is called before the first frame update
     void Start()
@@ -20,9 +21,10 @@ public class Vision : BehaviorRelated
         playerMask = LayerMask.GetMask("Player");
         berriesMask = LayerMask.GetMask("Berries");
         groundMask = LayerMask.GetMask("Ground", "Pushables");
+        platesMask = LayerMask.GetMask("Pressure Plates");
 
         // Combines the three masks
-        visionMask = LayerMask.GetMask("Player","Berries","Ground","Pushables");
+        visionMask = LayerMask.GetMask("Player", "Berries", "Ground", "Pushables", "Pressure Plates");
     }
     
     private bool IsInMask(GameObject obj, LayerMask mask) {
@@ -63,6 +65,7 @@ public class Vision : BehaviorRelated
             GameObject player = Array.Find(targets, target => target != null && IsInMask(target, playerMask));
             GameObject berry = Array.Find(targets, target => target != null && IsInMask(target, berriesMask));
             GameObject ground = Array.Find(targets, target => target != null && IsInMask(target, groundMask));
+            GameObject plate = Array.Find(targets, target => target != null && IsInMask(target, platesMask));
             
             if (player != null) {
                 if (!behavior.isChasing()) {
@@ -75,6 +78,9 @@ public class Vision : BehaviorRelated
                     this.behavior.setTarget(berry);
                     this.behavior.investigate();
                 }
+            } else if (plate != null && behavior.isPatrolling() && Mathf.Min(distantBottom, distantTop) < 0.1f) {
+                if (this.behavior.getDirection() == 1) this.behavior.turnLeft();
+                else this.behavior.turnRight();
             } else if (ground != null) {
                 if (Mathf.Min(distantBottom, distantTop) < 0.2f){
                     if (this.behavior.getDirection() == 1) this.behavior.turnLeft();
@@ -82,14 +88,7 @@ public class Vision : BehaviorRelated
 
                     this.behavior.patrol();
                 }
-            } else {
-                // if (!this.behavior.isPatrolling()) {
-                //     Debug.Log("Patrol");
-                //     this.behavior.reInitPatrol();
-                //     this.behavior.patrol();
-                // }
-                
-            }   
+            }
         }
     }
     

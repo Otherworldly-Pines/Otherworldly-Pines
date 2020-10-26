@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1520146772}
   - component: {fileID: 1520146774}
   - component: {fileID: 1520146773}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: VisionRange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5319783137865463190}
   - component: {fileID: 8822090758302037804}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

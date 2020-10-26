@@ -27,7 +27,7 @@ public class MovingPlatform : MonoBehaviour, PressurePlateActivated {
 
     private bool isBlocked = false;
 
-    void Start() {
+    private void Awake() {
         body = GetComponentInChildren<Rigidbody2D>();
         collider = GetComponent<BoxCollider2D>();
 
@@ -35,7 +35,7 @@ public class MovingPlatform : MonoBehaviour, PressurePlateActivated {
         nextTarget = gameObject.transform.position;
 
         isVertical = Mathf.Abs(destination.transform.localPosition.x) < 0.001f;
-
+        
         StartMoving();
     }
 
@@ -68,7 +68,7 @@ public class MovingPlatform : MonoBehaviour, PressurePlateActivated {
     }
 
     void Update() {
-        if (isPaused) {
+        if (isPaused && !isBlocked) {
             pauseTimer += Time.deltaTime;
 
             if (pauseTimer > pauseDuration) {
@@ -147,11 +147,13 @@ public class MovingPlatform : MonoBehaviour, PressurePlateActivated {
     }
 
     public void PPEnable() {
+        Debug.Log(gameObject.transform.parent.gameObject.name + " enabled");
         isBlocked = false;
         if (isVertical) StartMoving();
     }
 
     public void PPDisable() {
+        Debug.Log(gameObject.transform.parent.gameObject.name + " disabled");
         isBlocked = true;
         if (isVertical) body.velocity = Vector2.zero;
     }
