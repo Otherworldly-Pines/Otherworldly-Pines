@@ -4,7 +4,7 @@ using UnityEngine;
 using System;
 
 
-// TODO: boxcast
+// TODO: Add check for another enemy
 public class Vision : BehaviorRelated
 {
     public float maxDistant = 7;
@@ -14,6 +14,7 @@ public class Vision : BehaviorRelated
     private LayerMask groundMask; 
     private LayerMask visionMask;
     private LayerMask platesMask;
+
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,7 @@ public class Vision : BehaviorRelated
 
         // Combines the three masks
         visionMask = LayerMask.GetMask("Player", "Berries", "Ground", "Pushables", "Pressure Plates");
+
     }
     
     private bool IsInMask(GameObject obj, LayerMask mask) {
@@ -45,7 +47,7 @@ public class Vision : BehaviorRelated
             );
 
             RaycastHit2D hitBottom = Physics2D.Raycast(
-                new Vector2(outsideBound, collider.bounds.center.y - collider.bounds.extents.y + 0.1f), 
+                new Vector2(outsideBound, collider.bounds.center.y - this.behavior.getRigidbody().gravityScale * collider.bounds.extents.y + 0.1f), 
                 GetDirectionVector(),
                 maxDistant,
                 visionMask
@@ -83,8 +85,7 @@ public class Vision : BehaviorRelated
                 else this.behavior.turnRight();
             } else if (ground != null) {
                 if (Mathf.Min(distantBottom, distantTop) < 0.2f){
-                    if (this.behavior.getDirection() == 1) this.behavior.turnLeft();
-                    else this.behavior.turnRight();
+                    this.behavior.flipDirection();
 
                     this.behavior.patrol();
                 }
