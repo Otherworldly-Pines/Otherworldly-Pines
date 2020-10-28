@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class GravityControl : GravityAffected, IHUDConnected {
 
+    [SerializeField] private GameObject sm;
+    private SoundManager smScript;
+
     private GravityFlipIndicator indicator;
     private GravityRegion activeGravityRegion;
     private PlayerControls player;
@@ -15,6 +18,7 @@ public class GravityControl : GravityAffected, IHUDConnected {
     private void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerControls>();
+        smScript = sm.GetComponent<SoundManager>();
     }
 
     void Update()
@@ -23,7 +27,9 @@ public class GravityControl : GravityAffected, IHUDConnected {
         
         if (Input.GetKeyDown(KeyCode.W) && isFlipActive())
         {
+            smScript.PlayGravity();
             activeGravityRegion.FlipGravity();
+            smScript.SwapMusic();
             player.setJumping(false);
         }
     }
@@ -35,6 +41,7 @@ public class GravityControl : GravityAffected, IHUDConnected {
 
     private void SetActiveGravityRegion(GravityRegion region) {
         activeGravityRegion = region;
+        smScript.SetActiveGravityRegion(region);
         if (indicator != null) indicator.GravityRegionChanged(activeGravityRegion);
     }
 

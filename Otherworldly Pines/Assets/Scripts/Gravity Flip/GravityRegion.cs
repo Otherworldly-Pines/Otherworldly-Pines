@@ -33,6 +33,12 @@ public class GravityRegion : MonoBehaviour {
         ConfigureParticles();
     }
 
+    // returns whether or not the region is flipped, publicly accessible function
+    public bool getIsFlipped()
+    {
+        return gravityIsFlipped;
+    }
+
     public void FlipGravity() {
         if (!playerCanFlipGravity) return;
         
