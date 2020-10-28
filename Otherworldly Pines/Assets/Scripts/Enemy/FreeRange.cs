@@ -30,7 +30,7 @@ public class FreeRange : BehaviorRelated
         float extraHeight = 0.1f;
         Vector2 center2d = this.behavior.getCollider().bounds.center;
         RaycastHit2D raycastHit = Physics2D.Raycast(center2d + new Vector2(collider.bounds.extents.x * this.behavior.direction, 0), 
-                                                    Vector2.down, 
+                                                    this.body.gravityScale * Vector2.down, 
                                                     collider.bounds.extents.y + extraHeight, 
                                                     this.groundMask);
         return raycastHit.collider == null;

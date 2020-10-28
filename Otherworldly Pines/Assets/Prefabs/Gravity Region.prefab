@@ -188,58 +188,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GravityParticles
       objectReference: {fileID: 0}
-    - target: {fileID: 5081553469786013081, guid: 921345ba888cb0f40b399794e19f83e8, type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
-    - target: {fileID: 5081553469786013082, guid: 921345ba888cb0f40b399794e19f83e8, type: 3}
-      propertyPath: ShapeModule.m_Scale.x
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5081553469786013082, guid: 921345ba888cb0f40b399794e19f83e8, type: 3}
-      propertyPath: ShapeModule.m_Scale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5081553469786013082, guid: 921345ba888cb0f40b399794e19f83e8, type: 3}
-      propertyPath: ShapeModule.m_Scale.z
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5081553469786013082, guid: 921345ba888cb0f40b399794e19f83e8, type: 3}
-      propertyPath: InitialModule.startSize.scalar
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5081553469786013082, guid: 921345ba888cb0f40b399794e19f83e8, type: 3}
       propertyPath: TriggerModule.collisionShape0
       value: 
       objectReference: {fileID: 4898620906141801368}
-    - target: {fileID: 5081553469786013082, guid: 921345ba888cb0f40b399794e19f83e8, type: 3}
-      propertyPath: TriggerModule.radiusScale
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5081553469786013082, guid: 921345ba888cb0f40b399794e19f83e8, type: 3}
-      propertyPath: CollisionModule.enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5081553469786013082, guid: 921345ba888cb0f40b399794e19f83e8, type: 3}
-      propertyPath: CollisionModule.type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5081553469786013082, guid: 921345ba888cb0f40b399794e19f83e8, type: 3}
-      propertyPath: CollisionModule.collisionMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5081553469786013082, guid: 921345ba888cb0f40b399794e19f83e8, type: 3}
-      propertyPath: TriggerModule.enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5081553469786013082, guid: 921345ba888cb0f40b399794e19f83e8, type: 3}
-      propertyPath: CollisionModule.m_EnergyLossOnCollision.scalar
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5081553469786013082, guid: 921345ba888cb0f40b399794e19f83e8, type: 3}
-      propertyPath: CollisionModule.collidesWith.m_Bits
-      value: 256
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 921345ba888cb0f40b399794e19f83e8, type: 3}
 --- !u!4 &5261652129444874162 stripped

@@ -188,7 +188,7 @@ MonoBehaviour:
   exaustedMovementRate: 0.3
   aggroExaustRate: 2
   direction: 1
-  eatTime: 3
+  eatTime: 5
 --- !u!114 &2098249186938693122
 MonoBehaviour:
   m_ObjectHideFlags: 0
