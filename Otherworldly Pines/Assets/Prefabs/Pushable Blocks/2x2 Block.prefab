@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: -2647878123967911881}
   - component: {fileID: -5590097979379776640}
   - component: {fileID: 2793012068928615331}
-  - component: {fileID: 6858659717382767541}
   m_Layer: 10
   m_Name: 2x2 Block
   m_TagString: Untagged
@@ -75,16 +74,16 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.1875, y: 0.1875, z: 0.1875, w: 0.1875}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1, y: 1}
-    newSize: {x: 0.98, y: 0.98}
+    newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
-    drawMode: 2
+    drawMode: 0
     adaptiveTiling: 0
-  m_AutoTiling: 1
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.98, y: 0.98}
+  m_Size: {x: 0.95, y: 0.95}
   m_EdgeRadius: 0
 --- !u!114 &2945843626260660649
 MonoBehaviour:
@@ -141,12 +140,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8537688629317838292, guid: 85ac79b1e8efb4565b82a6a9a77e8c14, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b971e0a75a6806647836358b70fad15c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 2
-  m_Size: {x: 0.98, y: 0.98}
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -231,19 +230,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isFrozen: 0
   indicatorSprite: {fileID: 21300000, guid: dcbb2713def444ee9a1eb07e8f51415e, type: 3}
---- !u!114 &6858659717382767541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2945843626260660658}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10c30dcfe83154d4094d233181d7458b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damageImpulseThreshold: 5000
-  highestDamagingImpulse: 10000
-  lowestDamageDealt: 10
-  HighestDamageDealt: 30
