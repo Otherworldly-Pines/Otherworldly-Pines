@@ -24,24 +24,32 @@ public class GravityRegion : MonoBehaviour {
         var sh = particles.shape;
         sh.scale = new Vector3(ownCollider.size.x, 1, ownCollider.size.y);
         particles.transform.localPosition = new Vector3(particles.transform.localPosition.x, 0, -0.5f);
+
+        var emitter = particles.emission;
+        emitter.rateOverTime = ownCollider.size.x * 2f;
+    }
+
+    private void Start() {
+        ConfigureParticles();
     }
 
     public void FlipGravity() {
         if (!playerCanFlipGravity) return;
         
         gravityIsFlipped = !gravityIsFlipped;
-
-        //flips particles along with region's gravity. kinda ugly maybe but we do what we must
-        particles.transform.position = new Vector3(particles.transform.position.x, -particles.transform.position.y, particles.transform.position.z);
-        if (particles.transform.rotation.z == 0)
-            particles.transform.rotation = Quaternion.Euler(particles.transform.rotation.x, particles.transform.rotation.y, -180.0f);
-        else
-            particles.transform.rotation = Quaternion.Euler(particles.transform.rotation.x, particles.transform.rotation.y, 0.0f);
+        
+        ConfigureParticles();
 
         flippables.RemoveWhere(flippable => !flippable.StillExists());
         foreach (GravityFlippable flippable in flippables) {
             flippable.Flip();
         }
+    }
+
+    private void ConfigureParticles() {
+        var localRotation = particles.transform.localRotation;
+        localRotation.z = gravityIsFlipped ? 0f : 180f;
+        particles.transform.localRotation = localRotation;
     }
 
     private void OnTriggerEnter2D(Collider2D collider) {
