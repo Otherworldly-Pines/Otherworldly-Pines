@@ -9,6 +9,14 @@ public class Collectibles : MonoBehaviour
     private int c1Collected = 0; // num of C1 collected
     private int c2Collected = 0; // num of C2 collected
 
+    public GameObject sm;
+    private SoundManager smScript;
+
+    private void Start()
+    {
+        smScript = sm.GetComponent<SoundManager>();
+    }
+
     void Update()
     {
         if (c1 == c1Collected)
@@ -28,13 +36,16 @@ public class Collectibles : MonoBehaviour
         {
             Destroy(target.gameObject);
             c1Collected++;
+            smScript.PlayCollectible();
             // show c1Collected/c1 are collected
         }
         else if (target.gameObject.CompareTag("Collectible2"))
         {
             Destroy(target.gameObject);
             c2Collected++;
+            smScript.PlayCollectible();
             // show c2Collected/c2 are collected
         }
+
     }
 }
