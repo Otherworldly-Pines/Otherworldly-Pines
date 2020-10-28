@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class Thorn : MonoBehaviour
 {
-    public float knockDur = 0.01f;
+    private float knockDur = 0.01f;
 
-    public float knockbackPower = 10f;
+    private float knockbackPower = 70f;
 
 
     //calls when the player hits the thorn; can be changed to other functions
