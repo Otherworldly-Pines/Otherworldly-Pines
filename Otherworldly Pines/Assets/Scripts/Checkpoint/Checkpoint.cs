@@ -30,9 +30,10 @@ public class Checkpoint : MonoBehaviour
         hasReached = false;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    private void OnValidate() {
+        if (transform.position.z < 10f) {
+            Debug.LogError("Checkpoints should have a z position of at least 10", gameObject);
+        }
     }
+
 }
