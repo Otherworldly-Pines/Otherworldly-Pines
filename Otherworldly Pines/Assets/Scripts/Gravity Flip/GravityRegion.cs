@@ -116,15 +116,15 @@ public class GravityRegion : MonoBehaviour {
     }
 
     private void OnValidate() {
-        if (transform.position.z < 90f) Debug.LogError("Gravity regions must have z positions over 90 " + gameObject.name);
+        if (transform.position.z < 90f) Debug.LogError("Gravity regions must have z positions over 90 ", gameObject);
         if (!ownCollider) ownCollider = GetComponent<BoxCollider2D>();
         if (ownCollider.offset.magnitude > 0.001f) {
             var corrected = transform.position + (Vector3)ownCollider.offset;
-            Debug.LogError("Gravity region colliders must have offsets of zero. " + gameObject.name + " position should be " + corrected);
+            Debug.LogError("Gravity region colliders must have offsets of zero. Position should be " + corrected, gameObject);
         }
 
         if (!IsValid(ownCollider.size.x) || !IsValid(ownCollider.size.y))
-            Debug.LogError("Gravity region collider sizes must be multiples of 0.25: " + gameObject.name);
+            Debug.LogError("Gravity region collider sizes must be multiples of 0.25", gameObject);
     }
 
 }

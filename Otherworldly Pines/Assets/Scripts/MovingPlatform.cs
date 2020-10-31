@@ -147,13 +147,11 @@ public class MovingPlatform : MonoBehaviour, PressurePlateActivated {
     }
 
     public void PPEnable() {
-        Debug.Log(gameObject.transform.parent.gameObject.name + " enabled");
         isBlocked = false;
         if (isVertical) StartMoving();
     }
 
     public void PPDisable() {
-        Debug.Log(gameObject.transform.parent.gameObject.name + " disabled");
         isBlocked = true;
         if (isVertical) body.velocity = Vector2.zero;
     }

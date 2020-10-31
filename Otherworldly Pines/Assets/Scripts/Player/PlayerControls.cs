@@ -83,7 +83,6 @@ public class PlayerControls : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Space) && isPlayerGrounded())
         {
             setJumping(true);
-            Debug.Log("Jump if: "+ isJumping);
 
             Vector2 jumpDirection = !flippable.isUpsideDown ? Vector2.up : Vector2.down;
             body.velocity = jumpDirection * jumpForce;
@@ -102,7 +101,6 @@ public class PlayerControls : MonoBehaviour {
     }
     public bool isPlayerJumping()
     {
-        Debug.Log("Method Call: " + isJumping);
         return isJumping;
     }
     public bool isPlayerGrounded()

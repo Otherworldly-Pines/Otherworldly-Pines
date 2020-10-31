@@ -25,12 +25,11 @@ public class PressurePlate : MonoBehaviour {
 
     private void OnValidate() {
         if (target != null && target.GetComponentInChildren<PressurePlateActivated>() == null)
-            Debug.LogError(gameObject.name + "'s target must implement PressurePlateActivated");
+            Debug.LogError("Target must implement PressurePlateActivated", gameObject);
     }
 
     private void OnTriggerStay2D(Collider2D other) {
         if (((1 << other.gameObject.layer) & validContactsMask) != 0) {
-            Debug.Log(other.gameObject.name);
             validContants.Add(other.gameObject.GetInstanceID());
             activatable.PPEnable();
             gameObject.GetComponent<Renderer>().enabled = false;

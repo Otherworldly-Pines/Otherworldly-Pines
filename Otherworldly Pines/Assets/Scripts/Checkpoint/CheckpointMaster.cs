@@ -44,7 +44,7 @@ public class CheckpointMaster : MonoBehaviour
     }
 
     private void OnValidate() {
-        if (startingPosition == null) Debug.LogError("Must assign a starting position");
+        if (startingPosition == null) Debug.LogError("Must assign a starting position", gameObject);
     }
 
 }

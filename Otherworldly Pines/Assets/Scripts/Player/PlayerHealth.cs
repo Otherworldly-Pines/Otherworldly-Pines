@@ -30,7 +30,6 @@ public class PlayerHealth : MonoBehaviour, IHUDConnected {
 
     public void TakeDamage(float damage) {
         SetHealth(currentHealth - damage);
-        Debug.Log(currentHealth);
         if (currentHealth == minHealth) smScript.PlayDead();
         else smScript.PlayHurt();
     }
