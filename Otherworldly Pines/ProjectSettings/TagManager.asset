@@ -10,6 +10,8 @@ TagManager:
   - Berries
   - Block
   - BerryBush
+  - Collectible2
+  - Collectible1
   layers:
   - Default
   - TransparentFX
