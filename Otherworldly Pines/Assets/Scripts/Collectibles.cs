@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Collectibles : MonoBehaviour
 {
+    private Collectible1Counter collectible1Counter;
     public int c1 = 2;
     public int c2 = 1;
     private int c1Collected = 0; // num of C1 collected
