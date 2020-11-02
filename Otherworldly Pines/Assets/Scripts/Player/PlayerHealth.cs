@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour, IHUDConnected {
 
+    [SerializeField] private GameObject sm;
+    private SoundManager smScript;
+
     private static float maxHealth = 100f;
     private static float minHealth = 0f;
     
@@ -13,6 +16,7 @@ public class PlayerHealth : MonoBehaviour, IHUDConnected {
 
     private void Start() {
         RefillMaxHealth();
+        smScript = sm.GetComponent<SoundManager>();
     }
 
     private void SetHealth(float health) {
@@ -26,7 +30,8 @@ public class PlayerHealth : MonoBehaviour, IHUDConnected {
 
     public void TakeDamage(float damage) {
         SetHealth(currentHealth - damage);
-        Debug.Log(currentHealth);
+        if (currentHealth == minHealth) smScript.PlayDead();
+        else smScript.PlayHurt();
     }
 
     public void ConnectToHUD(HUD hud) {

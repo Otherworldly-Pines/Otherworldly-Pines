@@ -24,13 +24,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2098249186594794147}
-  m_LocalRotation: {x: -0, y: -0, z: -0.003347337, w: 0.99999446}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 2098249186938693135}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.384}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2098249186594794145
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -71,12 +71,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -6720528820406127468, guid: d2ef4c5761790f148ae99bf3512093ed, type: 3}
+  m_Sprite: {fileID: 8470155626186026135, guid: 30087762e2c469a4b97e7297c8e1ae55, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.4, y: 2.84}
+  m_Size: {x: 4.35, y: 5.04}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -101,6 +101,7 @@ GameObject:
   - component: {fileID: 2098249186938693127}
   - component: {fileID: 2098249186938693126}
   - component: {fileID: 9010958326117654544}
+  - component: {fileID: 926725813}
   m_Layer: 12
   m_Name: Rabbit
   m_TagString: Untagged
@@ -137,7 +138,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0078930855, y: -0.00007402897}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -148,7 +149,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0099125, y: 0.8281667}
+  m_Size: {x: 0.5, y: 0.6}
   m_EdgeRadius: 0
 --- !u!50 &2098249186938693129
 Rigidbody2D:
@@ -188,7 +189,7 @@ MonoBehaviour:
   exaustedMovementRate: 0.3
   aggroExaustRate: 2
   direction: 1
-  eatTime: 3
+  eatTime: 5
 --- !u!114 &2098249186938693122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,6 +241,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDistant: 5
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  berriesMask:
+    serializedVersion: 2
+    m_Bits: 0
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 0
+  visionMask:
+    serializedVersion: 2
+    m_Bits: 0
+  platesMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &2098249186938693127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -252,6 +268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88133679b23127e48a7f00986ea2b525, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  forgetDistance: 4
   aggroSpeed: 4
   jumpForce: 10
 --- !u!114 &2098249186938693126
@@ -287,6 +304,21 @@ MonoBehaviour:
   percentColliderWidth: 1
   height: 0.01
   offset: {x: 0, y: 0}
+--- !u!114 &926725813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098249186938693130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dcb0ddbd0ca94701b89ae3b25e5d598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  center: {fileID: 0}
+  gravityAffectsSprite: 1
+  isUpsideDown: 0
 --- !u!1 &2098249187618277737
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,7 +366,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 4
+  m_Radius: 3
 --- !u!114 &2098249187618277742
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[SelectionBase]
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(BoxCollider2D))]
 public class EnemyBehavior : MonoBehaviour
@@ -30,12 +31,13 @@ public class EnemyBehavior : MonoBehaviour
     
     private GameObject target;
 
+
     // Start is called before the first frame update 
     void Start()
     {
         this.collider = gameObject.GetComponent<BoxCollider2D>();
         this.rigidbody = gameObject.GetComponent<Rigidbody2D>();
-        groundChecker = GetComponent<GroundChecker>();
+        this.groundChecker = GetComponent<GroundChecker>();
 
         groundMask = LayerMask.GetMask("Ground", "Pushables");
         
@@ -152,18 +154,22 @@ public class EnemyBehavior : MonoBehaviour
     }
 
     public void eat(){
+        Debug.Log("Eat");
         this.state = 0;
     }
 
     public void chase(){
+        Debug.Log("Chase");
         this.state = 2;
     }
     
     public void patrol(){
+        Debug.Log("Patrol");
         this.state = 1;
     }
     
     public void investigate(){
+        Debug.Log("Investigate");
         this.state = 3;
     }
 

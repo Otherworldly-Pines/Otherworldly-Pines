@@ -49,7 +49,7 @@ public class PlayerControls : MonoBehaviour {
         if (shouldKnockback())
         {
             timer += Time.deltaTime;
-            body.AddForce(new Vector2(this.knockbackDir.x * -100, knockbackDir.y * -knockbackPwr));
+            body.AddRelativeForce(new Vector2(this.knockbackDir.x * -10, knockbackDir.y * -knockbackPwr));
         }
         else
         {
@@ -83,7 +83,6 @@ public class PlayerControls : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Space) && isPlayerGrounded())
         {
             setJumping(true);
-            Debug.Log("Jump if: "+ isJumping);
 
             Vector2 jumpDirection = !flippable.isUpsideDown ? Vector2.up : Vector2.down;
             body.velocity = jumpDirection * jumpForce;
@@ -102,7 +101,6 @@ public class PlayerControls : MonoBehaviour {
     }
     public bool isPlayerJumping()
     {
-        Debug.Log("Method Call: " + isJumping);
         return isJumping;
     }
     public bool isPlayerGrounded()

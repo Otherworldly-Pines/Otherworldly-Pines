@@ -24,24 +24,38 @@ public class GravityRegion : MonoBehaviour {
         var sh = particles.shape;
         sh.scale = new Vector3(ownCollider.size.x, 1, ownCollider.size.y);
         particles.transform.localPosition = new Vector3(particles.transform.localPosition.x, 0, -0.5f);
+
+        var emitter = particles.emission;
+        emitter.rateOverTime = ownCollider.size.x * 2f;
+    }
+
+    private void Start() {
+        ConfigureParticles();
+    }
+
+    // returns whether or not the region is flipped, publicly accessible function
+    public bool getIsFlipped()
+    {
+        return gravityIsFlipped;
     }
 
     public void FlipGravity() {
         if (!playerCanFlipGravity) return;
         
         gravityIsFlipped = !gravityIsFlipped;
-
-        //flips particles along with region's gravity. kinda ugly maybe but we do what we must
-        particles.transform.position = new Vector3(particles.transform.position.x, -particles.transform.position.y, particles.transform.position.z);
-        if (particles.transform.rotation.z == 0)
-            particles.transform.rotation = Quaternion.Euler(particles.transform.rotation.x, particles.transform.rotation.y, -180.0f);
-        else
-            particles.transform.rotation = Quaternion.Euler(particles.transform.rotation.x, particles.transform.rotation.y, 0.0f);
+        
+        ConfigureParticles();
 
         flippables.RemoveWhere(flippable => !flippable.StillExists());
         foreach (GravityFlippable flippable in flippables) {
             flippable.Flip();
         }
+    }
+
+    private void ConfigureParticles() {
+        var localRotation = particles.transform.localRotation;
+        localRotation.z = gravityIsFlipped ? 0f : 180f;
+        particles.transform.localRotation = localRotation;
     }
 
     private void OnTriggerEnter2D(Collider2D collider) {
@@ -102,15 +116,15 @@ public class GravityRegion : MonoBehaviour {
     }
 
     private void OnValidate() {
-        if (transform.position.z < 90f) Debug.LogError("Gravity regions must have z positions over 90 " + gameObject.name);
+        if (transform.position.z < 90f) Debug.LogError("Gravity regions must have z positions over 90 ", gameObject);
         if (!ownCollider) ownCollider = GetComponent<BoxCollider2D>();
         if (ownCollider.offset.magnitude > 0.001f) {
             var corrected = transform.position + (Vector3)ownCollider.offset;
-            Debug.LogError("Gravity region colliders must have offsets of zero. " + gameObject.name + " position should be " + corrected);
+            Debug.LogError("Gravity region colliders must have offsets of zero. Position should be " + corrected, gameObject);
         }
 
         if (!IsValid(ownCollider.size.x) || !IsValid(ownCollider.size.y))
-            Debug.LogError("Gravity region collider sizes must be multiples of 0.25: " + gameObject.name);
+            Debug.LogError("Gravity region collider sizes must be multiples of 0.25", gameObject);
     }
 
 }
