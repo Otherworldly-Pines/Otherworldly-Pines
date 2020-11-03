@@ -10,7 +10,7 @@ public class CheckpointMaster : MonoBehaviour
     private static CheckpointMaster instance;
     
     [SerializeField] private int berryCount = 5;
-    [SerializeField] public bool skipTutorial = true;
+    [SerializeField] public bool skipTutorial = false;
     [SerializeField] private GameObject dialogBox;
 
 
