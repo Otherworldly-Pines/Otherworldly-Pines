@@ -10,6 +10,7 @@ TagManager:
   - Berries
   - Block
   - BerryBush
+  - DialogBox
   layers:
   - Default
   - TransparentFX
