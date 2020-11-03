@@ -7,9 +7,8 @@ using UnityEngine;
 // This class is in charge of the aggressive state of the deer.
 [RequireComponent(typeof(EnemyBehavior))]
 
-public class RabbitAggro : BehaviorRelated
-{
-    public float aggroSpeed = 4f;
+public class RabbitAggro : BasicAggro {
+
     public float jumpForce = 0.5f;
 
     private bool jumpable = true;
@@ -19,26 +18,18 @@ public class RabbitAggro : BehaviorRelated
     // Exaust rate applied to this state too
     void Update()
     {
-        if(this.behavior.isChasing()){
-            //Jump
-
-            if(this.behavior.isGrounded() && this.jumpable){
-                if(!this.behavior.isExausted()){
-                    jump();
-                }
-                
-                if(this.behavior.getTarget().transform.position.x > gameObject.transform.position.x){
-                    this.behavior.turnRight();
-                }
-                else{
-                    this.behavior.turnLeft();
-                }
-
+        base.Update();
+        if (behavior.isChasing() && behavior.getTarget() != null) {
+            var distanceToTarget = Vector2.Distance(transform.position, behavior.getTarget().transform.position);
+            if (distanceToTarget > forgetDistance) {
+                behavior.setTarget(null);
+                behavior.investigate();
+                return;
             }
+        }
 
-
-            float movementRate = behavior.GetCurrentMovementSpeed();
-            MoveForwardBy(Time.deltaTime * this.aggroSpeed * movementRate);
+        if (behavior.isChasing() && behavior.isGrounded() && jumpable && !behavior.isExausted()) {
+            jump();
         }
 
     }
@@ -48,7 +39,7 @@ public class RabbitAggro : BehaviorRelated
     //TODO: Work with gravity flip
     void jump(){
         
-        this.behavior.getRigidbody().AddForce(new Vector2(0, jumpForce),ForceMode2D.Impulse);
+        body.AddForce(new Vector2(0, jumpForce) * body.gravityScale,ForceMode2D.Impulse);
         StartCoroutine(disableJumpForSeconds(0.5f));
     }
 
