@@ -162,6 +162,10 @@ public class MovingPlatform : MonoBehaviour, PressurePlateActivated {
     }
 
     private void OnDrawGizmos() {
+        if (Application.isEditor && !Application.isPlaying) {
+            currentTarget = destination.transform.position;
+        }
+        
         Gizmos.color = Color.magenta;
         Gizmos.DrawRay(transform.position, currentTarget - transform.position);
         GizmosUtility.DrawBox(currentTarget, collider.bounds.size);
