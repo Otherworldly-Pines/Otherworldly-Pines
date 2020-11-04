@@ -1464,6 +1464,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1802465787146032994, guid: 813b67ca0d9134b04a19119e3ad7004a, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 3.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1802465787146032995, guid: 813b67ca0d9134b04a19119e3ad7004a, type: 3}
       propertyPath: m_Name
       value: Thorns (4)
@@ -1617,6 +1621,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1802465787146032994, guid: 813b67ca0d9134b04a19119e3ad7004a, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 3.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1802465787146032995, guid: 813b67ca0d9134b04a19119e3ad7004a, type: 3}
       propertyPath: m_Name
       value: Thorns
@@ -1735,6 +1743,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1802465787146032994, guid: 813b67ca0d9134b04a19119e3ad7004a, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 4.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1802465787146032995, guid: 813b67ca0d9134b04a19119e3ad7004a, type: 3}
       propertyPath: m_Name
       value: Thorns (8)
@@ -4233,11 +4245,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5220010075900387767, guid: bd3f03d3f9fca4cfa8b764978c5fa159, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.823533
+      value: -39.81
       objectReference: {fileID: 0}
     - target: {fileID: 5220010075900387767, guid: bd3f03d3f9fca4cfa8b764978c5fa159, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.72882664
+      value: -0.74
       objectReference: {fileID: 0}
     - target: {fileID: 5220010075900387767, guid: bd3f03d3f9fca4cfa8b764978c5fa159, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5205,6 +5217,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1802465787146032994, guid: 813b67ca0d9134b04a19119e3ad7004a, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 4.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1802465787146032995, guid: 813b67ca0d9134b04a19119e3ad7004a, type: 3}
       propertyPath: m_Name
       value: Thorns (11)
@@ -5266,6 +5282,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1802465787146032994, guid: 813b67ca0d9134b04a19119e3ad7004a, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1802465787146032995, guid: 813b67ca0d9134b04a19119e3ad7004a, type: 3}
       propertyPath: m_Name
       value: Thorns (2)
@@ -5449,6 +5469,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1802465787146032994, guid: 813b67ca0d9134b04a19119e3ad7004a, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 4.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1802465787146032995, guid: 813b67ca0d9134b04a19119e3ad7004a, type: 3}
       propertyPath: m_Name
       value: Thorns (9)
@@ -6966,6 +6990,10 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1802465787146032994, guid: 813b67ca0d9134b04a19119e3ad7004a, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 1802465787146032995, guid: 813b67ca0d9134b04a19119e3ad7004a, type: 3}
       propertyPath: m_Name
       value: Thorns (7)
@@ -7217,6 +7245,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1802465787146032994, guid: 813b67ca0d9134b04a19119e3ad7004a, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 3.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1802465787146032995, guid: 813b67ca0d9134b04a19119e3ad7004a, type: 3}
       propertyPath: m_Name
       value: Thorns (3)
@@ -9078,6 +9110,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1802465787146032994, guid: 813b67ca0d9134b04a19119e3ad7004a, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 6.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1802465787146032995, guid: 813b67ca0d9134b04a19119e3ad7004a, type: 3}
       propertyPath: m_Name
       value: Thorns (10)
@@ -9629,6 +9665,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1802465787146032994, guid: 813b67ca0d9134b04a19119e3ad7004a, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1802465787146032995, guid: 813b67ca0d9134b04a19119e3ad7004a, type: 3}
       propertyPath: m_Name
       value: Thorns (1)
