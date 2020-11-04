@@ -46,7 +46,7 @@ public class PressurePlate : MonoBehaviour {
         }
     }
 
-    private void OnDrawGizmosSelected() {
+    private void OnDrawGizmos() {
         Gizmos.color = Color.green;
         Gizmos.DrawLine(gameObject.transform.position, target.transform.position);
     }

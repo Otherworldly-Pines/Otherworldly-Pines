@@ -48,7 +48,7 @@ public class CheckpointMaster : MonoBehaviour
     {
         dialogBox = GameObject.FindGameObjectWithTag("DialogBox");
 
-        dialogBox.SetActive(!skipTutorial);
+        if (dialogBox != null) dialogBox.SetActive(!skipTutorial);
         currentScene = SceneManager.GetActiveScene();
         if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>().currentHealth <= 0)
         {

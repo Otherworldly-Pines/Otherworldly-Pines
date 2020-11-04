@@ -28,10 +28,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3873076921912881188}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.2, y: -1.04, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6182702436186399217}
+  - {fileID: 4813443347246827645}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -44,7 +45,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 3873076921912881188}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: a9a7c6c977ca24a9cacfb148eeaaa963, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -73,8 +74,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7c80023f4e6c4418a00bb6594812acd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorSound: {fileID: 0}
   slidingPart: {fileID: 5622169761312535054}
+  slideDirection: {x: 0, y: -1}
 --- !u!212 &2867683100153341363
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -246,12 +247,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5622169761312535054}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 0.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 6182702436186399217}
-  m_RootOrder: 0
+  m_Father: {fileID: 3873076921912881191}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6545387872545018689
 SpriteRenderer:
@@ -292,7 +293,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: f64d893cf185e441591040c8e039cf73, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -331,8 +332,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 2, z: 1}
-  m_Children:
-  - {fileID: 4813443347246827645}
+  m_Children: []
   m_Father: {fileID: 3873076921912881191}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

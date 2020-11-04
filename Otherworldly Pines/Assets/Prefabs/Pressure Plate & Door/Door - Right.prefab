@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4764356771935465809
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1852396096304190540, guid: a36270acb35344d059007b4a2600368f, type: 3}
+      propertyPath: slideDirection.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1852396096304190540, guid: a36270acb35344d059007b4a2600368f, type: 3}
+      propertyPath: slideDirection.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867683100153341363, guid: a36270acb35344d059007b4a2600368f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5338ec238d59041ffa428adeec0e1da0, type: 3}
+    - target: {fileID: 3873076921912881188, guid: a36270acb35344d059007b4a2600368f, type: 3}
+      propertyPath: m_Name
+      value: Door - Right Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3873076921912881189, guid: a36270acb35344d059007b4a2600368f, type: 3}
+      propertyPath: m_Size.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3873076921912881189, guid: a36270acb35344d059007b4a2600368f, type: 3}
+      propertyPath: m_Size.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3873076921912881191, guid: a36270acb35344d059007b4a2600368f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3873076921912881191, guid: a36270acb35344d059007b4a2600368f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3873076921912881191, guid: a36270acb35344d059007b4a2600368f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3873076921912881191, guid: a36270acb35344d059007b4a2600368f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3873076921912881191, guid: a36270acb35344d059007b4a2600368f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3873076921912881191, guid: a36270acb35344d059007b4a2600368f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3873076921912881191, guid: a36270acb35344d059007b4a2600368f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3873076921912881191, guid: a36270acb35344d059007b4a2600368f, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3873076921912881191, guid: a36270acb35344d059007b4a2600368f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3873076921912881191, guid: a36270acb35344d059007b4a2600368f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3873076921912881191, guid: a36270acb35344d059007b4a2600368f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6182702436186399217, guid: a36270acb35344d059007b4a2600368f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6182702436186399217, guid: a36270acb35344d059007b4a2600368f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 6182702436186399217, guid: a36270acb35344d059007b4a2600368f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 6545387872545018689, guid: a36270acb35344d059007b4a2600368f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 18353134134c749cfa85ef9883ab3abf, type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a36270acb35344d059007b4a2600368f, type: 3}
