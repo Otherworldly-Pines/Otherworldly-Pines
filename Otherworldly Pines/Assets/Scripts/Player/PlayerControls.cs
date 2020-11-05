@@ -6,6 +6,7 @@ using UnityEngine;
 [SelectionBase]
 public class PlayerControls : MonoBehaviour {
 
+    public Animator animator;
     public GroundChecker groundCheck;
     public LayerMask groundMask;
     public LayerMask pushablesMask;
@@ -80,19 +81,19 @@ public class PlayerControls : MonoBehaviour {
         isPressingShift = Input.GetKey(KeyCode.LeftShift);
         currentHorizontalInput = Input.GetAxis("Horizontal");
     
+        animator.SetFloat("Speed", Mathf.Abs(currentHorizontalInput*walkSpeed));
+
         if (Input.GetKeyDown(KeyCode.Space) && isPlayerGrounded())
         {
             setJumping(true);
-
             Vector2 jumpDirection = !flippable.isUpsideDown ? Vector2.up : Vector2.down;
             body.velocity = jumpDirection * jumpForce;
         }
         if (isPlayerGrounded())
         {
-            //Debug.Log("Ground If: "+ isJumping);
-
-            //   isJumping = false;
         }
+
+        animator.SetBool("IsJumping", !groundCheck.IsGrounded());
     }
 
     public void setJumping(bool jp)

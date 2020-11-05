@@ -1,0 +1,799 @@
+fileFormatVersion: 2
+guid: 015ac3ec8ef7e4597b23e196115a026a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3604015255322474668
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_0
+  - first:
+      213: 142503819624198471
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_1
+  - first:
+      213: 4182053001672161351
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_2
+  - first:
+      213: -7817820818481876577
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_3
+  - first:
+      213: -9149719939116703171
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_4
+  - first:
+      213: 4413328880123647168
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_5
+  - first:
+      213: -3455589040036765889
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_6
+  - first:
+      213: 3203267428079936311
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_7
+  - first:
+      213: 508343054202461491
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_8
+  - first:
+      213: 4396010090469047768
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_9
+  - first:
+      213: 7470719666869250709
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_10
+  - first:
+      213: 5658093952402629523
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_11
+  - first:
+      213: -3152353473825047743
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_12
+  - first:
+      213: 4681297486689364964
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_13
+  - first:
+      213: -8804393340148244226
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_14
+  - first:
+      213: 4799947878853388161
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_15
+  - first:
+      213: 4220037681678152946
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_16
+  - first:
+      213: 2325262486353453281
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_17
+  - first:
+      213: 3837205323900393777
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_18
+  - first:
+      213: 2710668252260891662
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_19
+  - first:
+      213: -8765139928429375063
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_20
+  - first:
+      213: -5176932134067951483
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_21
+  - first:
+      213: 2451879464170813195
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_22
+  - first:
+      213: 6525563938109334515
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_23
+  - first:
+      213: 2003631150827707285
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_24
+  - first:
+      213: 7627391449011906400
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_25
+  - first:
+      213: -3781357997378783135
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_26
+  - first:
+      213: -7358346282538920057
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_27
+  - first:
+      213: 1807887027908132247
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_28
+  - first:
+      213: -5452258223155623508
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_29
+  - first:
+      213: 1318227632932289106
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_30
+  - first:
+      213: -610259611467290333
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_31
+  - first:
+      213: -8684263514957605487
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_32
+  - first:
+      213: 7506568537171303133
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_33
+  - first:
+      213: 8408614892650965731
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_34
+  - first:
+      213: 3669086255406245418
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_35
+  - first:
+      213: 5664659457421293159
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_36
+  - first:
+      213: 6072064609262398533
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_37
+  - first:
+      213: 2375746365867633236
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_38
+  - first:
+      213: 2248085545118997518
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_39
+  - first:
+      213: 7192180725478138321
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_40
+  - first:
+      213: -3801111220308403336
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_41
+  - first:
+      213: 4726996383397454448
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_42
+  - first:
+      213: -1958972286771948235
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_43
+  - first:
+      213: 2834956949252626069
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_44
+  - first:
+      213: 5051689307072900242
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_45
+  - first:
+      213: -8774637343293457037
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_46
+  - first:
+      213: -1688164102169488195
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_47
+  - first:
+      213: -8465539849666610381
+    second: Pines-PlayerCharacter-IdleSpriteSheet_v001_48
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 345
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-IdleSpriteSheet_v001_0
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 1653
+        width: 263
+        height: 521
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca8b592a7c8040230800000000000000
+      internalID: 3604015255322474668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-IdleSpriteSheet_v001_1
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 1653
+        width: 272
+        height: 518
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74136db08764af100800000000000000
+      internalID: 142503819624198471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-IdleSpriteSheet_v001_2
+      rect:
+        serializedVersion: 2
+        x: 1746
+        y: 1653
+        width: 273
+        height: 518
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 748768c2c03a90a30800000000000000
+      internalID: 4182053001672161351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-IdleSpriteSheet_v001_3
+      rect:
+        serializedVersion: 2
+        x: 2507
+        y: 1653
+        width: 281
+        height: 517
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f91fbbcd265818390800000000000000
+      internalID: -7817820818481876577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-IdleSpriteSheet_v001_4
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 1653
+        width: 285
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d32e3a2513aa50180800000000000000
+      internalID: -9149719939116703171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-IdleSpriteSheet_v001_5
+      rect:
+        serializedVersion: 2
+        x: 4048
+        y: 1653
+        width: 278
+        height: 510
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c41eb0db3b4f3d30800000000000000
+      internalID: 4413328880123647168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-IdleSpriteSheet_v001_6
+      rect:
+        serializedVersion: 2
+        x: 4821
+        y: 1653
+        width: 273
+        height: 510
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3f10ea93184b00d0800000000000000
+      internalID: -3455589040036765889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-IdleSpriteSheet_v001_7
+      rect:
+        serializedVersion: 2
+        x: 5601
+        y: 1653
+        width: 258
+        height: 510
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 733a84311ca447c20800000000000000
+      internalID: 3203267428079936311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-IdleSpriteSheet_v001_8
+      rect:
+        serializedVersion: 2
+        x: 6373
+        y: 1653
+        width: 255
+        height: 510
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33d56c1805ffd0700800000000000000
+      internalID: 508343054202461491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-IdleSpriteSheet_v001_9
+      rect:
+        serializedVersion: 2
+        x: 7149
+        y: 1653
+        width: 248
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ddb07fd2e3c10d30800000000000000
+      internalID: 4396010090469047768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-IdleSpriteSheet_v001_10
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 884
+        width: 244
+        height: 517
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59a244894f35da760800000000000000
+      internalID: 7470719666869250709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-IdleSpriteSheet_v001_11
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 884
+        width: 240
+        height: 517
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 393aebac876958e40800000000000000
+      internalID: 5658093952402629523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-IdleSpriteSheet_v001_12
+      rect:
+        serializedVersion: 2
+        x: 1768
+        y: 884
+        width: 251
+        height: 518
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14b703aa7379044d0800000000000000
+      internalID: -3152353473825047743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-IdleSpriteSheet_v001_13
+      rect:
+        serializedVersion: 2
+        x: 2526
+        y: 884
+        width: 262
+        height: 521
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb6c06f24f47f040800000000000000
+      internalID: 4681297486689364964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-IdleSpriteSheet_v001_14
+      rect:
+        serializedVersion: 2
+        x: 3287
+        y: 884
+        width: 270
+        height: 521
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef026a1a7e280d580800000000000000
+      internalID: -8804393340148244226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-IdleSpriteSheet_v001_15
+      rect:
+        serializedVersion: 2
+        x: 4048
+        y: 884
+        width: 278
+        height: 518
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18722732a27dc9240800000000000000
+      internalID: 4799947878853388161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-IdleSpriteSheet_v001_16
+      rect:
+        serializedVersion: 2
+        x: 4811
+        y: 884
+        width: 283
+        height: 517
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f4703ba9e5909a30800000000000000
+      internalID: 4220037681678152946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-IdleSpriteSheet_v001_17
+      rect:
+        serializedVersion: 2
+        x: 5578
+        y: 884
+        width: 281
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e0a3ac59edf44020800000000000000
+      internalID: 2325262486353453281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-IdleSpriteSheet_v001_18
+      rect:
+        serializedVersion: 2
+        x: 6351
+        y: 884
+        width: 277
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 139125569ed704530800000000000000
+      internalID: 3837205323900393777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-IdleSpriteSheet_v001_19
+      rect:
+        serializedVersion: 2
+        x: 7123
+        y: 884
+        width: 274
+        height: 510
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c70f7e96a3e9520800000000000000
+      internalID: 2710668252260891662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-IdleSpriteSheet_v001_20
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 118
+        width: 263
+        height: 510
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a1df5fbca7fb5680800000000000000
+      internalID: -8765139928429375063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-IdleSpriteSheet_v001_21
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 118
+        width: 255
+        height: 511
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 588239217a7d728b0800000000000000
+      internalID: -5176932134067951483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-IdleSpriteSheet_v001_22
+      rect:
+        serializedVersion: 2
+        x: 1772
+        y: 118
+        width: 247
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b07f9fdc163d60220800000000000000
+      internalID: 2451879464170813195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-IdleSpriteSheet_v001_23
+      rect:
+        serializedVersion: 2
+        x: 2545
+        y: 118
+        width: 243
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f32b1ae3d57f8a50800000000000000
+      internalID: 6525563938109334515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-IdleSpriteSheet_v001_24
+      rect:
+        serializedVersion: 2
+        x: 3321
+        y: 118
+        width: 236
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59b1efd7ae35ecb10800000000000000
+      internalID: 2003631150827707285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-IdleSpriteSheet_v001_25
+      rect:
+        serializedVersion: 2
+        x: 4072
+        y: 118
+        width: 254
+        height: 518
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 067e4397c10f9d960800000000000000
+      internalID: 7627391449011906400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
