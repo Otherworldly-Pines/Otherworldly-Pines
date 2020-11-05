@@ -1,7 +1,109 @@
 fileFormatVersion: 2
 guid: 8e814690411a74677bb513f5df98926f
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -2317686788759180153
+    second: Pines-PlayerCharacter-PushSpriteSheet-v001_0
+  - first:
+      213: -6412768350977243107
+    second: Pines-PlayerCharacter-PushSpriteSheet-v001_1
+  - first:
+      213: 927737812314206909
+    second: Pines-PlayerCharacter-PushSpriteSheet-v001_2
+  - first:
+      213: -7324086479509053241
+    second: Pines-PlayerCharacter-PushSpriteSheet-v001_3
+  - first:
+      213: 846152512052029523
+    second: Pines-PlayerCharacter-PushSpriteSheet-v001_4
+  - first:
+      213: -5077745904835940778
+    second: Pines-PlayerCharacter-PushSpriteSheet-v001_5
+  - first:
+      213: 6268514632145896738
+    second: Pines-PlayerCharacter-PushSpriteSheet-v001_6
+  - first:
+      213: 6772209235347171003
+    second: Pines-PlayerCharacter-PushSpriteSheet-v001_7
+  - first:
+      213: -5444619309691509370
+    second: Pines-PlayerCharacter-PushSpriteSheet-v001_8
+  - first:
+      213: -1416393402540961741
+    second: Pines-PlayerCharacter-PushSpriteSheet-v001_9
+  - first:
+      213: -7210921972616578889
+    second: Pines-PlayerCharacter-PushSpriteSheet-v001_10
+  - first:
+      213: 8398912247158349636
+    second: Pines-PlayerCharacter-PushSpriteSheet-v001_11
+  - first:
+      213: -3232473313592309129
+    second: Pines-PlayerCharacter-PushSpriteSheet-v001_12
+  - first:
+      213: -7093283433527904115
+    second: Pines-PlayerCharacter-PushSpriteSheet-v001_13
+  - first:
+      213: -7066136208246965127
+    second: Pines-PlayerCharacter-PushSpriteSheet-v001_14
+  - first:
+      213: -1589118900061448487
+    second: Pines-PlayerCharacter-PushSpriteSheet-v001_15
+  - first:
+      213: -6151812523865761234
+    second: Pines-PlayerCharacter-PushSpriteSheet-v001_16
+  - first:
+      213: -1651022743986511634
+    second: Pines-PlayerCharacter-PushSpriteSheet-v001_17
+  - first:
+      213: 4419391316771818648
+    second: Pines-PlayerCharacter-PushSpriteSheet-v001_18
+  - first:
+      213: 3498018472562655581
+    second: Pines-PlayerCharacter-PushSpriteSheet-v001_19
+  - first:
+      213: -8808467583201774770
+    second: Pines-PlayerCharacter-PushSpriteSheet-v001_20
+  - first:
+      213: 1041251321575612538
+    second: Pines-PlayerCharacter-PushSpriteSheet-v001_21
+  - first:
+      213: 151261582894791567
+    second: Pines-PlayerCharacter-PushSpriteSheet-v001_22
+  - first:
+      213: -6469929217737316558
+    second: Pines-PlayerCharacter-PushSpriteSheet-v001_23
+  - first:
+      213: -7065052915449599436
+    second: Pines-PlayerCharacter-PushSpriteSheet-v001_24
+  - first:
+      213: 1975617964858848146
+    second: Pines-PlayerCharacter-PushSpriteSheet-v001_25
+  - first:
+      213: 3997467503644637717
+    second: Pines-PlayerCharacter-PushSpriteSheet-v001_26
+  - first:
+      213: 5685828816072963232
+    second: Pines-PlayerCharacter-PushSpriteSheet-v001_27
+  - first:
+      213: 151580456418560780
+    second: Pines-PlayerCharacter-PushSpriteSheet-v001_28
+  - first:
+      213: 8601596963222556965
+    second: Pines-PlayerCharacter-PushSpriteSheet-v001_29
+  - first:
+      213: 2063111993157822552
+    second: Pines-PlayerCharacter-PushSpriteSheet-v001_30
+  - first:
+      213: 8137005855548941704
+    second: Pines-PlayerCharacter-PushSpriteSheet-v001_31
+  - first:
+      213: 4866927889334640076
+    second: Pines-PlayerCharacter-PushSpriteSheet-v001_32
+  - first:
+      213: -8153105637824694483
+    second: Pines-PlayerCharacter-PushSpriteSheet-v001_33
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,12 +143,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 345
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -73,9 +175,735 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PushSpriteSheet-v001_0
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 2432
+        width: 291
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78ca46f252ce5dfd0800000000000000
+      internalID: -2317686788759180153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PushSpriteSheet-v001_1
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 2432
+        width: 293
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d18422d39254107a0800000000000000
+      internalID: -6412768350977243107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PushSpriteSheet-v001_2
+      rect:
+        serializedVersion: 2
+        x: 1746
+        y: 2425
+        width: 285
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db2bfabff9cffdc00800000000000000
+      internalID: 927737812314206909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PushSpriteSheet-v001_3
+      rect:
+        serializedVersion: 2
+        x: 2514
+        y: 2425
+        width: 285
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c02f9cc62e9b5a90800000000000000
+      internalID: -7324086479509053241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PushSpriteSheet-v001_4
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 2410
+        width: 292
+        height: 518
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3586aa20a332ebb00800000000000000
+      internalID: 846152512052029523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PushSpriteSheet-v001_5
+      rect:
+        serializedVersion: 2
+        x: 4041
+        y: 2410
+        width: 292
+        height: 518
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65e2f8aa0093889b0800000000000000
+      internalID: -5077745904835940778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PushSpriteSheet-v001_6
+      rect:
+        serializedVersion: 2
+        x: 4798
+        y: 2410
+        width: 304
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 225056e88dc3ef650800000000000000
+      internalID: 6268514632145896738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PushSpriteSheet-v001_7
+      rect:
+        serializedVersion: 2
+        x: 5567
+        y: 2410
+        width: 304
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb6ec793b68bbfd50800000000000000
+      internalID: 6772209235347171003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PushSpriteSheet-v001_8
+      rect:
+        serializedVersion: 2
+        x: 6347
+        y: 2418
+        width: 292
+        height: 519
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 685ea9ca593d074b0800000000000000
+      internalID: -5444619309691509370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PushSpriteSheet-v001_9
+      rect:
+        serializedVersion: 2
+        x: 7116
+        y: 2418
+        width: 288
+        height: 519
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 330d65b64b5f75ce0800000000000000
+      internalID: -1416393402540961741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PushSpriteSheet-v001_10
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 1652
+        width: 270
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b83127cba8adeb90800000000000000
+      internalID: -7210921972616578889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PushSpriteSheet-v001_11
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 1652
+        width: 270
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44f1d8f703eee8470800000000000000
+      internalID: 8398912247158349636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PushSpriteSheet-v001_12
+      rect:
+        serializedVersion: 2
+        x: 1768
+        y: 1660
+        width: 263
+        height: 517
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77a866dc5a2f323d0800000000000000
+      internalID: -3232473313592309129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PushSpriteSheet-v001_13
+      rect:
+        serializedVersion: 2
+        x: 2537
+        y: 1660
+        width: 262
+        height: 517
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d88f76d8c489f8d90800000000000000
+      internalID: -7093283433527904115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PushSpriteSheet-v001_14
+      rect:
+        serializedVersion: 2
+        x: 3302
+        y: 1665
+        width: 262
+        height: 509
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97cf9ec7e8a00fd90800000000000000
+      internalID: -7066136208246965127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PushSpriteSheet-v001_15
+      rect:
+        serializedVersion: 2
+        x: 4071
+        y: 1666
+        width: 262
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d65af7a7c052f9e0800000000000000
+      internalID: -1589118900061448487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PushSpriteSheet-v001_16
+      rect:
+        serializedVersion: 2
+        x: 4837
+        y: 1660
+        width: 265
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2a9e2e6a1f50aaa0800000000000000
+      internalID: -6151812523865761234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PushSpriteSheet-v001_17
+      rect:
+        serializedVersion: 2
+        x: 5605
+        y: 1660
+        width: 266
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee0e794df836619e0800000000000000
+      internalID: -1651022743986511634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PushSpriteSheet-v001_18
+      rect:
+        serializedVersion: 2
+        x: 6362
+        y: 1656
+        width: 277
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89c41a7dcf4d45d30800000000000000
+      internalID: 4419391316771818648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PushSpriteSheet-v001_19
+      rect:
+        serializedVersion: 2
+        x: 7131
+        y: 1656
+        width: 273
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d510ada74457b8030800000000000000
+      internalID: 3498018472562655581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PushSpriteSheet-v001_20
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 887
+        width: 292
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e43f6bff66902c580800000000000000
+      internalID: -8808467583201774770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PushSpriteSheet-v001_21
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 887
+        width: 295
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a70ab686f84437e00800000000000000
+      internalID: 1041251321575612538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PushSpriteSheet-v001_22
+      rect:
+        serializedVersion: 2
+        x: 1727
+        y: 884
+        width: 304
+        height: 509
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8b7b94bb93691200800000000000000
+      internalID: 151261582894791567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PushSpriteSheet-v001_23
+      rect:
+        serializedVersion: 2
+        x: 2492
+        y: 884
+        width: 307
+        height: 509
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 237a8d6d7a13636a0800000000000000
+      internalID: -6469929217737316558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PushSpriteSheet-v001_24
+      rect:
+        serializedVersion: 2
+        x: 3276
+        y: 887
+        width: 288
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ae94f3ec3e3fd90800000000000000
+      internalID: -7065052915449599436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PushSpriteSheet-v001_25
+      rect:
+        serializedVersion: 2
+        x: 4044
+        y: 887
+        width: 289
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 293ba4f521eca6b10800000000000000
+      internalID: 1975617964858848146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PushSpriteSheet-v001_26
+      rect:
+        serializedVersion: 2
+        x: 4828
+        y: 887
+        width: 274
+        height: 518
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51af7ebd38bd97730800000000000000
+      internalID: 3997467503644637717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PushSpriteSheet-v001_27
+      rect:
+        serializedVersion: 2
+        x: 5597
+        y: 887
+        width: 274
+        height: 518
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a475b3fe2f18ee40800000000000000
+      internalID: 5685828816072963232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PushSpriteSheet-v001_28
+      rect:
+        serializedVersion: 2
+        x: 6377
+        y: 895
+        width: 262
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0b48bb3f958a1200800000000000000
+      internalID: 151580456418560780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PushSpriteSheet-v001_29
+      rect:
+        serializedVersion: 2
+        x: 7142
+        y: 895
+        width: 262
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52195f56dd20f5770800000000000000
+      internalID: 8601596963222556965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PushSpriteSheet-v001_30
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 122
+        width: 266
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 858250c4d65a1ac10800000000000000
+      internalID: 2063111993157822552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PushSpriteSheet-v001_31
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 122
+        width: 266
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 885a443c6b37ce070800000000000000
+      internalID: 8137005855548941704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PushSpriteSheet-v001_32
+      rect:
+        serializedVersion: 2
+        x: 1753
+        y: 126
+        width: 291
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd9b37112dca8340800000000000000
+      internalID: 4866927889334640076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PushSpriteSheet-v001_33
+      rect:
+        serializedVersion: 2
+        x: 2522
+        y: 126
+        width: 289
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2779319e995ade80800000000000000
+      internalID: -8153105637824694483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
