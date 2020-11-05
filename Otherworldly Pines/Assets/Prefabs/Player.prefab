@@ -137,7 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   center: {fileID: 0}
-  gravityAffectsSprite: 0
+  gravityAffectsSprite: 1
   isUpsideDown: 0
 --- !u!114 &7203038634332508862
 MonoBehaviour:
