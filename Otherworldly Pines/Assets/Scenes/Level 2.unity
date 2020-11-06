@@ -1426,6 +1426,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5199923320543158756, guid: 2042e9a47d89b1746bc361eed6b02f1f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 5199923320543158756, guid: 2042e9a47d89b1746bc361eed6b02f1f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.51
+      objectReference: {fileID: 0}
     - target: {fileID: 7097060035232523794, guid: 2042e9a47d89b1746bc361eed6b02f1f, type: 3}
       propertyPath: lastCheckPointPos.x
       value: 0
@@ -8868,25 +8876,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5319783137865463190, guid: 118f2bd46add8fb4f8d1feffc77068c0, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -4.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 5319783137865463190, guid: 118f2bd46add8fb4f8d1feffc77068c0, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.89
-      objectReference: {fileID: 0}
     - target: {fileID: 7683570258011486532, guid: 118f2bd46add8fb4f8d1feffc77068c0, type: 3}
       propertyPath: m_Name
       value: Deer
       objectReference: {fileID: 0}
     - target: {fileID: 7683570258011486536, guid: 118f2bd46add8fb4f8d1feffc77068c0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 144.5
+      value: 144.29
       objectReference: {fileID: 0}
     - target: {fileID: 7683570258011486536, guid: 118f2bd46add8fb4f8d1feffc77068c0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.76
+      value: -4.07
       objectReference: {fileID: 0}
     - target: {fileID: 7683570258011486536, guid: 118f2bd46add8fb4f8d1feffc77068c0, type: 3}
       propertyPath: m_LocalPosition.z
