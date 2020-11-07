@@ -27,6 +27,7 @@ public class GravityControl : GravityAffected, IHUDConnected {
         
         if (Input.GetKeyDown(KeyCode.W) && isFlipActive())
         {
+            Debug.Log("flip is actually happening, isFlipActive returning" + isFlipActive());
             smScript.PlayGravity();
             activeGravityRegion.FlipGravity();
             smScript.SwapMusic();
@@ -36,7 +37,7 @@ public class GravityControl : GravityAffected, IHUDConnected {
 
     private bool isFlipActive()
     {
-        return activeGravityRegion != null && (player.isPlayerGrounded() || player.isPlayerJumping());
+        return activeGravityRegion != null && activeGravityRegion.playerCanFlipGravity && (player.isPlayerGrounded() || player.isPlayerJumping());
     }
 
     private void SetActiveGravityRegion(GravityRegion region) {

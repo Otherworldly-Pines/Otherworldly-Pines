@@ -19,14 +19,16 @@ public class SoundManager : MonoBehaviour
     private AudioClip unflipped_music;
     private bool isFlipped;
 
+    private int timeStamp;
+
     // Start is called before the first frame update
     void Awake()
     {
         unflipped_music = soundSource.clip;
     }
-    private void Update()
+    void Update()
     {
-        
+        timeStamp = soundSource.timeSamples;
     }
 
     public void SetActiveGravityRegion(GravityRegion gr)
@@ -64,11 +66,13 @@ public class SoundManager : MonoBehaviour
         isFlipped = activeGravityRegion.getIsFlipped();
         if (activeGravityRegion.getIsFlipped()) {
             soundSource.clip = flipped_music;
+            soundSource.timeSamples = timeStamp;
             soundSource.Play();
         }
         else
         {
             soundSource.clip = unflipped_music;
+            soundSource.timeSamples = timeStamp;
             soundSource.Play();
         }
     }
