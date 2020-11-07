@@ -21,24 +21,19 @@ public class SoundManager : MonoBehaviour
     private GravityRegion activeGravityRegion;
     private AudioClip unflipped_music;
 
-    private int timeStamp;
-
     // Start is called before the first frame update
-    void Awake() {
+    void Awake()
+    {
         // Create audio sources
         var as1obj = new GameObject();
         as1obj.transform.parent = transform;
         unflippedMusicSource = as1obj.AddComponent<AudioSource>();
-        
+
         var as2obj = new GameObject();
         as2obj.transform.parent = transform;
         flippedMusicSource = as2obj.AddComponent<AudioSource>();
-        
+
         unflipped_music = soundSource.clip;
-    }
-    void Update()
-    {
-        timeStamp = soundSource.timeSamples;
         unflippedMusicSource.clip = unflipped_music;
         flippedMusicSource.clip = flipped_music;
         soundSource.clip = null;
@@ -46,7 +41,7 @@ public class SoundManager : MonoBehaviour
         unflippedMusicSource.volume = GameSettings.musicVolume;
         flippedMusicSource.volume = GameSettings.musicVolume;
         soundSource.volume = GameSettings.sfxVolume;
-        
+
         unflippedMusicSource.Play();
         flippedMusicSource.Play();
     }
@@ -56,7 +51,7 @@ public class SoundManager : MonoBehaviour
         activeGravityRegion = gr;
     }
 
-    public void PlayCollectible() 
+    public void PlayCollectible()
     {
         soundSource.PlayOneShot(clip_collection);
     }
@@ -82,32 +77,26 @@ public class SoundManager : MonoBehaviour
     }
 
     public void SwapMusic()
-    {/*
-        isFlipped = activeGravityRegion.getIsFlipped();
-        if (activeGravityRegion.getIsFlipped()) {
-            soundSource.clip = flipped_music;
-            soundSource.timeSamples = timeStamp;
-            soundSource.Play();
+    {
+        if (activeGravityRegion != null && activeGravityRegion.playerCanFlipGravity && activeGravityRegion.gravityIsFlipped)
+        {
+            flippedMusicSource.volume = GameSettings.musicVolume;
+            unflippedMusicSource.volume = 0f;
         }
         else
         {
-            soundSource.clip = unflipped_music;
-            soundSource.timeSamples = timeStamp;
-            soundSource.Play(); */
-        if (activeGravityRegion != null && activeGravityRegion.gravityIsFlipped) {
-            flippedMusicSource.volume = GameSettings.musicVolume;
-            unflippedMusicSource.volume = 0f;
-        } else {
             flippedMusicSource.volume = 0f;
             unflippedMusicSource.volume = GameSettings.musicVolume;
         }
     }
 
-    public void UpdateMusicVolume() {
+    public void UpdateMusicVolume()
+    {
         SwapMusic();
     }
 
-    public void UpdateSfxVolume() {
+    public void UpdateSfxVolume()
+    {
         soundSource.volume = GameSettings.sfxVolume;
     }
 }
