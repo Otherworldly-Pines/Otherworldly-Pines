@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerThrow : MonoBehaviour, IHUDConnected {
 
+    public Animator animator;
     private BerryCounter berryCounter;
     public GameObject bulletPrefab;
     public float bulletSpeed = 10.0f;
@@ -47,6 +48,7 @@ public class PlayerThrow : MonoBehaviour, IHUDConnected {
     {
         if (ammo > 0)
         {
+            animator.SetTrigger("TriggerThrow");
             GameObject bullet = Instantiate(bulletPrefab) as GameObject;
             bullet.transform.position = transform.position;
             FollowMouse(bullet);
@@ -57,7 +59,7 @@ public class PlayerThrow : MonoBehaviour, IHUDConnected {
             float distance = difference.magnitude;
             Vector2 direction = difference / distance;
             direction.Normalize();
-
+            
             bullet.transform.position +=
                 new Vector3(direction.x, direction.y, 0f); // bullets dont collide with player's collider
             bullet.GetComponent<Rigidbody2D>().velocity = direction * bulletSpeed;
