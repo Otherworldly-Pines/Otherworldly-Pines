@@ -27,7 +27,6 @@ public class GravityControl : GravityAffected, IHUDConnected {
         
         if (Input.GetKeyDown(KeyCode.W) && isFlipActive())
         {
-            Debug.Log("flip is actually happening, isFlipActive returning" + isFlipActive());
             smScript.PlayGravity();
             activeGravityRegion.FlipGravity();
             smScript.SwapMusic();

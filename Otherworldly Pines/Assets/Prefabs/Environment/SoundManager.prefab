@@ -50,6 +50,7 @@ MonoBehaviour:
   clip_hurt: {fileID: 8300000, guid: 20b52977772915844acc84e43687b07d, type: 3}
   clip_death: {fileID: 8300000, guid: eac52383e3172bd48b02aee297c7351f, type: 3}
   clip_gravflip: {fileID: 8300000, guid: eac52383e3172bd48b02aee297c7351f, type: 3}
+  clip_checkpoint: {fileID: 8300000, guid: 9bff58a5e720d9a4f8bdc1651a49a3aa, type: 3}
   soundSource: {fileID: 7746342771095835730}
 --- !u!82 &7746342771095835730
 AudioSource:

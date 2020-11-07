@@ -6,6 +6,7 @@ using UnityEngine;
 public class Checkpoint : MonoBehaviour
 {
     [SerializeField] private Sprite spriteActivated;
+    private AudioSource audioSrc;
     private SpriteRenderer sr;
     private bool hasReached;
     private CheckpointMaster cm;
@@ -18,6 +19,7 @@ public class Checkpoint : MonoBehaviour
             {
                 hasReached = true;
                 sr.sprite = spriteActivated;
+                audioSrc.Play();
             }
         }
     }
@@ -27,6 +29,7 @@ public class Checkpoint : MonoBehaviour
     {
         cm = GameObject.FindGameObjectWithTag("CM").GetComponent<CheckpointMaster>();
         sr = GetComponent<SpriteRenderer>();
+        audioSrc = GetComponent<AudioSource>();
         hasReached = false;
     }
 

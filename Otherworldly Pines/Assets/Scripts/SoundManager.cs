@@ -78,7 +78,7 @@ public class SoundManager : MonoBehaviour
 
     public void SwapMusic()
     {
-        if (activeGravityRegion != null && activeGravityRegion.playerCanFlipGravity && activeGravityRegion.gravityIsFlipped)
+        if (activeGravityRegion != null && activeGravityRegion.gravityIsFlipped)
         {
             flippedMusicSource.volume = GameSettings.musicVolume;
             unflippedMusicSource.volume = 0f;
