@@ -172,6 +172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sm: {fileID: 7746342771095835731, guid: f88d0ebc3c09e1c4c9a6dae97ddaae87, type: 3}
+  animator: {fileID: 8427786318093474098}
   currentHealth: 100
 --- !u!114 &2231194606405011350
 MonoBehaviour:

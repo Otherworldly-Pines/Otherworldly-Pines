@@ -7,7 +7,7 @@ public class PlayerHealth : MonoBehaviour, IHUDConnected {
 
     [SerializeField] private GameObject sm;
     private SoundManager smScript;
-
+    public Animator animator;
     private static float maxHealth = 100f;
     private static float minHealth = 0f;
     
@@ -31,7 +31,10 @@ public class PlayerHealth : MonoBehaviour, IHUDConnected {
     public void TakeDamage(float damage) {
         SetHealth(currentHealth - damage);
         if (currentHealth == minHealth) smScript.PlayDead();
-        else smScript.PlayHurt();
+        else {
+            animator.SetTrigger("TriggerDamage");
+            smScript.PlayHurt();
+        }
     }
 
     public void ConnectToHUD(HUD hud) {
