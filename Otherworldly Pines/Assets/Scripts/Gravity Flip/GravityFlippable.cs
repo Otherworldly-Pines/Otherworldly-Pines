@@ -10,6 +10,7 @@ public class GravityFlippable : GravityAffected
 
     private Rigidbody2D body;
 
+
     void Start()
     {
         base.Start();
@@ -33,5 +34,4 @@ public class GravityFlippable : GravityAffected
             transform.localScale = flippedScale;            
         }
     }
-
 }
