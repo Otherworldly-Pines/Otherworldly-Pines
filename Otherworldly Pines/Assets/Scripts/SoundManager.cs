@@ -11,7 +11,10 @@ public class SoundManager : MonoBehaviour
     [SerializeField] private AudioClip clip_collection;
     [SerializeField] private AudioClip clip_hurt;
     [SerializeField] private AudioClip clip_death;
-    [SerializeField] private AudioClip clip_gravflip;
+    [SerializeField] private AudioClip clip_gravflip_ready;
+    [SerializeField] private AudioClip clip_gravflip_up;
+    [SerializeField] private AudioClip clip_gravflip_down;
+    [SerializeField] private AudioClip clip_gravflip_unavailable;
 
     private AudioSource unflippedMusicSource;
     private AudioSource flippedMusicSource;
@@ -71,9 +74,21 @@ public class SoundManager : MonoBehaviour
         soundSource.PlayOneShot(clip_death);
     }
 
-    public void PlayGravity()
+    public void PlayGravflipUp()
     {
-        soundSource.PlayOneShot(clip_gravflip);
+        soundSource.PlayOneShot(clip_gravflip_up);
+    }
+    public void PlayGravflipDown()
+    {
+        soundSource.PlayOneShot(clip_gravflip_down);
+    }
+    public void PlayGravflipReady()
+    {
+        soundSource.PlayOneShot(clip_gravflip_ready);
+    }
+    public void PlayGravflipUnavailable()
+    {
+        soundSource.PlayOneShot(clip_gravflip_unavailable);
     }
 
     public void SwapMusic()
