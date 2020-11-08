@@ -25,18 +25,23 @@ public class GravityControl : GravityAffected, IHUDConnected {
     {
         if (controlsFrozen) return;
         
-        if (Input.GetKeyDown(KeyCode.W) && isFlipActive())
+        if (Input.GetKeyDown(KeyCode.W))
         {
-            smScript.PlayGravity();
-            activeGravityRegion.FlipGravity();
-            smScript.SwapMusic();
-            player.setJumping(false);
+            if (isFlipActive())
+            {
+                if (!activeGravityRegion.gravityIsFlipped) smScript.PlayGravflipUp();
+                else smScript.PlayGravflipDown();
+                activeGravityRegion.FlipGravity();
+                smScript.SwapMusic();
+                player.setJumping(false);
+            }
+            else smScript.PlayGravflipUnavailable();
         }
     }
 
     private bool isFlipActive()
     {
-        return activeGravityRegion != null && (player.isPlayerGrounded() || player.isPlayerJumping());
+        return activeGravityRegion != null && activeGravityRegion.playerCanFlipGravity && (player.isPlayerGrounded() || player.isPlayerJumping());
     }
 
     private void SetActiveGravityRegion(GravityRegion region) {

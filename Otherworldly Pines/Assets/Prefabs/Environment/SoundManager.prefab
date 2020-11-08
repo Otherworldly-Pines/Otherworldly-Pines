@@ -48,8 +48,11 @@ MonoBehaviour:
   clip_basic: {fileID: 8300000, guid: eac52383e3172bd48b02aee297c7351f, type: 3}
   clip_collection: {fileID: 8300000, guid: 41c2f24bef7688149826853a6c39e2e4, type: 3}
   clip_hurt: {fileID: 8300000, guid: 20b52977772915844acc84e43687b07d, type: 3}
-  clip_death: {fileID: 8300000, guid: eac52383e3172bd48b02aee297c7351f, type: 3}
-  clip_gravflip: {fileID: 8300000, guid: eac52383e3172bd48b02aee297c7351f, type: 3}
+  clip_death: {fileID: 8300000, guid: ccbc6c71da755a24aaeaa042bec57eca, type: 3}
+  clip_gravflip_ready: {fileID: 8300000, guid: 425d4b0a2139fa84f966628bf864b46e, type: 3}
+  clip_gravflip_up: {fileID: 8300000, guid: 8fdbd4ad02563c74da4b09d9f8a8c17f, type: 3}
+  clip_gravflip_down: {fileID: 8300000, guid: 9d995f32f6f7af642921f1219c2dd47c, type: 3}
+  clip_gravflip_unavailable: {fileID: 8300000, guid: da671b3da00efca44b8adc4169a96859, type: 3}
   soundSource: {fileID: 7746342771095835730}
 --- !u!82 &7746342771095835730
 AudioSource:
