@@ -46,28 +46,25 @@ public class ParallaxBackground : MonoBehaviour
         objLength = ratio * GetComponent<SpriteRenderer>().bounds.size.x;
         objHeight = ratio * GetComponent<SpriteRenderer>().bounds.size.y;
     }
-
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
 
         screenHeightInUnits = Camera.main.orthographicSize * 2;
         screenWidthInUnits = screenHeightInUnits * Screen.width / Screen.height;
 
         move = cam.transform.position.x * bgMoveSpeed;
-
-        // moves obj
-        transform.position = new Vector3(startPos.x + move, cam.transform.position.y + offsetY, transform.position.z);
+        
+        var unscrolledPos = new Vector3(startPos.x + move, cam.transform.position.y + offsetY, transform.position.z);
 
         // if object is too far left or right (is offscreen), moves it back over
         // creates the "scrolling background"
-        if (transform.position.x - cam.transform.position.x < -1.0 * screenWidthInUnits)
-        {
-            transform.position = new Vector3(transform.position.x + (2 * objLength), transform.position.y, transform.position.z);
-        }
-        else if (transform.position.x - cam.transform.position.x > 1.0 * screenWidthInUnits)
-        {
-            transform.position = new Vector3(transform.position.x - (2 * objLength), transform.position.y, transform.position.z);
+        if (unscrolledPos.x - cam.transform.position.x < -1.0 * screenWidthInUnits) {
+            transform.position = new Vector3(unscrolledPos.x + (2 * objLength), unscrolledPos.y, unscrolledPos.z);
+        } else if (unscrolledPos.x - cam.transform.position.x > 1.0 * screenWidthInUnits) {
+            transform.position = new Vector3(unscrolledPos.x - (2 * objLength), unscrolledPos.y, unscrolledPos.z);
+        } else {
+            transform.position = unscrolledPos;
         }
     }
 

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -16,6 +17,11 @@ public class PauseMenu : MonoBehaviour
     public GameObject optionMenuUI;
     public GameObject helpMenuUI;
 
+    public Slider musicSlider;
+    public Slider sfxSlider;
+
+    private SoundManager soundManager;
+
     private void Awake() {
         IsDisabledByTutorialText = false;
     }
@@ -27,6 +33,10 @@ public class PauseMenu : MonoBehaviour
         optionMenuUI.SetActive(false);
         helpMenuUI.SetActive(false);
         GameIsPaused = false;
+
+        soundManager = FindObjectOfType<SoundManager>();
+        musicSlider.value = GameSettings.musicVolume;
+        sfxSlider.value = GameSettings.sfxVolume;
     }
 
     void Update()
@@ -99,5 +109,15 @@ public class PauseMenu : MonoBehaviour
     public void exitLevel()
     {
         SceneManager.LoadScene(SceneIdentifier.MainMenu);
+    }
+
+    public void SetMusicVolume(float value) {
+        GameSettings.musicVolume = value;
+        soundManager.UpdateMusicVolume();
+    }
+
+    public void SetSfxVolume(float value) {
+        GameSettings.sfxVolume = value;
+        soundManager.UpdateSfxVolume();
     }
 }

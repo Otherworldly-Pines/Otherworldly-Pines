@@ -12,6 +12,7 @@ TagManager:
   - BerryBush
   - Collectible2
   - Collectible1
+  - DialogBox
   layers:
   - Default
   - TransparentFX

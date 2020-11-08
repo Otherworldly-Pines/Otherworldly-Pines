@@ -9,11 +9,13 @@ public class BehaviorRelated : MonoBehaviour {
     protected EnemyBehavior behavior;
     protected Rigidbody2D body;
     protected BoxCollider2D collider;
+    protected Vision vision;
 
     protected void Awake() {
         behavior = GetComponent<EnemyBehavior>();
         body = GetComponent<Rigidbody2D>();
         collider = GetComponent<BoxCollider2D>();
+        vision = GetComponent<Vision>();
     }
 
     protected Vector2 GetDirectionVector() {
