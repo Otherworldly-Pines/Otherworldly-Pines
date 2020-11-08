@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Collectibles : MonoBehaviour
+public class Collectibles : MonoBehaviour, IHUDConnected
 {
+    private Collectible1Counter c1Counter;
+    private Collectible2Counter c2Counter;
     public int c1 = 2;
     public int c2 = 1;
     private int c1Collected = 0; // num of C1 collected
@@ -29,6 +31,11 @@ public class Collectibles : MonoBehaviour
             // show all C2 are collected
         }
     }
+    public void ConnectToHUD(HUD hud)
+    {
+        c1Counter = hud.c1Counter;
+        c2Counter = hud.c2Counter;
+    }
     
     void OnCollisionEnter2D(Collision2D target)
     {
@@ -38,6 +45,7 @@ public class Collectibles : MonoBehaviour
             c1Collected++;
             smScript.PlayCollectible();
             // show c1Collected/c1 are collected
+            c1Counter.SetCount(c1Collected);
         }
         else if (target.gameObject.CompareTag("Collectible2"))
         {
@@ -45,6 +53,7 @@ public class Collectibles : MonoBehaviour
             c2Collected++;
             smScript.PlayCollectible();
             // show c2Collected/c2 are collected
+            c2Counter.SetCount(c2Collected);
         }
 
     }
