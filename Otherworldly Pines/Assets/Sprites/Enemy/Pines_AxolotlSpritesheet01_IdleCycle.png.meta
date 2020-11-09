@@ -1,0 +1,862 @@
+fileFormatVersion: 2
+guid: f9bb755bc0d5f3647997ccef718d0ca0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 715437680321559770
+    second: Pines_AxolotlSpritesheet01_IdleCycle_0
+  - first:
+      213: 280952012968747004
+    second: Pines_AxolotlSpritesheet01_IdleCycle_1
+  - first:
+      213: -6115188451530199658
+    second: Pines_AxolotlSpritesheet01_IdleCycle_2
+  - first:
+      213: 3798637310744016165
+    second: Pines_AxolotlSpritesheet01_IdleCycle_3
+  - first:
+      213: 6143895588745577769
+    second: Pines_AxolotlSpritesheet01_IdleCycle_4
+  - first:
+      213: -4466246583668566632
+    second: Pines_AxolotlSpritesheet01_IdleCycle_5
+  - first:
+      213: -8137179625080069273
+    second: Pines_AxolotlSpritesheet01_IdleCycle_6
+  - first:
+      213: 5959514283230169633
+    second: Pines_AxolotlSpritesheet01_IdleCycle_7
+  - first:
+      213: 3750699391652778064
+    second: Pines_AxolotlSpritesheet01_IdleCycle_8
+  - first:
+      213: 4949361736314672622
+    second: Pines_AxolotlSpritesheet01_IdleCycle_9
+  - first:
+      213: 4840667193106484445
+    second: Pines_AxolotlSpritesheet01_IdleCycle_10
+  - first:
+      213: -1536649330752086000
+    second: Pines_AxolotlSpritesheet01_IdleCycle_11
+  - first:
+      213: -2327895753183890830
+    second: Pines_AxolotlSpritesheet01_IdleCycle_12
+  - first:
+      213: -6533734906113833178
+    second: Pines_AxolotlSpritesheet01_IdleCycle_13
+  - first:
+      213: -5875202029770399587
+    second: Pines_AxolotlSpritesheet01_IdleCycle_14
+  - first:
+      213: 124835799029006507
+    second: Pines_AxolotlSpritesheet01_IdleCycle_15
+  - first:
+      213: -8750122204360579739
+    second: Pines_AxolotlSpritesheet01_IdleCycle_16
+  - first:
+      213: 678427928997252692
+    second: Pines_AxolotlSpritesheet01_IdleCycle_17
+  - first:
+      213: -832429116231365839
+    second: Pines_AxolotlSpritesheet01_IdleCycle_18
+  - first:
+      213: 3316325745828797835
+    second: Pines_AxolotlSpritesheet01_IdleCycle_19
+  - first:
+      213: 4417683795277402592
+    second: Pines_AxolotlSpritesheet01_IdleCycle_20
+  - first:
+      213: -1946008477322806169
+    second: Pines_AxolotlSpritesheet01_IdleCycle_21
+  - first:
+      213: -2479600044435167365
+    second: Pines_AxolotlSpritesheet01_IdleCycle_22
+  - first:
+      213: -7265909714131172685
+    second: Pines_AxolotlSpritesheet01_IdleCycle_23
+  - first:
+      213: -6783082697779243477
+    second: Pines_AxolotlSpritesheet01_IdleCycle_24
+  - first:
+      213: -5076944687165088153
+    second: Pines_AxolotlSpritesheet01_IdleCycle_25
+  - first:
+      213: -585806061624320048
+    second: Pines_AxolotlSpritesheet01_IdleCycle_26
+  - first:
+      213: -8298568352938972005
+    second: Pines_AxolotlSpritesheet01_IdleCycle_27
+  - first:
+      213: 5140716269778398688
+    second: Pines_AxolotlSpritesheet01_IdleCycle_28
+  - first:
+      213: 6096298330398196333
+    second: Pines_AxolotlSpritesheet01_IdleCycle_29
+  - first:
+      213: -2127140576162279342
+    second: Pines_AxolotlSpritesheet01_IdleCycle_30
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 426.66666
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pines_AxolotlSpritesheet01_IdleCycle_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 1164
+        width: 415
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adcfe7a97cebde900800000000000000
+      internalID: 715437680321559770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_AxolotlSpritesheet01_IdleCycle_1
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 1164
+        width: 415
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cffdee30e5426e300800000000000000
+      internalID: 280952012968747004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_AxolotlSpritesheet01_IdleCycle_2
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 1164
+        width: 412
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69da8f3c08c722ba0800000000000000
+      internalID: -6115188451530199658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_AxolotlSpritesheet01_IdleCycle_3
+      rect:
+        serializedVersion: 2
+        x: 1566
+        y: 1164
+        width: 413
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5253171128877b430800000000000000
+      internalID: 3798637310744016165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_AxolotlSpritesheet01_IdleCycle_4
+      rect:
+        serializedVersion: 2
+        x: 2078
+        y: 1164
+        width: 414
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92505487c70834550800000000000000
+      internalID: 6143895588745577769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_AxolotlSpritesheet01_IdleCycle_5
+      rect:
+        serializedVersion: 2
+        x: 2589
+        y: 1164
+        width: 415
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89512253564b402c0800000000000000
+      internalID: -4466246583668566632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_AxolotlSpritesheet01_IdleCycle_6
+      rect:
+        serializedVersion: 2
+        x: 3101
+        y: 1164
+        width: 415
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7636e8d5e3ee21f80800000000000000
+      internalID: -8137179625080069273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_AxolotlSpritesheet01_IdleCycle_7
+      rect:
+        serializedVersion: 2
+        x: 3613
+        y: 1164
+        width: 414
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12a0dcd6aa274b250800000000000000
+      internalID: 5959514283230169633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_AxolotlSpritesheet01_IdleCycle_8
+      rect:
+        serializedVersion: 2
+        x: 4126
+        y: 1164
+        width: 413
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 050dcb289392d0430800000000000000
+      internalID: 3750699391652778064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_AxolotlSpritesheet01_IdleCycle_9
+      rect:
+        serializedVersion: 2
+        x: 4638
+        y: 1164
+        width: 412
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee552fdb64aafa440800000000000000
+      internalID: 4949361736314672622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_AxolotlSpritesheet01_IdleCycle_10
+      rect:
+        serializedVersion: 2
+        x: 5149
+        y: 1164
+        width: 415
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddccff84a218d2340800000000000000
+      internalID: 4840667193106484445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_AxolotlSpritesheet01_IdleCycle_11
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 653
+        width: 415
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0102e204399bcaae0800000000000000
+      internalID: -1536649330752086000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_AxolotlSpritesheet01_IdleCycle_12
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 653
+        width: 415
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 272755d6527a1bfd0800000000000000
+      internalID: -2327895753183890830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_AxolotlSpritesheet01_IdleCycle_13
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 653
+        width: 412
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 627c38858b28355a0800000000000000
+      internalID: -6533734906113833178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_AxolotlSpritesheet01_IdleCycle_14
+      rect:
+        serializedVersion: 2
+        x: 1566
+        y: 653
+        width: 413
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d90a1efc1e6177ea0800000000000000
+      internalID: -5875202029770399587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_AxolotlSpritesheet01_IdleCycle_15
+      rect:
+        serializedVersion: 2
+        x: 2078
+        y: 653
+        width: 414
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba040607f718bb100800000000000000
+      internalID: 124835799029006507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_AxolotlSpritesheet01_IdleCycle_16
+      rect:
+        serializedVersion: 2
+        x: 2576
+        y: 653
+        width: 428
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56564db1732519680800000000000000
+      internalID: -8750122204360579739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_AxolotlSpritesheet01_IdleCycle_17
+      rect:
+        serializedVersion: 2
+        x: 3082
+        y: 653
+        width: 434
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45ec5916b924a6900800000000000000
+      internalID: 678427928997252692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_AxolotlSpritesheet01_IdleCycle_18
+      rect:
+        serializedVersion: 2
+        x: 3591
+        y: 653
+        width: 436
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13b4652112e9274f0800000000000000
+      internalID: -832429116231365839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_AxolotlSpritesheet01_IdleCycle_19
+      rect:
+        serializedVersion: 2
+        x: 4110
+        y: 653
+        width: 429
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d9b97f1b4f50e20800000000000000
+      internalID: 3316325745828797835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_AxolotlSpritesheet01_IdleCycle_20
+      rect:
+        serializedVersion: 2
+        x: 4630
+        y: 653
+        width: 437
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e152838104ce4d30800000000000000
+      internalID: 4417683795277402592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_AxolotlSpritesheet01_IdleCycle_21
+      rect:
+        serializedVersion: 2
+        x: 5147
+        y: 653
+        width: 453
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76c764ba9936ef4e0800000000000000
+      internalID: -1946008477322806169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_AxolotlSpritesheet01_IdleCycle_22
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 142
+        width: 465
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b772666a5e0b69dd0800000000000000
+      internalID: -2479600044435167365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_AxolotlSpritesheet01_IdleCycle_23
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 142
+        width: 475
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b2c6278c9d4a2b90800000000000000
+      internalID: -7265909714131172685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_AxolotlSpritesheet01_IdleCycle_24
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 142
+        width: 476
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2615c48936add1a0800000000000000
+      internalID: -6783082697779243477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_AxolotlSpritesheet01_IdleCycle_25
+      rect:
+        serializedVersion: 2
+        x: 1563
+        y: 142
+        width: 468
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76ed731b4b11b89b0800000000000000
+      internalID: -5076944687165088153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_AxolotlSpritesheet01_IdleCycle_26
+      rect:
+        serializedVersion: 2
+        x: 2075
+        y: 142
+        width: 456
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df9c9d9d7cced7f0800000000000000
+      internalID: -585806061624320048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_AxolotlSpritesheet01_IdleCycle_27
+      rect:
+        serializedVersion: 2
+        x: 2584
+        y: 142
+        width: 445
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9c26cafc0095dc80800000000000000
+      internalID: -8298568352938972005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_AxolotlSpritesheet01_IdleCycle_28
+      rect:
+        serializedVersion: 2
+        x: 3092
+        y: 142
+        width: 451
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed663fe53e775740800000000000000
+      internalID: 5140716269778398688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_AxolotlSpritesheet01_IdleCycle_29
+      rect:
+        serializedVersion: 2
+        x: 3604
+        y: 142
+        width: 453
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d62013c28076a9450800000000000000
+      internalID: 6096298330398196333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_AxolotlSpritesheet01_IdleCycle_30
+      rect:
+        serializedVersion: 2
+        x: 4118
+        y: 142
+        width: 448
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25017828ae0ea72e0800000000000000
+      internalID: -2127140576162279342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

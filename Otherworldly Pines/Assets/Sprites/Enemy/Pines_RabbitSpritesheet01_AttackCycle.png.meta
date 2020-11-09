@@ -1,0 +1,838 @@
+fileFormatVersion: 2
+guid: 1eac34eff5ddb5349ba10074d7d5e3a3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3274792268056636694
+    second: Pines_RabbitSpritesheet01_AttackCycle_0
+  - first:
+      213: 1019370405110773545
+    second: Pines_RabbitSpritesheet01_AttackCycle_1
+  - first:
+      213: -3844552363335022272
+    second: Pines_RabbitSpritesheet01_AttackCycle_2
+  - first:
+      213: 8332867147783191977
+    second: Pines_RabbitSpritesheet01_AttackCycle_3
+  - first:
+      213: 5806009681802399547
+    second: Pines_RabbitSpritesheet01_AttackCycle_4
+  - first:
+      213: 7981683564793451443
+    second: Pines_RabbitSpritesheet01_AttackCycle_5
+  - first:
+      213: -3876556459455020502
+    second: Pines_RabbitSpritesheet01_AttackCycle_6
+  - first:
+      213: 1900069032083445039
+    second: Pines_RabbitSpritesheet01_AttackCycle_7
+  - first:
+      213: 4723402259735638581
+    second: Pines_RabbitSpritesheet01_AttackCycle_8
+  - first:
+      213: -1846198403045512138
+    second: Pines_RabbitSpritesheet01_AttackCycle_9
+  - first:
+      213: 4126381580256690334
+    second: Pines_RabbitSpritesheet01_AttackCycle_10
+  - first:
+      213: 259510147292597993
+    second: Pines_RabbitSpritesheet01_AttackCycle_11
+  - first:
+      213: 6797875792325831090
+    second: Pines_RabbitSpritesheet01_AttackCycle_12
+  - first:
+      213: 8843891834237829183
+    second: Pines_RabbitSpritesheet01_AttackCycle_13
+  - first:
+      213: -5612563927940252960
+    second: Pines_RabbitSpritesheet01_AttackCycle_14
+  - first:
+      213: 4613829673521578737
+    second: Pines_RabbitSpritesheet01_AttackCycle_15
+  - first:
+      213: 976123828127301420
+    second: Pines_RabbitSpritesheet01_AttackCycle_16
+  - first:
+      213: 5375025502092278251
+    second: Pines_RabbitSpritesheet01_AttackCycle_17
+  - first:
+      213: -4793193128634586210
+    second: Pines_RabbitSpritesheet01_AttackCycle_18
+  - first:
+      213: 8280305267700895983
+    second: Pines_RabbitSpritesheet01_AttackCycle_19
+  - first:
+      213: 2590486686555679634
+    second: Pines_RabbitSpritesheet01_AttackCycle_20
+  - first:
+      213: -4055417849583530367
+    second: Pines_RabbitSpritesheet01_AttackCycle_21
+  - first:
+      213: -1239065999176529185
+    second: Pines_RabbitSpritesheet01_AttackCycle_22
+  - first:
+      213: -3917745686130410763
+    second: Pines_RabbitSpritesheet01_AttackCycle_23
+  - first:
+      213: 6673751966547695999
+    second: Pines_RabbitSpritesheet01_AttackCycle_24
+  - first:
+      213: -3333336706919450842
+    second: Pines_RabbitSpritesheet01_AttackCycle_25
+  - first:
+      213: -1631141311128857272
+    second: Pines_RabbitSpritesheet01_AttackCycle_26
+  - first:
+      213: 8817550188519243774
+    second: Pines_RabbitSpritesheet01_AttackCycle_27
+  - first:
+      213: 6968003828852450378
+    second: Pines_RabbitSpritesheet01_AttackCycle_28
+  - first:
+      213: 3230431589953649118
+    second: Pines_RabbitSpritesheet01_AttackCycle_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 853.3333
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_AttackCycle_0
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1583
+        width: 294
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae2d94568c99d82d0800000000000000
+      internalID: -3274792268056636694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_AttackCycle_1
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 1583
+        width: 294
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9277c2b8bf7852e00800000000000000
+      internalID: 1019370405110773545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_AttackCycle_2
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 1583
+        width: 294
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 049070faef765aac0800000000000000
+      internalID: -3844552363335022272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_AttackCycle_3
+      rect:
+        serializedVersion: 2
+        x: 1663
+        y: 1583
+        width: 294
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9adb320858a44a370800000000000000
+      internalID: 8332867147783191977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_AttackCycle_4
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 1583
+        width: 294
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3f8f464b07139050800000000000000
+      internalID: 5806009681802399547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_AttackCycle_5
+      rect:
+        serializedVersion: 2
+        x: 2687
+        y: 1583
+        width: 294
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b35615d9e2a4ce60800000000000000
+      internalID: 7981683564793451443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_AttackCycle_6
+      rect:
+        serializedVersion: 2
+        x: 3199
+        y: 1583
+        width: 294
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2200726074b33ac0800000000000000
+      internalID: -3876556459455020502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_AttackCycle_7
+      rect:
+        serializedVersion: 2
+        x: 3711
+        y: 1583
+        width: 294
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f25dd0ab7b66e5a10800000000000000
+      internalID: 1900069032083445039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_AttackCycle_8
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1071
+        width: 294
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 532f1de5455ec8140800000000000000
+      internalID: 4723402259735638581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_AttackCycle_9
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 1071
+        width: 294
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63c2491855cf066e0800000000000000
+      internalID: -1846198403045512138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_AttackCycle_10
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 1071
+        width: 294
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e904aea4f2ad34930800000000000000
+      internalID: 4126381580256690334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_AttackCycle_11
+      rect:
+        serializedVersion: 2
+        x: 1663
+        y: 1071
+        width: 294
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ee0cf0aa17f99300800000000000000
+      internalID: 259510147292597993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_AttackCycle_12
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 1071
+        width: 294
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b9eec43408e65e50800000000000000
+      internalID: 6797875792325831090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_AttackCycle_13
+      rect:
+        serializedVersion: 2
+        x: 2687
+        y: 1071
+        width: 294
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3049bb24c0dbba70800000000000000
+      internalID: 8843891834237829183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_AttackCycle_14
+      rect:
+        serializedVersion: 2
+        x: 3199
+        y: 1071
+        width: 294
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea33fb18da2c12b0800000000000000
+      internalID: -5612563927940252960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_AttackCycle_15
+      rect:
+        serializedVersion: 2
+        x: 3697
+        y: 1083
+        width: 314
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f2096894ad970040800000000000000
+      internalID: 4613829673521578737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_AttackCycle_16
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 573
+        width: 328
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f72503373eb8d00800000000000000
+      internalID: 976123828127301420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_AttackCycle_17
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 601
+        width: 350
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be930ee473de79a40800000000000000
+      internalID: 5375025502092278251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_AttackCycle_18
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 579
+        width: 378
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9b64e3be382b7db0800000000000000
+      internalID: -4793193128634586210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_AttackCycle_19
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 595
+        width: 352
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe09b1125cd89e270800000000000000
+      internalID: 8280305267700895983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_AttackCycle_20
+      rect:
+        serializedVersion: 2
+        x: 2143
+        y: 613
+        width: 338
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29ba78b9ae143f320800000000000000
+      internalID: 2590486686555679634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_AttackCycle_21
+      rect:
+        serializedVersion: 2
+        x: 2665
+        y: 623
+        width: 324
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18e8bcbc3f248b7c0800000000000000
+      internalID: -4055417849583530367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_AttackCycle_22
+      rect:
+        serializedVersion: 2
+        x: 3191
+        y: 641
+        width: 304
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fda81d1e904fdcee0800000000000000
+      internalID: -1239065999176529185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_AttackCycle_23
+      rect:
+        serializedVersion: 2
+        x: 3725
+        y: 621
+        width: 270
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fab0e93e0f51a9c0800000000000000
+      internalID: -3917745686130410763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_AttackCycle_24
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 83
+        width: 226
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f79d325fd0eed9c50800000000000000
+      internalID: 6673751966547695999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_AttackCycle_25
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 63
+        width: 256
+        height: 410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 627bb430deb9db1d0800000000000000
+      internalID: -3333336706919450842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_AttackCycle_26
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 49
+        width: 234
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84513b3ae950d59e0800000000000000
+      internalID: -1631141311128857272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_AttackCycle_27
+      rect:
+        serializedVersion: 2
+        x: 1697
+        y: 39
+        width: 226
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eff3ed7dd2b3e5a70800000000000000
+      internalID: 8817550188519243774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_AttackCycle_28
+      rect:
+        serializedVersion: 2
+        x: 2205
+        y: 47
+        width: 246
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a44ef44709253b060800000000000000
+      internalID: 6968003828852450378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_AttackCycle_29
+      rect:
+        serializedVersion: 2
+        x: 2701
+        y: 55
+        width: 270
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed9336e5a6cc4dc20800000000000000
+      internalID: 3230431589953649118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

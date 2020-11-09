@@ -1,0 +1,622 @@
+fileFormatVersion: 2
+guid: 44047c106757dfa4c8d00c3ba60be2e0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8643706131292979808
+    second: Pines_RabbitSpritesheet01_IdleCycle_0
+  - first:
+      213: -4608061197169662751
+    second: Pines_RabbitSpritesheet01_IdleCycle_1
+  - first:
+      213: 2287103092776621260
+    second: Pines_RabbitSpritesheet01_IdleCycle_2
+  - first:
+      213: -1971641197991814883
+    second: Pines_RabbitSpritesheet01_IdleCycle_3
+  - first:
+      213: 2512453252049888428
+    second: Pines_RabbitSpritesheet01_IdleCycle_4
+  - first:
+      213: -4802630809756670940
+    second: Pines_RabbitSpritesheet01_IdleCycle_5
+  - first:
+      213: 276985117418931411
+    second: Pines_RabbitSpritesheet01_IdleCycle_6
+  - first:
+      213: 6368383044463850973
+    second: Pines_RabbitSpritesheet01_IdleCycle_7
+  - first:
+      213: -1288286636020530657
+    second: Pines_RabbitSpritesheet01_IdleCycle_8
+  - first:
+      213: 6884029015581585315
+    second: Pines_RabbitSpritesheet01_IdleCycle_9
+  - first:
+      213: 5715099541606064397
+    second: Pines_RabbitSpritesheet01_IdleCycle_10
+  - first:
+      213: 7212806801329888078
+    second: Pines_RabbitSpritesheet01_IdleCycle_11
+  - first:
+      213: 1851562083644563653
+    second: Pines_RabbitSpritesheet01_IdleCycle_12
+  - first:
+      213: 419125297748282108
+    second: Pines_RabbitSpritesheet01_IdleCycle_13
+  - first:
+      213: 974892128543723269
+    second: Pines_RabbitSpritesheet01_IdleCycle_14
+  - first:
+      213: 1738693302297263441
+    second: Pines_RabbitSpritesheet01_IdleCycle_15
+  - first:
+      213: 7849148299658603032
+    second: Pines_RabbitSpritesheet01_IdleCycle_16
+  - first:
+      213: -3084815901069170720
+    second: Pines_RabbitSpritesheet01_IdleCycle_17
+  - first:
+      213: 5057586856982090666
+    second: Pines_RabbitSpritesheet01_IdleCycle_18
+  - first:
+      213: -1139546432154743157
+    second: Pines_RabbitSpritesheet01_IdleCycle_19
+  - first:
+      213: 7612111604652748898
+    second: Pines_RabbitSpritesheet01_IdleCycle_20
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 853.3333
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_IdleCycle_0
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1114
+        width: 319
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ad7a65e1136b0880800000000000000
+      internalID: -8643706131292979808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_IdleCycle_1
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 1114
+        width: 324
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e4e07771c0ec00c0800000000000000
+      internalID: -4608061197169662751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_IdleCycle_2
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 1114
+        width: 325
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc4d5a1352c6dbf10800000000000000
+      internalID: 2287103092776621260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_IdleCycle_3
+      rect:
+        serializedVersion: 2
+        x: 1641
+        y: 1114
+        width: 327
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d191c21d6c253a4e0800000000000000
+      internalID: -1971641197991814883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_IdleCycle_4
+      rect:
+        serializedVersion: 2
+        x: 2152
+        y: 1114
+        width: 327
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca46533dbe60ed220800000000000000
+      internalID: 2512453252049888428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_IdleCycle_5
+      rect:
+        serializedVersion: 2
+        x: 2664
+        y: 1114
+        width: 324
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4246b1559b0a95db0800000000000000
+      internalID: -4802630809756670940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_IdleCycle_6
+      rect:
+        serializedVersion: 2
+        x: 3175
+        y: 1114
+        width: 322
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d443db2f7c08d300800000000000000
+      internalID: 276985117418931411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_IdleCycle_7
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 602
+        width: 320
+        height: 375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd573e643aa016850800000000000000
+      internalID: 6368383044463850973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_IdleCycle_8
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 602
+        width: 322
+        height: 375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f120d1351261f1ee0800000000000000
+      internalID: -1288286636020530657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_IdleCycle_9
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 602
+        width: 322
+        height: 375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3afe831aaebf88f50800000000000000
+      internalID: 6884029015581585315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_IdleCycle_10
+      rect:
+        serializedVersion: 2
+        x: 1641
+        y: 602
+        width: 320
+        height: 375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d016d61d0cc105f40800000000000000
+      internalID: 5715099541606064397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_IdleCycle_11
+      rect:
+        serializedVersion: 2
+        x: 2152
+        y: 602
+        width: 322
+        height: 375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4b1aca1299091460800000000000000
+      internalID: 7212806801329888078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_IdleCycle_12
+      rect:
+        serializedVersion: 2
+        x: 2664
+        y: 602
+        width: 321
+        height: 375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c06733b7e112b910800000000000000
+      internalID: 1851562083644563653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_IdleCycle_13
+      rect:
+        serializedVersion: 2
+        x: 3175
+        y: 602
+        width: 322
+        height: 375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfa8aa8dc3801d500800000000000000
+      internalID: 419125297748282108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_IdleCycle_14
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 90
+        width: 320
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f4c28c933878d00800000000000000
+      internalID: 974892128543723269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_IdleCycle_15
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 90
+        width: 326
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15d77c0b854112810800000000000000
+      internalID: 1738693302297263441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_IdleCycle_16
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 90
+        width: 325
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81a238ebac6cdec60800000000000000
+      internalID: 7849148299658603032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_IdleCycle_17
+      rect:
+        serializedVersion: 2
+        x: 1641
+        y: 90
+        width: 327
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e7ab4338488035d0800000000000000
+      internalID: -3084815901069170720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_IdleCycle_18
+      rect:
+        serializedVersion: 2
+        x: 2152
+        y: 90
+        width: 327
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa31a1f3378203640800000000000000
+      internalID: 5057586856982090666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_IdleCycle_19
+      rect:
+        serializedVersion: 2
+        x: 2664
+        y: 90
+        width: 326
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8e4a5abe848f20f0800000000000000
+      internalID: -1139546432154743157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_IdleCycle_20
+      rect:
+        serializedVersion: 2
+        x: 3175
+        y: 90
+        width: 324
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 260b4f97c27a3a960800000000000000
+      internalID: 7612111604652748898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -14,6 +14,8 @@ public class EnemyBehavior : MonoBehaviour
     private float maxStamina = 100; // Max stamina to end resting state
     private bool exausted = false; // Exausted state
 
+    public Animator animator;
+
     private Rigidbody2D rigidbody;
     private BoxCollider2D collider;
     private GroundChecker groundChecker;
@@ -28,13 +30,15 @@ public class EnemyBehavior : MonoBehaviour
     public float aggroExaustRate = 2;  // Amount of stamina use per second in aggressive state.
     public int direction = 1; // Direction the enemy is moveing
     public float eatTime = 3f;
-    
+    public GameObject sprite;
+
     private GameObject target;
 
 
     // Start is called before the first frame update 
     void Start()
     {
+        this.animator = sprite.GetComponent<Animator>();
         this.collider = gameObject.GetComponent<BoxCollider2D>();
         this.rigidbody = gameObject.GetComponent<Rigidbody2D>();
         this.groundChecker = GetComponent<GroundChecker>();
@@ -154,23 +158,23 @@ public class EnemyBehavior : MonoBehaviour
     }
 
     public void eat(){
-        Debug.Log("Eat");
         this.state = 0;
+        this.animator.SetInteger("State", 0);
     }
 
     public void chase(){
-        Debug.Log("Chase");
         this.state = 2;
+        this.animator.SetInteger("State", 2);
     }
     
     public void patrol(){
-        Debug.Log("Patrol");
         this.state = 1;
+        this.animator.SetInteger("State", 1);
     }
     
     public void investigate(){
-        Debug.Log("Investigate");
         this.state = 3;
+        this.animator.SetInteger("State", 1);
     }
 
     public float GetCurrentMovementSpeed() {

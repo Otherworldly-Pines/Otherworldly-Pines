@@ -1,0 +1,712 @@
+fileFormatVersion: 2
+guid: 677b27c952c1fb145ab59dfb2d481834
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8205558006517177433
+    second: Pines_DeerSpritesheet01_IdleCycle_0
+  - first:
+      213: -3287219029336036975
+    second: Pines_DeerSpritesheet01_IdleCycle_1
+  - first:
+      213: -2249775353609079758
+    second: Pines_DeerSpritesheet01_IdleCycle_2
+  - first:
+      213: 643300067447851303
+    second: Pines_DeerSpritesheet01_IdleCycle_3
+  - first:
+      213: -7931884339122535418
+    second: Pines_DeerSpritesheet01_IdleCycle_4
+  - first:
+      213: 3087872754798388763
+    second: Pines_DeerSpritesheet01_IdleCycle_5
+  - first:
+      213: -6750660966802387254
+    second: Pines_DeerSpritesheet01_IdleCycle_6
+  - first:
+      213: -7101660060251546061
+    second: Pines_DeerSpritesheet01_IdleCycle_7
+  - first:
+      213: 3687413723045372744
+    second: Pines_DeerSpritesheet01_IdleCycle_8
+  - first:
+      213: 7443826475470697131
+    second: Pines_DeerSpritesheet01_IdleCycle_9
+  - first:
+      213: -5373357639103413575
+    second: Pines_DeerSpritesheet01_IdleCycle_10
+  - first:
+      213: -415875384753645113
+    second: Pines_DeerSpritesheet01_IdleCycle_11
+  - first:
+      213: -7266070526604775586
+    second: Pines_DeerSpritesheet01_IdleCycle_12
+  - first:
+      213: 3667563128845461318
+    second: Pines_DeerSpritesheet01_IdleCycle_13
+  - first:
+      213: 3884705816860752900
+    second: Pines_DeerSpritesheet01_IdleCycle_14
+  - first:
+      213: 5192691072435443099
+    second: Pines_DeerSpritesheet01_IdleCycle_15
+  - first:
+      213: 5130102044764321481
+    second: Pines_DeerSpritesheet01_IdleCycle_16
+  - first:
+      213: -653188899230234904
+    second: Pines_DeerSpritesheet01_IdleCycle_17
+  - first:
+      213: -4216603732947009680
+    second: Pines_DeerSpritesheet01_IdleCycle_18
+  - first:
+      213: -5946488331859808684
+    second: Pines_DeerSpritesheet01_IdleCycle_19
+  - first:
+      213: 5681571149300224843
+    second: Pines_DeerSpritesheet01_IdleCycle_20
+  - first:
+      213: 2250590295815909449
+    second: Pines_DeerSpritesheet01_IdleCycle_21
+  - first:
+      213: 5211793261036982466
+    second: Pines_DeerSpritesheet01_IdleCycle_0
+  - first:
+      213: -7513423483658489158
+    second: Pines_DeerSpritesheet01_IdleCycle_1
+  - first:
+      213: -1349659356639270766
+    second: Pines_DeerSpritesheet01_IdleCycle_2
+  - first:
+      213: 5549602727746825238
+    second: Pines_DeerSpritesheet01_IdleCycle_3
+  - first:
+      213: 4916622204147310080
+    second: Pines_DeerSpritesheet01_IdleCycle_4
+  - first:
+      213: 3256058004922153920
+    second: Pines_DeerSpritesheet01_IdleCycle_5
+  - first:
+      213: -8832811957394455783
+    second: Pines_DeerSpritesheet01_IdleCycle_6
+  - first:
+      213: -7172826185541121697
+    second: Pines_DeerSpritesheet01_IdleCycle_7
+  - first:
+      213: 4259394570092604671
+    second: Pines_DeerSpritesheet01_IdleCycle_8
+  - first:
+      213: 6649511497893036206
+    second: Pines_DeerSpritesheet01_IdleCycle_9
+  - first:
+      213: -8974068312822725408
+    second: Pines_DeerSpritesheet01_IdleCycle_10
+  - first:
+      213: 9184372317201989833
+    second: Pines_DeerSpritesheet01_IdleCycle_11
+  - first:
+      213: 2566646288462052000
+    second: Pines_DeerSpritesheet01_IdleCycle_12
+  - first:
+      213: 5746561646606601845
+    second: Pines_DeerSpritesheet01_IdleCycle_13
+  - first:
+      213: 2321843304407808017
+    second: Pines_DeerSpritesheet01_IdleCycle_14
+  - first:
+      213: -650024657152242889
+    second: Pines_DeerSpritesheet01_IdleCycle_15
+  - first:
+      213: 5290012432570748391
+    second: Pines_DeerSpritesheet01_IdleCycle_16
+  - first:
+      213: 1652742369495333404
+    second: Pines_DeerSpritesheet01_IdleCycle_17
+  - first:
+      213: -1473420726779673229
+    second: Pines_DeerSpritesheet01_IdleCycle_18
+  - first:
+      213: 4638142952874454013
+    second: Pines_DeerSpritesheet01_IdleCycle_19
+  - first:
+      213: -7324451270626770489
+    second: Pines_DeerSpritesheet01_IdleCycle_20
+  - first:
+      213: 6071833091787216902
+    second: Pines_DeerSpritesheet01_IdleCycle_21
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_IdleCycle_0
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 1047
+        width: 378
+        height: 466
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c052ee8b52045840800000000000000
+      internalID: 5211793261036982466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_IdleCycle_1
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 1047
+        width: 378
+        height: 466
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab235714625fab790800000000000000
+      internalID: -7513423483658489158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_IdleCycle_2
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 1047
+        width: 422
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 298ebb747fb054de0800000000000000
+      internalID: -1349659356639270766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_IdleCycle_3
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 1047
+        width: 384
+        height: 466
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61c63ef1746240d40800000000000000
+      internalID: 5549602727746825238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_IdleCycle_4
+      rect:
+        serializedVersion: 2
+        x: 2137
+        y: 1047
+        width: 378
+        height: 466
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00e9ff468d95b3440800000000000000
+      internalID: 4916622204147310080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_IdleCycle_5
+      rect:
+        serializedVersion: 2
+        x: 2605
+        y: 1047
+        width: 422
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cbb37f0187df2d20800000000000000
+      internalID: 3256058004922153920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_IdleCycle_6
+      rect:
+        serializedVersion: 2
+        x: 3155
+        y: 1047
+        width: 384
+        height: 466
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9134eafa25c8b6580800000000000000
+      internalID: -8832811957394455783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_IdleCycle_7
+      rect:
+        serializedVersion: 2
+        x: 3673
+        y: 1047
+        width: 378
+        height: 466
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5983376690057c90800000000000000
+      internalID: -7172826185541121697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_IdleCycle_8
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 535
+        width: 378
+        height: 466
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffce8945bc86c1b30800000000000000
+      internalID: 4259394570092604671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_IdleCycle_9
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 537
+        width: 378
+        height: 464
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea04ac90a7fc74c50800000000000000
+      internalID: 6649511497893036206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_IdleCycle_10
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 537
+        width: 378
+        height: 464
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e4cc188a64b57380800000000000000
+      internalID: -8974068312822725408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_IdleCycle_11
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 537
+        width: 378
+        height: 464
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c081cb26f1757f70800000000000000
+      internalID: 9184372317201989833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_IdleCycle_12
+      rect:
+        serializedVersion: 2
+        x: 2137
+        y: 537
+        width: 378
+        height: 464
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aafadf533f8e9320800000000000000
+      internalID: 2566646288462052000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_IdleCycle_13
+      rect:
+        serializedVersion: 2
+        x: 2649
+        y: 537
+        width: 378
+        height: 464
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57eced9fe53efbf40800000000000000
+      internalID: 5746561646606601845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_IdleCycle_14
+      rect:
+        serializedVersion: 2
+        x: 3161
+        y: 535
+        width: 378
+        height: 466
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 118b8570f28d83020800000000000000
+      internalID: 2321843304407808017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_IdleCycle_15
+      rect:
+        serializedVersion: 2
+        x: 3673
+        y: 535
+        width: 378
+        height: 466
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73b023fa406aaf6f0800000000000000
+      internalID: -650024657152242889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_IdleCycle_16
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 23
+        width: 378
+        height: 466
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ed87cc9746e96940800000000000000
+      internalID: 5290012432570748391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_IdleCycle_17
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 23
+        width: 392
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1ab10fad68bfe610800000000000000
+      internalID: 1652742369495333404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_IdleCycle_18
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 23
+        width: 384
+        height: 466
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 375899fc7ab5d8be0800000000000000
+      internalID: -1473420726779673229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_IdleCycle_19
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 23
+        width: 378
+        height: 466
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfb2093117efd5040800000000000000
+      internalID: 4638142952874454013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_IdleCycle_20
+      rect:
+        serializedVersion: 2
+        x: 2123
+        y: 23
+        width: 392
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c102af30625a5a90800000000000000
+      internalID: -7324451270626770489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_IdleCycle_21
+      rect:
+        serializedVersion: 2
+        x: 2643
+        y: 23
+        width: 384
+        height: 466
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 608507be60c734450800000000000000
+      internalID: 6071833091787216902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -38,7 +38,6 @@ public class RabbitAggro : BasicAggro {
 
     //TODO: Work with gravity flip
     void jump(){
-        
         body.AddForce(new Vector2(0, jumpForce) * body.gravityScale,ForceMode2D.Impulse);
         StartCoroutine(disableJumpForSeconds(0.5f));
     }
