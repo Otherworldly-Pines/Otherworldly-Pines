@@ -60,6 +60,7 @@ GameObject:
   - component: {fileID: -2488532358820609698}
   - component: {fileID: -155953835281480196}
   - component: {fileID: 612381439730105153}
+  - component: {fileID: 5290385662432175580}
   m_Layer: 14
   m_Name: Berry
   m_TagString: Berries
@@ -185,3 +186,16 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.087890625
+--- !u!114 &5290385662432175580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7121226826332205653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9313d59deedb145349960c2686ad5cbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEdible: 0

@@ -6,6 +6,7 @@ using UnityEngine;
 [SelectionBase]
 public class PlayerControls : MonoBehaviour {
 
+    public Animator animator;
     public GroundChecker groundCheck;
     public LayerMask groundMask;
     public LayerMask pushablesMask;
@@ -79,20 +80,17 @@ public class PlayerControls : MonoBehaviour {
         
         isPressingShift = Input.GetKey(KeyCode.LeftShift);
         currentHorizontalInput = Input.GetAxis("Horizontal");
-    
+
         if (Input.GetKeyDown(KeyCode.Space) && isPlayerGrounded())
         {
             setJumping(true);
-
             Vector2 jumpDirection = !flippable.isUpsideDown ? Vector2.up : Vector2.down;
             body.velocity = jumpDirection * jumpForce;
         }
-        if (isPlayerGrounded())
-        {
-            //Debug.Log("Ground If: "+ isJumping);
 
-            //   isJumping = false;
-        }
+        animator.SetFloat("Speed", Mathf.Abs(currentHorizontalInput*walkSpeed));
+        animator.SetBool("IsJumping", !groundCheck.IsGrounded());
+
     }
 
     public void setJumping(bool jp)
@@ -131,12 +129,34 @@ public class PlayerControls : MonoBehaviour {
                 // Player is pushing/pulling a block
                 isPullingBlock = true;
                 currentPushable.ConnectToBody(body);
+                animator.SetBool("IsPulling", IsPulling(currentPushable));
+                animator.SetBool("IsPushing", IsPushing(currentPushable));
             } else {
                 // Player is against a block but not pushing it 
                 isPullingBlock = false;
                 currentPushable.Harden();
+                animator.SetBool("IsPulling", false);
+                animator.SetBool("IsPushing", false);
             }
         }
+    }
+
+    private bool IsPulling(PushPullBlock block){
+        Vector3 playerBlockPosDiff = transform.localPosition - block.transform.localPosition;
+        //player is on the right of the object and they are moving to the right direction
+        bool onRightMoveRight = playerBlockPosDiff.x > Vector3.zero.x && Input.GetAxis("Horizontal") > 0;
+        //player is on the left of the object and they are moving to the left direction
+        bool onLeftMoveLeft = playerBlockPosDiff.x < Vector3.zero.x && Input.GetAxis("Horizontal") < 0;
+        return onRightMoveRight || onLeftMoveLeft;
+    }
+
+    private bool IsPushing(PushPullBlock block){
+        Vector3 playerBlockPosDiff = transform.localPosition - block.transform.localPosition;
+        //player is on the right of the object and they are moving to the left direction
+        bool onRightMoveLeft = playerBlockPosDiff.x > Vector3.zero.x && Input.GetAxis("Horizontal") < 0;
+        //player is on the left of the object and they are moving to the right direction
+        bool onLeftMoveRight = playerBlockPosDiff.x < Vector3.zero.x && Input.GetAxis("Horizontal") > 0;
+        return onRightMoveLeft || onLeftMoveRight;
     }
 
     private Collider2D FrontIsTouchingMask(LayerMask mask) {

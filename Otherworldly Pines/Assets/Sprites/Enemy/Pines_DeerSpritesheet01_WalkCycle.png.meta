@@ -1,0 +1,631 @@
+fileFormatVersion: 2
+guid: 3eee3fc0807b0da4da93a33e3579768d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7315776857452239661
+    second: Pines_DeerSpritesheet01_WalkCycle_0
+  - first:
+      213: 4691560011372593310
+    second: Pines_DeerSpritesheet01_WalkCycle_1
+  - first:
+      213: -4658841750635387058
+    second: Pines_DeerSpritesheet01_WalkCycle_2
+  - first:
+      213: -4218676936900814150
+    second: Pines_DeerSpritesheet01_WalkCycle_3
+  - first:
+      213: -7603129741692855342
+    second: Pines_DeerSpritesheet01_WalkCycle_4
+  - first:
+      213: 1988822395041128231
+    second: Pines_DeerSpritesheet01_WalkCycle_5
+  - first:
+      213: 3129973772558950995
+    second: Pines_DeerSpritesheet01_WalkCycle_6
+  - first:
+      213: 8521536817688773906
+    second: Pines_DeerSpritesheet01_WalkCycle_7
+  - first:
+      213: -5665890508810932651
+    second: Pines_DeerSpritesheet01_WalkCycle_8
+  - first:
+      213: 8447737811315985602
+    second: Pines_DeerSpritesheet01_WalkCycle_9
+  - first:
+      213: 5447929881217494377
+    second: Pines_DeerSpritesheet01_WalkCycle_10
+  - first:
+      213: -1646571085103806606
+    second: Pines_DeerSpritesheet01_WalkCycle_11
+  - first:
+      213: 1090435196047865424
+    second: Pines_DeerSpritesheet01_WalkCycle_12
+  - first:
+      213: -2711986788073546464
+    second: Pines_DeerSpritesheet01_WalkCycle_13
+  - first:
+      213: 2132030748958798950
+    second: Pines_DeerSpritesheet01_WalkCycle_14
+  - first:
+      213: 2000174070510461304
+    second: Pines_DeerSpritesheet01_WalkCycle_15
+  - first:
+      213: -130573362658533874
+    second: Pines_DeerSpritesheet01_WalkCycle_16
+  - first:
+      213: 806469737502068383
+    second: Pines_DeerSpritesheet01_WalkCycle_17
+  - first:
+      213: 2447356429444962263
+    second: Pines_DeerSpritesheet01_WalkCycle_18
+  - first:
+      213: 218320849337536329
+    second: Pines_DeerSpritesheet01_WalkCycle_0
+  - first:
+      213: -2527414923589489205
+    second: Pines_DeerSpritesheet01_WalkCycle_1
+  - first:
+      213: -9204712012001491380
+    second: Pines_DeerSpritesheet01_WalkCycle_2
+  - first:
+      213: 5624733069634256897
+    second: Pines_DeerSpritesheet01_WalkCycle_3
+  - first:
+      213: 3528187100900170781
+    second: Pines_DeerSpritesheet01_WalkCycle_4
+  - first:
+      213: 1125034022550195858
+    second: Pines_DeerSpritesheet01_WalkCycle_5
+  - first:
+      213: -8267011331573355672
+    second: Pines_DeerSpritesheet01_WalkCycle_6
+  - first:
+      213: -99398144638223963
+    second: Pines_DeerSpritesheet01_WalkCycle_7
+  - first:
+      213: -7028707671480911747
+    second: Pines_DeerSpritesheet01_WalkCycle_8
+  - first:
+      213: 3223299995477251517
+    second: Pines_DeerSpritesheet01_WalkCycle_9
+  - first:
+      213: 8648032636155342836
+    second: Pines_DeerSpritesheet01_WalkCycle_10
+  - first:
+      213: 7241395692706407830
+    second: Pines_DeerSpritesheet01_WalkCycle_11
+  - first:
+      213: -1887419902725486764
+    second: Pines_DeerSpritesheet01_WalkCycle_12
+  - first:
+      213: -7420696474992391926
+    second: Pines_DeerSpritesheet01_WalkCycle_13
+  - first:
+      213: 5952805327566763190
+    second: Pines_DeerSpritesheet01_WalkCycle_14
+  - first:
+      213: -6376445947610179880
+    second: Pines_DeerSpritesheet01_WalkCycle_15
+  - first:
+      213: -4463060531669357447
+    second: Pines_DeerSpritesheet01_WalkCycle_16
+  - first:
+      213: -6448956799380011552
+    second: Pines_DeerSpritesheet01_WalkCycle_17
+  - first:
+      213: -2833952020428770045
+    second: Pines_DeerSpritesheet01_WalkCycle_18
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_WalkCycle_0
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 1051
+        width: 392
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94f43dfd7a1a70300800000000000000
+      internalID: 218320849337536329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_WalkCycle_1
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 1051
+        width: 392
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcd6d6f8481dcecd0800000000000000
+      internalID: -2527414923589489205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_WalkCycle_2
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 1049
+        width: 392
+        height: 462
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4641e8913b424080800000000000000
+      internalID: -9204712012001491380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_WalkCycle_3
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 1059
+        width: 392
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10041fbfce01f0e40800000000000000
+      internalID: 5624733069634256897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_WalkCycle_4
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 1059
+        width: 394
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c1542a973a6f030800000000000000
+      internalID: 3528187100900170781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_WalkCycle_5
+      rect:
+        serializedVersion: 2
+        x: 2633
+        y: 1059
+        width: 392
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e455a9b7cec9f00800000000000000
+      internalID: 1125034022550195858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_WalkCycle_6
+      rect:
+        serializedVersion: 2
+        x: 3146
+        y: 1059
+        width: 392
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86be0739efca54d80800000000000000
+      internalID: -8267011331573355672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_WalkCycle_7
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 547
+        width: 392
+        height: 453
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a971810aedde9ef0800000000000000
+      internalID: -99398144638223963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_WalkCycle_8
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 547
+        width: 392
+        height: 453
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d78315bcc93057e90800000000000000
+      internalID: -7028707671480911747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_WalkCycle_9
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 547
+        width: 392
+        height: 453
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db590f2a4467bbc20800000000000000
+      internalID: 3223299995477251517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_WalkCycle_10
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 543
+        width: 395
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ff26040ddbf30870800000000000000
+      internalID: 8648032636155342836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_WalkCycle_11
+      rect:
+        serializedVersion: 2
+        x: 2108
+        y: 541
+        width: 406
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6952fc5140b9e7460800000000000000
+      internalID: 7241395692706407830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_WalkCycle_12
+      rect:
+        serializedVersion: 2
+        x: 2621
+        y: 545
+        width: 404
+        height: 446
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4578b0439998ec5e0800000000000000
+      internalID: -1887419902725486764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_WalkCycle_13
+      rect:
+        serializedVersion: 2
+        x: 3119
+        y: 545
+        width: 419
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a09c51e5fd3640990800000000000000
+      internalID: -7420696474992391926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_WalkCycle_14
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 32
+        width: 419
+        height: 445
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b47ba6f7ec9c9250800000000000000
+      internalID: 5952805327566763190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_WalkCycle_15
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 32
+        width: 404
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d6573bc1305287a0800000000000000
+      internalID: -6376445947610179880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_WalkCycle_16
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 32
+        width: 397
+        height: 453
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c28ceb7160012c0800000000000000
+      internalID: -4463060531669357447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_WalkCycle_17
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 32
+        width: 397
+        height: 453
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e54d1185f3b086a0800000000000000
+      internalID: -6448956799380011552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_DeerSpritesheet01_WalkCycle_18
+      rect:
+        serializedVersion: 2
+        x: 2117
+        y: 31
+        width: 397
+        height: 454
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 305b7dff6a7cba8d0800000000000000
+      internalID: -2833952020428770045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

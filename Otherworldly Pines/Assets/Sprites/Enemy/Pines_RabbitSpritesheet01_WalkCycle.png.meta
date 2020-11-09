@@ -1,0 +1,838 @@
+fileFormatVersion: 2
+guid: f2260f8877761a24689ea57326ab7393
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5652119117646183814
+    second: Pines_RabbitSpritesheet01_WalkCycle_0
+  - first:
+      213: -2020059235190909003
+    second: Pines_RabbitSpritesheet01_WalkCycle_1
+  - first:
+      213: -2728557757683278233
+    second: Pines_RabbitSpritesheet01_WalkCycle_2
+  - first:
+      213: -5012466835766070308
+    second: Pines_RabbitSpritesheet01_WalkCycle_3
+  - first:
+      213: 8727053600644961770
+    second: Pines_RabbitSpritesheet01_WalkCycle_4
+  - first:
+      213: -8285242065711303673
+    second: Pines_RabbitSpritesheet01_WalkCycle_5
+  - first:
+      213: -4064664952528994355
+    second: Pines_RabbitSpritesheet01_WalkCycle_6
+  - first:
+      213: 1935103246269297135
+    second: Pines_RabbitSpritesheet01_WalkCycle_7
+  - first:
+      213: -5151379360642859285
+    second: Pines_RabbitSpritesheet01_WalkCycle_8
+  - first:
+      213: -718071440713697179
+    second: Pines_RabbitSpritesheet01_WalkCycle_9
+  - first:
+      213: 5990321662572812634
+    second: Pines_RabbitSpritesheet01_WalkCycle_10
+  - first:
+      213: -6389213908861836287
+    second: Pines_RabbitSpritesheet01_WalkCycle_11
+  - first:
+      213: -9155454056867283231
+    second: Pines_RabbitSpritesheet01_WalkCycle_12
+  - first:
+      213: -6670284576591294627
+    second: Pines_RabbitSpritesheet01_WalkCycle_13
+  - first:
+      213: 2490916512106371612
+    second: Pines_RabbitSpritesheet01_WalkCycle_14
+  - first:
+      213: 1652762735478171879
+    second: Pines_RabbitSpritesheet01_WalkCycle_15
+  - first:
+      213: -2386418403757064589
+    second: Pines_RabbitSpritesheet01_WalkCycle_16
+  - first:
+      213: -1610457487142468487
+    second: Pines_RabbitSpritesheet01_WalkCycle_17
+  - first:
+      213: -14744147794147687
+    second: Pines_RabbitSpritesheet01_WalkCycle_18
+  - first:
+      213: 6062733770701457834
+    second: Pines_RabbitSpritesheet01_WalkCycle_19
+  - first:
+      213: -8846589799990704069
+    second: Pines_RabbitSpritesheet01_WalkCycle_20
+  - first:
+      213: -3537051752126942189
+    second: Pines_RabbitSpritesheet01_WalkCycle_21
+  - first:
+      213: 8879048472461385197
+    second: Pines_RabbitSpritesheet01_WalkCycle_22
+  - first:
+      213: -7511438911996322344
+    second: Pines_RabbitSpritesheet01_WalkCycle_23
+  - first:
+      213: 5741454054079286748
+    second: Pines_RabbitSpritesheet01_WalkCycle_24
+  - first:
+      213: -2368139341548208345
+    second: Pines_RabbitSpritesheet01_WalkCycle_25
+  - first:
+      213: -4754175569115957497
+    second: Pines_RabbitSpritesheet01_WalkCycle_26
+  - first:
+      213: 3631261729826645945
+    second: Pines_RabbitSpritesheet01_WalkCycle_27
+  - first:
+      213: 1751261565054962030
+    second: Pines_RabbitSpritesheet01_WalkCycle_28
+  - first:
+      213: -5239844098835861199
+    second: Pines_RabbitSpritesheet01_WalkCycle_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 853.3333
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_WalkCycle_0
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1603
+        width: 292
+        height: 366
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a724184db93af81b0800000000000000
+      internalID: -5652119117646183814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_WalkCycle_1
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 1595
+        width: 268
+        height: 390
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b7d23d04de47f3e0800000000000000
+      internalID: -2020059235190909003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_WalkCycle_2
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 1587
+        width: 248
+        height: 416
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76ed6280d27322ad0800000000000000
+      internalID: -2728557757683278233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_WalkCycle_3
+      rect:
+        serializedVersion: 2
+        x: 1661
+        y: 1597
+        width: 254
+        height: 428
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd3bcb558f3207ab0800000000000000
+      internalID: -5012466835766070308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_WalkCycle_4
+      rect:
+        serializedVersion: 2
+        x: 2169
+        y: 1613
+        width: 278
+        height: 435
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae59c3a0309bc1970800000000000000
+      internalID: 8727053600644961770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_WalkCycle_5
+      rect:
+        serializedVersion: 2
+        x: 2681
+        y: 1635
+        width: 248
+        height: 413
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70477230d38e40d80800000000000000
+      internalID: -8285242065711303673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_WalkCycle_6
+      rect:
+        serializedVersion: 2
+        x: 3175
+        y: 1661
+        width: 292
+        height: 380
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcf778dd2c86797c0800000000000000
+      internalID: -4064664952528994355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_WalkCycle_7
+      rect:
+        serializedVersion: 2
+        x: 3661
+        y: 1683
+        width: 332
+        height: 358
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe1369d562edada10800000000000000
+      internalID: 1935103246269297135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_WalkCycle_8
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 1151
+        width: 354
+        height: 354
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bee7a91c3cf9288b0800000000000000
+      internalID: -5151379360642859285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_WalkCycle_9
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 1141
+        width: 366
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56838e444d5e806f0800000000000000
+      internalID: -718071440713697179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_WalkCycle_10
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 1121
+        width: 382
+        height: 334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a59daf360d5e12350800000000000000
+      internalID: 5990321662572812634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_WalkCycle_11
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 1105
+        width: 410
+        height: 296
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1042e482dc3f457a0800000000000000
+      internalID: -6389213908861836287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_WalkCycle_12
+      rect:
+        serializedVersion: 2
+        x: 2089
+        y: 1127
+        width: 378
+        height: 334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee340ffa0b41f080800000000000000
+      internalID: -9155454056867283231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_WalkCycle_13
+      rect:
+        serializedVersion: 2
+        x: 2619
+        y: 1099
+        width: 358
+        height: 352
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5f428da4836e63a0800000000000000
+      internalID: -6670284576591294627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_WalkCycle_14
+      rect:
+        serializedVersion: 2
+        x: 3143
+        y: 1095
+        width: 342
+        height: 354
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1a514dce53819220800000000000000
+      internalID: 2490916512106371612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_WalkCycle_15
+      rect:
+        serializedVersion: 2
+        x: 3669
+        y: 1083
+        width: 320
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e8ed2283facfe610800000000000000
+      internalID: 1652762735478171879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_WalkCycle_16
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 571
+        width: 320
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37efa960b1db1eed0800000000000000
+      internalID: -2386418403757064589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_WalkCycle_17
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 571
+        width: 320
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9744101b27186a9e0800000000000000
+      internalID: -1610457487142468487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_WalkCycle_18
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 571
+        width: 320
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 996c634964e9bcff0800000000000000
+      internalID: -14744147794147687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_WalkCycle_19
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 571
+        width: 320
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa9cc622e38232450800000000000000
+      internalID: 6062733770701457834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_WalkCycle_20
+      rect:
+        serializedVersion: 2
+        x: 2133
+        y: 571
+        width: 320
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b38c5f9b2799a3580800000000000000
+      internalID: -8846589799990704069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_WalkCycle_21
+      rect:
+        serializedVersion: 2
+        x: 2645
+        y: 571
+        width: 320
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 314fc4aeb2ed9eec0800000000000000
+      internalID: -3537051752126942189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_WalkCycle_22
+      rect:
+        serializedVersion: 2
+        x: 3157
+        y: 571
+        width: 320
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ded1980ea87b83b70800000000000000
+      internalID: 8879048472461385197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_WalkCycle_23
+      rect:
+        serializedVersion: 2
+        x: 3669
+        y: 571
+        width: 320
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dd996a5b1202c790800000000000000
+      internalID: -7511438911996322344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_WalkCycle_24
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 59
+        width: 320
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdd4f9bea0ebdaf40800000000000000
+      internalID: 5741454054079286748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_WalkCycle_25
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 59
+        width: 320
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72f3468d0dda22fd0800000000000000
+      internalID: -2368139341548208345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_WalkCycle_26
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 59
+        width: 320
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 707b0033286c50eb0800000000000000
+      internalID: -4754175569115957497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_WalkCycle_27
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 59
+        width: 320
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b7a9c4dd45d46230800000000000000
+      internalID: 3631261729826645945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_WalkCycle_28
+      rect:
+        serializedVersion: 2
+        x: 2133
+        y: 60
+        width: 320
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6945e56d1bbd4810800000000000000
+      internalID: 1751261565054962030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines_RabbitSpritesheet01_WalkCycle_29
+      rect:
+        serializedVersion: 2
+        x: 2685
+        y: 38
+        width: 292
+        height: 365
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1313672dd855847b0800000000000000
+      internalID: -5239844098835861199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

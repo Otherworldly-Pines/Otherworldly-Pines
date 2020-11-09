@@ -1,0 +1,553 @@
+fileFormatVersion: 2
+guid: 30f12e0ba5f0446899a0ac88d855850a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4454944273916142338
+    second: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_0
+  - first:
+      213: -199578627126205831
+    second: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_1
+  - first:
+      213: -4651117329422990464
+    second: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_2
+  - first:
+      213: -4667490879133397510
+    second: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_3
+  - first:
+      213: 7677463870002677446
+    second: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_4
+  - first:
+      213: 3327447045367242703
+    second: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_5
+  - first:
+      213: -7899019938351851208
+    second: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_6
+  - first:
+      213: -5130448301268817745
+    second: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_7
+  - first:
+      213: -7316729849611614857
+    second: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_8
+  - first:
+      213: -7029923736820887567
+    second: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_9
+  - first:
+      213: -3208212315874019471
+    second: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_10
+  - first:
+      213: -1841211232427396740
+    second: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_11
+  - first:
+      213: 5518925909989477678
+    second: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_12
+  - first:
+      213: -2030295066989473173
+    second: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_13
+  - first:
+      213: 8246715721754393429
+    second: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_14
+  - first:
+      213: 6478404097965837214
+    second: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_15
+  - first:
+      213: -7879280836332877148
+    second: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_16
+  - first:
+      213: 3770955055629244508
+    second: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_17
+  - first:
+      213: 587000431724559251
+    second: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_18
+  - first:
+      213: -9034904006153470214
+    second: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_19
+  - first:
+      213: -4544975884147367973
+    second: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_20
+  - first:
+      213: 7516652903215506011
+    second: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_21
+  - first:
+      213: -6175444054801195860
+    second: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_22
+  - first:
+      213: 6403811932025225850
+    second: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_23
+  - first:
+      213: 120646654467551308
+    second: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_24
+  - first:
+      213: -7418868623039358139
+    second: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_25
+  - first:
+      213: 6210545574213127725
+    second: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_26
+  - first:
+      213: 4706232570394087050
+    second: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_27
+  - first:
+      213: 3900829486670160657
+    second: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_28
+  - first:
+      213: -3782101622814434740
+    second: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_29
+  - first:
+      213: -3052511395053914009
+    second: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_30
+  - first:
+      213: 7053958433420682213
+    second: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_31
+  - first:
+      213: -6319557479780227329
+    second: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_32
+  - first:
+      213: -3571505664415663648
+    second: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_33
+  - first:
+      213: 6410769564474363991
+    second: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_34
+  - first:
+      213: 7803520718073905282
+    second: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_35
+  - first:
+      213: 5438867824501678174
+    second: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_36
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 345
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_0
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 2433
+        width: 285
+        height: 501
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 203aeecb63423dd30800000000000000
+      internalID: 4454944273916142338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_1
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 2426
+        width: 277
+        height: 506
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 972e169cb44fa3df0800000000000000
+      internalID: -199578627126205831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_2
+      rect:
+        serializedVersion: 2
+        x: 1737
+        y: 2413
+        width: 289
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 083441b7e69e37fb0800000000000000
+      internalID: -4651117329422990464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_3
+      rect:
+        serializedVersion: 2
+        x: 2497
+        y: 2413
+        width: 296
+        height: 516
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afdc0ec56cdb93fb0800000000000000
+      internalID: -4667490879133397510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_4
+      rect:
+        serializedVersion: 2
+        x: 3278
+        y: 2420
+        width: 284
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c6c76b76b4db8a60800000000000000
+      internalID: 7677463870002677446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_5
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1655
+        width: 266
+        height: 516
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf990c45777d2e20800000000000000
+      internalID: 3327447045367242703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_6
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 1661
+        width: 257
+        height: 515
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8395fc4873b016290800000000000000
+      internalID: -7899019938351851208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_7
+      rect:
+        serializedVersion: 2
+        x: 1767
+        y: 1668
+        width: 272
+        height: 505
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa8ad58c37cfcc8b0800000000000000
+      internalID: -5130448301268817745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_8
+      rect:
+        serializedVersion: 2
+        x: 2528
+        y: 1661
+        width: 295
+        height: 506
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 775076ca7f0c57a90800000000000000
+      internalID: -7316729849611614857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_9
+      rect:
+        serializedVersion: 2
+        x: 3292
+        y: 1657
+        width: 298
+        height: 505
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ff44b48b91b07e90800000000000000
+      internalID: -7029923736820887567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_10
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 890
+        width: 315
+        height: 497
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 177bb4485e32a73d0800000000000000
+      internalID: -3208212315874019471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_11
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 888
+        width: 308
+        height: 503
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c71b4b6a324b276e0800000000000000
+      internalID: -1841211232427396740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_12
+      rect:
+        serializedVersion: 2
+        x: 1741
+        y: 890
+        width: 294
+        height: 508
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2d4f96efd9279c40800000000000000
+      internalID: 5518925909989477678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_13
+      rect:
+        serializedVersion: 2
+        x: 2528
+        y: 890
+        width: 267
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b625ddeb461f2d3e0800000000000000
+      internalID: -2030295066989473173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_14
+      rect:
+        serializedVersion: 2
+        x: 3307
+        y: 897
+        width: 255
+        height: 511
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55bbcc68148327270800000000000000
+      internalID: 8246715721754393429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-WalkCycleSpriteSheet-v001_15
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 125
+        width: 258
+        height: 510
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9b40baf33ae7e950800000000000000
+      internalID: 6478404097965837214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
