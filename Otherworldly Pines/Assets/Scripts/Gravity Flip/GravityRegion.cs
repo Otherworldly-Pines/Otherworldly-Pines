@@ -8,6 +8,7 @@ public class GravityRegion : MonoBehaviour {
 
     [SerializeField] private ParticleSystem particles;
     [SerializeField] private BoxCollider2D boundsCollider;
+    [SerializeField] private GameObject boundsSprite;
     public bool gravityIsFlipped = false;
     public bool playerCanFlipGravity = true;
 
@@ -15,22 +16,11 @@ public class GravityRegion : MonoBehaviour {
     private HashSet<GravityFlippable> flippables = new HashSet<GravityFlippable>();
 
     void Awake() {
-        if (!playerCanFlipGravity) particles.Stop();
-        ownCollider = GetComponent<BoxCollider2D>();
-        
-        Vector3 updatedScale = new Vector3(ownCollider.size.x, ownCollider.size.y, 1f);
-        boundsCollider.size = updatedScale;
-        
-        var sh = particles.shape;
-        sh.scale = new Vector3(ownCollider.size.x, 1, ownCollider.size.y);
-        particles.transform.localPosition = new Vector3(particles.transform.localPosition.x, 0, -0.5f);
-
-        var emitter = particles.emission;
-        emitter.rateOverTime = ownCollider.size.x * 2f;
+        ConfigureIndicators();
     }
 
     private void Start() {
-        ConfigureParticles();
+        ConfigureParticlesDirection();
     }
 
     // returns whether or not the region is flipped, publicly accessible function
@@ -44,7 +34,7 @@ public class GravityRegion : MonoBehaviour {
         
         gravityIsFlipped = !gravityIsFlipped;
         
-        ConfigureParticles();
+        ConfigureParticlesDirection();
 
         flippables.RemoveWhere(flippable => !flippable.StillExists());
         foreach (GravityFlippable flippable in flippables) {
@@ -52,9 +42,36 @@ public class GravityRegion : MonoBehaviour {
         }
     }
 
-    private void ConfigureParticles() {
+    private void ConfigureIndicators() {
+        if (!playerCanFlipGravity) {
+            particles.Stop();
+            particles.gameObject.SetActive(false);
+            boundsSprite.SetActive(false);
+        } else {
+            boundsSprite.SetActive(true);
+            particles.gameObject.SetActive(true);
+            particles.Play();
+        }
+
+        if (!ownCollider) ownCollider = GetComponent<BoxCollider2D>();
+        
+        Vector3 updatedScale = new Vector3(ownCollider.size.x, ownCollider.size.y, 1f);
+        boundsCollider.size = updatedScale;
+
+        var boundsRenderer = boundsSprite.GetComponent<SpriteRenderer>();
+        boundsRenderer.size = new Vector2(ownCollider.size.x / boundsSprite.transform.localScale.x, ownCollider.size.y / boundsSprite.transform.localScale.y);
+
+        var sh = particles.shape;
+        sh.scale = new Vector3(ownCollider.size.x, 1, ownCollider.size.y);
+        particles.transform.localPosition = new Vector3(particles.transform.localPosition.x, 0, -0.5f);
+
+        var emitter = particles.emission;
+        emitter.rateOverTime = ownCollider.size.x * 2f;
+    }
+
+    private void ConfigureParticlesDirection() {
         var localRotation = particles.transform.localRotation;
-        localRotation.z = gravityIsFlipped ? 0f : 180f;
+        localRotation.z = !gravityIsFlipped ? 0f : 180f;
         particles.transform.localRotation = localRotation;
     }
 
@@ -118,6 +135,10 @@ public class GravityRegion : MonoBehaviour {
     private void OnValidate() {
         if (transform.position.z < 90f) Debug.LogError("Gravity regions must have z positions over 90 ", gameObject);
         if (!ownCollider) ownCollider = GetComponent<BoxCollider2D>();
+        
+        ConfigureIndicators();
+        ConfigureParticlesDirection();
+
         if (ownCollider.offset.magnitude > 0.001f) {
             var corrected = transform.position + (Vector3)ownCollider.offset;
             Debug.LogError("Gravity region colliders must have offsets of zero. Position should be " + corrected, gameObject);
