@@ -10,6 +10,10 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(SceneIdentifier.Level1);
     }
 
+    public void SkipToLevel2() {
+        SceneManager.LoadScene(SceneIdentifier.Level2);
+    }
+
     public void Instruction()
     {
         SceneManager.LoadScene(SceneIdentifier.Instructions);

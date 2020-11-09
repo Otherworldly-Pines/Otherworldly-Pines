@@ -95,6 +95,16 @@ public class PlayerThrow : MonoBehaviour, IHUDConnected {
         berryCounter.SetCount(ammo);
     }
 
+    public int getAmmo()
+    {
+        return ammo;
+    }
+
+    public void setAmmo(int value)
+    {
+        ammo = value;
+    }
+
 }
 
 

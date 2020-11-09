@@ -74,5 +74,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af83989f42337af4398580f4ad6f9eab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  berryCount: 5
+  skipTutorial: 0
+  dialogBox: {fileID: 0}
   startingPosition: {fileID: 5199923320543158756}
   lastCheckPointPos: {x: -5.92, y: 2.8}

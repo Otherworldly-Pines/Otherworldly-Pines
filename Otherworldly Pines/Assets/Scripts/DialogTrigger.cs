@@ -19,6 +19,9 @@ public class DialogTrigger : MonoBehaviour
     private GameObject player;
 
     private void OnTriggerEnter2D(Collider2D other) {
+        var shouldSkipTutorial = GameObject.FindGameObjectWithTag("CM").GetComponent<CheckpointMaster>().skipTutorial;
+        if (shouldSkipTutorial) return;
+        
         var playerControls = other.gameObject.GetComponent<PlayerControls>();
         if (playerControls != null) {
             player = other.gameObject;
