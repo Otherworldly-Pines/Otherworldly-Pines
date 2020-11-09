@@ -1,0 +1,394 @@
+fileFormatVersion: 2
+guid: d7128e7e60f3145e9838e535976bd9a6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3298712777838582507
+    second: Pines-PlayerCharacter-ThrowSpriteSheet_v003_0
+  - first:
+      213: -527073416291488538
+    second: Pines-PlayerCharacter-ThrowSpriteSheet_v003_1
+  - first:
+      213: -3607205648169728511
+    second: Pines-PlayerCharacter-ThrowSpriteSheet_v003_2
+  - first:
+      213: -2000039775558408593
+    second: Pines-PlayerCharacter-ThrowSpriteSheet_v003_3
+  - first:
+      213: -2402757306716902496
+    second: Pines-PlayerCharacter-ThrowSpriteSheet_v003_4
+  - first:
+      213: -2846307872461811747
+    second: Pines-PlayerCharacter-ThrowSpriteSheet_v003_5
+  - first:
+      213: 8555088568287357446
+    second: Pines-PlayerCharacter-ThrowSpriteSheet_v003_6
+  - first:
+      213: -706401292099519554
+    second: Pines-PlayerCharacter-ThrowSpriteSheet_v003_7
+  - first:
+      213: -4153725228534311319
+    second: Pines-PlayerCharacter-ThrowSpriteSheet_v003_8
+  - first:
+      213: -2774046275201254537
+    second: Pines-PlayerCharacter-ThrowSpriteSheet_v003_9
+  - first:
+      213: -874587843893993314
+    second: Pines-PlayerCharacter-ThrowSpriteSheet_v003_10
+  - first:
+      213: -1446937556076557137
+    second: Pines-PlayerCharacter-ThrowSpriteSheet_v003_11
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 345
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-ThrowSpriteSheet_v003_0
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1654
+        width: 333
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bea5c1b4bc167cd20800000000000000
+      internalID: 3298712777838582507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-ThrowSpriteSheet_v003_1
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 1654
+        width: 332
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ece46b35857fa8f0800000000000000
+      internalID: -527073416291488538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-ThrowSpriteSheet_v003_2
+      rect:
+        serializedVersion: 2
+        x: 1733
+        y: 1654
+        width: 338
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1068f052391a0fdc0800000000000000
+      internalID: -3607205648169728511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-ThrowSpriteSheet_v003_3
+      rect:
+        serializedVersion: 2
+        x: 2502
+        y: 1654
+        width: 336
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f666039bb6e6e34e0800000000000000
+      internalID: -2000039775558408593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-ThrowSpriteSheet_v003_4
+      rect:
+        serializedVersion: 2
+        x: 3303
+        y: 1654
+        width: 296
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ab2aabb5f0b7aed0800000000000000
+      internalID: -2402757306716902496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-ThrowSpriteSheet_v003_5
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 886
+        width: 294
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddf04840212ef78d0800000000000000
+      internalID: -2846307872461811747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-ThrowSpriteSheet_v003_6
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 886
+        width: 280
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60ae5ced9b7c9b670800000000000000
+      internalID: 8555088568287357446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-ThrowSpriteSheet_v003_7
+      rect:
+        serializedVersion: 2
+        x: 1769
+        y: 886
+        width: 280
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebbf78b74cb5236f0800000000000000
+      internalID: -706401292099519554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-ThrowSpriteSheet_v003_8
+      rect:
+        serializedVersion: 2
+        x: 2542
+        y: 886
+        width: 266
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96652aa79e00b56c0800000000000000
+      internalID: -4153725228534311319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-ThrowSpriteSheet_v003_9
+      rect:
+        serializedVersion: 2
+        x: 3308
+        y: 886
+        width: 267
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b32283c9b9089d0800000000000000
+      internalID: -2774046275201254537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-ThrowSpriteSheet_v003_10
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 117
+        width: 266
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e90e2df5df6dcd3f0800000000000000
+      internalID: -874587843893993314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-ThrowSpriteSheet_v003_11
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 117
+        width: 268
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fac82ed75f17bebe0800000000000000
+      internalID: -1446937556076557137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -57,7 +57,7 @@ public class PushPullBlock : MonoBehaviour {
         joint.connectedBody = null;
         joint.enabled = false;
     }
-    
+
     public void Soften() {
         collider.sharedMaterial = originalMaterial;
         body.mass = originalMass;

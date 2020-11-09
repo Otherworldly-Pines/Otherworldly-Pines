@@ -1,0 +1,778 @@
+fileFormatVersion: 2
+guid: fac7fe68b61034e85918cf2d888056e3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8422675545742522530
+    second: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_0
+  - first:
+      213: 8664092463634044739
+    second: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_1
+  - first:
+      213: 6009148442981737517
+    second: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_2
+  - first:
+      213: -2825631548073449947
+    second: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_3
+  - first:
+      213: -8909084587428220543
+    second: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_4
+  - first:
+      213: 802439608338387471
+    second: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_5
+  - first:
+      213: -943060868184845205
+    second: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_6
+  - first:
+      213: -6961455176922428484
+    second: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_7
+  - first:
+      213: -817099594728832044
+    second: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_8
+  - first:
+      213: 7969415650833793239
+    second: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_9
+  - first:
+      213: -5861312805677130654
+    second: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_10
+  - first:
+      213: 6043400752741889864
+    second: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_11
+  - first:
+      213: 7651724910816702611
+    second: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_12
+  - first:
+      213: -919221143159210480
+    second: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_13
+  - first:
+      213: 3124476842726230461
+    second: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_14
+  - first:
+      213: 4800763153196898975
+    second: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_15
+  - first:
+      213: 1545990538510280385
+    second: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_16
+  - first:
+      213: 5049702238694701073
+    second: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_17
+  - first:
+      213: -4566225529395608136
+    second: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_18
+  - first:
+      213: 4188058374196192568
+    second: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_19
+  - first:
+      213: 8142172650561993385
+    second: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_20
+  - first:
+      213: 809534068693090248
+    second: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_21
+  - first:
+      213: 1413644708798853427
+    second: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_22
+  - first:
+      213: -1123841123793015071
+    second: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_23
+  - first:
+      213: 7096007809538437400
+    second: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_24
+  - first:
+      213: 2799490688376540162
+    second: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_25
+  - first:
+      213: 4721420129233877328
+    second: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_26
+  - first:
+      213: 6713965089502487285
+    second: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_27
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 345
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_0
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 1653
+        width: 270
+        height: 518
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e57c5a56735ac1b80800000000000000
+      internalID: -8422675545742522530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_1
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 1653
+        width: 283
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 347db0cf03a0d3870800000000000000
+      internalID: 8664092463634044739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_2
+      rect:
+        serializedVersion: 2
+        x: 1765
+        y: 1653
+        width: 281
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d24a48acba8c46350800000000000000
+      internalID: 6009148442981737517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_3
+      rect:
+        serializedVersion: 2
+        x: 2541
+        y: 1657
+        width: 273
+        height: 495
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 526e1fee31759c8d0800000000000000
+      internalID: -2825631548073449947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_4
+      rect:
+        serializedVersion: 2
+        x: 3306
+        y: 1657
+        width: 277
+        height: 495
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 181fe6425c29c5480800000000000000
+      internalID: -8909084587428220543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_5
+      rect:
+        serializedVersion: 2
+        x: 4056
+        y: 1657
+        width: 296
+        height: 495
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0296b08296d22b00800000000000000
+      internalID: 802439608338387471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_6
+      rect:
+        serializedVersion: 2
+        x: 4824
+        y: 1657
+        width: 296
+        height: 495
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b64554e032399e2f0800000000000000
+      internalID: -943060868184845205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_7
+      rect:
+        serializedVersion: 2
+        x: 5593
+        y: 1657
+        width: 293
+        height: 495
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbb0cb36661f36f90800000000000000
+      internalID: -6961455176922428484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_8
+      rect:
+        serializedVersion: 2
+        x: 6358
+        y: 1657
+        width: 296
+        height: 495
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d3821e6f3419a4f0800000000000000
+      internalID: -817099594728832044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_9
+      rect:
+        serializedVersion: 2
+        x: 7127
+        y: 1657
+        width: 296
+        height: 495
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d003678f4d099e60800000000000000
+      internalID: 7969415650833793239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_10
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 887
+        width: 296
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26c9a2cce0f68aea0800000000000000
+      internalID: -5861312805677130654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_11
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 888
+        width: 296
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 847328e17f87ed350800000000000000
+      internalID: 6043400752741889864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_12
+      rect:
+        serializedVersion: 2
+        x: 1753
+        y: 888
+        width: 293
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 390bc3c0443603a60800000000000000
+      internalID: 7651724910816702611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_13
+      rect:
+        serializedVersion: 2
+        x: 2518
+        y: 887
+        width: 296
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01e77f39d354e33f0800000000000000
+      internalID: -919221143159210480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_14
+      rect:
+        serializedVersion: 2
+        x: 3287
+        y: 887
+        width: 296
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db981af522f5c5b20800000000000000
+      internalID: 3124476842726230461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_15
+      rect:
+        serializedVersion: 2
+        x: 4056
+        y: 887
+        width: 296
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ad51df6acbf9240800000000000000
+      internalID: 4800763153196898975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_16
+      rect:
+        serializedVersion: 2
+        x: 4824
+        y: 888
+        width: 296
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c6250a2436747510800000000000000
+      internalID: 1545990538510280385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_17
+      rect:
+        serializedVersion: 2
+        x: 5593
+        y: 885
+        width: 285
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11874ee7e65241640800000000000000
+      internalID: 5049702238694701073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_18
+      rect:
+        serializedVersion: 2
+        x: 6362
+        y: 886
+        width: 285
+        height: 501
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b50e0ce21281a0c0800000000000000
+      internalID: -4566225529395608136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_19
+      rect:
+        serializedVersion: 2
+        x: 7134
+        y: 876
+        width: 285
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 835609ce6e8fe1a30800000000000000
+      internalID: 4188058374196192568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_20
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 107
+        width: 285
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aaf5a8f2eecef070800000000000000
+      internalID: 8142172650561993385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_21
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 111
+        width: 307
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cf370642fa0c3b00800000000000000
+      internalID: 809534068693090248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_22
+      rect:
+        serializedVersion: 2
+        x: 1734
+        y: 115
+        width: 326
+        height: 509
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 331f0927f564e9310800000000000000
+      internalID: 1413644708798853427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_23
+      rect:
+        serializedVersion: 2
+        x: 2503
+        y: 115
+        width: 323
+        height: 509
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee6758c3705760f0800000000000000
+      internalID: -1123841123793015071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_24
+      rect:
+        serializedVersion: 2
+        x: 3258
+        y: 118
+        width: 344
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 811bfeaa1851a7260800000000000000
+      internalID: 7096007809538437400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_25
+      rect:
+        serializedVersion: 2
+        x: 4007
+        y: 122
+        width: 360
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20c82b0e2f9c9d620800000000000000
+      internalID: 2799490688376540162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_26
+      rect:
+        serializedVersion: 2
+        x: 4776
+        y: 122
+        width: 360
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0593d56a79ad58140800000000000000
+      internalID: 4721420129233877328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-JumpUpSpriteSheet_v002_27
+      rect:
+        serializedVersion: 2
+        x: 5541
+        y: 122
+        width: 359
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f26b224dabcc2d50800000000000000
+      internalID: 6713965089502487285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
