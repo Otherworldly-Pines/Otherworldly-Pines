@@ -9,6 +9,7 @@ public class PushPullBlock : MonoBehaviour {
     [HideInInspector] public bool isBeingMoved = false;
     [HideInInspector] public BoxCollider2D collider;
     [SerializeField] private LayerMask playerMask;
+    private AudioSource boxSoundSource;
     private Rigidbody2D body;
     private float border = 0.5f;
     private bool isPlayerNear = false;
@@ -19,7 +20,10 @@ public class PushPullBlock : MonoBehaviour {
     private PhysicsMaterial2D originalMaterial;
     private float originalMass;
 
+    private bool isMoving = false;
+
     void Start() {
+        boxSoundSource = GetComponent<AudioSource>();
         collider = GetComponent<BoxCollider2D>();
         joint = GetComponent<SliderJoint2D>();
         groundChecker = GetComponent<GroundChecker>();
@@ -27,6 +31,7 @@ public class PushPullBlock : MonoBehaviour {
         originalMaterial = collider.sharedMaterial;
         
         originalMass = body.mass;
+        boxSoundSource.volume = GameSettings.sfxVolume;
     }
 
     public bool IsGrounded() {
@@ -45,6 +50,13 @@ public class PushPullBlock : MonoBehaviour {
         } else if (!isPlayerNear && lastPlayerNear) {
             Soften();
         }
+
+        //play sound effects
+        isMoving = body.velocity != Vector2.zero;
+        if (isMoving && isPlayerNear&& !boxSoundSource.isPlaying)
+            boxSoundSource.Play();
+        if (!isMoving && boxSoundSource.isPlaying)
+            boxSoundSource.Stop();
     }
 
     public void ConnectToBody(Rigidbody2D otherBody) {
