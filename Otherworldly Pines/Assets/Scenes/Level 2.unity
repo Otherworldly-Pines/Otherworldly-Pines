@@ -2573,6 +2573,14 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 5261652129444874162, guid: 44e8ba5fd09304d7292a3704d1d3c749, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.99998456
+      objectReference: {fileID: 0}
+    - target: {fileID: 5261652129444874162, guid: 44e8ba5fd09304d7292a3704d1d3c749, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.00555547
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44e8ba5fd09304d7292a3704d1d3c749, type: 3}
 --- !u!1001 &750174711
@@ -3504,6 +3512,14 @@ PrefabInstance:
     - target: {fileID: 3952145474307392999, guid: 44e8ba5fd09304d7292a3704d1d3c749, type: 3}
       propertyPath: m_Size.y
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5261652129444874162, guid: 44e8ba5fd09304d7292a3704d1d3c749, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.99998456
+      objectReference: {fileID: 0}
+    - target: {fileID: 5261652129444874162, guid: 44e8ba5fd09304d7292a3704d1d3c749, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.00555547
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44e8ba5fd09304d7292a3704d1d3c749, type: 3}
@@ -4989,6 +5005,14 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 5261652129444874162, guid: 44e8ba5fd09304d7292a3704d1d3c749, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.99998456
+      objectReference: {fileID: 0}
+    - target: {fileID: 5261652129444874162, guid: 44e8ba5fd09304d7292a3704d1d3c749, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.00555547
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44e8ba5fd09304d7292a3704d1d3c749, type: 3}
 --- !u!1001 &1342719091
@@ -5683,7 +5707,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: HUD
       objectReference: {fileID: 0}
+    - target: {fileID: 6210983712206932936, guid: c94c4e947833646559dfb9afa6ea4ef8, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6927184660482302568, guid: c94c4e947833646559dfb9afa6ea4ef8, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8517483102302058002, guid: c94c4e947833646559dfb9afa6ea4ef8, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
@@ -6297,6 +6329,14 @@ PrefabInstance:
     - target: {fileID: 3952145474307392999, guid: 44e8ba5fd09304d7292a3704d1d3c749, type: 3}
       propertyPath: m_Size.y
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5261652129444874162, guid: 44e8ba5fd09304d7292a3704d1d3c749, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.99998456
+      objectReference: {fileID: 0}
+    - target: {fileID: 5261652129444874162, guid: 44e8ba5fd09304d7292a3704d1d3c749, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.00555547
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44e8ba5fd09304d7292a3704d1d3c749, type: 3}
@@ -7564,6 +7604,14 @@ PrefabInstance:
     - target: {fileID: 3952145474307392999, guid: 44e8ba5fd09304d7292a3704d1d3c749, type: 3}
       propertyPath: m_Size.y
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5261652129444874162, guid: 44e8ba5fd09304d7292a3704d1d3c749, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.99998456
+      objectReference: {fileID: 0}
+    - target: {fileID: 5261652129444874162, guid: 44e8ba5fd09304d7292a3704d1d3c749, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.00555547
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44e8ba5fd09304d7292a3704d1d3c749, type: 3}
