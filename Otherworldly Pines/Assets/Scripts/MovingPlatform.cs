@@ -27,6 +27,8 @@ public class MovingPlatform : MonoBehaviour, PressurePlateActivated {
 
     private bool isBlocked = false;
 
+    private SpriteRenderer mySprite;
+
     private void Awake() {
         body = GetComponentInChildren<Rigidbody2D>();
         collider = GetComponent<BoxCollider2D>();
@@ -35,6 +37,8 @@ public class MovingPlatform : MonoBehaviour, PressurePlateActivated {
         nextTarget = gameObject.transform.position;
 
         isVertical = Mathf.Abs(destination.transform.localPosition.x) < 0.001f;
+
+        mySprite = GetComponent<SpriteRenderer>();
         
         StartMoving();
     }
@@ -154,6 +158,11 @@ public class MovingPlatform : MonoBehaviour, PressurePlateActivated {
     public void PPDisable() {
         isBlocked = true;
         if (isVertical) body.velocity = Vector2.zero;
+    }
+
+    public void setColor(Color c)
+    {
+        mySprite.color = c; //comment this out if you don't want platform color changed
     }
 
     private void OnValidate() {

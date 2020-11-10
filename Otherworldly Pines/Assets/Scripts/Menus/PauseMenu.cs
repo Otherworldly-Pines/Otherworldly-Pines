@@ -75,23 +75,27 @@ public class PauseMenu : MonoBehaviour
 
     public void LoadOptions()
     {
+        pauseMenuUI.SetActive(false);
         optionMenuUI.SetActive(true);
     }
 
     public void BacktoPauseMenu()
     {
         optionMenuUI.SetActive(false);
+        pauseMenuUI.SetActive(true);
         
     }
 
     public void Help()
     {
+        optionMenuUI.SetActive(false);
         helpMenuUI.SetActive(true);   
     }
 
     public void backtoOptionsMenu()
     {
         helpMenuUI.SetActive(false);
+        optionMenuUI.SetActive(true);
     }
 
     public void returnToCheckpoint()

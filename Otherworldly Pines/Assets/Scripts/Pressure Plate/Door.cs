@@ -15,6 +15,9 @@ public class Door : MonoBehaviour, PressurePlateActivated {
     private Vector3 destination;
     private AudioSource doorSound;
 
+    private static Color c_white = Color.white;
+    private bool pressurePlateIsEnabled;
+
     private void Awake() {
         collider = GetComponent<BoxCollider2D>();
         slidingRenderer = slidingPart.GetComponent<SpriteRenderer>();
@@ -59,13 +62,22 @@ public class Door : MonoBehaviour, PressurePlateActivated {
     }
 
     public void PPEnable() {
+        if (pressurePlateIsEnabled) return;
+        pressurePlateIsEnabled = true;
         destination = Vector3.Scale(slidingRenderer.bounds.size, new Vector3(slideDirection.x, slideDirection.y, 1f));
         doorSound.Play();
     }
 
     public void PPDisable() {
+        if (!pressurePlateIsEnabled) return;
+        pressurePlateIsEnabled = false;
         destination = Vector3.zero;
         doorSound.Stop();
+    }
+
+    public void setColor(Color c) {
+        GetComponent<SpriteRenderer>().color = c;
+        slidingRenderer.color = c;
     }
 
 }
