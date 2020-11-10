@@ -13,6 +13,7 @@ TagManager:
   - Collectible2
   - Collectible1
   - DialogBox
+  - Tilemap
   layers:
   - Default
   - TransparentFX

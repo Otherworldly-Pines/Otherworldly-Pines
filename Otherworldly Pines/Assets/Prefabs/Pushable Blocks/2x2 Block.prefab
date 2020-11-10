@@ -170,6 +170,8 @@ MonoBehaviour:
   playerMask:
     serializedVersion: 2
     m_Bits: 2048
+  boxThud: {fileID: 8300000, guid: 219e2b1e808ae4cc28849d2dad502a8d, type: 3}
+  boxMoving: {fileID: 8300000, guid: b288192ae239e48d49ed7082768d4c6f, type: 3}
   highFrictionMaterial: {fileID: 6200000, guid: 4c483a8b091704c619d9c7a70f34c559, type: 2}
 --- !u!114 &-2647878123967911881
 MonoBehaviour:
@@ -241,7 +243,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b288192ae239e48d49ed7082768d4c6f, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

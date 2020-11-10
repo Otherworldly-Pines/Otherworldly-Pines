@@ -9,6 +9,8 @@ public class PushPullBlock : MonoBehaviour {
     [HideInInspector] public bool isBeingMoved = false;
     [HideInInspector] public BoxCollider2D collider;
     [SerializeField] private LayerMask playerMask;
+    [SerializeField] private AudioClip boxThud;
+    [SerializeField] private AudioClip boxMoving;
     private AudioSource boxSoundSource;
     private Rigidbody2D body;
     private float border = 0.5f;
@@ -38,7 +40,7 @@ public class PushPullBlock : MonoBehaviour {
         return groundChecker.IsGrounded();
     }
 
-    private void Update() {
+    void Update() {
         Vector2 size = collider.bounds.size + new Vector3(2f * border, 0f, 0f);
         RaycastHit2D hitInfo = Physics2D.BoxCast(collider.bounds.center, size, 0f, Vector2.down, 0f, playerMask);
 
@@ -51,12 +53,24 @@ public class PushPullBlock : MonoBehaviour {
             Soften();
         }
 
+        boxSoundSource.volume = GameSettings.sfxVolume;
+
         //play sound effects
         isMoving = body.velocity != Vector2.zero;
         if (isMoving && isPlayerNear&& !boxSoundSource.isPlaying)
-            boxSoundSource.Play();
+            boxSoundSource.PlayOneShot(boxMoving);
         if (!isMoving && boxSoundSource.isPlaying)
             boxSoundSource.Stop();
+    }
+
+    //play the thud noise when hitting the ground
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.collider.tag == "Tilemap")
+        {
+            boxSoundSource.PlayOneShot(boxThud);
+            Debug.Log("sound played");
+        }
     }
 
     public void ConnectToBody(Rigidbody2D otherBody) {
