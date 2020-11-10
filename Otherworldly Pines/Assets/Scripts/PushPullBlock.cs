@@ -46,6 +46,9 @@ public class PushPullBlock : MonoBehaviour {
             Soften();
         }
     }
+    public bool IsPlayerNear(){
+        return isPlayerNear;
+    }
 
     public void ConnectToBody(Rigidbody2D otherBody) {
         Soften();
