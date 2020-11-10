@@ -31,10 +31,12 @@ public class SoundManager : MonoBehaviour
         var as1obj = new GameObject();
         as1obj.transform.parent = transform;
         unflippedMusicSource = as1obj.AddComponent<AudioSource>();
+        unflippedMusicSource.loop = true;
 
         var as2obj = new GameObject();
         as2obj.transform.parent = transform;
         flippedMusicSource = as2obj.AddComponent<AudioSource>();
+        flippedMusicSource.loop = true;
 
         unflipped_music = soundSource.clip;
         unflippedMusicSource.clip = unflipped_music;
