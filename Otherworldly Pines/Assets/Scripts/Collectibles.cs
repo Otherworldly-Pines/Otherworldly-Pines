@@ -4,12 +4,7 @@ using UnityEngine;
 
 public class Collectibles : MonoBehaviour, IHUDConnected
 {
-    private Collectible1Counter c1Counter;
-    private Collectible2Counter c2Counter;
-    public int c1 = 2;
-    public int c2 = 1;
-    private int c1Collected = 0; // num of C1 collected
-    private int c2Collected = 0; // num of C2 collected
+    private CollectibleUIControl collectUI;
 
     public GameObject sm;
     private SoundManager smScript;
@@ -21,20 +16,10 @@ public class Collectibles : MonoBehaviour, IHUDConnected
 
     void Update()
     {
-        if (c1 == c1Collected)
-        {
-            // show all C1 are collected
-        }
-
-        if (c2 == c2Collected)
-        {
-            // show all C2 are collected
-        }
     }
     public void ConnectToHUD(HUD hud)
     {
-        c1Counter = hud.c1Counter;
-        c2Counter = hud.c2Counter;
+        collectUI = hud.CollectibleUIControl;
     }
     
     void OnCollisionEnter2D(Collision2D target)
@@ -42,18 +27,38 @@ public class Collectibles : MonoBehaviour, IHUDConnected
         if (target.gameObject.CompareTag("Collectible1"))
         {
             Destroy(target.gameObject);
-            c1Collected++;
             smScript.PlayCollectible();
-            // show c1Collected/c1 are collected
-            c1Counter.SetCount(c1Collected);
+            collectUI.collect1Active();
         }
         else if (target.gameObject.CompareTag("Collectible2"))
         {
             Destroy(target.gameObject);
-            c2Collected++;
             smScript.PlayCollectible();
-            // show c2Collected/c2 are collected
-            c2Counter.SetCount(c2Collected);
+            collectUI.collect2Active();
+        }
+        else if (target.gameObject.CompareTag("Collectible3"))
+        {
+            Destroy(target.gameObject);
+            smScript.PlayCollectible();
+            collectUI.collect3Active();
+        }
+        else if (target.gameObject.CompareTag("Collectible4"))
+        {
+            Destroy(target.gameObject);
+            smScript.PlayCollectible();
+            collectUI.collect4Active();
+        }
+        else if (target.gameObject.CompareTag("Collectible5"))
+        {
+            Destroy(target.gameObject);
+            smScript.PlayCollectible();
+            collectUI.collect5Active();
+        }
+        else if (target.gameObject.CompareTag("Collectible6"))
+        {
+            Destroy(target.gameObject);
+            smScript.PlayCollectible();
+            collectUI.collect6Active();
         }
 
     }
