@@ -14,7 +14,9 @@ public class Vision : BehaviorRelated
     public LayerMask groundMask; 
     public LayerMask visionMask;
     public LayerMask platesMask;
-
+    [SerializeField] private AudioClip eatingClip;
+    [SerializeField] private AudioClip alertClip;
+    private AudioSource deerSoundSource;
 
     // Start is called before the first frame update
     void Awake() {
@@ -26,7 +28,9 @@ public class Vision : BehaviorRelated
 
         // Combines the three masks
         visionMask = LayerMask.GetMask("Player", "Berries", "Ground", "Pushables", "Pressure Plates");
+        deerSoundSource = GetComponent<AudioSource>();
     }
+
 
     // Send out 10 raycasts instead of using BoxcastAll
     public List<RaycastHit2D> PerformRaycast() {
@@ -67,8 +71,9 @@ public class Vision : BehaviorRelated
 
     // Update is called once per frame
     void Update()
-    { 
-        if(!behavior.isEating()) {
+    {
+        deerSoundSource.volume = GameSettings.sfxVolume;
+        if (!behavior.isEating()) {
             var hits = PerformRaycast();
 
             var playerHit = NearestHitObjectInLayer(hits, playerMask);
@@ -80,6 +85,7 @@ public class Vision : BehaviorRelated
                 if (!behavior.isChasing()) {
                     behavior.setTarget(playerHit.collider.gameObject);
                     behavior.chase();
+                    deerSoundSource.PlayOneShot(alertClip);
                 }
             } else if (!behavior.isChasing() && groundHit.collider != null && groundHit.distance < 0.1f) {
                 behavior.flipDirection();
@@ -92,6 +98,11 @@ public class Vision : BehaviorRelated
             } else if (plateHit.collider != null && behavior.isPatrolling() && plateHit.distance < 0.1f) {
                 behavior.flipDirection();
             }
+        }
+        if (behavior.isEating() && !deerSoundSource.isPlaying)
+        {
+            deerSoundSource.PlayOneShot(eatingClip);
+            Debug.Log("eating played");
         }
     }
     
