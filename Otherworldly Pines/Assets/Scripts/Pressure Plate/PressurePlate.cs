@@ -7,6 +7,7 @@ public interface PressurePlateActivated {
 
     void PPEnable();
     void PPDisable();
+    void setColor(Color c);
 
 }
 
@@ -15,11 +16,14 @@ public class PressurePlate : MonoBehaviour {
     public GameObject target;
     public LayerMask validContactsMask;
     private HashSet<int> validContants = new HashSet<int>();
+    private Color myColor;
 
     private PressurePlateActivated activatable;
 
     private void Start() {
         activatable = target.GetComponentInChildren<PressurePlateActivated>();
+        myColor = GetComponent<SpriteRenderer>().color;
+        activatable.setColor(myColor); //default white, set instance color to change activatable's color
         activatable.PPDisable();
     }
 
