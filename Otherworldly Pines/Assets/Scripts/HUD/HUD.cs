@@ -14,8 +14,7 @@ public class HUD : MonoBehaviour {
     public GravityFlipIndicator gravityFlipIndicator;
     public StasisDisplay stasisDisplay;
     public BerryCounter berryCounter;
-    public Collectible1Counter c1Counter;
-    public Collectible2Counter c2Counter;
+    public CollectibleUIControl CollectibleUIControl;
 
     private void Start() {
         GameObject player = GameObject.Find("Player");
