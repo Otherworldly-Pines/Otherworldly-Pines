@@ -13,6 +13,10 @@ TagManager:
   - Collectible2
   - Collectible1
   - DialogBox
+  - Collectible3
+  - Collectible4
+  - Collectible5
+  - Collectible6
   layers:
   - Default
   - TransparentFX

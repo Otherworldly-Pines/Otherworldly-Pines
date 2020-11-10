@@ -15,6 +15,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: collectable - cookie
       objectReference: {fileID: 0}
+    - target: {fileID: 6534052430984463894, guid: 86f5e93c4fb7a244c9b84be65e1e6bcc, type: 3}
+      propertyPath: m_TagString
+      value: Collectible3
+      objectReference: {fileID: 0}
     - target: {fileID: 6534052430984463895, guid: 86f5e93c4fb7a244c9b84be65e1e6bcc, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 1.4179688
