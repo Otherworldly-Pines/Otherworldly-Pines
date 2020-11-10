@@ -5,11 +5,16 @@ using UnityEngine;
 [SelectionBase]
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(BoxCollider2D))]
-public class EnemyBehavior : MonoBehaviour
-{
+public class EnemyBehavior : MonoBehaviour {
 
-// TODO state to enum
-    private int state = 1; //0 is eat , 1 is moving, , 
+    enum State : int {
+        Eating = 0,
+        Patrolling = 1,
+        Investigating = 2,
+        Chasing = 3,
+    }
+
+    private State state = State.Patrolling;
     private float stamina = 100; //Stamina for movement. Eneter resting state when reach 0
     private float maxStamina = 100; // Max stamina to end resting state
     private bool exausted = false; // Exausted state
@@ -80,14 +85,6 @@ public class EnemyBehavior : MonoBehaviour
         
     }
 
-    // Enter rest state for amount of seconds
-    public IEnumerator restForSeconds(float second){
-        int tmp = this.state;
-        this.state = 0;
-        yield return new WaitForSeconds(second);
-        this.state = tmp;
-	}
-
     public bool isGrounded(){
         return this.grounded;
     }
@@ -142,38 +139,38 @@ public class EnemyBehavior : MonoBehaviour
 	}
 
     public bool isPatrolling(){
-        return this.state == 1;
+        return this.state == State.Patrolling;
     }
 
     public bool isChasing(){
-        return this.state == 2;
+        return this.state == State.Chasing;
     }
 
     public bool isInvestigating(){
-        return this.state == 3;
+        return this.state == State.Investigating;
     }
 
     public bool isEating(){
-        return this.state == 0;
+        return this.state == State.Eating;
     }
 
     public void eat(){
-        this.state = 0;
+        this.state = State.Eating;
         this.animator.SetInteger("State", 0);
     }
 
     public void chase(){
-        this.state = 2;
+        this.state = State.Chasing;
         this.animator.SetInteger("State", 2);
     }
     
     public void patrol(){
-        this.state = 1;
+        this.state = State.Patrolling;
         this.animator.SetInteger("State", 1);
     }
     
     public void investigate(){
-        this.state = 3;
+        this.state = State.Investigating;
         this.animator.SetInteger("State", 1);
     }
 
