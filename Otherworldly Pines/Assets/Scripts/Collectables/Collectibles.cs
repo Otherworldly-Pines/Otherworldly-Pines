@@ -10,6 +10,7 @@ public class Collectibles : MonoBehaviour, IHUDConnected
     public int c2 = 1;
     private int c1Collected = 0; // num of C1 collected
     private int c2Collected = 0; // num of C2 collected
+    private LinkedList<Collectable.Item> collectedItems;
 
     public GameObject sm;
     private SoundManager smScript;
@@ -41,11 +42,34 @@ public class Collectibles : MonoBehaviour, IHUDConnected
     {
         if (target.gameObject.CompareTag("Collectible1"))
         {
-            Destroy(target.gameObject);
-            c1Collected++;
-            smScript.PlayCollectible();
-            // show c1Collected/c1 are collected
-            c1Counter.SetCount(c1Collected);
+            Collectable collectable = target.gameObject.GetComponent<Collectable>();
+            switch (collectable.getItem())
+            {
+                case Collectable.Item.Apple:
+                //Show Apple Item
+                case Collectable.Item.Banana:
+                //Show Banana Item
+                case Collectable.Item.Cookie:
+                //Show Banana Item
+                case Collectable.Item.Cupcake:
+                //Show Banana Item
+                case Collectable.Item.Pie:
+                //Show Banana Item
+                case Collectable.Item.Water:
+                //Show Banana Item
+
+                default:
+                {
+                    Destroy(target.gameObject);
+                    c1Collected++;
+                    smScript.PlayCollectible();
+                    // show c1Collected/c1 are collected
+                    c1Counter.SetCount(c1Collected);
+                    break;
+                }
+                
+            }
+            
         }
         else if (target.gameObject.CompareTag("Collectible2"))
         {
