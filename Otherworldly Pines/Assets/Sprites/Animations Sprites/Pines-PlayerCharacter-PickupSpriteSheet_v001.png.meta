@@ -1,0 +1,730 @@
+fileFormatVersion: 2
+guid: 91d2780c3574b4a13bdb08f831bcc85d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5409555060791024906
+    second: Pines-PlayerCharacter-PickupSpriteSheet_v001_0
+  - first:
+      213: 75154188067045617
+    second: Pines-PlayerCharacter-PickupSpriteSheet_v001_1
+  - first:
+      213: -7970606403490002707
+    second: Pines-PlayerCharacter-PickupSpriteSheet_v001_2
+  - first:
+      213: 2314238663176826772
+    second: Pines-PlayerCharacter-PickupSpriteSheet_v001_3
+  - first:
+      213: 6875255408953647491
+    second: Pines-PlayerCharacter-PickupSpriteSheet_v001_4
+  - first:
+      213: 7405655341185246959
+    second: Pines-PlayerCharacter-PickupSpriteSheet_v001_5
+  - first:
+      213: -2185635812630834725
+    second: Pines-PlayerCharacter-PickupSpriteSheet_v001_6
+  - first:
+      213: -9076530969161559876
+    second: Pines-PlayerCharacter-PickupSpriteSheet_v001_7
+  - first:
+      213: -4257731858200884062
+    second: Pines-PlayerCharacter-PickupSpriteSheet_v001_8
+  - first:
+      213: 7947596104898909490
+    second: Pines-PlayerCharacter-PickupSpriteSheet_v001_9
+  - first:
+      213: 5827017971894258388
+    second: Pines-PlayerCharacter-PickupSpriteSheet_v001_10
+  - first:
+      213: 8838615451790625372
+    second: Pines-PlayerCharacter-PickupSpriteSheet_v001_11
+  - first:
+      213: -8847457539394903807
+    second: Pines-PlayerCharacter-PickupSpriteSheet_v001_12
+  - first:
+      213: -6527659172280369254
+    second: Pines-PlayerCharacter-PickupSpriteSheet_v001_13
+  - first:
+      213: -2449854631633132444
+    second: Pines-PlayerCharacter-PickupSpriteSheet_v001_14
+  - first:
+      213: -9010516568993616023
+    second: Pines-PlayerCharacter-PickupSpriteSheet_v001_15
+  - first:
+      213: 6911680149881515720
+    second: Pines-PlayerCharacter-PickupSpriteSheet_v001_16
+  - first:
+      213: -3903123161087000940
+    second: Pines-PlayerCharacter-PickupSpriteSheet_v001_17
+  - first:
+      213: 2078655735622356767
+    second: Pines-PlayerCharacter-PickupSpriteSheet_v001_18
+  - first:
+      213: 8041079624891264870
+    second: Pines-PlayerCharacter-PickupSpriteSheet_v001_19
+  - first:
+      213: 4790571303662616384
+    second: Pines-PlayerCharacter-PickupSpriteSheet_v001_20
+  - first:
+      213: 4833938959936367895
+    second: Pines-PlayerCharacter-PickupSpriteSheet_v001_21
+  - first:
+      213: 4022418296479943928
+    second: Pines-PlayerCharacter-PickupSpriteSheet_v001_22
+  - first:
+      213: 7900068907491399728
+    second: Pines-PlayerCharacter-PickupSpriteSheet_v001_23
+  - first:
+      213: 2303495406350452209
+    second: Pines-PlayerCharacter-PickupSpriteSheet_v001_24
+  - first:
+      213: 6475646875233398054
+    second: Pines-PlayerCharacter-PickupSpriteSheet_v001_25
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 345
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PickupSpriteSheet_v001_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f262a055566de4b0800000000000000
+      internalID: -5409555060791024906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PickupSpriteSheet_v001_1
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1536
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f08e1bf5500b0100800000000000000
+      internalID: 75154188067045617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PickupSpriteSheet_v001_2
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1536
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de84683c4b7b26190800000000000000
+      internalID: -7970606403490002707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PickupSpriteSheet_v001_3
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 1536
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49f21248dc3dd1020800000000000000
+      internalID: 2314238663176826772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PickupSpriteSheet_v001_4
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1536
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 381e3c62e50d96f50800000000000000
+      internalID: 6875255408953647491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PickupSpriteSheet_v001_5
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1536
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe62254cb4c26c660800000000000000
+      internalID: 7405655341185246959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PickupSpriteSheet_v001_6
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 1536
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd154c3fecf0ba1e0800000000000000
+      internalID: -2185635812630834725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PickupSpriteSheet_v001_7
+      rect:
+        serializedVersion: 2
+        x: 5376
+        y: 1536
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb01b4e4c2fa90280800000000000000
+      internalID: -9076530969161559876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PickupSpriteSheet_v001_8
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 1536
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ac8213fe6f79e4c0800000000000000
+      internalID: -4257731858200884062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PickupSpriteSheet_v001_9
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 1536
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23517ca9c888b4e60800000000000000
+      internalID: 7947596104898909490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PickupSpriteSheet_v001_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4da039af8f9bdd050800000000000000
+      internalID: 5827017971894258388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PickupSpriteSheet_v001_11
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a4246ace119aa70800000000000000
+      internalID: 8838615451790625372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PickupSpriteSheet_v001_12
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 768
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 101e3076e34873580800000000000000
+      internalID: -8847457539394903807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PickupSpriteSheet_v001_13
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 768
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f786d51981965a0800000000000000
+      internalID: -6527659172280369254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PickupSpriteSheet_v001_14
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 768
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4646922413e500ed0800000000000000
+      internalID: -2449854631633132444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PickupSpriteSheet_v001_15
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 768
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96f2d569be634f280800000000000000
+      internalID: -9010516568993616023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PickupSpriteSheet_v001_16
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 768
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce6ec60a783bef50800000000000000
+      internalID: 6911680149881515720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PickupSpriteSheet_v001_17
+      rect:
+        serializedVersion: 2
+        x: 5376
+        y: 768
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49e3fc42a2255d9c0800000000000000
+      internalID: -3903123161087000940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PickupSpriteSheet_v001_18
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 768
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1f491cd06ed8dc10800000000000000
+      internalID: 2078655735622356767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PickupSpriteSheet_v001_19
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 768
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66f664cb057a79f60800000000000000
+      internalID: 8041079624891264870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PickupSpriteSheet_v001_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04f7df918378b7240800000000000000
+      internalID: 4790571303662616384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PickupSpriteSheet_v001_21
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71dadec6fd9951340800000000000000
+      internalID: 4833938959936367895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PickupSpriteSheet_v001_22
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fc08b3012082d730800000000000000
+      internalID: 4022418296479943928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PickupSpriteSheet_v001_23
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 0
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0381224a0dea2ad60800000000000000
+      internalID: 7900068907491399728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PickupSpriteSheet_v001_24
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 0
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f5434d1ed8a7ff10800000000000000
+      internalID: 2303495406350452209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PlayerCharacter-PickupSpriteSheet_v001_25
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62da729068e1ed950800000000000000
+      internalID: 6475646875233398054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

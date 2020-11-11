@@ -1,0 +1,922 @@
+fileFormatVersion: 2
+guid: 0661e755822004aef89a8a10ff22205e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -788405598297338226
+    second: Pines-PurpleFriend-WaveSpriteSheet-v002_0
+  - first:
+      213: -1466930689327576990
+    second: Pines-PurpleFriend-WaveSpriteSheet-v002_1
+  - first:
+      213: 2956136094920491321
+    second: Pines-PurpleFriend-WaveSpriteSheet-v002_2
+  - first:
+      213: 8745473092870902592
+    second: Pines-PurpleFriend-WaveSpriteSheet-v002_3
+  - first:
+      213: -5876525698836368933
+    second: Pines-PurpleFriend-WaveSpriteSheet-v002_4
+  - first:
+      213: -381228163572198495
+    second: Pines-PurpleFriend-WaveSpriteSheet-v002_5
+  - first:
+      213: -6677693263789076500
+    second: Pines-PurpleFriend-WaveSpriteSheet-v002_6
+  - first:
+      213: 2976800689824053405
+    second: Pines-PurpleFriend-WaveSpriteSheet-v002_7
+  - first:
+      213: -356492682639346030
+    second: Pines-PurpleFriend-WaveSpriteSheet-v002_8
+  - first:
+      213: -3610783307689767909
+    second: Pines-PurpleFriend-WaveSpriteSheet-v002_9
+  - first:
+      213: 2772904693538041625
+    second: Pines-PurpleFriend-WaveSpriteSheet-v002_10
+  - first:
+      213: -5777458361865858129
+    second: Pines-PurpleFriend-WaveSpriteSheet-v002_11
+  - first:
+      213: -5592332711115887967
+    second: Pines-PurpleFriend-WaveSpriteSheet-v002_12
+  - first:
+      213: 3706139359556031053
+    second: Pines-PurpleFriend-WaveSpriteSheet-v002_13
+  - first:
+      213: 3707858636107291070
+    second: Pines-PurpleFriend-WaveSpriteSheet-v002_14
+  - first:
+      213: 5710872562569124225
+    second: Pines-PurpleFriend-WaveSpriteSheet-v002_15
+  - first:
+      213: -8398389650131399401
+    second: Pines-PurpleFriend-WaveSpriteSheet-v002_16
+  - first:
+      213: 1444189295468443161
+    second: Pines-PurpleFriend-WaveSpriteSheet-v002_17
+  - first:
+      213: -8706890419562415252
+    second: Pines-PurpleFriend-WaveSpriteSheet-v002_18
+  - first:
+      213: 1590475677848396432
+    second: Pines-PurpleFriend-WaveSpriteSheet-v002_19
+  - first:
+      213: -4785560215792098511
+    second: Pines-PurpleFriend-WaveSpriteSheet-v002_20
+  - first:
+      213: -1241360991760859875
+    second: Pines-PurpleFriend-WaveSpriteSheet-v002_21
+  - first:
+      213: -1876507738620317465
+    second: Pines-PurpleFriend-WaveSpriteSheet-v002_22
+  - first:
+      213: -9005765861930367889
+    second: Pines-PurpleFriend-WaveSpriteSheet-v002_23
+  - first:
+      213: 3291695406177869034
+    second: Pines-PurpleFriend-WaveSpriteSheet-v002_24
+  - first:
+      213: 4046854250969578352
+    second: Pines-PurpleFriend-WaveSpriteSheet-v002_25
+  - first:
+      213: -5564175022389618797
+    second: Pines-PurpleFriend-WaveSpriteSheet-v002_26
+  - first:
+      213: -8409742882525734834
+    second: Pines-PurpleFriend-WaveSpriteSheet-v002_27
+  - first:
+      213: -2172607890531861382
+    second: Pines-PurpleFriend-WaveSpriteSheet-v002_28
+  - first:
+      213: -1237390608438313767
+    second: Pines-PurpleFriend-WaveSpriteSheet-v002_29
+  - first:
+      213: 5673336017860639353
+    second: Pines-PurpleFriend-WaveSpriteSheet-v002_30
+  - first:
+      213: -8701418386930383718
+    second: Pines-PurpleFriend-WaveSpriteSheet-v002_31
+  - first:
+      213: -3816868174150012765
+    second: Pines-PurpleFriend-WaveSpriteSheet-v002_32
+  - first:
+      213: 809489391891349743
+    second: Pines-PurpleFriend-WaveSpriteSheet-v002_33
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 345
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-WaveSpriteSheet-v002_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2304
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ece8619450f05f0800000000000000
+      internalID: -788405598297338226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-WaveSpriteSheet-v002_1
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2304
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 268c2886f4a64abe0800000000000000
+      internalID: -1466930689327576990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-WaveSpriteSheet-v002_2
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2304
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9314275bd1e460920800000000000000
+      internalID: 2956136094920491321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-WaveSpriteSheet-v002_3
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 2304
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0439e4541792e5970800000000000000
+      internalID: 8745473092870902592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-WaveSpriteSheet-v002_4
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 2304
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd177671303627ea0800000000000000
+      internalID: -5876525698836368933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-WaveSpriteSheet-v002_5
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 2304
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a397eb410b95baf0800000000000000
+      internalID: -381228163572198495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-WaveSpriteSheet-v002_6
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 2304
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cef45d44b511453a0800000000000000
+      internalID: -6677693263789076500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-WaveSpriteSheet-v002_7
+      rect:
+        serializedVersion: 2
+        x: 5376
+        y: 2304
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d98b914a478bf4920800000000000000
+      internalID: 2976800689824053405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-WaveSpriteSheet-v002_8
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 2304
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 296714e3bcb7d0bf0800000000000000
+      internalID: -356492682639346030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-WaveSpriteSheet-v002_9
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 2304
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1ccd3066bbe3edc0800000000000000
+      internalID: -3610783307689767909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-WaveSpriteSheet-v002_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91f295690265b7620800000000000000
+      internalID: 2772904693538041625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-WaveSpriteSheet-v002_11
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1536
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa3106cea3852dfa0800000000000000
+      internalID: -5777458361865858129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-WaveSpriteSheet-v002_12
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1536
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aae328570b0462b0800000000000000
+      internalID: -5592332711115887967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-WaveSpriteSheet-v002_13
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 1536
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d425e6e8c1ade6330800000000000000
+      internalID: 3706139359556031053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-WaveSpriteSheet-v002_14
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1536
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb91a82d8c5f47330800000000000000
+      internalID: 3707858636107291070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-WaveSpriteSheet-v002_15
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1536
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18915719658114f40800000000000000
+      internalID: 5710872562569124225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-WaveSpriteSheet-v002_16
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 1536
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71dc99a1c1de27b80800000000000000
+      internalID: -8398389650131399401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-WaveSpriteSheet-v002_17
+      rect:
+        serializedVersion: 2
+        x: 5376
+        y: 1536
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91671d8338aca0410800000000000000
+      internalID: 1444189295468443161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-WaveSpriteSheet-v002_18
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 1536
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6bfab36b49ea2780800000000000000
+      internalID: -8706890419562415252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-WaveSpriteSheet-v002_19
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 1536
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0926d0ac331821610800000000000000
+      internalID: 1590475677848396432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-WaveSpriteSheet-v002_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1336876b656469db0800000000000000
+      internalID: -4785560215792098511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-WaveSpriteSheet-v002_21
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1d311841ccc5cee0800000000000000
+      internalID: -1241360991760859875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-WaveSpriteSheet-v002_22
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 768
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e0b345672e45f5e0800000000000000
+      internalID: -1876507738620317465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-WaveSpriteSheet-v002_23
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 768
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f640d45c9a7150380800000000000000
+      internalID: -9005765861930367889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-WaveSpriteSheet-v002_24
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 768
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aec540228837ead20800000000000000
+      internalID: 3291695406177869034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-WaveSpriteSheet-v002_25
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 768
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07b32d60080592830800000000000000
+      internalID: 4046854250969578352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-WaveSpriteSheet-v002_26
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 768
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3979d522c4418c2b0800000000000000
+      internalID: -5564175022389618797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-WaveSpriteSheet-v002_27
+      rect:
+        serializedVersion: 2
+        x: 5376
+        y: 768
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e481fa2b7679a4b80800000000000000
+      internalID: -8409742882525734834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-WaveSpriteSheet-v002_28
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 768
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7c33a072a859d1e0800000000000000
+      internalID: -2172607890531861382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-WaveSpriteSheet-v002_29
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 768
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dc31af2cc7e3dee0800000000000000
+      internalID: -1237390608438313767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-WaveSpriteSheet-v002_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97a3304bc0dbbbe40800000000000000
+      internalID: 5673336017860639353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-WaveSpriteSheet-v002_31
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9446f4441a5e3780800000000000000
+      internalID: -8701418386930383718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-WaveSpriteSheet-v002_32
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a07b454e92c70bc0800000000000000
+      internalID: -3816868174150012765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-WaveSpriteSheet-v002_33
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 0
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe081252052eb3b00800000000000000
+      internalID: 809489391891349743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

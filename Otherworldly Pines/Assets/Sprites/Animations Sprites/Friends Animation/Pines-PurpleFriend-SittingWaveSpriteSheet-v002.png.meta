@@ -1,0 +1,922 @@
+fileFormatVersion: 2
+guid: 1f0c49c2decb44254959e72d08e65e9e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6059267327670206660
+    second: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_0
+  - first:
+      213: -1529342893824848035
+    second: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_1
+  - first:
+      213: 4730969328602393504
+    second: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_2
+  - first:
+      213: -4990110486381409774
+    second: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_3
+  - first:
+      213: -7110933422548509578
+    second: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_4
+  - first:
+      213: -5966772090710520022
+    second: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_5
+  - first:
+      213: -3980629794545286369
+    second: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_6
+  - first:
+      213: -1269778521093786391
+    second: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_7
+  - first:
+      213: -3353558452083347111
+    second: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_8
+  - first:
+      213: -874206143219308345
+    second: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_9
+  - first:
+      213: -4983140331294925193
+    second: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_10
+  - first:
+      213: 4728010887197379002
+    second: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_11
+  - first:
+      213: -7613003993893088480
+    second: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_12
+  - first:
+      213: 5691503491098565757
+    second: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_13
+  - first:
+      213: 8819911620007327532
+    second: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_14
+  - first:
+      213: 7258059566742611711
+    second: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_15
+  - first:
+      213: 6859230102757095507
+    second: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_16
+  - first:
+      213: -1797724673537965283
+    second: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_17
+  - first:
+      213: 7728446324969923060
+    second: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_18
+  - first:
+      213: 8904720616923329847
+    second: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_19
+  - first:
+      213: 2555375794266725804
+    second: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_20
+  - first:
+      213: 9096026245655773888
+    second: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_21
+  - first:
+      213: 1213670397502460921
+    second: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_22
+  - first:
+      213: -3491801104953921212
+    second: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_23
+  - first:
+      213: -981586495187500533
+    second: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_24
+  - first:
+      213: -5707168810748354155
+    second: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_25
+  - first:
+      213: -8992863534118148482
+    second: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_26
+  - first:
+      213: 4954460161908254489
+    second: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_27
+  - first:
+      213: 3547218628861627198
+    second: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_28
+  - first:
+      213: 1366093642934272232
+    second: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_29
+  - first:
+      213: 2857994313582298376
+    second: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_30
+  - first:
+      213: -148453759870783099
+    second: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_31
+  - first:
+      213: -6046635886234265003
+    second: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_32
+  - first:
+      213: 1113422970643050907
+    second: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_33
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 345
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2304
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3f3617087829eba0800000000000000
+      internalID: -6059267327670206660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_1
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2304
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5f4dc9adbea6cae0800000000000000
+      internalID: -1529342893824848035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_2
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2304
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ab2d92e987c7a140800000000000000
+      internalID: 4730969328602393504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_3
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 2304
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21ac84d83f09fbab0800000000000000
+      internalID: -4990110486381409774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_4
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 2304
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67c1b8f3ab3e05d90800000000000000
+      internalID: -7110933422548509578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_5
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 2304
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2f0c759564c13da0800000000000000
+      internalID: -5966772090710520022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_6
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 2304
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f13cac9ca46f1c8c0800000000000000
+      internalID: -3980629794545286369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_7
+      rect:
+        serializedVersion: 2
+        x: 5376
+        y: 2304
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e4b8c2a927d06ee0800000000000000
+      internalID: -1269778521093786391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_8
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 2304
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95130121b54c571d0800000000000000
+      internalID: -3353558452083347111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_9
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 2304
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c8e2fcf4223ed3f0800000000000000
+      internalID: -874206143219308345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77e5e3f354458dab0800000000000000
+      internalID: -4983140331294925193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_11
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1536
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab944911ad44d9140800000000000000
+      internalID: 4728010887197379002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_12
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1536
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0235f56f33d295690800000000000000
+      internalID: -7613003993893088480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_13
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 1536
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7c53d035484cfe40800000000000000
+      internalID: 5691503491098565757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_14
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1536
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2770e473ee966a70800000000000000
+      internalID: 8819911620007327532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_15
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1536
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff6a15a98bec9b460800000000000000
+      internalID: 7258059566742611711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_16
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 1536
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 358b08bcf61e03f50800000000000000
+      internalID: 6859230102757095507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_17
+      rect:
+        serializedVersion: 2
+        x: 5376
+        y: 1536
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1380d52fe23d07e0800000000000000
+      internalID: -1797724673537965283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_18
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 1536
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f161894cf4f04b60800000000000000
+      internalID: 7728446324969923060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_19
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 1536
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 735ffcbc83ce39b70800000000000000
+      internalID: 8904720616923329847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cad56e4feb4867320800000000000000
+      internalID: 2555375794266725804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_21
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c241f77da39b3e70800000000000000
+      internalID: 9096026245655773888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_22
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 768
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f39a85dbc2d7d010800000000000000
+      internalID: 1213670397502460921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_23
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 768
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 441b7e83561aa8fc0800000000000000
+      internalID: -3491801104953921212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_24
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 768
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0247068844b062f0800000000000000
+      internalID: -981586495187500533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_25
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 768
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 591e72a54301cc0b0800000000000000
+      internalID: -5707168810748354155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_26
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 768
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e76e25f034ee23380800000000000000
+      internalID: -8992863534118148482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_27
+      rect:
+        serializedVersion: 2
+        x: 5376
+        y: 768
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 917ad547447c1c440800000000000000
+      internalID: 4954460161908254489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_28
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 768
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3b02f98c804a3130800000000000000
+      internalID: 3547218628861627198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_29
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 768
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e0440d2ee655f210800000000000000
+      internalID: 1366093642934272232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 805c8279fa2a9a720800000000000000
+      internalID: 2857994313582298376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_31
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581b459871690fdf0800000000000000
+      internalID: -148453759870783099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_32
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55a90eaa2b8061ca0800000000000000
+      internalID: -6046635886234265003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-PurpleFriend-SittingWaveSpriteSheet-v002_33
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 0
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9170f9ea4ca37f00800000000000000
+      internalID: 1113422970643050907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
