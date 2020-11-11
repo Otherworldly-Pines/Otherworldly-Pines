@@ -61,10 +61,10 @@ public class PushPullBlock : MonoBehaviour {
         boxSoundSource.volume = GameSettings.sfxVolume;
 
         //play sound effects
-        isMoving = Math.Abs(body.velocity.x) > 0;
+        isMoving = Math.Abs(body.velocity.x) > 0.001f;
         if (isMoving && !isHard && !boxSoundSource.isPlaying)
             boxSoundSource.Play();
-        if (!isMoving && boxSoundSource.isPlaying || !isPlayerNear)
+        if (boxSoundSource.isPlaying && (!isMoving || !isPlayerNear))
             boxSoundSource.Stop();
     }
 
