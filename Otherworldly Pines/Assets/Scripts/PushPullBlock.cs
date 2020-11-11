@@ -16,7 +16,7 @@ public class PushPullBlock : MonoBehaviour {
     private float border = 0.5f;
     private bool isPlayerNear = false;
     private GroundChecker groundChecker;
-
+    private bool isSoften = false;
     private SliderJoint2D joint;
     public PhysicsMaterial2D highFrictionMaterial;
     private PhysicsMaterial2D originalMaterial;
@@ -57,9 +57,9 @@ public class PushPullBlock : MonoBehaviour {
 
         //play sound effects
         isMoving = body.velocity != Vector2.zero;
-        if (isMoving && isPlayerNear&& !boxSoundSource.isPlaying)
+        if (isMoving && isSoften&& !boxSoundSource.isPlaying)
             boxSoundSource.PlayOneShot(boxMoving);
-        if (!isMoving && boxSoundSource.isPlaying)
+        if (!isMoving && boxSoundSource.isPlaying || !isPlayerNear)
             boxSoundSource.Stop();
     }
 
@@ -90,11 +90,13 @@ public class PushPullBlock : MonoBehaviour {
     public void Soften() {
         collider.sharedMaterial = originalMaterial;
         body.mass = originalMass;
+        isSoften = true;
     }
 
     public void Harden() {
         collider.sharedMaterial = highFrictionMaterial;
         body.mass = 100000000f;
+        isSoften = false;
     }
 
     private void OnValidate() {

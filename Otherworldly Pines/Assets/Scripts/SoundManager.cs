@@ -15,7 +15,7 @@ public class SoundManager : MonoBehaviour
     [SerializeField] private AudioClip clip_gravflip_up;
     [SerializeField] private AudioClip clip_gravflip_down;
     [SerializeField] private AudioClip clip_gravflip_unavailable;
-
+    [SerializeField] private AudioClip buttonClick;
     private AudioSource unflippedMusicSource;
     private AudioSource flippedMusicSource;
 
@@ -91,6 +91,12 @@ public class SoundManager : MonoBehaviour
     public void PlayGravflipUnavailable()
     {
         soundSource.PlayOneShot(clip_gravflip_unavailable);
+    }
+
+    public void playButtonClick()
+    {
+        soundSource.PlayOneShot(buttonClick);
+        Debug.Log("button clicked");
     }
 
     public void SwapMusic()
