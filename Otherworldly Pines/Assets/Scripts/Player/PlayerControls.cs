@@ -125,11 +125,14 @@ public class PlayerControls : MonoBehaviour {
             currentPushable.Soften();
             currentPushable = null;
         }
-        
+
         if (currentPushable != null) {
             if (isGrounded && isPressingShift) {
+                if (isPullingBlock) return;
+
                 // Player is pushing/pulling a block
                 isPullingBlock = true;
+                PushPullBlock.SoftenAll();
                 currentPushable.ConnectToBody(body);
                 animator.SetBool("IsPulling", IsPulling(currentPushable));
                 animator.SetBool("IsPushing", IsPushing(currentPushable));

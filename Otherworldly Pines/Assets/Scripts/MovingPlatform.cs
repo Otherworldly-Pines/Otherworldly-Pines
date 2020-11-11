@@ -92,10 +92,15 @@ public class MovingPlatform : MonoBehaviour, PressurePlateActivated {
     }
 
     private bool IsInWay(Vector2 otherPosition) {
+        var currentDirection = GetCurrentDirection();
         if (isVertical) {
-            return Math.Abs(Mathf.Sign(otherPosition.y - transform.position.y) - Mathf.Sign(GetCurrentDirection().y)) < 0.001f;
+            return Math.Abs(Mathf.Sign(otherPosition.y - transform.position.y) - Mathf.Sign(currentDirection.y)) < 0.001f;
         } else {
-            return Math.Abs(Mathf.Sign(otherPosition.x - transform.position.x) - Mathf.Sign(GetCurrentDirection().x)) < 0.001f;
+            if (currentDirection.x > 0f) {
+                return otherPosition.x > collider.bounds.max.x;
+            } else {
+                return otherPosition.x < collider.bounds.min.x;
+            }
         }
     }
 

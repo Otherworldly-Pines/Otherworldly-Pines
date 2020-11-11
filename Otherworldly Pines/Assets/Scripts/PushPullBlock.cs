@@ -5,14 +5,17 @@ using UnityEngine;
 
 public class PushPullBlock : MonoBehaviour {
 
+    private static float HARD_MASS = 200f;
+
     [HideInInspector] public bool shouldFreezePosition = false;
     [HideInInspector] public bool isBeingMoved = false;
     [HideInInspector] public BoxCollider2D collider;
     [SerializeField] private LayerMask playerMask;
     private Rigidbody2D body;
-    private float border = 0.5f;
+    private float border = 0.1f;
     private bool isPlayerNear = false;
     private GroundChecker groundChecker;
+    public bool isHard = false;
 
     private SliderJoint2D joint;
     public PhysicsMaterial2D highFrictionMaterial;
@@ -64,11 +67,23 @@ public class PushPullBlock : MonoBehaviour {
     public void Soften() {
         collider.sharedMaterial = originalMaterial;
         body.mass = originalMass;
+        isHard = false;
+    }
+
+    public static void SoftenAll() {
+        var all = FindObjectsOfType<PushPullBlock>();
+        
+        foreach (var block in all) {
+            if (block.isHard) {
+                block.Soften();
+            }
+        }
     }
 
     public void Harden() {
         collider.sharedMaterial = highFrictionMaterial;
-        body.mass = 100000000f;
+        body.mass = HARD_MASS;
+        isHard = true;
     }
 
     private void OnValidate() {
@@ -76,7 +91,12 @@ public class PushPullBlock : MonoBehaviour {
     }
 
     private void OnDrawGizmosSelected() {
-        Gizmos.color = Color.yellow;
+        if (!collider) collider = GetComponent<BoxCollider2D>();
+        
+        Gizmos.color = isHard ? Color.red : Color.yellow;
+        GizmosUtility.DrawCollider(collider);
+        
+        Gizmos.color = Color.green;
         Vector2 size = collider.bounds.size + new Vector3(2f * border, 0f, 0f);
         GizmosUtility.DrawBox(transform.position, size);
     }
