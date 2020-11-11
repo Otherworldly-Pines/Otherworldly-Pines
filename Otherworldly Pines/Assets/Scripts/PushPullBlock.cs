@@ -72,6 +72,9 @@ public class PushPullBlock : MonoBehaviour {
             Debug.Log("sound played");
         }
     }
+    public bool IsPlayerNear(){
+        return isPlayerNear;
+    }
 
     public void ConnectToBody(Rigidbody2D otherBody) {
         Soften();
