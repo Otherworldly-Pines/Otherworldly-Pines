@@ -17,6 +17,7 @@ TagManager:
   - Collectible4
   - Collectible5
   - Collectible6
+  - Tilemap
   layers:
   - Default
   - TransparentFX
