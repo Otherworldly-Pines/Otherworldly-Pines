@@ -17,6 +17,9 @@ TagManager:
   - Collectible4
   - Collectible5
   - Collectible6
+  - Tilemap
+  - ButtonClickSoundSource
+  - MenuAudio
   layers:
   - Default
   - TransparentFX

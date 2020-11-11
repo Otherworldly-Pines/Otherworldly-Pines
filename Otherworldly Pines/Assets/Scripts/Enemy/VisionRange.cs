@@ -15,9 +15,9 @@ public class VisionRange : MonoBehaviour
     }
 
     private void OnTriggerExit2D(Collider2D other) {
-        if(other.gameObject.GetInstanceID() == this.behavior.getTarget().GetInstanceID()){
-            if (!this.behavior.isPatrolling()) {
-                this.behavior.patrol();
+        if (behavior.IsTarget(other.gameObject)) {
+            if (!behavior.isPatrolling()) {
+                behavior.patrol();
             }
         }
     }

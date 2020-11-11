@@ -1,16 +1,24 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+
+    private void Start() {
+        MenuMusic.StartIfStopped();
+    }
+
     public void PlayGame()
     {
+        MenuMusic.StopPlaying();
         SceneManager.LoadScene("Intro Scene");
     }
 
     public void SkipToLevel2() {
+        MenuMusic.StopPlaying();
         SceneManager.LoadScene(SceneIdentifier.Level2);
     }
 

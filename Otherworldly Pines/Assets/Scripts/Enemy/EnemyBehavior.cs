@@ -5,11 +5,16 @@ using UnityEngine;
 [SelectionBase]
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(BoxCollider2D))]
-public class EnemyBehavior : MonoBehaviour
-{
+public class EnemyBehavior : MonoBehaviour {
 
-// TODO state to enum
-    private int state = 1; //0 is eat , 1 is moving, , 
+    public enum State : int {
+        Eating = 0,
+        Patrolling = 1,
+        Investigating = 2,
+        Chasing = 3,
+    }
+
+    private State state = State.Patrolling;
     private float stamina = 100; //Stamina for movement. Eneter resting state when reach 0
     private float maxStamina = 100; // Max stamina to end resting state
     private bool exausted = false; // Exausted state
@@ -30,9 +35,14 @@ public class EnemyBehavior : MonoBehaviour
     public float aggroExaustRate = 2;  // Amount of stamina use per second in aggressive state.
     public int direction = 1; // Direction the enemy is moveing
     public float eatTime = 3f;
+    public Berry currentBerry;
     public GameObject sprite;
 
     private GameObject target;
+    
+    private AudioSource soundSource;
+    [SerializeField] protected AudioClip alertClip;
+    [SerializeField] protected AudioClip eatingClip;
 
 
     // Start is called before the first frame update 
@@ -42,6 +52,7 @@ public class EnemyBehavior : MonoBehaviour
         this.collider = gameObject.GetComponent<BoxCollider2D>();
         this.rigidbody = gameObject.GetComponent<Rigidbody2D>();
         this.groundChecker = GetComponent<GroundChecker>();
+        this.soundSource = GetComponent<AudioSource>();
 
         groundMask = LayerMask.GetMask("Ground", "Pushables");
         
@@ -54,7 +65,6 @@ public class EnemyBehavior : MonoBehaviour
     {
         updateStamina();
         updateGrounded();
-        // Debug.Log(this.state);
     }
 
     // Update stamina base on the state enemy is in
@@ -80,20 +90,19 @@ public class EnemyBehavior : MonoBehaviour
         
     }
 
-    // Enter rest state for amount of seconds
-    public IEnumerator restForSeconds(float second){
-        int tmp = this.state;
-        this.state = 0;
-        yield return new WaitForSeconds(second);
-        this.state = tmp;
-	}
-
     public bool isGrounded(){
         return this.grounded;
     }
 
     void updateGrounded() {
         grounded = groundChecker.IsGrounded();
+    }
+
+    private void ResetSounds() {
+        soundSource.volume = GameSettings.sfxVolume;
+        soundSource.Stop();
+        soundSource.time = 0f;
+        soundSource.loop = false;
     }
 
     // ------------ Getters and Setters------------------
@@ -104,6 +113,12 @@ public class EnemyBehavior : MonoBehaviour
 
     public GameObject getTarget(){
         return target;
+    }
+
+    public bool IsTarget(GameObject other) {
+        if (other == null) return false;
+        if (target == null) return false;
+        return other.GetInstanceID() == target.GetInstanceID();
     }
     
     public void turnLeft(){
@@ -142,38 +157,50 @@ public class EnemyBehavior : MonoBehaviour
 	}
 
     public bool isPatrolling(){
-        return this.state == 1;
+        return this.state == State.Patrolling;
     }
 
     public bool isChasing(){
-        return this.state == 2;
+        return this.state == State.Chasing;
     }
 
     public bool isInvestigating(){
-        return this.state == 3;
+        return this.state == State.Investigating;
     }
 
     public bool isEating(){
-        return this.state == 0;
+        return this.state == State.Eating;
     }
 
-    public void eat(){
-        this.state = 0;
+    public void eat(Berry berry) {
+        ResetSounds();
+        soundSource.clip = eatingClip;
+        soundSource.loop = true;
+        soundSource.Play();
+        
+        currentBerry = berry;
+        this.state = State.Eating;
         this.animator.SetInteger("State", 0);
     }
 
     public void chase(){
-        this.state = 2;
+        ResetSounds();
+        soundSource.clip = alertClip;
+        soundSource.Play();
+        
+        this.state = State.Chasing;
         this.animator.SetInteger("State", 2);
     }
     
     public void patrol(){
-        this.state = 1;
+        ResetSounds();
+        this.state = State.Patrolling;
         this.animator.SetInteger("State", 1);
     }
     
     public void investigate(){
-        this.state = 3;
+        ResetSounds();
+        this.state = State.Investigating;
         this.animator.SetInteger("State", 1);
     }
 
@@ -181,9 +208,4 @@ public class EnemyBehavior : MonoBehaviour
         return exausted ? exaustedMovementRate : 1f;
     }
 
-    public IEnumerator eatBerries(){
-        this.eat();
-        yield return new WaitForSeconds(this.eatTime);
-        this.patrol();
-    }
 }

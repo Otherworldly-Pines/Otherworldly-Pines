@@ -200,10 +200,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 8427786318093474098}
-  bulletPrefab: {fileID: 7121226826332205653, guid: be84e52594781294aa47e11a85c21256,
-    type: 3}
+  bulletPrefab: {fileID: 7121226826332205653, guid: be84e52594781294aa47e11a85c21256, type: 3}
   bulletSpeed: 10
-  bulletDestroyTime: 3
+  bulletDestroyTime: 1200
 --- !u!114 &7003344175297845799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -248,8 +247,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11a9d5c921f9c954e9e03b2707cc1750, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  c1: 2
-  c2: 1
   sm: {fileID: 7746342771095835731, guid: f88d0ebc3c09e1c4c9a6dae97ddaae87, type: 3}
 --- !u!212 &8956436512857479517
 SpriteRenderer:

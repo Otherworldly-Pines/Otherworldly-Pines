@@ -12,15 +12,17 @@ public class Checkpoint : MonoBehaviour
     private CheckpointMaster cm;
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
-        {
+        if (other.CompareTag("Player") && !hasReached) {
+            hasReached = true;
+            
+            var player = other.gameObject;
+            var berries = player.GetComponent<PlayerThrow>().getAmmo();
+        
             cm.lastCheckPointPos = gameObject.transform.position;
-            if (!hasReached)
-            {
-                hasReached = true;
-                sr.sprite = spriteActivated;
-                audioSrc.Play();
-            }
+            cm.berryCount = berries;
+            
+            sr.sprite = spriteActivated;
+            audioSrc.Play();
         }
     }
 

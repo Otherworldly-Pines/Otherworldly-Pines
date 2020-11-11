@@ -15,7 +15,6 @@ public class Vision : BehaviorRelated
     public LayerMask visionMask;
     public LayerMask platesMask;
 
-
     // Start is called before the first frame update
     void Awake() {
         base.Awake();
@@ -27,6 +26,7 @@ public class Vision : BehaviorRelated
         // Combines the three masks
         visionMask = LayerMask.GetMask("Player", "Berries", "Ground", "Pushables", "Pressure Plates");
     }
+
 
     // Send out 10 raycasts instead of using BoxcastAll
     public List<RaycastHit2D> PerformRaycast() {
@@ -67,8 +67,8 @@ public class Vision : BehaviorRelated
 
     // Update is called once per frame
     void Update()
-    { 
-        if(!behavior.isEating()) {
+    {
+        if (!behavior.isEating()) {
             var hits = PerformRaycast();
 
             var playerHit = NearestHitObjectInLayer(hits, playerMask);

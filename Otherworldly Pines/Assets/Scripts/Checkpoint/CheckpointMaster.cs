@@ -9,7 +9,7 @@ public class CheckpointMaster : MonoBehaviour
     
     private static CheckpointMaster instance;
     
-    [SerializeField] private int berryCount = 5;
+    [SerializeField] public int berryCount = 5;
     [SerializeField] public bool skipTutorial = false;
     [SerializeField] private GameObject dialogBox;
 
@@ -28,13 +28,12 @@ public class CheckpointMaster : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(instance);
             instance.lastCheckPointPos = startingPosition.position;
+            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerThrow>().setAmmo(berryCount);
         }
         else
         {
             Destroy(gameObject);
         }
-
-        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerThrow>().setAmmo(berryCount);
     }
     // Start is called before the first frame update
     void Start()
@@ -50,7 +49,11 @@ public class CheckpointMaster : MonoBehaviour
 
         if (dialogBox != null) dialogBox.SetActive(!skipTutorial);
         currentScene = SceneManager.GetActiveScene();
-        if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>().currentHealth <= 0)
+
+        var player = GameObject.FindGameObjectWithTag("Player");
+        if (player == null) return;
+        
+        if (player.GetComponent<PlayerHealth>().currentHealth <= 0)
         {
             SceneManager.LoadScene(currentScene.name);
         };

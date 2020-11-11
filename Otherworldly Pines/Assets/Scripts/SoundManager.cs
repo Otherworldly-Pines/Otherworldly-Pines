@@ -15,7 +15,7 @@ public class SoundManager : MonoBehaviour
     [SerializeField] private AudioClip clip_gravflip_up;
     [SerializeField] private AudioClip clip_gravflip_down;
     [SerializeField] private AudioClip clip_gravflip_unavailable;
-
+    [SerializeField] private AudioClip buttonClick;
     private AudioSource unflippedMusicSource;
     private AudioSource flippedMusicSource;
 

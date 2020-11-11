@@ -38,17 +38,4 @@ public class Investigate : BehaviorRelated {
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D other) {
-        if (MasksUtility.IsInMask(other.gameObject, berriesMask)) {
-            StartCoroutine(eatThenDestroy(other.collider.gameObject));
-        }
-    }
-
-    IEnumerator eatThenDestroy(GameObject berry){
-        yield return StartCoroutine(this.behavior.eatBerries());
-        if(berry != null){
-            Destroy(berry);
-        }
-        
-    }
 }
