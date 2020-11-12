@@ -32,11 +32,15 @@ public class Spirit : MonoBehaviour
 
     // Update is called once per frame
     void Update() {
-        Vector3 anchorTarget = playerTransform.position - new Vector3(Mathf.Sign(playerTransform.localScale.x), -0.5f, -5f);
+        var anchorTarget = playerTransform.position - new Vector3(Mathf.Sign(playerTransform.localScale.x), -0.5f, -5f);
         anchorTarget = (Vector2) anchorTarget + CurrentAnchorOffset(Time.time * 2f);
-        float currentDistance = Vector2.Distance(transform.position, anchorTarget);
-        float currentSpeed = CurrentSpeed(currentDistance);
+        var currentDistance = Vector2.Distance(transform.position, anchorTarget);
 
-        body.velocity = (anchorTarget - transform.position).normalized * currentSpeed;
+        if (currentDistance > 30f) {
+            transform.position = anchorTarget;
+        } else {
+            var currentSpeed = CurrentSpeed(currentDistance);
+            body.velocity = (anchorTarget - transform.position).normalized * currentSpeed;
+        }
     }
 }
