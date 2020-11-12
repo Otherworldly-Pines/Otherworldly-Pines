@@ -16,8 +16,12 @@ public class PinesButton : MonoBehaviour {
 
     private void Start() {
         instance = GetSoundInstance();
-        DontDestroyOnLoad(instance.gameObject);
+        if (!instance) {
+            Debug.LogWarning("Button could not find the shared sound instance", gameObject);
+            return;
+        }
         
+        DontDestroyOnLoad(instance.gameObject);
         GetComponent<Button>().onClick.AddListener(PlayClick);
     }
 

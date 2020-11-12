@@ -74,7 +74,7 @@ public class GravityRegion : MonoBehaviour {
 
     private void ConfigureParticlesDirection() {
         var localRotation = particles.transform.localRotation;
-        localRotation.z = !gravityIsFlipped ? 0f : 180f;
+        localRotation.z = !gravityIsFlipped ? 180f : 0f;
         particles.transform.localRotation = localRotation;
     }
 
