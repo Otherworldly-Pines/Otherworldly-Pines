@@ -5,11 +5,11 @@ using UnityEngine;
 public class PlayerThrow : MonoBehaviour, IHUDConnected {
 
     public Animator animator;
-    private BerryCounter berryCounter;
+    public BerryCounter berryCounter;
     public GameObject bulletPrefab;
     public float bulletSpeed = 10.0f;
     public float bulletDestroyTime = 3.0f;
-    private int ammo = 0;
+    private int ammo = 5;
     
     private PlayerFreeze playerFreeze;
 
@@ -105,6 +105,7 @@ public class PlayerThrow : MonoBehaviour, IHUDConnected {
     public void setAmmo(int value)
     {
         ammo = value;
+        berryCounter.SetCount(ammo);
     }
 
 }
