@@ -76,6 +76,7 @@ MonoBehaviour:
   particles: {fileID: 5261652129444874160}
   boundsCollider: {fileID: 4080722453726265439}
   boundsSprite: {fileID: 8912428895184481221}
+  particlesSortingLayerName: Gravity Particles
   gravityIsFlipped: 0
   playerCanFlipGravity: 1
 --- !u!1 &8197094373370370111
@@ -203,8 +204,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -249355583
+  m_SortingLayer: -3
   m_SortingOrder: 0
   m_Sprite: {fileID: -1906463882171421821, guid: 6d014b391e426bb4c9d80fd1bea618b9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

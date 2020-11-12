@@ -9,6 +9,8 @@ public class GravityRegion : MonoBehaviour {
     [SerializeField] private ParticleSystem particles;
     [SerializeField] private BoxCollider2D boundsCollider;
     [SerializeField] private GameObject boundsSprite;
+    [SerializeField] private string particlesSortingLayerName;
+    
     public bool gravityIsFlipped = false;
     public bool playerCanFlipGravity = true;
 
@@ -17,6 +19,7 @@ public class GravityRegion : MonoBehaviour {
 
     void Awake() {
         ConfigureIndicators();
+        particles.GetComponent<Renderer>().sortingLayerName = particlesSortingLayerName;
     }
 
     private void Start() {
