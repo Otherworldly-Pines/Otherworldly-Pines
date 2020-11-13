@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    private static bool cutscenePlayed = false;
 
     private void Start() {
         MenuMusic.StartIfStopped();
@@ -14,7 +15,12 @@ public class MainMenu : MonoBehaviour
     public void PlayGame()
     {
         MenuMusic.StopPlaying();
-        SceneManager.LoadScene("Intro Scene");
+        if (!cutscenePlayed)
+        {
+            SceneManager.LoadScene("Intro Scene");
+            cutscenePlayed = true;
+        }
+        else SceneManager.LoadScene(SceneIdentifier.Level1);
     }
 
     public void SkipToLevel2() {

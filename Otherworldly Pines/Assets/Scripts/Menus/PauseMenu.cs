@@ -37,6 +37,7 @@ public class PauseMenu : MonoBehaviour
         soundManager = FindObjectOfType<SoundManager>();
         musicSlider.value = GameSettings.musicVolume;
         sfxSlider.value = GameSettings.sfxVolume;
+        Resume();
     }
 
     void Update()
