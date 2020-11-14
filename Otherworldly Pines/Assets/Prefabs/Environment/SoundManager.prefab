@@ -39,7 +39,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7746342771095835731}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6398c7f63b8558643adc3adc87b9f540, type: 3}
   m_Name: 
@@ -53,6 +53,7 @@ MonoBehaviour:
   clip_gravflip_up: {fileID: 8300000, guid: 8fdbd4ad02563c74da4b09d9f8a8c17f, type: 3}
   clip_gravflip_down: {fileID: 8300000, guid: 9d995f32f6f7af642921f1219c2dd47c, type: 3}
   clip_gravflip_unavailable: {fileID: 8300000, guid: da671b3da00efca44b8adc4169a96859, type: 3}
+  buttonClick: {fileID: 0}
   soundSource: {fileID: 7746342771095835730}
 --- !u!82 &7746342771095835730
 AudioSource:
@@ -65,7 +66,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fc934dc7c50fe0a4eba7d4fb7716b5e2, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
