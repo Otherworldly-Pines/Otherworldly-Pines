@@ -24,6 +24,11 @@ public class SoundManager : MonoBehaviour
     private GravityRegion activeGravityRegion;
     private AudioClip unflipped_music;
 
+    public static float SmoothLerp(float a, float b, float t) {
+        var smoothed = t * t * (3f - 2f * t);
+        return Mathf.Lerp(a, b, smoothed);
+    }
+
     // Start is called before the first frame update
     void Awake()
     {
