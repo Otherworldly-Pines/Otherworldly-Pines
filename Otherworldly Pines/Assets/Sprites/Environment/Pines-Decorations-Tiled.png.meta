@@ -1,0 +1,2674 @@
+fileFormatVersion: 2
+guid: 2012572b4765d4989b05447cefcd8ac7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4626642690468694756
+    second: Pines-Decorations-Tiled_0
+  - first:
+      213: -1608159585239439334
+    second: Pines-Decorations-Tiled_1
+  - first:
+      213: 261203984029683349
+    second: Pines-Decorations-Tiled_2
+  - first:
+      213: -2278915486498983082
+    second: Pines-Decorations-Tiled_3
+  - first:
+      213: -6381648776830254726
+    second: Pines-Decorations-Tiled_4
+  - first:
+      213: -1897997578500735875
+    second: Pines-Decorations-Tiled_5
+  - first:
+      213: -820982458846936775
+    second: Pines-Decorations-Tiled_6
+  - first:
+      213: 1789780013589154717
+    second: Pines-Decorations-Tiled_7
+  - first:
+      213: 2133555876400000732
+    second: Pines-Decorations-Tiled_8
+  - first:
+      213: 3740391755147701921
+    second: Pines-Decorations-Tiled_9
+  - first:
+      213: 8278171173593680026
+    second: Pines-Decorations-Tiled_10
+  - first:
+      213: -7612998863980920493
+    second: Pines-Decorations-Tiled_11
+  - first:
+      213: -1441128569063806835
+    second: Pines-Decorations-Tiled_12
+  - first:
+      213: -8183964311364175518
+    second: Pines-Decorations-Tiled_13
+  - first:
+      213: 465961625306700144
+    second: Pines-Decorations-Tiled_14
+  - first:
+      213: 2273028549197671091
+    second: Pines-Decorations-Tiled_15
+  - first:
+      213: 5001066813799380000
+    second: Pines-Decorations-Tiled_16
+  - first:
+      213: 7566484826933633535
+    second: Pines-Decorations-Tiled_17
+  - first:
+      213: -6308378452425452595
+    second: Pines-Decorations-Tiled_18
+  - first:
+      213: -8419656648436589442
+    second: Pines-Decorations-Tiled_19
+  - first:
+      213: -620331595337969417
+    second: Pines-Decorations-Tiled_20
+  - first:
+      213: 2010193566758259911
+    second: Pines-Decorations-Tiled_21
+  - first:
+      213: -7308946861442175280
+    second: Pines-Decorations-Tiled_22
+  - first:
+      213: 3197505041909122744
+    second: Pines-Decorations-Tiled_23
+  - first:
+      213: 3274787018271525410
+    second: Pines-Decorations-Tiled_24
+  - first:
+      213: 8974480078802598799
+    second: Pines-Decorations-Tiled_25
+  - first:
+      213: -8749996762720726136
+    second: Pines-Decorations-Tiled_26
+  - first:
+      213: -3193876224996470089
+    second: Pines-Decorations-Tiled_27
+  - first:
+      213: -5345371715803985422
+    second: Pines-Decorations-Tiled_28
+  - first:
+      213: 3787631092732530843
+    second: Pines-Decorations-Tiled_29
+  - first:
+      213: 4421098781355057161
+    second: Pines-Decorations-Tiled_30
+  - first:
+      213: 6096381195385636631
+    second: Pines-Decorations-Tiled_31
+  - first:
+      213: 1324690904329834246
+    second: Pines-Decorations-Tiled_32
+  - first:
+      213: -6006920317319780791
+    second: Pines-Decorations-Tiled_33
+  - first:
+      213: 2482552063557841533
+    second: Pines-Decorations-Tiled_34
+  - first:
+      213: 9159072359699873720
+    second: Pines-Decorations-Tiled_35
+  - first:
+      213: 3568027782961662744
+    second: Pines-Decorations-Tiled_36
+  - first:
+      213: 737878095246015877
+    second: Pines-Decorations-Tiled_37
+  - first:
+      213: -6844773833833807048
+    second: Pines-Decorations-Tiled_38
+  - first:
+      213: -1386019831734541916
+    second: Pines-Decorations-Tiled_39
+  - first:
+      213: 8804147815771299919
+    second: Pines-Decorations-Tiled_40
+  - first:
+      213: -1525353735826611439
+    second: Pines-Decorations-Tiled_41
+  - first:
+      213: 8514424967661460512
+    second: Pines-Decorations-Tiled_42
+  - first:
+      213: 8800322352284443806
+    second: Pines-Decorations-Tiled_43
+  - first:
+      213: -6024300929165449458
+    second: Pines-Decorations-Tiled_44
+  - first:
+      213: 1291366024156631219
+    second: Pines-Decorations-Tiled_45
+  - first:
+      213: -2498538207814022475
+    second: Pines-Decorations-Tiled_46
+  - first:
+      213: 439719455382783786
+    second: Pines-Decorations-Tiled_47
+  - first:
+      213: 778503258305111752
+    second: Pines-Decorations-Tiled_48
+  - first:
+      213: 7027639384369277020
+    second: Pines-Decorations-Tiled_49
+  - first:
+      213: 4437737447639150772
+    second: Pines-Decorations-Tiled_50
+  - first:
+      213: -6823249854248237851
+    second: Pines-Decorations-Tiled_51
+  - first:
+      213: -61621068983951320
+    second: Pines-Decorations-Tiled_52
+  - first:
+      213: 3447587503817536287
+    second: Pines-Decorations-Tiled_53
+  - first:
+      213: 8319266609255392091
+    second: Pines-Decorations-Tiled_54
+  - first:
+      213: -8464335966173521146
+    second: Pines-Decorations-Tiled_55
+  - first:
+      213: -3132258113766464303
+    second: Pines-Decorations-Tiled_56
+  - first:
+      213: 6344285569756372940
+    second: Pines-Decorations-Tiled_57
+  - first:
+      213: 3862198578498597051
+    second: Pines-Decorations-Tiled_58
+  - first:
+      213: 7326311379327081300
+    second: Pines-Decorations-Tiled_59
+  - first:
+      213: 5593213101395477195
+    second: Pines-Decorations-Tiled_60
+  - first:
+      213: -581758134835611736
+    second: Pines-Decorations-Tiled_61
+  - first:
+      213: -4190929558834873331
+    second: Pines-Decorations-Tiled_62
+  - first:
+      213: 2970582649789433534
+    second: Pines-Decorations-Tiled_63
+  - first:
+      213: 9163849801984838765
+    second: Pines-Decorations-Tiled_64
+  - first:
+      213: -2800032167206449687
+    second: Pines-Decorations-Tiled_65
+  - first:
+      213: 7757527428700071383
+    second: Pines-Decorations-Tiled_66
+  - first:
+      213: -404803837856001873
+    second: Pines-Decorations-Tiled_67
+  - first:
+      213: 5663044193339229229
+    second: Pines-Decorations-Tiled_68
+  - first:
+      213: -1139862719692574338
+    second: Pines-Decorations-Tiled_69
+  - first:
+      213: -8680322413359045503
+    second: Pines-Decorations-Tiled_70
+  - first:
+      213: 1746158708817294713
+    second: Pines-Decorations-Tiled_71
+  - first:
+      213: -1619832072262964082
+    second: Pines-Decorations-Tiled_72
+  - first:
+      213: 4544965538239414334
+    second: Pines-Decorations-Tiled_73
+  - first:
+      213: 545964270428076856
+    second: Pines-Decorations-Tiled_74
+  - first:
+      213: -4765302240344282942
+    second: Pines-Decorations-Tiled_75
+  - first:
+      213: 3489202950501548039
+    second: Pines-Decorations-Tiled_76
+  - first:
+      213: 7155472161966687524
+    second: Pines-Decorations-Tiled_77
+  - first:
+      213: -8761204448799368795
+    second: Pines-Decorations-Tiled_78
+  - first:
+      213: -3459890215148921129
+    second: Pines-Decorations-Tiled_79
+  - first:
+      213: -8759505453799974314
+    second: Pines-Decorations-Tiled_80
+  - first:
+      213: 5937993433957291680
+    second: Pines-Decorations-Tiled_81
+  - first:
+      213: -6303326181364387572
+    second: Pines-Decorations-Tiled_82
+  - first:
+      213: -1515652180556100874
+    second: Pines-Decorations-Tiled_83
+  - first:
+      213: -4997980913767212343
+    second: Pines-Decorations-Tiled_84
+  - first:
+      213: -5989586558500282385
+    second: Pines-Decorations-Tiled_85
+  - first:
+      213: -4236792410213304826
+    second: Pines-Decorations-Tiled_86
+  - first:
+      213: -6766366385954038996
+    second: Pines-Decorations-Tiled_87
+  - first:
+      213: -6559500938129194081
+    second: Pines-Decorations-Tiled_88
+  - first:
+      213: -3518462595352786822
+    second: Pines-Decorations-Tiled_89
+  - first:
+      213: 8583283062077069753
+    second: Pines-Decorations-Tiled_90
+  - first:
+      213: -6589336639652710159
+    second: Pines-Decorations-Tiled_91
+  - first:
+      213: -2436241245201332783
+    second: Pines-Decorations-Tiled_92
+  - first:
+      213: 7103019790524851066
+    second: Pines-Decorations-Tiled_93
+  - first:
+      213: -6647618344050369991
+    second: Pines-Decorations-Tiled_94
+  - first:
+      213: -934136128594411525
+    second: Pines-Decorations-Tiled_95
+  - first:
+      213: -7580091783216101766
+    second: Pines-Decorations-Tiled_96
+  - first:
+      213: 4293786624471999079
+    second: Pines-Decorations-Tiled_97
+  - first:
+      213: -8594100559186563216
+    second: Pines-Decorations-Tiled_98
+  - first:
+      213: -5240754491200846733
+    second: Pines-Decorations-Tiled_99
+  - first:
+      213: -8511135442948629707
+    second: Pines-Decorations-Tiled_100
+  - first:
+      213: 6015549636891895811
+    second: Pines-Decorations-Tiled_101
+  - first:
+      213: -884902688875001490
+    second: Pines-Decorations-Tiled_102
+  - first:
+      213: -7837654050617353971
+    second: Pines-Decorations-Tiled_103
+  - first:
+      213: 19961301981882119
+    second: Pines-Decorations-Tiled_104
+  - first:
+      213: 6396585374332034927
+    second: Pines-Decorations-Tiled_105
+  - first:
+      213: 3648942025295467879
+    second: Pines-Decorations-Tiled_106
+  - first:
+      213: -7593137573324762983
+    second: Pines-Decorations-Tiled_107
+  - first:
+      213: -847428532971746966
+    second: Pines-Decorations-Tiled_108
+  - first:
+      213: -620952819320665733
+    second: Pines-Decorations-Tiled_109
+  - first:
+      213: -8022296941784205696
+    second: Pines-Decorations-Tiled_110
+  - first:
+      213: -7363876794930350041
+    second: Pines-Decorations-Tiled_111
+  - first:
+      213: 248697478175020176
+    second: Pines-Decorations-Tiled_112
+  - first:
+      213: 4201355774309220076
+    second: Pines-Decorations-Tiled_113
+  - first:
+      213: -6703952362142601202
+    second: Pines-Decorations-Tiled_114
+  - first:
+      213: 8753933069053271948
+    second: Pines-Decorations-Tiled_115
+  - first:
+      213: -6993753418128494829
+    second: Pines-Decorations-Tiled_116
+  - first:
+      213: 4023620284149796699
+    second: Pines-Decorations-Tiled_117
+  - first:
+      213: -3266501789139718421
+    second: Pines-Decorations-Tiled_118
+  - first:
+      213: -561327957644527238
+    second: Pines-Decorations-Tiled_119
+  - first:
+      213: -2114737846467749987
+    second: Pines-Decorations-Tiled_120
+  - first:
+      213: -5761842100674735296
+    second: Pines-Decorations-Tiled_121
+  - first:
+      213: -199407503267065492
+    second: Pines-Decorations-Tiled_122
+  - first:
+      213: -3612648689023553171
+    second: Pines-Decorations-Tiled_123
+  - first:
+      213: -8184483276193384680
+    second: Pines-Decorations-Tiled_124
+  - first:
+      213: -465788449200593320
+    second: Pines-Decorations-Tiled_125
+  - first:
+      213: 3898435967589043629
+    second: Pines-Decorations-Tiled_126
+  - first:
+      213: 8087706489054966674
+    second: Pines-Decorations-Tiled_127
+  - first:
+      213: 5702402506514303352
+    second: Pines-Decorations-Tiled_128
+  - first:
+      213: 7505631514915088020
+    second: Pines-Decorations-Tiled_129
+  - first:
+      213: 8095545958909304431
+    second: Pines-Decorations-Tiled_130
+  - first:
+      213: -6086447172947770524
+    second: Pines-Decorations-Tiled_131
+  - first:
+      213: -389905386117973611
+    second: Pines-Decorations-Tiled_132
+  - first:
+      213: 2090406838906709184
+    second: Pines-Decorations-Tiled_133
+  - first:
+      213: 7109604404606744491
+    second: Pines-Decorations-Tiled_134
+  - first:
+      213: -3275031489367526602
+    second: Pines-Decorations-Tiled_135
+  - first:
+      213: -2170741896940226664
+    second: Pines-Decorations-Tiled_136
+  - first:
+      213: -4564422919052524918
+    second: Pines-Decorations-Tiled_137
+  - first:
+      213: 5420713498428657140
+    second: Pines-Decorations-Tiled_138
+  - first:
+      213: 1247552155541537119
+    second: Pines-Decorations-Tiled_139
+  - first:
+      213: 2967978765665745150
+    second: Pines-Decorations-Tiled_140
+  - first:
+      213: 8674865757831540364
+    second: Pines-Decorations-Tiled_141
+  - first:
+      213: -8306452973609497743
+    second: Pines-Decorations-Tiled_142
+  - first:
+      213: -5224970366390650626
+    second: Pines-Decorations-Tiled_143
+  - first:
+      213: 6303548372289301351
+    second: Pines-Decorations-Tiled_144
+  - first:
+      213: 1103865226554344470
+    second: Pines-Decorations-Tiled_145
+  - first:
+      213: 2726336874631636967
+    second: Pines-Decorations-Tiled_146
+  - first:
+      213: -8689115452022436855
+    second: Pines-Decorations-Tiled_147
+  - first:
+      213: 441079407416204781
+    second: Pines-Decorations-Tiled_148
+  - first:
+      213: 2220611950081339698
+    second: Pines-Decorations-Tiled_149
+  - first:
+      213: 3569274839469845331
+    second: Pines-Decorations-Tiled_150
+  - first:
+      213: -102544009619581207
+    second: Pines-Decorations-Tiled_151
+  - first:
+      213: 4938577756762317796
+    second: Pines-Decorations-Tiled_152
+  - first:
+      213: -5767798143681902517
+    second: Pines-Decorations-Tiled_153
+  - first:
+      213: 4712798459717597751
+    second: Pines-Decorations-Tiled_154
+  - first:
+      213: 8334675613685013873
+    second: Pines-Decorations-Tiled_155
+  - first:
+      213: -6521113581171427490
+    second: Pines-Decorations-Tiled_156
+  - first:
+      213: -2483858234472984697
+    second: Pines-Decorations-Tiled_157
+  - first:
+      213: 5620709622529993729
+    second: Pines-Decorations-Tiled_158
+  - first:
+      213: 2909803758062451901
+    second: Pines-Decorations-Tiled_159
+  - first:
+      213: 4332186613010032431
+    second: Pines-Decorations-Tiled_160
+  - first:
+      213: 2079336100209537627
+    second: Pines-Decorations-Tiled_161
+  - first:
+      213: -6199327279572268176
+    second: Pines-Decorations-Tiled_162
+  - first:
+      213: -5310612359432423780
+    second: Pines-Decorations-Tiled_163
+  - first:
+      213: -8558744504518151322
+    second: Pines-Decorations-Tiled_164
+  - first:
+      213: 4202467387704411154
+    second: Pines-Decorations-Tiled_165
+  - first:
+      213: 7640950224413306038
+    second: Pines-Decorations-Tiled_166
+  - first:
+      213: 1699513690683364988
+    second: Pines-Decorations-Tiled_167
+  - first:
+      213: 2689635750522760410
+    second: Pines-Decorations-Tiled_168
+  - first:
+      213: -7086917211647901675
+    second: Pines-Decorations-Tiled_169
+  - first:
+      213: -900884236410503611
+    second: Pines-Decorations-Tiled_170
+  - first:
+      213: 97831890757818595
+    second: Pines-Decorations-Tiled_171
+  - first:
+      213: 7091444935212126494
+    second: Pines-Decorations-Tiled_172
+  - first:
+      213: 3321468105005047973
+    second: Pines-Decorations-Tiled_173
+  - first:
+      213: 6014073852347651126
+    second: Pines-Decorations-Tiled_174
+  - first:
+      213: 5573167471107920146
+    second: Pines-Decorations-Tiled_175
+  - first:
+      213: 7139736205685959407
+    second: Pines-Decorations-Tiled_176
+  - first:
+      213: -9045174641626565937
+    second: Pines-Decorations-Tiled_177
+  - first:
+      213: -9182650529603286867
+    second: Pines-Decorations-Tiled_178
+  - first:
+      213: -8471656243301984798
+    second: Pines-Decorations-Tiled_179
+  - first:
+      213: -5808322955997181632
+    second: Pines-Decorations-Tiled_180
+  - first:
+      213: 8561771825655982989
+    second: Pines-Decorations-Tiled_181
+  - first:
+      213: -1589901539895152277
+    second: Pines-Decorations-Tiled_182
+  - first:
+      213: -4437704366317243740
+    second: Pines-Decorations-Tiled_183
+  - first:
+      213: 6975697220485912299
+    second: Pines-Decorations-Tiled_184
+  - first:
+      213: -5360897167347353018
+    second: Pines-Decorations-Tiled_185
+  - first:
+      213: 2182702312967895832
+    second: Pines-Decorations-Tiled_186
+  - first:
+      213: 3864540874241573149
+    second: Pines-Decorations-Tiled_187
+  - first:
+      213: -7389184252400100285
+    second: Pines-Decorations-Tiled_188
+  - first:
+      213: 1509685405279665627
+    second: Pines-Decorations-Tiled_189
+  - first:
+      213: -2324370817287439444
+    second: Pines-Decorations-Tiled_190
+  - first:
+      213: 81841739280786654
+    second: Pines-Decorations-Tiled_191
+  - first:
+      213: -9175228664728569408
+    second: Pines-Decorations-Tiled_192
+  - first:
+      213: -270093270724194360
+    second: Pines-Decorations-Tiled_193
+  - first:
+      213: 3340903804075698517
+    second: Pines-Decorations-Tiled_194
+  - first:
+      213: -6543777064177590600
+    second: Pines-Decorations-Tiled_195
+  - first:
+      213: 8038134007518759058
+    second: Pines-Decorations-Tiled_196
+  - first:
+      213: 3658363486852260135
+    second: Pines-Decorations-Tiled_197
+  - first:
+      213: -5580255090105001398
+    second: Pines-Decorations-Tiled_198
+  - first:
+      213: -4504918919045234762
+    second: Pines-Decorations-Tiled_199
+  - first:
+      213: 1727481589967178829
+    second: Pines-Decorations-Tiled_200
+  - first:
+      213: 7626194789241667615
+    second: Pines-Decorations-Tiled_201
+  - first:
+      213: 3840379559321133383
+    second: Pines-Decorations-Tiled_202
+  - first:
+      213: 1401016313613788304
+    second: Pines-Decorations-Tiled_203
+  - first:
+      213: 4336941511172358470
+    second: Pines-Decorations-Tiled_204
+  - first:
+      213: -3157229664319757316
+    second: Pines-Decorations-Tiled_205
+  - first:
+      213: -1407025409309387750
+    second: Pines-Decorations-Tiled_206
+  - first:
+      213: -5377903553600142494
+    second: Pines-Decorations-Tiled_207
+  - first:
+      213: 3604964448394607255
+    second: Pines-Decorations-Tiled_208
+  - first:
+      213: 1348420763455101427
+    second: Pines-Decorations-Tiled_209
+  - first:
+      213: -1726468372943746862
+    second: Pines-Decorations-Tiled_210
+  - first:
+      213: -3873241640456901821
+    second: Pines-Decorations-Tiled_211
+  - first:
+      213: -4897230240228757057
+    second: Pines-Decorations-Tiled_212
+  - first:
+      213: -1069461567789704597
+    second: Pines-Decorations-Tiled_213
+  - first:
+      213: 3918255708408421826
+    second: Pines-Decorations-Tiled_214
+  - first:
+      213: -6540018329594684326
+    second: Pines-Decorations-Tiled_215
+  - first:
+      213: -8861298393277580606
+    second: Pines-Decorations-Tiled_216
+  - first:
+      213: -1119089139890622020
+    second: Pines-Decorations-Tiled_217
+  - first:
+      213: -1226316845058024173
+    second: Pines-Decorations-Tiled_218
+  - first:
+      213: -961900254388548289
+    second: Pines-Decorations-Tiled_219
+  - first:
+      213: 7202990921999799343
+    second: Pines-Decorations-Tiled_220
+  - first:
+      213: 7241429101378877899
+    second: Pines-Decorations-Tiled_221
+  - first:
+      213: -6504097614249123889
+    second: Pines-Decorations-Tiled_222
+  - first:
+      213: -889549259075168543
+    second: Pines-Decorations-Tiled_223
+  - first:
+      213: -979677676307637862
+    second: Pines-Decorations-Tiled_224
+  - first:
+      213: -7932112640012760743
+    second: Pines-Decorations-Tiled_225
+  - first:
+      213: 2444134219548506219
+    second: Pines-Decorations-Tiled_226
+  - first:
+      213: 2545496189376358539
+    second: Pines-Decorations-Tiled_227
+  - first:
+      213: 2744923411522930266
+    second: Pines-Decorations-Tiled_228
+  - first:
+      213: 1228074300054430600
+    second: Pines-Decorations-Tiled_229
+  - first:
+      213: 4139598198792827561
+    second: Pines-Decorations-Tiled_230
+  - first:
+      213: 911666136671396308
+    second: Pines-Decorations-Tiled_231
+  - first:
+      213: 889570185391836758
+    second: Pines-Decorations-Tiled_232
+  - first:
+      213: 3448163536001399232
+    second: Pines-Decorations-Tiled_233
+  - first:
+      213: 2132061614208691121
+    second: Pines-Decorations-Tiled_234
+  - first:
+      213: -3057761209391236687
+    second: Pines-Decorations-Tiled_235
+  - first:
+      213: -1065480375462588896
+    second: Pines-Decorations-Tiled_236
+  - first:
+      213: -9045317769825965078
+    second: Pines-Decorations-Tiled_237
+  - first:
+      213: 585628653549731038
+    second: Pines-Decorations-Tiled_238
+  - first:
+      213: 3812269153439829020
+    second: Pines-Decorations-Tiled_239
+  - first:
+      213: -1382336737551060130
+    second: Pines-Decorations-Tiled_240
+  - first:
+      213: -595541828846903788
+    second: Pines-Decorations-Tiled_241
+  - first:
+      213: -706064962891700159
+    second: Pines-Decorations-Tiled_242
+  - first:
+      213: 8992767975304211709
+    second: Pines-Decorations-Tiled_243
+  - first:
+      213: -684651909233118442
+    second: Pines-Decorations-Tiled_244
+  - first:
+      213: -1264103149670777138
+    second: Pines-Decorations-Tiled_245
+  - first:
+      213: 8807452152085078119
+    second: Pines-Decorations-Tiled_246
+  - first:
+      213: 6593418243270042645
+    second: Pines-Decorations-Tiled_247
+  - first:
+      213: -2745849106462402018
+    second: Pines-Decorations-Tiled_248
+  - first:
+      213: 7430930514824407838
+    second: Pines-Decorations-Tiled_249
+  - first:
+      213: -2850909366317470688
+    second: Pines-Decorations-Tiled_250
+  - first:
+      213: -1701053702204312617
+    second: Pines-Decorations-Tiled_251
+  - first:
+      213: 5566036108677374779
+    second: Pines-Decorations-Tiled_252
+  - first:
+      213: -9079966985704971543
+    second: Pines-Decorations-Tiled_253
+  - first:
+      213: -1117291901606294323
+    second: Pines-Decorations-Tiled_254
+  - first:
+      213: 8248133358207327566
+    second: Pines-Decorations-Tiled_255
+  - first:
+      213: -727482470086829771
+    second: Pines-Decorations-Tiled_256
+  - first:
+      213: 7101171314453358997
+    second: Pines-Decorations-Tiled_257
+  - first:
+      213: 4980558637056552398
+    second: Pines-Decorations-Tiled_258
+  - first:
+      213: -1956436273098026168
+    second: Pines-Decorations-Tiled_259
+  - first:
+      213: -7202302184506859704
+    second: Pines-Decorations-Tiled_0
+  - first:
+      213: 1456546453140704629
+    second: Pines-Decorations-Tiled_1
+  - first:
+      213: 2114978733613415182
+    second: Pines-Decorations-Tiled_2
+  - first:
+      213: -1695108293657281612
+    second: Pines-Decorations-Tiled_3
+  - first:
+      213: -587446373908887337
+    second: Pines-Decorations-Tiled_4
+  - first:
+      213: -130735351810522388
+    second: Pines-Decorations-Tiled_5
+  - first:
+      213: 4969274196003206604
+    second: Pines-Decorations-Tiled_6
+  - first:
+      213: -2499950125397915267
+    second: Pines-Decorations-Tiled_7
+  - first:
+      213: 3694516220393189654
+    second: Pines-Decorations-Tiled_8
+  - first:
+      213: -329223026044307075
+    second: Pines-Decorations-Tiled_9
+  - first:
+      213: -4580339579860719696
+    second: Pines-Decorations-Tiled_10
+  - first:
+      213: -806590685006339048
+    second: Pines-Decorations-Tiled_11
+  - first:
+      213: -4953112813621863797
+    second: Pines-Decorations-Tiled_12
+  - first:
+      213: -2102535286614744436
+    second: Pines-Decorations-Tiled_13
+  - first:
+      213: 7086981334980518473
+    second: Pines-Decorations-Tiled_14
+  - first:
+      213: -8745002199179372298
+    second: Pines-Decorations-Tiled_15
+  - first:
+      213: -4551272033171605438
+    second: Pines-Decorations-Tiled_16
+  - first:
+      213: 2894656234186468824
+    second: Pines-Decorations-Tiled_17
+  - first:
+      213: 7241502436056450124
+    second: Pines-Decorations-Tiled_18
+  - first:
+      213: 1112215489805656631
+    second: Pines-Decorations-Tiled_19
+  - first:
+      213: 876419351410340347
+    second: Pines-Decorations-Tiled_20
+  - first:
+      213: -4428970422431010889
+    second: Pines-Decorations-Tiled_21
+  - first:
+      213: -8748522618602390843
+    second: Pines-Decorations-Tiled_22
+  - first:
+      213: -3137882554164409087
+    second: Pines-Decorations-Tiled_23
+  - first:
+      213: -5838159727721666741
+    second: Pines-Decorations-Tiled_24
+  - first:
+      213: 4221659702792843434
+    second: Pines-Decorations-Tiled_25
+  - first:
+      213: -1220774160605751517
+    second: Pines-Decorations-Tiled_26
+  - first:
+      213: 4901482761872440854
+    second: Pines-Decorations-Tiled_27
+  - first:
+      213: -6797970181914587766
+    second: Pines-Decorations-Tiled_28
+  - first:
+      213: 6299394749296131796
+    second: Pines-Decorations-Tiled_29
+  - first:
+      213: -3447689148131993576
+    second: Pines-Decorations-Tiled_30
+  - first:
+      213: -9153016129426544472
+    second: Pines-Decorations-Tiled_31
+  - first:
+      213: 5052471088821434019
+    second: Pines-Decorations-Tiled_32
+  - first:
+      213: -6794971299910735934
+    second: Pines-Decorations-Tiled_33
+  - first:
+      213: -4018715097682165965
+    second: Pines-Decorations-Tiled_34
+  - first:
+      213: -8610121943388041543
+    second: Pines-Decorations-Tiled_35
+  - first:
+      213: 272553831625148036
+    second: Pines-Decorations-Tiled_36
+  - first:
+      213: 645291133514789326
+    second: Pines-Decorations-Tiled_37
+  - first:
+      213: -7284536570227581608
+    second: Pines-Decorations-Tiled_38
+  - first:
+      213: -5244131574878239692
+    second: Pines-Decorations-Tiled_39
+  - first:
+      213: 7804871004315412548
+    second: Pines-Decorations-Tiled_40
+  - first:
+      213: 6037994209724998695
+    second: Pines-Decorations-Tiled_41
+  - first:
+      213: 9008925663173052411
+    second: Pines-Decorations-Tiled_42
+  - first:
+      213: 5471698052758019485
+    second: Pines-Decorations-Tiled_43
+  - first:
+      213: -7435060788120644850
+    second: Pines-Decorations-Tiled_44
+  - first:
+      213: 2207171525143848557
+    second: Pines-Decorations-Tiled_45
+  - first:
+      213: -8978971662761336593
+    second: Pines-Decorations-Tiled_46
+  - first:
+      213: -738853272848273357
+    second: Pines-Decorations-Tiled_47
+  - first:
+      213: -6128088027086556829
+    second: Pines-Decorations-Tiled_48
+  - first:
+      213: -5496971437261315735
+    second: Pines-Decorations-Tiled_49
+  - first:
+      213: 5472917190588623634
+    second: Pines-Decorations-Tiled_50
+  - first:
+      213: 3507476191762342011
+    second: Pines-Decorations-Tiled_51
+  - first:
+      213: -3403143454023150716
+    second: Pines-Decorations-Tiled_52
+  - first:
+      213: -6073376117077262745
+    second: Pines-Decorations-Tiled_53
+  - first:
+      213: -3372285371253479150
+    second: Pines-Decorations-Tiled_54
+  - first:
+      213: 1241165882380709736
+    second: Pines-Decorations-Tiled_55
+  - first:
+      213: 2129603305608397714
+    second: Pines-Decorations-Tiled_56
+  - first:
+      213: -5673596355990649968
+    second: Pines-Decorations-Tiled_57
+  - first:
+      213: 6810560579166180174
+    second: Pines-Decorations-Tiled_58
+  - first:
+      213: -3467704572641424397
+    second: Pines-Decorations-Tiled_59
+  - first:
+      213: -6954951360169099303
+    second: Pines-Decorations-Tiled_60
+  - first:
+      213: 5385232088273321613
+    second: Pines-Decorations-Tiled_61
+  - first:
+      213: 4709142616572434092
+    second: Pines-Decorations-Tiled_62
+  - first:
+      213: 4521835171457843535
+    second: Pines-Decorations-Tiled_63
+  - first:
+      213: -1001763075183332082
+    second: Pines-Decorations-Tiled_64
+  - first:
+      213: 7661615703048417796
+    second: Pines-Decorations-Tiled_65
+  - first:
+      213: -8948885725842904676
+    second: Pines-Decorations-Tiled_66
+  - first:
+      213: 2463560126936816669
+    second: Pines-Decorations-Tiled_67
+  - first:
+      213: 5330906386341326804
+    second: Pines-Decorations-Tiled_68
+  - first:
+      213: -8183101508140991640
+    second: Pines-Decorations-Tiled_69
+  - first:
+      213: 674241392846869737
+    second: Pines-Decorations-Tiled_70
+  - first:
+      213: -5247270872361315579
+    second: Pines-Decorations-Tiled_71
+  - first:
+      213: -3642335024113189571
+    second: Pines-Decorations-Tiled_72
+  - first:
+      213: -2624332981645192943
+    second: Pines-Decorations-Tiled_73
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84fd27792584c0c90800000000000000
+      internalID: -7202302184506859704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57d8e423841b63410800000000000000
+      internalID: 1456546453140704629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0b788cd3f9e95d10800000000000000
+      internalID: 2114978733613415182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb3dbcecf3c978e0800000000000000
+      internalID: -1695108293657281612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d8c196a2a8f8d7f0800000000000000
+      internalID: -587446373908887337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce28fb3e3e88f2ef0800000000000000
+      internalID: -130735351810522388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc5394c8d8866f440800000000000000
+      internalID: 4969274196003206604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d79c6733b946e4dd0800000000000000
+      internalID: -2499950125397915267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_8
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61174759dee854330800000000000000
+      internalID: 3694516220393189654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_9
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d79ffb0f66d5e6bf0800000000000000
+      internalID: -329223026044307075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_10
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b76db77b6d5f60c0800000000000000
+      internalID: -4580339579860719696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_11
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 814ee05ab0a6ec4f0800000000000000
+      internalID: -806590685006339048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8a12a38322034bb0800000000000000
+      internalID: -4953112813621863797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_13
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c82aa99eb4b42d2e0800000000000000
+      internalID: -2102535286614744436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9426659c9f30a5260800000000000000
+      internalID: 7086981334980518473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_15
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f857e535d283a680800000000000000
+      internalID: -8745002199179372298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_16
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 248f2a21332a6d0c0800000000000000
+      internalID: -4551272033171605438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_17
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dded892282eb2820800000000000000
+      internalID: 2894656234186468824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_18
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c444545391cfe7460800000000000000
+      internalID: 7241502436056450124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_19
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 732ad8f58126f6f00800000000000000
+      internalID: 1112215489805656631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_20
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf17713b1caa92c00800000000000000
+      internalID: 876419351410340347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_21
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bfa942ddd22982c0800000000000000
+      internalID: -4428970422431010889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_22
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cafbb0b701079680800000000000000
+      internalID: -8748522618602390843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_23
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10d822431700474d0800000000000000
+      internalID: -3137882554164409087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_24
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1152
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b47a827d8a0bafea0800000000000000
+      internalID: -5838159727721666741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_25
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1152
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa07c83e129569a30800000000000000
+      internalID: 4221659702792843434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_26
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1152
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3275e1e6e50fe0fe0800000000000000
+      internalID: -1220774160605751517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e7b1e4a90950440800000000000000
+      internalID: 4901482761872440854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_28
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8d88410322c8a1a0800000000000000
+      internalID: -6797970181914587766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_29
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4deb1cb1622fb6750800000000000000
+      internalID: 6299394749296131796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_30
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8189f958cf85720d0800000000000000
+      internalID: -3447689148131993576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_31
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a82c163354f9f080800000000000000
+      internalID: -9153016129426544472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_32
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a6f127afabfd1640800000000000000
+      internalID: 5052471088821434019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_33
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c7a8d1aa9963b1a0800000000000000
+      internalID: -6794971299910735934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_34
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33fb72529e7aa38c0800000000000000
+      internalID: -4018715097682165965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_35
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9be4f8bf5b3b28880800000000000000
+      internalID: -8610121943388041543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_36
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 486403c044e48c300800000000000000
+      internalID: 272553831625148036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_37
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec1bbd5fdd884f800800000000000000
+      internalID: 645291133514789326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_38
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d1e32a59028ea90800000000000000
+      internalID: -7284536570227581608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43409f30e1a1937b0800000000000000
+      internalID: -5244131574878239692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_40
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44867f193d8705c60800000000000000
+      internalID: 7804871004315412548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_41
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 724268a3eb34bc350800000000000000
+      internalID: 6037994209724998695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_42
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf78459c822260d70800000000000000
+      internalID: 9008925663173052411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_43
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9d96d083606feb40800000000000000
+      internalID: 5471698052758019485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_44
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0312a81b9b51d890800000000000000
+      internalID: -7435060788120644850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_45
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d666e8adec271ae10800000000000000
+      internalID: 2207171525143848557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_46
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe0efc868d8446380800000000000000
+      internalID: -8978971662761336593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_47
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3307ebaecd01fb5f0800000000000000
+      internalID: -738853272848273357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_48
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3617e294868a4faa0800000000000000
+      internalID: -6128088027086556829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_49
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 961229d1a95d6b3b0800000000000000
+      internalID: -5496971437261315735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_50
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21be9262035b3fb40800000000000000
+      internalID: 5472917190588623634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_51
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b706224530f0da030800000000000000
+      internalID: 3507476191762342011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_52
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48311472f0b95c0d0800000000000000
+      internalID: -3403143454023150716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_53
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76eb442899807bba0800000000000000
+      internalID: -6073376117077262745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_54
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 219a03d625c3331d0800000000000000
+      internalID: -3372285371253479150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_55
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86fe2a64bc1893110800000000000000
+      internalID: 1241165882380709736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_56
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 293494f5ceedd8d10800000000000000
+      internalID: 2129603305608397714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_57
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0930a3a9c265341b0800000000000000
+      internalID: -5673596355990649968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_58
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e439a7a43c8f38e50800000000000000
+      internalID: 6810560579166180174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_59
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fbc5b9501d30efc0800000000000000
+      internalID: -3467704572641424397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_60
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9df300b369c0b7f90800000000000000
+      internalID: -6954951360169099303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_61
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ef0965d003cba40800000000000000
+      internalID: 5385232088273321613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_62
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca61479724c3a5140800000000000000
+      internalID: 4709142616572434092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_63
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f41cc977129c0ce30800000000000000
+      internalID: 4521835171457843535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_64
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e05389a6ac50912f0800000000000000
+      internalID: -1001763075183332082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_65
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40271c193e6835a60800000000000000
+      internalID: 7661615703048417796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_66
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c99e19778db2fc380800000000000000
+      internalID: -8948885725842904676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_67
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c92e802e2503220800000000000000
+      internalID: 2463560126936816669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_68
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df6cb03d1f2bf940800000000000000
+      internalID: 5330906386341326804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_69
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86bfa46c888cf6e80800000000000000
+      internalID: -8183101508140991640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_70
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e4908979f26b5900800000000000000
+      internalID: 674241392846869737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_71
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50356ac51f2fd27b0800000000000000
+      internalID: -5247270872361315579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_72
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3df4cee793d37dc0800000000000000
+      internalID: -3642335024113189571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pines-Decorations-Tiled_73
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11152b8be0f749bd0800000000000000
+      internalID: -2624332981645192943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
