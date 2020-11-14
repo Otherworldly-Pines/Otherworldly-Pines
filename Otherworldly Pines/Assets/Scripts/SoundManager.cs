@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Timeline;
@@ -48,12 +49,16 @@ public class SoundManager : MonoBehaviour
         flippedMusicSource.clip = flipped_music;
         soundSource.clip = null;
 
-        unflippedMusicSource.volume = GameSettings.musicVolume;
-        flippedMusicSource.volume = GameSettings.musicVolume;
+        unflippedMusicSource.volume = 0f;
+        flippedMusicSource.volume = 0f;
         soundSource.volume = GameSettings.sfxVolume;
 
         unflippedMusicSource.Play();
         flippedMusicSource.Play();
+    }
+
+    private void Start() {
+        StartCoroutine(FadeAudioIn());
     }
 
     public void SetActiveGravityRegion(GravityRegion gr)
@@ -120,5 +125,18 @@ public class SoundManager : MonoBehaviour
     public void UpdateSfxVolume()
     {
         soundSource.volume = GameSettings.sfxVolume;
+    }
+
+    IEnumerator FadeAudioIn() {
+        var t = 0f;
+        var duration = 2f;
+
+        var audioSource = (activeGravityRegion != null && activeGravityRegion.gravityIsFlipped) ? flippedMusicSource : unflippedMusicSource;
+        
+        while (t < duration) {
+            audioSource.volume = SmoothLerp(0f, GameSettings.musicVolume, t / duration);
+            t += Time.deltaTime;
+            yield return new WaitForEndOfFrame();
+        }
     }
 }
