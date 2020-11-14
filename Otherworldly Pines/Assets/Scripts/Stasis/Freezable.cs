@@ -10,19 +10,13 @@ public class Freezable : MonoBehaviour {
     private Rigidbody2D body;
     private Collider2D collider;
     private RigidbodyType2D originalBodyType;
-    public Sprite indicatorSprite;
     private SpriteRenderer renderer;
+    private Color originalColor;
 
     void Start() {
         collider = GetComponent<Collider2D>();
-        
-        var rendererObj = new GameObject();
-        rendererObj.transform.parent = transform;
-        rendererObj.transform.localPosition = Vector3.zero;
-        renderer = rendererObj.AddComponent<SpriteRenderer>();
-        renderer.sprite = indicatorSprite;
-        renderer.size = collider.bounds.size;
-        renderer.color = Color.clear;
+        renderer = GetComponent<SpriteRenderer>();
+        originalColor = renderer.color;
 
         body = GetComponent<Rigidbody2D>();
         originalBodyType = body.bodyType;
@@ -33,29 +27,31 @@ public class Freezable : MonoBehaviour {
     public void Freeze() {
         isFrozen = true;
         body.bodyType = RigidbodyType2D.Static;
-        renderer.color = Color.Lerp(Color.clear, Color.cyan, 0.5f);
+        renderer.color = Color.Lerp(originalColor, Color.cyan, 0.5f);
     }
 
     public void Unfreeze() {
         body.bodyType = originalBodyType;
         body.velocity = Vector2.zero;
         isFrozen = false;
-        renderer.color = Color.clear;
-    }
-
-    private void OnMouseDown() {
-        if (isFrozen) player.UnfreezeObject(this);
-        else player.FreezeObject(this);
+        renderer.color = originalColor;
     }
 
     private void OnMouseEnter() {
         player.StartHovering(this);
-        if (!isFrozen && player.CanFreeze()) renderer.color = Color.Lerp(Color.clear, Color.cyan, 0.2f);
+        if (!isFrozen && player.CanFreeze()) renderer.color = Color.Lerp(originalColor, Color.cyan, 0.2f);
+    }
+
+    private void OnMouseOver() {
+        if (Input.GetMouseButtonDown(1)) {
+            if (isFrozen) player.UnfreezeObject(this);
+            else player.FreezeObject(this);
+        }
     }
 
     private void OnMouseExit() {
         player.StopHovering(this);
-        if (!isFrozen) renderer.color = Color.clear;
+        if (!isFrozen) renderer.color = originalColor;
     }
 
 }

@@ -13,30 +13,17 @@ public class PlayerFreeze : MonoBehaviour, IHUDConnected {
     private float freezeTimeout = MAX_TIMEOUT;
     private StasisDisplay stasisDisplay;
     private AudioSource freezeChime;
-    private bool isMusicPlaying = false;
     void Start()
     {
         freezeChime = GetComponent<AudioSource>();
     }
     private void Update() {
         if (hasFrozen) {
-            if (!isMusicPlaying)
-            {
-                freezeChime.Play();
-                isMusicPlaying = true;
-            }
             freezeTimeout -= Time.deltaTime;
             if (freezeTimeout < 0) {
-                hasFrozen = false;
-                frozen.Unfreeze();
-                stasisDisplay.SetStasisEnabled(false);
+                UnfreezeObject(frozen);
             }
         } else {
-            if (isMusicPlaying)
-            {
-                freezeChime.Stop();
-                isMusicPlaying = false;
-            }
             if (freezeTimeout < MAX_TIMEOUT) freezeTimeout += Time.deltaTime;
             else if (freezeTimeout > MAX_TIMEOUT) {
                 freezeTimeout = MAX_TIMEOUT;
@@ -69,10 +56,13 @@ public class PlayerFreeze : MonoBehaviour, IHUDConnected {
             frozen = obj;
             hasFrozen = true;
             freezeTimeout = MAX_TIMEOUT;
+            freezeChime.time = 0f;
+            freezeChime.Play();
         }
     }
 
     public void UnfreezeObject(Freezable obj) {
+        freezeChime.Stop();
         obj.Unfreeze();
         frozen = null;
         hasFrozen = false;
