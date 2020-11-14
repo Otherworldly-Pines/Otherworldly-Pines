@@ -76,21 +76,26 @@ public class PlayerControls : MonoBehaviour {
     }
 
     void Update() {
-        if (controlsFrozen) return;
-        
-        isPressingShift = Input.GetKey(KeyCode.LeftShift);
-        currentHorizontalInput = Input.GetAxis("Horizontal");
+        if (controlsFrozen) {
+            currentHorizontalInput = 0;
+            isPressingShift = false;
+            animator.SetFloat("Speed", Mathf.Abs(currentHorizontalInput*walkSpeed));
+            animator.SetBool("IsJumping", !groundCheck.IsGrounded());
+            return;
+        } else {
+            isPressingShift = Input.GetKey(KeyCode.LeftShift);
+            currentHorizontalInput = Input.GetAxis("Horizontal");
 
-        if (Input.GetKeyDown(KeyCode.Space) && isPlayerGrounded())
-        {
-            setJumping(true);
-            Vector2 jumpDirection = !flippable.isUpsideDown ? Vector2.up : Vector2.down;
-            body.velocity = jumpDirection * jumpForce;
+            if (Input.GetKeyDown(KeyCode.Space) && isPlayerGrounded())
+            {
+                setJumping(true);
+                Vector2 jumpDirection = !flippable.isUpsideDown ? Vector2.up : Vector2.down;
+                body.velocity = jumpDirection * jumpForce;
+            }
+
+            animator.SetFloat("Speed", Mathf.Abs(currentHorizontalInput*walkSpeed));
+            animator.SetBool("IsJumping", !groundCheck.IsGrounded());            
         }
-
-        animator.SetFloat("Speed", Mathf.Abs(currentHorizontalInput*walkSpeed));
-        animator.SetBool("IsJumping", !groundCheck.IsGrounded());
-
     }
 
     public void setJumping(bool jp)
