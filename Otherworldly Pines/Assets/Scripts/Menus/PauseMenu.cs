@@ -83,6 +83,7 @@ public class PauseMenu : MonoBehaviour
     public void BacktoPauseMenu()
     {
         optionMenuUI.SetActive(false);
+        helpMenuUI.SetActive(false);
         pauseMenuUI.SetActive(true);
         
     }
