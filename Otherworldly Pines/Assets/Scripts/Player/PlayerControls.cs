@@ -133,14 +133,16 @@ public class PlayerControls : MonoBehaviour {
 
         if (currentPushable != null) {
             if (isGrounded && isPressingShift) {
-                if (isPullingBlock) return;
+                if (isPullingBlock){
+                    animator.SetBool("IsPulling", IsPulling(currentPushable));
+                    animator.SetBool("IsPushing", IsPushing(currentPushable));
+                    return;
+                } 
 
                 // Player is pushing/pulling a block
                 isPullingBlock = true;
                 PushPullBlock.SoftenAll();
                 currentPushable.ConnectToBody(body);
-                animator.SetBool("IsPulling", IsPulling(currentPushable));
-                animator.SetBool("IsPushing", IsPushing(currentPushable));
             } else {
                 // Player is against a block but not pushing it 
                 isPullingBlock = false;
