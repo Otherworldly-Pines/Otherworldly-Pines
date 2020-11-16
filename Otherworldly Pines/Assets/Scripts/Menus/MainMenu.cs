@@ -10,6 +10,8 @@ public class MainMenu : MonoBehaviour
 
     private void Start() {
         MenuMusic.StartIfStopped();
+        Time.timeScale = 1f;
+        PauseMenu.GameIsPaused = false;
     }
 
     public void PlayGame()
