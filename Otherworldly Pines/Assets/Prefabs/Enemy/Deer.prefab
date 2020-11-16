@@ -220,7 +220,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.02, y: -0.15}
+  m_Offset: {x: -0.01999998, y: -0.12253469}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -231,7 +231,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.55, y: 1.6}
+  m_Size: {x: 1.55, y: 1.5450693}
   m_EdgeRadius: 0
 --- !u!50 &7683570258011486535
 Rigidbody2D:
@@ -275,6 +275,7 @@ MonoBehaviour:
   eatTime: 12
   currentBerry: {fileID: 0}
   sprite: {fileID: 6644520521476235749}
+  animationSpeed: 2
   alertClip: {fileID: 8300000, guid: e3195d62701c54193ae8a04657e6a3b5, type: 3}
   eatingClip: {fileID: 8300000, guid: 10314dc49375e4164be11c81ac3481c7, type: 3}
 --- !u!114 &1583167359

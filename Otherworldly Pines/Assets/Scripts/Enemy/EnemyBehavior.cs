@@ -37,7 +37,7 @@ public class EnemyBehavior : MonoBehaviour {
     public float eatTime = 3f;
     public Berry currentBerry;
     public GameObject sprite;
-
+    public float animationSpeed;
     private GameObject target;
     
     private AudioSource soundSource;
@@ -48,7 +48,10 @@ public class EnemyBehavior : MonoBehaviour {
     // Start is called before the first frame update 
     void Start()
     {
+        
         this.animator = sprite.GetComponent<Animator>();
+        this.animator.speed = animationSpeed;
+
         this.collider = gameObject.GetComponent<BoxCollider2D>();
         this.rigidbody = gameObject.GetComponent<Rigidbody2D>();
         this.groundChecker = GetComponent<GroundChecker>();

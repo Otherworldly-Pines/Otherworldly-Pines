@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 926725813}
   - component: {fileID: 2217658357304512757}
   - component: {fileID: 957812161368360698}
+  - component: {fileID: 8501968875517815187}
   m_Layer: 12
   m_Name: Rabbit
   m_TagString: Untagged
@@ -160,7 +161,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.03295186}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -171,7 +172,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.6}
+  m_Size: {x: 0.5, y: 0.5340963}
   m_EdgeRadius: 0
 --- !u!50 &2098249186938693129
 Rigidbody2D:
@@ -215,6 +216,7 @@ MonoBehaviour:
   eatTime: 15
   currentBerry: {fileID: 0}
   sprite: {fileID: 2098249186594794147}
+  animationSpeed: 2
   alertClip: {fileID: 8300000, guid: 7f2edc07e0876439593202b343ddcef7, type: 3}
   eatingClip: {fileID: 8300000, guid: 10314dc49375e4164be11c81ac3481c7, type: 3}
 --- !u!114 &2098249186938693122
@@ -454,6 +456,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20a6398c104b47fba0ff29e1f6e22d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8501968875517815187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098249186938693130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dcb0ddbd0ca94701b89ae3b25e5d598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  center: {fileID: 0}
+  gravityAffectsSprite: 1
+  isUpsideDown: 0
 --- !u!1 &2098249187618277737
 GameObject:
   m_ObjectHideFlags: 0
