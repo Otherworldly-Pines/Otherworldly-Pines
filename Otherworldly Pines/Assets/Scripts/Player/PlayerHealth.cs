@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour, IHUDConnected {
 
@@ -30,7 +31,12 @@ public class PlayerHealth : MonoBehaviour, IHUDConnected {
 
     public void TakeDamage(float damage) {
         SetHealth(currentHealth - damage);
-        if (currentHealth == minHealth) smScript.PlayDead();
+        if (currentHealth <= minHealth)
+        {
+            smScript.PlayDead();
+            var currentScene = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(currentScene.name);
+        }
         else {
             animator.SetTrigger("TriggerDamage");
             smScript.PlayHurt();
