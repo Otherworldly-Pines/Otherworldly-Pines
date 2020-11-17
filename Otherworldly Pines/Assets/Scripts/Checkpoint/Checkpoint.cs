@@ -9,7 +9,14 @@ public class Checkpoint : MonoBehaviour
     private AudioSource audioSrc;
     private SpriteRenderer sr;
     private bool hasReached;
-    private CheckpointMaster cm;
+
+    void Start()
+    {
+        sr = GetComponent<SpriteRenderer>();
+        audioSrc = GetComponent<AudioSource>();
+        hasReached = false;
+    }
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player") && !hasReached) {
@@ -18,21 +25,13 @@ public class Checkpoint : MonoBehaviour
             var player = other.gameObject;
             var berries = player.GetComponent<PlayerThrow>().getAmmo();
         
-            cm.lastCheckPointPos = gameObject.transform.position;
-            cm.berryCount = berries;
-            
+            CheckpointMaster.spawnPoint = gameObject.transform.position;
+            CheckpointMaster.spawnAmmo = berries;
+            CheckpointMaster.shouldResetToStartingPos = false;
+
             sr.sprite = spriteActivated;
             audioSrc.Play();
         }
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        cm = GameObject.FindGameObjectWithTag("CM").GetComponent<CheckpointMaster>();
-        sr = GetComponent<SpriteRenderer>();
-        audioSrc = GetComponent<AudioSource>();
-        hasReached = false;
     }
 
     private void OnValidate() {

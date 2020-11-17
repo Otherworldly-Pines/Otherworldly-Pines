@@ -16,6 +16,7 @@ public class PlayerThrow : MonoBehaviour, IHUDConnected {
     private bool controlsFrozen = false;
 
     private void Start() {
+        ammo = CheckpointMaster.spawnAmmo;
         playerFreeze = GetComponent<PlayerFreeze>();
         if (berryCounter) berryCounter.SetCount(ammo);
     }

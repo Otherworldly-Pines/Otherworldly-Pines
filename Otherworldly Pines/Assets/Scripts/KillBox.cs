@@ -17,9 +17,9 @@ public class KillBox : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         
-        if(collision.collider.tag == "Player")
+        if (collision.collider.CompareTag("Player"))
         {
-            collision.gameObject.GetComponent<PlayerHealth>().TakeDamage(100000000);
+            collision.gameObject.GetComponent<PlayerHealth>().TakeDamage(10000);
             SceneManager.LoadScene(currentScene.name);
         }
     }

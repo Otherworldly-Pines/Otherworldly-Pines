@@ -21,6 +21,7 @@ public class LevelChanger : MonoBehaviour
     {
         fade_animator.SetBool("FadeOut", true);
         yield return new WaitForSeconds(transitionTime);
+        CheckpointMaster.shouldResetToStartingPos = true;
         SceneManager.LoadScene(levelName);
     }
 }
