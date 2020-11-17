@@ -6,10 +6,9 @@ using TMPro;
 
 public class DialogTrigger : MonoBehaviour
 {
-    public TextMeshProUGUI dialogText;
-    public GameObject dialogDisplay;
-    public GameObject continueText;
+    public DialogBox dialogDisplay;
     public string[] sentences;
+    public bool skippable = true;
   
     public float charTypingInterval;
 
@@ -30,12 +29,14 @@ public class DialogTrigger : MonoBehaviour
             playerControls.FreezeControls();
             gravityControls.FreezeControls();
             throwControls.FreezeControls();
-
+            
             PauseMenu.IsDisabledByTutorialText = true;
-
-            dialogDisplay.SetActive(true);
-            continueText.SetActive(false);
-            dialogText.text = "";
+            
+            dialogDisplay.gameObject.SetActive(true);
+            dialogDisplay.skipObject.SetActive(false);
+            dialogDisplay.skipText.text = skippable ? "Press esc to skip…" : "Cannot skip";
+            dialogDisplay.continueText.SetActive(false);
+            dialogDisplay.mainText.text = "";
             StartCoroutine(TypeText());
         }
     }
@@ -43,8 +44,11 @@ public class DialogTrigger : MonoBehaviour
     private void Update() {
         if (isDisplaying) {
             if (Input.GetKeyUp(KeyCode.Escape)) {
-                Close();
-            } else if (dialogText.text == sentences[sentenceIndex] && Input.anyKeyDown) {
+                if (skippable) Close();
+                else {
+                    dialogDisplay.skipObject.SetActive(true);
+                }
+            } else if (dialogDisplay.mainText.text == sentences[sentenceIndex] && Input.anyKeyDown) {
                 if (sentenceIndex < sentences.Length - 1) {
                     NextSentence();
                 } else {
@@ -57,22 +61,28 @@ public class DialogTrigger : MonoBehaviour
     IEnumerator TypeText()
     {
         foreach(char letter in sentences[sentenceIndex].ToCharArray()){
-            dialogText.text += letter;
+            dialogDisplay.mainText.text += letter;
             yield return new WaitForSeconds(charTypingInterval);
         }
 
-        continueText.SetActive(true);
+        if (skippable) {
+            dialogDisplay.skipObject.SetActive(true);
+        } else {
+            dialogDisplay.skipText.text = "Cannot skip";
+        }
+
+        dialogDisplay.continueText.SetActive(true);
     }
 
     public void NextSentence() {
         sentenceIndex++;
-        dialogText.text = "";
+        dialogDisplay.mainText.text = "";
         StartCoroutine(TypeText());
-        continueText.SetActive(false);
+        dialogDisplay.continueText.SetActive(false);
     }
 
     private void Close() {
-        dialogDisplay.SetActive(false);
+        dialogDisplay.gameObject.SetActive(false);
                     
         var playerControls = player.GetComponent<PlayerControls>();
         var gravityControls = player.GetComponent<GravityControl>();

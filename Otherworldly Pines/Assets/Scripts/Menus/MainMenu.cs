@@ -14,8 +14,8 @@ public class MainMenu : MonoBehaviour
         PauseMenu.GameIsPaused = false;
     }
 
-    public void PlayGame()
-    {
+    public void PlayGame() {
+        CheckpointMaster.shouldResetToStartingPos = true;
         MenuMusic.StopPlaying();
         if (!cutscenePlayed)
         {
@@ -26,6 +26,7 @@ public class MainMenu : MonoBehaviour
     }
 
     public void SkipToLevel2() {
+        CheckpointMaster.shouldResetToStartingPos = true;
         MenuMusic.StopPlaying();
         SceneManager.LoadScene(SceneIdentifier.Level2);
     }
