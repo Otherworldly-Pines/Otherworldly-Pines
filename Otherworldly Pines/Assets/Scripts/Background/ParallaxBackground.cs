@@ -54,18 +54,20 @@ public class ParallaxBackground : MonoBehaviour
         screenWidthInUnits = screenHeightInUnits * Screen.width / Screen.height;
 
         move = cam.transform.position.x * bgMoveSpeed;
-        
+
         var unscrolledPos = new Vector3(startPos.x + move, cam.transform.position.y + offsetY, transform.position.z);
+        //new Vector3(move, cam.transform.position.y + offsetY, transform.position.z);
 
         // if object is too far left or right (is offscreen), moves it back over
-        // creates the "scrolling background"
+        /* creates the "scrolling background"
         if (unscrolledPos.x - cam.transform.position.x < -1.0 * screenWidthInUnits) {
             transform.position = new Vector3(unscrolledPos.x + (2 * objLength), unscrolledPos.y, unscrolledPos.z);
         } else if (unscrolledPos.x - cam.transform.position.x > 1.0 * screenWidthInUnits) {
             transform.position = new Vector3(unscrolledPos.x - (2 * objLength), unscrolledPos.y, unscrolledPos.z);
         } else {
             transform.position = unscrolledPos;
-        }
+        }*/
+        transform.position = unscrolledPos;
     }
 
     public float getRatio()
