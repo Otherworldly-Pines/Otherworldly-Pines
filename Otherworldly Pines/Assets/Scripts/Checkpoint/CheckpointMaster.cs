@@ -5,16 +5,16 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class CheckpointMaster : MonoBehaviour {
-
+    
     public static Vector2 spawnPoint;
     public static int spawnAmmo;
-    public static bool shouldResetToStartingPos;
+    public static bool shouldResetToStartingPos = true;
     
     [SerializeField] private Transform startingPosition;
     private Scene currentScene;
 
     void Awake() {
-        if (shouldResetToStartingPos) {
+        if (shouldResetToStartingPos | spawnPoint == null) {
             spawnPoint = startingPosition.position;
         }
     }

@@ -114,6 +114,8 @@ public class PauseMenu : MonoBehaviour
 
     public void exitLevel()
     {
+        EndsceneController.ResetCollectables();
+        CollectibleUIControl.ResetCollectables();
         SceneManager.LoadScene(SceneIdentifier.MainMenu);
     }
 

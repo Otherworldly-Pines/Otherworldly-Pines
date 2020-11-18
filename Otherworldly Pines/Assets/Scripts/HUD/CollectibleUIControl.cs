@@ -34,6 +34,15 @@ public class CollectibleUIControl : MonoBehaviour {
         }
     }
 
+    public static void ResetCollectables() {
+        apple = false;
+        banana = false;
+        cookie = false;
+        cupcake = false;
+        pie = false;
+        water = false;
+    }
+
     private void Start() {
         Collectible1.SetActive(apple);
         Collectible2.SetActive(banana);

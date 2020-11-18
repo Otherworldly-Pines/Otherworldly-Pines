@@ -24,14 +24,6 @@ PrefabInstance:
       value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2945843626260660661, guid: ee399d18f73ac479cb5176a30563ac02, type: 3}
-      propertyPath: m_Size.x
-      value: 1.49
-      objectReference: {fileID: 0}
-    - target: {fileID: 2945843626260660661, guid: ee399d18f73ac479cb5176a30563ac02, type: 3}
-      propertyPath: m_Size.y
-      value: 1.49
-      objectReference: {fileID: 0}
-    - target: {fileID: 2945843626260660661, guid: ee399d18f73ac479cb5176a30563ac02, type: 3}
       propertyPath: m_SpriteTilingProperty.drawMode
       value: 1
       objectReference: {fileID: 0}

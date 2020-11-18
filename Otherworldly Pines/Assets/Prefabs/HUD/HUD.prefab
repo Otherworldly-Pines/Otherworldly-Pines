@@ -97,7 +97,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &826502520150367279
 RectTransform:
   m_ObjectHideFlags: 0
@@ -113,10 +113,10 @@ RectTransform:
   m_Father: {fileID: 4119021453858537557}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -438.6, y: 235.52}
-  m_SizeDelta: {x: 55.346016, y: 35.158997}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 37.3, y: -28}
+  m_SizeDelta: {x: 55.34601, y: 35.158997}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1643223971301040258
 CanvasRenderer:
@@ -245,10 +245,10 @@ RectTransform:
   m_Father: {fileID: 4119021453858537557}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -430, y: 238.6}
-  m_SizeDelta: {x: 75.88225, y: 51.003723}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 108.9, y: -32.4}
+  m_SizeDelta: {x: 75.88226, y: 51.003723}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6705482977852968442
 CanvasRenderer:
@@ -633,11 +633,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8761716889553061745, guid: 2eb6de55ff4f846c884ed821692384a7, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -332
+      value: 148.2
       objectReference: {fileID: 0}
     - target: {fileID: 8761716889553061745, guid: 2eb6de55ff4f846c884ed821692384a7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 193.7
+      value: -73.6
       objectReference: {fileID: 0}
     - target: {fileID: 8761716889553061745, guid: 2eb6de55ff4f846c884ed821692384a7, type: 3}
       propertyPath: m_SizeDelta.x
@@ -645,23 +645,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8761716889553061745, guid: 2eb6de55ff4f846c884ed821692384a7, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 83.71091
+      value: 83.71094
       objectReference: {fileID: 0}
     - target: {fileID: 8761716889553061745, guid: 2eb6de55ff4f846c884ed821692384a7, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8761716889553061745, guid: 2eb6de55ff4f846c884ed821692384a7, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8761716889553061745, guid: 2eb6de55ff4f846c884ed821692384a7, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8761716889553061745, guid: 2eb6de55ff4f846c884ed821692384a7, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8761716889553061745, guid: 2eb6de55ff4f846c884ed821692384a7, type: 3}
       propertyPath: m_Pivot.x
